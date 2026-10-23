@@ -1,0 +1,23 @@
+{
+  "name": "@privana/auth",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "check-types": "tsc -b"
+  },
+  "dependencies": {
+    "@polar-sh/better-auth": "catalog:",
+    "@polar-sh/sdk": "catalog:",
+    "@privana/db": "workspace:*",
+    "better-auth": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@privana/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}

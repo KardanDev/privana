@@ -1,0 +1,3 @@
+{
+  "extends": "@privana/config/tsconfig.base.json"
+}
