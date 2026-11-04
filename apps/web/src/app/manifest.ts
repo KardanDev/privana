@@ -1,25 +1,24 @@
 import type { MetadataRoute } from "next";
+import { loadPlatform } from "@/shared/platform/load-platform";
 
-export default function manifest(): MetadataRoute.Manifest {
+export const dynamic = "force-dynamic";
+
+export default async function manifest(): Promise<MetadataRoute.Manifest> {
+  const config = await loadPlatform();
   return {
-    name: "privana",
-    short_name: "privana",
-    description: "my pwa app",
-    start_url: "/",
-    display: "standalone",
     background_color: "#ffffff",
-    theme_color: "#000000",
+    description: config.discovery.description,
+    display: "standalone",
     icons: [
       {
-        src: "/favicon/web-app-manifest-192x192.png",
-        sizes: "192x192",
-        type: "image/png",
-      },
-      {
-        src: "/favicon/web-app-manifest-512x512.png",
-        sizes: "512x512",
-        type: "image/png",
+        purpose: "any",
+        sizes: "any",
+        src: config.brand.logoUrl || "/favicon/favicon.svg",
       },
     ],
+    name: config.brand.name,
+    short_name: config.brand.name.slice(0, 24),
+    start_url: "/",
+    theme_color: config.brand.accentColor,
   };
 }

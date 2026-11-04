@@ -1,0 +1,5 @@
+{
+  "extends": "@privana/config/tsconfig.base.json",
+  "compilerOptions": { "noEmit": true },
+  "include": ["scripts/**/*.ts", "src/**/*.ts", "prisma/generated/**/*.ts"]
+}

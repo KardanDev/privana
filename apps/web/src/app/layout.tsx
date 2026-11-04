@@ -1,41 +1,43 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { DM_Sans, Manrope } from "next/font/google";
+import { connection } from "next/server";
 
 import "../index.css";
-import Header from "@/components/header";
 import Providers from "@/components/providers";
 import PwaRegistration from "@/components/pwa-registration";
+import { AppShell } from "@/shared/layout/app-shell";
+import { loadPlatform } from "@/shared/platform/load-platform";
+import { platformMetadata } from "@/shared/platform/platform-metadata";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const bodyFont = DM_Sans({
+  display: "swap",
   subsets: ["latin"],
+  variable: "--font-dm-sans",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const headingFont = Manrope({
+  display: "swap",
   subsets: ["latin"],
+  variable: "--font-manrope",
 });
 
-export const metadata: Metadata = {
-  title: "privana",
-  description: "privana",
-};
+export const generateMetadata = platformMetadata;
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  await connection();
+  const config = await loadPlatform();
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <html lang="pt-BR" suppressHydrationWarning>
+      <body
+        className={`${bodyFont.variable} ${headingFont.variable} antialiased`}
+      >
         <PwaRegistration />
 
-        <Providers>
-          <div className="grid grid-rows-[auto_1fr] h-svh">
-            <Header />
-            {children}
-          </div>
+        <Providers platformConfig={config}>
+          <AppShell>{children}</AppShell>
         </Providers>
       </body>
     </html>

@@ -1,0 +1,43 @@
+model PlatformSettings {
+  id String @id @default("platform")
+  draft Json
+  published Json
+  version Int @default(0)
+  publishedAt DateTime?
+  updatedAt DateTime @updatedAt
+}
+
+model PlatformRevision {
+  id String @id @default(cuid())
+  version Int @unique
+  config Json
+  publisherId String
+  publisher User @relation(fields:[publisherId],references:[id],onDelete:Restrict)
+  publishedAt DateTime @default(now())
+  @@index([publishedAt])
+}
+
+model TransactionRecord {
+  id String @id @default(cuid())
+  userId String?
+  user User? @relation(fields:[userId],references:[id],onDelete:Restrict)
+  creatorId String?
+  creator CreatorProfile? @relation(fields:[creatorId],references:[id],onDelete:Restrict)
+  subscriptionId String?
+  subscription Subscription? @relation(fields:[subscriptionId],references:[id],onDelete:Restrict)
+  provider String
+  externalEventId String
+  externalId String
+  kind String
+  status String
+  amountMinor Int
+  currency String
+  occurredAt DateTime
+  createdAt DateTime @default(now())
+  @@unique([provider,externalEventId])
+  @@index([occurredAt,id])
+  @@index([currency,status,kind])
+  @@index([userId])
+  @@index([creatorId])
+  @@index([subscriptionId])
+}

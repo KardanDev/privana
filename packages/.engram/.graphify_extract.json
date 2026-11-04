@@ -1,0 +1,3670 @@
+{
+  "nodes": [
+    {
+      "id": "src_context",
+      "label": "context.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\context.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_context_context",
+      "label": "Context",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\context.ts",
+      "source_location": "L4"
+    },
+    {
+      "id": "src_index",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\index.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_index_o",
+      "label": "o",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\index.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "src_index_publicprocedure",
+      "label": "publicProcedure",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\index.ts",
+      "source_location": "L4"
+    },
+    {
+      "id": "src_index_protectedprocedure",
+      "label": "protectedProcedure",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\index.ts",
+      "source_location": "L14"
+    },
+    {
+      "id": "src_index_adminprocedure",
+      "label": "adminProcedure",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\index.ts",
+      "source_location": "L22"
+    },
+    {
+      "id": "src_index_cmsprocedure",
+      "label": "cmsProcedure",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\index.ts",
+      "source_location": "L28"
+    },
+    {
+      "id": "src_index_moderationprocedure",
+      "label": "moderationProcedure",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\index.ts",
+      "source_location": "L34"
+    },
+    {
+      "id": "src_index_financeprocedure",
+      "label": "financeProcedure",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\index.ts",
+      "source_location": "L45"
+    },
+    {
+      "id": "routers_index",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "routers_index_approuter",
+      "label": "appRouter",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L46"
+    },
+    {
+      "id": "routers_index_approuterclient",
+      "label": "AppRouterClient",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L90"
+    },
+    {
+      "id": "src_index",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_index_authconfig",
+      "label": "AuthConfig",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L14"
+    },
+    {
+      "id": "src_index_createauth",
+      "label": "createAuth()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L21"
+    },
+    {
+      "id": "src_index_session",
+      "label": "Session",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L157"
+    },
+    {
+      "id": "lib_payments",
+      "label": "payments.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\lib\\payments.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "lib_payments_marketplacepayments",
+      "label": "marketplacePayments",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\lib\\payments.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "db_prisma_config",
+      "label": "prisma.config.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\db\\prisma.config.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_config",
+      "label": "config.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\db\\src\\config.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_config_databaseconfig",
+      "label": "DatabaseConfig",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\db\\src\\config.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_index",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\db\\src\\index.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_index_createprismaclient",
+      "label": "createPrismaClient()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\db\\src\\index.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "src_index_database",
+      "label": "Database",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\db\\src\\index.ts",
+      "source_location": "L19"
+    },
+    {
+      "id": "ui_postcss_config",
+      "label": "postcss.config.mjs",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\postcss.config.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_attachment",
+      "label": "attachment.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_attachment_attachmentvariants",
+      "label": "attachmentVariants",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L8"
+    },
+    {
+      "id": "components_attachment_attachment",
+      "label": "Attachment()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L26"
+    },
+    {
+      "id": "components_attachment_attachmentmediavariants",
+      "label": "attachmentMediaVariants",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L50"
+    },
+    {
+      "id": "components_attachment_attachmentmedia",
+      "label": "AttachmentMedia()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L66"
+    },
+    {
+      "id": "components_attachment_attachmentcontent",
+      "label": "AttachmentContent()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L81"
+    },
+    {
+      "id": "components_attachment_attachmenttitle",
+      "label": "AttachmentTitle()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L97"
+    },
+    {
+      "id": "components_attachment_attachmentdescription",
+      "label": "AttachmentDescription()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L113"
+    },
+    {
+      "id": "components_attachment_attachmentactions",
+      "label": "AttachmentActions()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L130"
+    },
+    {
+      "id": "components_attachment_attachmentaction",
+      "label": "AttachmentAction()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L146"
+    },
+    {
+      "id": "components_attachment_attachmenttrigger",
+      "label": "AttachmentTrigger()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L165"
+    },
+    {
+      "id": "components_attachment_attachmentgroup",
+      "label": "AttachmentGroup()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L187"
+    },
+    {
+      "id": "components_bubble",
+      "label": "bubble.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\bubble.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_bubble_bubblegroup",
+      "label": "BubbleGroup()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\bubble.tsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "components_bubble_bubblevariants",
+      "label": "bubbleVariants",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\bubble.tsx",
+      "source_location": "L17"
+    },
+    {
+      "id": "components_bubble_bubble",
+      "label": "Bubble()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\bubble.tsx",
+      "source_location": "L44"
+    },
+    {
+      "id": "components_bubble_bubblecontent",
+      "label": "BubbleContent()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\bubble.tsx",
+      "source_location": "L64"
+    },
+    {
+      "id": "components_bubble_bubblereactionsvariants",
+      "label": "bubbleReactionsVariants",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\bubble.tsx",
+      "source_location": "L87"
+    },
+    {
+      "id": "components_bubble_bubblereactions",
+      "label": "BubbleReactions()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\bubble.tsx",
+      "source_location": "L107"
+    },
+    {
+      "id": "components_button",
+      "label": "button.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\button.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_button_buttonvariants",
+      "label": "buttonVariants",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\button.tsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "components_button_button",
+      "label": "Button()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\button.tsx",
+      "source_location": "L40"
+    },
+    {
+      "id": "components_card",
+      "label": "card.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\card.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_card_card",
+      "label": "Card()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\card.tsx",
+      "source_location": "L4"
+    },
+    {
+      "id": "components_card_cardheader",
+      "label": "CardHeader()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\card.tsx",
+      "source_location": "L22"
+    },
+    {
+      "id": "components_card_cardtitle",
+      "label": "CardTitle()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\card.tsx",
+      "source_location": "L35"
+    },
+    {
+      "id": "components_card_carddescription",
+      "label": "CardDescription()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\card.tsx",
+      "source_location": "L48"
+    },
+    {
+      "id": "components_card_cardaction",
+      "label": "CardAction()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\card.tsx",
+      "source_location": "L58"
+    },
+    {
+      "id": "components_card_cardcontent",
+      "label": "CardContent()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\card.tsx",
+      "source_location": "L71"
+    },
+    {
+      "id": "components_card_cardfooter",
+      "label": "CardFooter()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\card.tsx",
+      "source_location": "L81"
+    },
+    {
+      "id": "components_checkbox",
+      "label": "checkbox.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\checkbox.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_checkbox_checkbox",
+      "label": "Checkbox()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\checkbox.tsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "components_dropdown_menu",
+      "label": "dropdown-menu.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_dropdown_menu_dropdownmenu",
+      "label": "DropdownMenu()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L8"
+    },
+    {
+      "id": "components_dropdown_menu_dropdownmenuportal",
+      "label": "DropdownMenuPortal()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L12"
+    },
+    {
+      "id": "components_dropdown_menu_dropdownmenutrigger",
+      "label": "DropdownMenuTrigger()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L16"
+    },
+    {
+      "id": "components_dropdown_menu_dropdownmenucontent",
+      "label": "DropdownMenuContent()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L20"
+    },
+    {
+      "id": "components_dropdown_menu_dropdownmenugroup",
+      "label": "DropdownMenuGroup()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L54"
+    },
+    {
+      "id": "components_dropdown_menu_dropdownmenulabel",
+      "label": "DropdownMenuLabel()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L58"
+    },
+    {
+      "id": "components_dropdown_menu_dropdownmenuitem",
+      "label": "DropdownMenuItem()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L78"
+    },
+    {
+      "id": "components_dropdown_menu_dropdownmenusub",
+      "label": "DropdownMenuSub()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L101"
+    },
+    {
+      "id": "components_dropdown_menu_dropdownmenusubtrigger",
+      "label": "DropdownMenuSubTrigger()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L105"
+    },
+    {
+      "id": "components_dropdown_menu_dropdownmenusubcontent",
+      "label": "DropdownMenuSubContent()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L129"
+    },
+    {
+      "id": "components_dropdown_menu_dropdownmenucheckboxitem",
+      "label": "DropdownMenuCheckboxItem()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L153"
+    },
+    {
+      "id": "components_dropdown_menu_dropdownmenuradiogroup",
+      "label": "DropdownMenuRadioGroup()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L186"
+    },
+    {
+      "id": "components_dropdown_menu_dropdownmenuradioitem",
+      "label": "DropdownMenuRadioItem()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L195"
+    },
+    {
+      "id": "components_dropdown_menu_dropdownmenuseparator",
+      "label": "DropdownMenuSeparator()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L226"
+    },
+    {
+      "id": "components_dropdown_menu_dropdownmenushortcut",
+      "label": "DropdownMenuShortcut()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L239"
+    },
+    {
+      "id": "components_empty",
+      "label": "empty.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\empty.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_empty_empty",
+      "label": "Empty()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\empty.tsx",
+      "source_location": "L4"
+    },
+    {
+      "id": "components_empty_emptyheader",
+      "label": "EmptyHeader()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\empty.tsx",
+      "source_location": "L17"
+    },
+    {
+      "id": "components_empty_emptymediavariants",
+      "label": "emptyMediaVariants",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\empty.tsx",
+      "source_location": "L27"
+    },
+    {
+      "id": "components_empty_emptymedia",
+      "label": "EmptyMedia()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\empty.tsx",
+      "source_location": "L42"
+    },
+    {
+      "id": "components_empty_emptytitle",
+      "label": "EmptyTitle()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\empty.tsx",
+      "source_location": "L57"
+    },
+    {
+      "id": "components_empty_emptydescription",
+      "label": "EmptyDescription()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\empty.tsx",
+      "source_location": "L70"
+    },
+    {
+      "id": "components_empty_emptycontent",
+      "label": "EmptyContent()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\empty.tsx",
+      "source_location": "L83"
+    },
+    {
+      "id": "components_input_group",
+      "label": "input-group.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_input_group_inputgroup",
+      "label": "InputGroup()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L10"
+    },
+    {
+      "id": "components_input_group_inputgroupaddonvariants",
+      "label": "inputGroupAddonVariants",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L28"
+    },
+    {
+      "id": "components_input_group_inputgroupaddon",
+      "label": "InputGroupAddon()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L49"
+    },
+    {
+      "id": "components_input_group_inputgroupbuttonvariants",
+      "label": "inputGroupButtonVariants",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L64"
+    },
+    {
+      "id": "components_input_group_inputgroupbutton",
+      "label": "InputGroupButton()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L81"
+    },
+    {
+      "id": "components_input_group_inputgrouptext",
+      "label": "InputGroupText()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L102"
+    },
+    {
+      "id": "components_input_group_inputgroupinput",
+      "label": "InputGroupInput()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L114"
+    },
+    {
+      "id": "components_input_group_inputgrouptextarea",
+      "label": "InputGroupTextarea()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L130"
+    },
+    {
+      "id": "components_input",
+      "label": "input.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_input_input",
+      "label": "Input()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input.tsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "components_label",
+      "label": "label.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\label.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_label_label",
+      "label": "Label()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\label.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "components_marker",
+      "label": "marker.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\marker.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_marker_markervariants",
+      "label": "markerVariants",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\marker.tsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "components_marker_marker",
+      "label": "Marker()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\marker.tsx",
+      "source_location": "L21"
+    },
+    {
+      "id": "components_marker_markericon",
+      "label": "MarkerIcon()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\marker.tsx",
+      "source_location": "L43"
+    },
+    {
+      "id": "components_marker_markercontent",
+      "label": "MarkerContent()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\marker.tsx",
+      "source_location": "L57"
+    },
+    {
+      "id": "components_message_scroller",
+      "label": "message-scroller.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message-scroller.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_message_scroller_messagescrollerprovider",
+      "label": "MessageScrollerProvider()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message-scroller.tsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "components_message_scroller_messagescroller",
+      "label": "MessageScroller()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message-scroller.tsx",
+      "source_location": "L15"
+    },
+    {
+      "id": "components_message_scroller_messagescrollerviewport",
+      "label": "MessageScrollerViewport()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message-scroller.tsx",
+      "source_location": "L31"
+    },
+    {
+      "id": "components_message_scroller_messagescrollercontent",
+      "label": "MessageScrollerContent()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message-scroller.tsx",
+      "source_location": "L47"
+    },
+    {
+      "id": "components_message_scroller_messagescrolleritem",
+      "label": "MessageScrollerItem()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message-scroller.tsx",
+      "source_location": "L63"
+    },
+    {
+      "id": "components_message_scroller_messagescrollerbutton",
+      "label": "MessageScrollerButton()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message-scroller.tsx",
+      "source_location": "L81"
+    },
+    {
+      "id": "components_message",
+      "label": "message.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_message_messagegroup",
+      "label": "MessageGroup()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message.tsx",
+      "source_location": "L4"
+    },
+    {
+      "id": "components_message_message",
+      "label": "Message()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message.tsx",
+      "source_location": "L14"
+    },
+    {
+      "id": "components_message_messageavatar",
+      "label": "MessageAvatar()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message.tsx",
+      "source_location": "L32"
+    },
+    {
+      "id": "components_message_messagecontent",
+      "label": "MessageContent()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message.tsx",
+      "source_location": "L45"
+    },
+    {
+      "id": "components_message_messageheader",
+      "label": "MessageHeader()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message.tsx",
+      "source_location": "L58"
+    },
+    {
+      "id": "components_message_messagefooter",
+      "label": "MessageFooter()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message.tsx",
+      "source_location": "L71"
+    },
+    {
+      "id": "components_skeleton",
+      "label": "skeleton.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\skeleton.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_skeleton_skeleton",
+      "label": "Skeleton()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\skeleton.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "components_sonner",
+      "label": "sonner.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\sonner.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_sonner_toaster",
+      "label": "Toaster()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\sonner.tsx",
+      "source_location": "L13"
+    },
+    {
+      "id": "components_textarea",
+      "label": "textarea.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\textarea.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_textarea_textarea",
+      "label": "Textarea()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\textarea.tsx",
+      "source_location": "L4"
+    },
+    {
+      "id": "components_tooltip",
+      "label": "tooltip.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\tooltip.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_tooltip_tooltipprovider",
+      "label": "TooltipProvider()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\tooltip.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "components_tooltip_tooltip",
+      "label": "Tooltip()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\tooltip.tsx",
+      "source_location": "L19"
+    },
+    {
+      "id": "components_tooltip_tooltiptrigger",
+      "label": "TooltipTrigger()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\tooltip.tsx",
+      "source_location": "L23"
+    },
+    {
+      "id": "components_tooltip_tooltipcontent",
+      "label": "TooltipContent()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\tooltip.tsx",
+      "source_location": "L27"
+    },
+    {
+      "id": "lib_utils",
+      "label": "utils.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\lib\\utils.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "lib_utils_cn",
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\lib\\utils.ts",
+      "source_location": "L3"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_context",
+      "target": "ref_privana_auth",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\context.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "src_context",
+      "target": "ref_privana_db",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\context.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "src_context",
+      "target": "src_context_context",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\context.ts",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "ref_orpc_server",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\index.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "src_context",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\index.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "src_context_context",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\index.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "src_index_o",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\index.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "src_index_publicprocedure",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\index.ts",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "src_index_protectedprocedure",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\index.ts",
+      "source_location": "L14",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "src_index_adminprocedure",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\index.ts",
+      "source_location": "L22",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "src_index_cmsprocedure",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\index.ts",
+      "source_location": "L28",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "src_index_moderationprocedure",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\index.ts",
+      "source_location": "L34",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "src_index_financeprocedure",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\index.ts",
+      "source_location": "L45",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "ref_orpc_server",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_admin_analytics_overview_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "analytics_overview_analyticsoverview",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_admin_cms_get_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "cms_get_getcms",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_admin_cms_history_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "cms_history_cmshistory",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_admin_cms_publish_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "cms_publish_publishcms",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_admin_cms_restore_draft_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "cms_restore_draft_restorecmsdraft",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_admin_cms_save_draft_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "cms_save_draft_savecmsdraft",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_admin_operations_audits_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L8",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "operations_audits_operationsaudits",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L8",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_admin_operations_creators_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L9",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "operations_creators_operationscreators",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L9",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_admin_operations_reports_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L10",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "operations_reports_operationsreports",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L10",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_admin_operations_subscriptions_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L11",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "operations_subscriptions_operationssubscriptions",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L11",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_admin_operations_transactions_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L12",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "operations_transactions_operationstransactions",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L12",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_admin_operations_users_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L13",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "operations_users_operationsusers",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L13",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_admin_overview_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L14",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "admin_overview_adminoverview",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L14",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_admin_report_details_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L15",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "admin_report_details_reportdetails",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L15",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_admin_resolve_report_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L16",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "admin_resolve_report_resolvereport",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L16",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_admin_revoke_subscription_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L17",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "admin_revoke_subscription_revokesubscription",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L17",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_admin_set_creator_status_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L18",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "admin_set_creator_status_setcreatorstatus",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L18",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_admin_set_team_role_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L19",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "admin_set_team_role_setteamrole",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L19",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_admin_set_user_status_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L20",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "admin_set_user_status_setuserstatus",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L20",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_creators_get_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L21",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "creators_get_getcreator",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L21",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_creators_list_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L22",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "creators_list_listcreators",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L22",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_creators_set_follow_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L23",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "creators_set_follow_setfollow",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L23",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_feed_list_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L24",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "feed_list_listfeed",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L24",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_memberships_list_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L25",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "memberships_list_listmemberships",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L25",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_memberships_request_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L26",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "memberships_request_requestmembership",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L26",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_messages_get_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L27",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "messages_get_getmessages",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L27",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_messages_list_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L28",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "messages_list_listconversations",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L28",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_messages_send_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L29",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "messages_send_sendmessage",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L29",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_messages_start_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L30",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "messages_start_startconversation",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L30",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_notifications_list_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L31",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "notifications_list_listnotifications",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L31",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_notifications_mark_read_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L32",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "notifications_mark_read_markread",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L32",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_platform_get_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L33",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "platform_get_getplatform",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L33",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_posts_add_comment_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L34",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "posts_add_comment_addcomment",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L34",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_posts_comments_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L35",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "posts_comments_listcomments",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L35",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_posts_set_bookmark_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L36",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "posts_set_bookmark_setbookmark",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L36",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_posts_set_like_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L37",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "posts_set_like_setlike",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L37",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_reports_create_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L38",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "reports_create_createreport",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L38",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_settings_get_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L39",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "settings_get_getsettings",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L39",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_settings_update_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L40",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "settings_update_updatesettings",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L40",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_studio_delete_post_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L41",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "studio_delete_post_deletepost",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L41",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_studio_overview_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L42",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "studio_overview_studiooverview",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L42",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_studio_save_post_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L43",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "studio_save_post_savepost",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L43",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_studio_save_profile_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L44",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "studio_save_profile_saveprofile",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L44",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "c_users_d_kruger_documents_privana_packages_api_src_domains_viewer_get_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L45",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "viewer_get_getviewer",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L45",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "routers_index_approuter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L46",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "routers_index_approuter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L89",
+      "weight": 1
+    },
+    {
+      "source": "routers_index",
+      "target": "routers_index_approuterclient",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\api\\src\\routers\\index.ts",
+      "source_location": "L90",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "ref_privana_db",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "ref_privana_db_read_platform_brand",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "ref_better_auth",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "ref_better_auth_adapters_prisma",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "ref_better_auth_api",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "ref_better_auth_next_js",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "c_users_d_kruger_documents_privana_packages_auth_src_assert_registration_enabled_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "src_assert_registration_enabled_assertregistrationenabled",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "c_users_d_kruger_documents_privana_packages_auth_src_email_config_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L8",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "email_config_emailconfig",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L8",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "c_users_d_kruger_documents_privana_packages_auth_src_email_render_auth_email_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L9",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "email_render_auth_email_renderauthemail",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L9",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "c_users_d_kruger_documents_privana_packages_auth_src_email_send_email_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L10",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "email_send_email_sendemail",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L10",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "c_users_d_kruger_documents_privana_packages_auth_src_email_validate_email_config_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L11",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "email_validate_email_config_validateemailconfig",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L11",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "c_users_d_kruger_documents_privana_packages_auth_src_rate_limit_create_redis_rate_limit_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L12",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "rate_limit_create_redis_rate_limit_createredisratelimit",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L12",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "src_index_authconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L14",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "src_index_createauth",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L21",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "src_index_session",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\index.ts",
+      "source_location": "L157",
+      "weight": 1
+    },
+    {
+      "source": "lib_payments",
+      "target": "lib_payments_marketplacepayments",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\auth\\src\\lib\\payments.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "db_prisma_config",
+      "target": "ref_node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\db\\prisma.config.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "db_prisma_config",
+      "target": "ref_prisma_config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\db\\prisma.config.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "db_prisma_config",
+      "target": "ref_varlock_auto_load",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\db\\prisma.config.ts",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "src_config",
+      "target": "src_config_databaseconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\db\\src\\config.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "ref_prisma_adapter_ppg",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\db\\src\\index.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "c_users_d_kruger_documents_privana_packages_db_prisma_generated_client_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\db\\src\\index.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "generated_client_prismaclient",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\db\\src\\index.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "src_config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\db\\src\\index.ts",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "src_config_databaseconfig",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\db\\src\\index.ts",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "src_index_createprismaclient",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\db\\src\\index.ts",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "src_index",
+      "target": "src_index_database",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\db\\src\\index.ts",
+      "source_location": "L19",
+      "weight": 1
+    },
+    {
+      "source": "components_attachment",
+      "target": "ref_base_ui_react_merge_props",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "components_attachment",
+      "target": "ref_base_ui_react_use_render",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "components_attachment",
+      "target": "components_button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_attachment",
+      "target": "components_button_button",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_attachment",
+      "target": "lib_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_attachment",
+      "target": "lib_utils_cn",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_attachment",
+      "target": "ref_class_variance_authority",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "components_attachment",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "components_attachment",
+      "target": "components_attachment_attachmentvariants",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L8",
+      "weight": 1
+    },
+    {
+      "source": "components_attachment",
+      "target": "components_attachment_attachment",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L26",
+      "weight": 1
+    },
+    {
+      "source": "components_attachment",
+      "target": "components_attachment_attachmentmediavariants",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L50",
+      "weight": 1
+    },
+    {
+      "source": "components_attachment",
+      "target": "components_attachment_attachmentmedia",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L66",
+      "weight": 1
+    },
+    {
+      "source": "components_attachment",
+      "target": "components_attachment_attachmentcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L81",
+      "weight": 1
+    },
+    {
+      "source": "components_attachment",
+      "target": "components_attachment_attachmenttitle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L97",
+      "weight": 1
+    },
+    {
+      "source": "components_attachment",
+      "target": "components_attachment_attachmentdescription",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L113",
+      "weight": 1
+    },
+    {
+      "source": "components_attachment",
+      "target": "components_attachment_attachmentactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L130",
+      "weight": 1
+    },
+    {
+      "source": "components_attachment",
+      "target": "components_attachment_attachmentaction",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L146",
+      "weight": 1
+    },
+    {
+      "source": "components_attachment",
+      "target": "components_attachment_attachmenttrigger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L165",
+      "weight": 1
+    },
+    {
+      "source": "components_attachment",
+      "target": "components_attachment_attachmentgroup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L187",
+      "weight": 1
+    },
+    {
+      "source": "components_attachment_attachment",
+      "target": "components_attachment_attachmentvariants",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L40",
+      "weight": 1
+    },
+    {
+      "source": "components_attachment_attachmentmedia",
+      "target": "components_attachment_attachmentmediavariants",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\attachment.tsx",
+      "source_location": "L73",
+      "weight": 1
+    },
+    {
+      "source": "components_bubble",
+      "target": "ref_base_ui_react_merge_props",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\bubble.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "components_bubble",
+      "target": "ref_base_ui_react_use_render",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\bubble.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "components_bubble",
+      "target": "lib_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\bubble.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_bubble",
+      "target": "lib_utils_cn",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\bubble.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_bubble",
+      "target": "ref_class_variance_authority",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\bubble.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_bubble",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\bubble.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "components_bubble",
+      "target": "components_bubble_bubblegroup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\bubble.tsx",
+      "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "components_bubble",
+      "target": "components_bubble_bubblevariants",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\bubble.tsx",
+      "source_location": "L17",
+      "weight": 1
+    },
+    {
+      "source": "components_bubble",
+      "target": "components_bubble_bubble",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\bubble.tsx",
+      "source_location": "L44",
+      "weight": 1
+    },
+    {
+      "source": "components_bubble",
+      "target": "components_bubble_bubblecontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\bubble.tsx",
+      "source_location": "L64",
+      "weight": 1
+    },
+    {
+      "source": "components_bubble",
+      "target": "components_bubble_bubblereactionsvariants",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\bubble.tsx",
+      "source_location": "L87",
+      "weight": 1
+    },
+    {
+      "source": "components_bubble",
+      "target": "components_bubble_bubblereactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\bubble.tsx",
+      "source_location": "L107",
+      "weight": 1
+    },
+    {
+      "source": "components_bubble_bubble",
+      "target": "components_bubble_bubblevariants",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\bubble.tsx",
+      "source_location": "L55",
+      "weight": 1
+    },
+    {
+      "source": "components_bubble_bubblereactions",
+      "target": "components_bubble_bubblereactionsvariants",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\bubble.tsx",
+      "source_location": "L118",
+      "weight": 1
+    },
+    {
+      "source": "components_button",
+      "target": "ref_base_ui_react_button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\button.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "components_button",
+      "target": "lib_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\button.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "components_button",
+      "target": "lib_utils_cn",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\button.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "components_button",
+      "target": "ref_class_variance_authority",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\button.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_button",
+      "target": "components_button_buttonvariants",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\button.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "components_button",
+      "target": "components_button_button",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\button.tsx",
+      "source_location": "L40",
+      "weight": 1
+    },
+    {
+      "source": "components_button_button",
+      "target": "components_button_buttonvariants",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\button.tsx",
+      "source_location": "L48",
+      "weight": 1
+    },
+    {
+      "source": "components_card",
+      "target": "lib_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\card.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "components_card",
+      "target": "lib_utils_cn",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\card.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "components_card",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\card.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "components_card",
+      "target": "components_card_card",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\card.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_card",
+      "target": "components_card_cardheader",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\card.tsx",
+      "source_location": "L22",
+      "weight": 1
+    },
+    {
+      "source": "components_card",
+      "target": "components_card_cardtitle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\card.tsx",
+      "source_location": "L35",
+      "weight": 1
+    },
+    {
+      "source": "components_card",
+      "target": "components_card_carddescription",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\card.tsx",
+      "source_location": "L48",
+      "weight": 1
+    },
+    {
+      "source": "components_card",
+      "target": "components_card_cardaction",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\card.tsx",
+      "source_location": "L58",
+      "weight": 1
+    },
+    {
+      "source": "components_card",
+      "target": "components_card_cardcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\card.tsx",
+      "source_location": "L71",
+      "weight": 1
+    },
+    {
+      "source": "components_card",
+      "target": "components_card_cardfooter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\card.tsx",
+      "source_location": "L81",
+      "weight": 1
+    },
+    {
+      "source": "components_checkbox",
+      "target": "ref_base_ui_react_checkbox",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\checkbox.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_checkbox",
+      "target": "lib_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\checkbox.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_checkbox",
+      "target": "lib_utils_cn",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\checkbox.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_checkbox",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\checkbox.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "components_checkbox",
+      "target": "components_checkbox_checkbox",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\checkbox.tsx",
+      "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "components_dropdown_menu",
+      "target": "ref_base_ui_react_menu",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_dropdown_menu",
+      "target": "lib_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_dropdown_menu",
+      "target": "lib_utils_cn",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_dropdown_menu",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "components_dropdown_menu",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "components_dropdown_menu",
+      "target": "components_dropdown_menu_dropdownmenu",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L8",
+      "weight": 1
+    },
+    {
+      "source": "components_dropdown_menu",
+      "target": "components_dropdown_menu_dropdownmenuportal",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L12",
+      "weight": 1
+    },
+    {
+      "source": "components_dropdown_menu",
+      "target": "components_dropdown_menu_dropdownmenutrigger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L16",
+      "weight": 1
+    },
+    {
+      "source": "components_dropdown_menu",
+      "target": "components_dropdown_menu_dropdownmenucontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L20",
+      "weight": 1
+    },
+    {
+      "source": "components_dropdown_menu",
+      "target": "components_dropdown_menu_dropdownmenugroup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L54",
+      "weight": 1
+    },
+    {
+      "source": "components_dropdown_menu",
+      "target": "components_dropdown_menu_dropdownmenulabel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L58",
+      "weight": 1
+    },
+    {
+      "source": "components_dropdown_menu",
+      "target": "components_dropdown_menu_dropdownmenuitem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L78",
+      "weight": 1
+    },
+    {
+      "source": "components_dropdown_menu",
+      "target": "components_dropdown_menu_dropdownmenusub",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L101",
+      "weight": 1
+    },
+    {
+      "source": "components_dropdown_menu",
+      "target": "components_dropdown_menu_dropdownmenusubtrigger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L105",
+      "weight": 1
+    },
+    {
+      "source": "components_dropdown_menu",
+      "target": "components_dropdown_menu_dropdownmenusubcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L129",
+      "weight": 1
+    },
+    {
+      "source": "components_dropdown_menu",
+      "target": "components_dropdown_menu_dropdownmenucheckboxitem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L153",
+      "weight": 1
+    },
+    {
+      "source": "components_dropdown_menu",
+      "target": "components_dropdown_menu_dropdownmenuradiogroup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L186",
+      "weight": 1
+    },
+    {
+      "source": "components_dropdown_menu",
+      "target": "components_dropdown_menu_dropdownmenuradioitem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L195",
+      "weight": 1
+    },
+    {
+      "source": "components_dropdown_menu",
+      "target": "components_dropdown_menu_dropdownmenuseparator",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L226",
+      "weight": 1
+    },
+    {
+      "source": "components_dropdown_menu",
+      "target": "components_dropdown_menu_dropdownmenushortcut",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\dropdown-menu.tsx",
+      "source_location": "L239",
+      "weight": 1
+    },
+    {
+      "source": "components_empty",
+      "target": "lib_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\empty.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "components_empty",
+      "target": "lib_utils_cn",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\empty.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "components_empty",
+      "target": "ref_class_variance_authority",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\empty.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "components_empty",
+      "target": "components_empty_empty",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\empty.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_empty",
+      "target": "components_empty_emptyheader",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\empty.tsx",
+      "source_location": "L17",
+      "weight": 1
+    },
+    {
+      "source": "components_empty",
+      "target": "components_empty_emptymediavariants",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\empty.tsx",
+      "source_location": "L27",
+      "weight": 1
+    },
+    {
+      "source": "components_empty",
+      "target": "components_empty_emptymedia",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\empty.tsx",
+      "source_location": "L42",
+      "weight": 1
+    },
+    {
+      "source": "components_empty",
+      "target": "components_empty_emptytitle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\empty.tsx",
+      "source_location": "L57",
+      "weight": 1
+    },
+    {
+      "source": "components_empty",
+      "target": "components_empty_emptydescription",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\empty.tsx",
+      "source_location": "L70",
+      "weight": 1
+    },
+    {
+      "source": "components_empty",
+      "target": "components_empty_emptycontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\empty.tsx",
+      "source_location": "L83",
+      "weight": 1
+    },
+    {
+      "source": "components_empty_emptymedia",
+      "target": "components_empty_emptymediavariants",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\empty.tsx",
+      "source_location": "L49",
+      "weight": 1
+    },
+    {
+      "source": "components_input_group",
+      "target": "components_button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_input_group",
+      "target": "components_button_button",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_input_group",
+      "target": "components_input",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_input_group",
+      "target": "components_input_input",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_input_group",
+      "target": "components_textarea",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "components_input_group",
+      "target": "components_textarea_textarea",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "components_input_group",
+      "target": "lib_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "components_input_group",
+      "target": "lib_utils_cn",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "components_input_group",
+      "target": "ref_class_variance_authority",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "components_input_group",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L8",
+      "weight": 1
+    },
+    {
+      "source": "components_input_group",
+      "target": "components_input_group_inputgroup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L10",
+      "weight": 1
+    },
+    {
+      "source": "components_input_group",
+      "target": "components_input_group_inputgroupaddonvariants",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L28",
+      "weight": 1
+    },
+    {
+      "source": "components_input_group",
+      "target": "components_input_group_inputgroupaddon",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L49",
+      "weight": 1
+    },
+    {
+      "source": "components_input_group",
+      "target": "components_input_group_inputgroupbuttonvariants",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L64",
+      "weight": 1
+    },
+    {
+      "source": "components_input_group",
+      "target": "components_input_group_inputgroupbutton",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L81",
+      "weight": 1
+    },
+    {
+      "source": "components_input_group",
+      "target": "components_input_group_inputgrouptext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L102",
+      "weight": 1
+    },
+    {
+      "source": "components_input_group",
+      "target": "components_input_group_inputgroupinput",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L114",
+      "weight": 1
+    },
+    {
+      "source": "components_input_group",
+      "target": "components_input_group_inputgrouptextarea",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L130",
+      "weight": 1
+    },
+    {
+      "source": "components_input_group_inputgroupaddon",
+      "target": "components_input_group_inputgroupaddonvariants",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L56",
+      "weight": 1
+    },
+    {
+      "source": "components_input_group_inputgroupbutton",
+      "target": "components_input_group_inputgroupbuttonvariants",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input-group.tsx",
+      "source_location": "L93",
+      "weight": 1
+    },
+    {
+      "source": "components_input",
+      "target": "ref_base_ui_react_input",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "components_input",
+      "target": "lib_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "components_input",
+      "target": "lib_utils_cn",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "components_input",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_input",
+      "target": "components_input_input",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\input.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "components_label",
+      "target": "lib_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\label.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_label",
+      "target": "lib_utils_cn",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\label.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_label",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\label.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_label",
+      "target": "components_label_label",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\label.tsx",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "components_marker",
+      "target": "ref_base_ui_react_merge_props",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\marker.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "components_marker",
+      "target": "ref_base_ui_react_use_render",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\marker.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "components_marker",
+      "target": "lib_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\marker.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_marker",
+      "target": "lib_utils_cn",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\marker.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_marker",
+      "target": "ref_class_variance_authority",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\marker.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_marker",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\marker.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "components_marker",
+      "target": "components_marker_markervariants",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\marker.tsx",
+      "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "components_marker",
+      "target": "components_marker_marker",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\marker.tsx",
+      "source_location": "L21",
+      "weight": 1
+    },
+    {
+      "source": "components_marker",
+      "target": "components_marker_markericon",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\marker.tsx",
+      "source_location": "L43",
+      "weight": 1
+    },
+    {
+      "source": "components_marker",
+      "target": "components_marker_markercontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\marker.tsx",
+      "source_location": "L57",
+      "weight": 1
+    },
+    {
+      "source": "components_marker_marker",
+      "target": "components_marker_markervariants",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\marker.tsx",
+      "source_location": "L31",
+      "weight": 1
+    },
+    {
+      "source": "components_message_scroller",
+      "target": "components_button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message-scroller.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_message_scroller",
+      "target": "components_button_button",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message-scroller.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_message_scroller",
+      "target": "lib_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message-scroller.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_message_scroller",
+      "target": "lib_utils_cn",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message-scroller.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_message_scroller",
+      "target": "ref_shadcn_react_message_scroller",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message-scroller.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "components_message_scroller",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message-scroller.tsx",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "components_message_scroller",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message-scroller.tsx",
+      "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "components_message_scroller",
+      "target": "components_message_scroller_messagescrollerprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message-scroller.tsx",
+      "source_location": "L9",
+      "weight": 1
+    },
+    {
+      "source": "components_message_scroller",
+      "target": "components_message_scroller_messagescroller",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message-scroller.tsx",
+      "source_location": "L15",
+      "weight": 1
+    },
+    {
+      "source": "components_message_scroller",
+      "target": "components_message_scroller_messagescrollerviewport",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message-scroller.tsx",
+      "source_location": "L31",
+      "weight": 1
+    },
+    {
+      "source": "components_message_scroller",
+      "target": "components_message_scroller_messagescrollercontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message-scroller.tsx",
+      "source_location": "L47",
+      "weight": 1
+    },
+    {
+      "source": "components_message_scroller",
+      "target": "components_message_scroller_messagescrolleritem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message-scroller.tsx",
+      "source_location": "L63",
+      "weight": 1
+    },
+    {
+      "source": "components_message_scroller",
+      "target": "components_message_scroller_messagescrollerbutton",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message-scroller.tsx",
+      "source_location": "L81",
+      "weight": 1
+    },
+    {
+      "source": "components_message",
+      "target": "lib_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "components_message",
+      "target": "lib_utils_cn",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "components_message",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "components_message",
+      "target": "components_message_messagegroup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_message",
+      "target": "components_message_message",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message.tsx",
+      "source_location": "L14",
+      "weight": 1
+    },
+    {
+      "source": "components_message",
+      "target": "components_message_messageavatar",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message.tsx",
+      "source_location": "L32",
+      "weight": 1
+    },
+    {
+      "source": "components_message",
+      "target": "components_message_messagecontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message.tsx",
+      "source_location": "L45",
+      "weight": 1
+    },
+    {
+      "source": "components_message",
+      "target": "components_message_messageheader",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message.tsx",
+      "source_location": "L58",
+      "weight": 1
+    },
+    {
+      "source": "components_message",
+      "target": "components_message_messagefooter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\message.tsx",
+      "source_location": "L71",
+      "weight": 1
+    },
+    {
+      "source": "components_skeleton",
+      "target": "lib_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\skeleton.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "components_skeleton",
+      "target": "lib_utils_cn",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\skeleton.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "components_skeleton",
+      "target": "components_skeleton_skeleton",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\skeleton.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_sonner",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\sonner.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_sonner",
+      "target": "ref_next_themes",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\sonner.tsx",
+      "source_location": "L10",
+      "weight": 1
+    },
+    {
+      "source": "components_sonner",
+      "target": "ref_sonner",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\sonner.tsx",
+      "source_location": "L11",
+      "weight": 1
+    },
+    {
+      "source": "components_sonner",
+      "target": "components_sonner_toaster",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\sonner.tsx",
+      "source_location": "L13",
+      "weight": 1
+    },
+    {
+      "source": "components_textarea",
+      "target": "lib_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\textarea.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "components_textarea",
+      "target": "lib_utils_cn",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\textarea.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "components_textarea",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\textarea.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "components_textarea",
+      "target": "components_textarea_textarea",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\textarea.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_tooltip",
+      "target": "ref_base_ui_react_tooltip",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\tooltip.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_tooltip",
+      "target": "lib_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\tooltip.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_tooltip",
+      "target": "lib_utils_cn",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\tooltip.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_tooltip",
+      "target": "components_tooltip_tooltipprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\tooltip.tsx",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "components_tooltip",
+      "target": "components_tooltip_tooltip",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\tooltip.tsx",
+      "source_location": "L19",
+      "weight": 1
+    },
+    {
+      "source": "components_tooltip",
+      "target": "components_tooltip_tooltiptrigger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\tooltip.tsx",
+      "source_location": "L23",
+      "weight": 1
+    },
+    {
+      "source": "components_tooltip",
+      "target": "components_tooltip_tooltipcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\components\\tooltip.tsx",
+      "source_location": "L27",
+      "weight": 1
+    },
+    {
+      "source": "lib_utils",
+      "target": "ref_cn",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\lib\\utils.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "lib_utils",
+      "target": "lib_utils_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\packages\\ui\\src\\lib\\utils.ts",
+      "source_location": "L3",
+      "weight": 1
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

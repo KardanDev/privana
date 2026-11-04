@@ -7,13 +7,15 @@
   },
   "scripts": {
     "build": "tsc -b",
-    "check-types": "tsc -b"
+    "check-types": "tsc -b",
+    "email:check": "cd ../../apps/web && varlock run -- bun ../../packages/auth/scripts/check-email.ts",
+    "email:check-auth": "cd ../../apps/web && varlock run -- bun ../../packages/auth/scripts/check-auth-email.ts"
   },
   "dependencies": {
-    "@polar-sh/better-auth": "catalog:",
-    "@polar-sh/sdk": "catalog:",
     "@privana/db": "workspace:*",
+    "@upstash/redis": "^1.41.0",
     "better-auth": "catalog:",
+    "resend": "^6.34.1",
     "zod": "catalog:"
   },
   "devDependencies": {

@@ -1,141 +1,135 @@
-# privana
+﻿# Privana
 
-This project was created with [Better-T-Stack](https://github.com/AmanVarshney01/create-better-t-stack), a modern TypeScript stack that combines Next.js, Self, ORPC, and more.
+Marketplace de comunidades e criadores em português do Brasil, com interface roxa, contas por e-mail e dados persistidos no PostgreSQL. Usa Next.js 16, React 19, Better Auth 1.7.10, oRPC, Prisma 7, shadcn/Base UI, Bun e Turborepo.
 
-## Features
+## Produto
 
-- **TypeScript** - For type safety and improved developer experience
-- **Next.js** - Full-stack React framework
-- **TailwindCSS** - Utility-first CSS for rapid UI development
-- **Shared UI package** - shadcn/ui primitives live in `packages/ui`
-- **oRPC** - End-to-end type-safe APIs with OpenAPI integration
-- **Prisma** - TypeScript-first ORM
-- **PostgreSQL** - Database engine
-- **Authentication** - Better-Auth
-- **PWA** - Progressive Web App support
-- **Turborepo** - Optimized monorepo build system
+- Descoberta por busca/categoria, perfis de criadores, feed, publicações públicas e exclusivas, seguir, curtir, salvar e comentar.
+- Conversas privadas persistidas, notificações, biblioteca e preferências da conta.
+- Cadastro, confirmação de e-mail, login e recuperação de senha; confirmação obrigatória e limites de tentativas persistidos.
+- Estúdio para perfil, rascunhos, publicação, mídia e métricas dos dados existentes.
+- Administração com papéis de proprietário, editor, moderador e analista; gestão de usuários, criadores, denúncias, assinaturas, transações e auditoria.
+- CMS com marca, cores, navegação, descoberta, páginas, avisos e recursos; rascunho, publicação, histórico e restauração com proteção contra edições simultâneas.
+- Upload privado e entrega de mídia autorizada no servidor. Conteúdo exclusivo é omitido das respostas sem acesso.
 
-## Getting Started
+**Pagamentos reais estão adiados.** `/checkout/demo` oferece uma simulação com cartão de teste, Pix ilustrativo e preços de exemplo em BRL, USD e EUR. A simulação não cobra, ativa assinaturas ou libera conteúdo. A ação de interesse nos perfis apenas registra interesse no lançamento. Polar foi removido das dependências e configurações. Veja [o fluxo de demonstração](docs/payment-demo.md) e [a pesquisa de provedores](docs/payments-research.md).
 
-First, install the dependencies:
+## Executar localmente
 
-```bash
-bun install
-```
+Requisitos: Bun **1.3.14**, Node.js compatível com Next.js 16 e um banco **Prisma Postgres na nuvem**. O projeto usa `@prisma/adapter-ppg`: obtenha no console do Prisma a **URL de conexão direta TCP**, no formato `postgres://…@…:5432/…?sslmode=require`. Preserve as credenciais e parâmetros fornecidos pelo console. Não substitua por uma URL HTTP/Accelerate ou por um banco local.
 
-## Database Setup
+1. Execute `bun install`.
+2. Copie [apps/web/.env.example](apps/web/.env.example) para `apps/web/.env` somente se esse arquivo ainda não existir. Preencha `DATABASE_URL`, gere `BETTER_AUTH_SECRET` e confira `BETTER_AUTH_URL=http://localhost:3001`.
+3. Gere os tipos de ambiente e o cliente Prisma:
 
-Generate the Prisma client before development, typechecking, or building, including in CI and deployment builds. Run this again after changing the Prisma schema:
-
-```bash
+```sh
+bun run env:generate
 bun run db:generate
 ```
 
-This project uses PostgreSQL with Prisma.
+4. Confirme a conexão com `bun run db:inspect`. Se o Prisma retornar `Unauthorized`, atualize `DATABASE_URL` com uma conexão direta válida do console antes de continuar.
+5. Para um banco vazio, aplique as migrações versionadas:
 
-1. Make sure you have a PostgreSQL database set up.
-2. Update your `apps/web/.env` file with your PostgreSQL connection details.
-
-3. Apply the schema to your database:
-
-```bash
-bun run db:push
+```sh
+bun run db:migrate:deploy
 ```
 
-Then, run the development server:
+A migração inicial também cria as tabelas de autenticação. Um banco que já contém tabelas do starter precisa de revisão de baseline ou migração incremental antes dessa etapa. Não é necessário apagar ou recriar o banco.
 
-```bash
-bun run dev
+6. Inicie o aplicativo:
+
+```sh
+bun run dev:web
 ```
 
-Open [http://localhost:3001](http://localhost:3001) in your browser to see the fullstack application.
+Abra [localhost:3001](http://localhost:3001). `bun run dev` e `bun run start:dev` também iniciam as tarefas de desenvolvimento do monorepo. `start:dev` é um alias de desenvolvimento. Sem registros, o produto mostra estados vazios; erros de conexão não são substituídos por demonstrações.
 
-## UI Customization
+## Ambiente e integrações
 
-React web apps in this stack share shadcn/ui primitives through `packages/ui`.
+| Variável | Uso |
+| --- | --- |
+| `DATABASE_URL` | URL direta TCP do Prisma Postgres da aplicação. Obrigatória. |
+| `BETTER_AUTH_SECRET` | Segredo aleatório de pelo menos 32 caracteres, estável entre instâncias. Obrigatório. |
+| `BETTER_AUTH_URL` | Origem exata do aplicativo, incluindo protocolo e porta local. |
+| `EMAIL_DELIVERY_MODE` | `preview` no desenvolvimento ou `resend` para entrega real. Produção recusa `preview`. |
+| `RESEND_API_KEY`, `EMAIL_FROM` | Necessários para `resend`; remetente de domínio verificado. |
+| `UPSTASH_BLOB_TOKEN` | Token do bucket **privado** Upstash Blob, necessário para operações de mídia. |
+| `UPSTASH_REDIS_REST_URL`, `UPSTASH_REDIS_REST_TOKEN` | URL REST e token do Upstash Redis para limites compartilhados de autenticação. Configure ambos. |
 
-- Change design tokens and global styles in `packages/ui/src/styles/globals.css`
-- Update shared primitives in `packages/ui/src/components/*`
-- Adjust shadcn aliases or style config in `packages/ui/components.json` and `apps/web/components.json`
+Os schemas ficam em `apps/web/.env.schema` e `packages/db/.env.schema`; o banco importa as variáveis da aplicação. `bun run env:generate` atualiza tipos, sem criar credenciais. Bun não carrega `.env` automaticamente neste repositório: a integração Next.js/Varlock e os comandos do projeto fazem o carregamento. Não versione segredos nem use prefixos públicos para chaves de serviços.
 
-### Add more shared components
+**E-mail local:** use `EMAIL_DELIVERY_MODE=preview`. Após cadastro ou recuperação, abra o HTML mais recente em `apps/web/.local-mail/` e use o link. A pasta é ignorada pelo Git e contém links temporários de acesso; limpe os arquivos após testar. Nenhum e-mail externo é enviado nesse modo. Confirmação expira em uma hora; recuperação, em 30 minutos. A redefinição de senha revoga sessões existentes.
 
-Run this from the project root to add more primitives to the shared UI package:
+**E-mail em produção:** configure `resend`, a chave e o remetente, e publique os registros de autenticação do domínio indicados pelo Resend. A entrega usa o SDK oficial do Resend no servidor, com idempotência, timeout e tratamento dos erros retornados pelo SDK. Falta de configuração impede ações dependentes de e-mail com uma mensagem útil; páginas públicas e builds não precisam inicializar o provedor. Não há fila automática de reenvio. O MCP Resend está declarado nos arquivos de configuração; reinicie/reconecte o cliente MCP para disponibilizá-lo quando necessário.
 
-```bash
-npx shadcn@latest add accordion dialog popover sheet table -c packages/ui
+**Redis:** a instância Upstash usada no desenvolvimento fica em São Paulo (`sa-east-1`). O SDK HTTP executa uma operação atômica para conferir e incrementar os limites de autenticação, compartilhados entre instâncias Vercel. As chaves usam identificadores protegidos por HMAC e expiram automaticamente. Sessões e permissões continuam no Prisma. Sem as duas configurações Redis, o aplicativo usa o limite persistido no banco; uma configuração parcial é recusada.
+
+**Mídia:** conecte um bucket privado do Upstash Blob. Sem token, ações de armazenamento retornam indisponibilidade. São aceitos JPEG, PNG, WebP e MP4 de até 100 MiB. O navegador envia os bytes diretamente ao bucket por upload multipart; o servidor confere propriedade e metadados reais antes de registrar o arquivo. A leitura usa autorização e streaming privado, inclusive intervalos de bytes. URLs assinadas de leitura ficam no servidor. Consulte [docs/media-report.md](docs/media-report.md).
+
+## Conta proprietária
+
+Cadastre a conta pretendida e confirme seu e-mail. Então execute deliberadamente, na raiz:
+
+```sh
+bun run owner:bootstrap owner@example.com
 ```
 
-Import shared components like this:
+O comando carrega a configuração da aplicação e promove somente uma conta existente, confirmada e ativa para o papel servidor `admin`, registrando auditoria. Não existe regra de primeiro usuário nem campo público para conceder administração. O acesso de super-admin fica em `/admin`. Veja [docs/auth-report.md](docs/auth-report.md).
 
-```tsx
-import { Button } from "@privana/ui/components/button";
+## Dados de demonstração
+
+O seed é opcional, idempotente e limitado a um banco de desenvolvimento. Cria 18 contas verificadas com senhas individuais aleatórias, 13 perfis e mais de 150 publicações, além de conversas, comentários e exemplos de moderação. Inclui cliente, modelos/criadores, proprietário, editor, moderador e analista. Não cria pagamentos ou assinaturas ativas. Exige `ALLOW_DEMO_SEED=1` e recusa produção. Históricos são gravados em lotes por criador para respeitar os limites de transação na nuvem; uma execução interrompida pode ser repetida com as mesmas credenciais.
+
+PowerShell:
+
+```powershell
+$env:NODE_ENV = "development"
+$env:ALLOW_DEMO_SEED = "1"
+bun run db:seed:demo
+Remove-Item Env:ALLOW_DEMO_SEED
 ```
 
-### Add app-specific blocks
+Em shells POSIX: `ALLOW_DEMO_SEED=1 bun run db:seed:demo`. O seed escreve no banco configurado; não o inclua no build ou no deploy.
 
-If you want to add app-specific blocks instead of shared primitives, run the shadcn CLI from `apps/web`.
+Após sucesso, as credenciais ficam em `apps/web/.local-demo-credentials.json`, ignorado pelo Git. Use apenas um arquivo com `status: "ready"`. As senhas são reutilizadas em execuções seguintes. Consulte [as contas e permissões](docs/demo-accounts.md).
 
-## Environment Configuration
+## Comandos e estrutura
 
-Each app owns its environment schema in `.env.schema`. Varlock generates `src/env.ts` during installation; run `bun run env:generate` after changing a schema. Commit schemas, and keep secrets in ignored env files or your deployment platform.
+| Comando na raiz | Função |
+| --- | --- |
+| `bun run dev:web` | Inicia somente a aplicação web na porta 3001. |
+| `bun run dev` / `bun run start:dev` | Inicia desenvolvimento pelo Turborepo. |
+| `bun run build` | Compila pacotes e aplicativo. |
+| `bun run --cwd apps/web start` | Serve um build de produção existente. |
+| `bun run test` | Executa testes de backend, autenticação, seed, mídia, CMS e checkout com fixtures locais. |
+| `bun run test:smoke` | Verifica logins e fluxos HTTP locais com as contas demo; exige `ALLOW_DEMO_SMOKE=1`. |
+| `bun run --cwd packages/auth email:check` | Testa o SDK Resend com o destinatário de simulação oficial. |
+| `bun run --cwd packages/auth email:check-auth` | Verifica cadastro, confirmação, recuperação e login pelo handler real; exige `ALLOW_EMAIL_CHECK=1` e usa somente o simulador Resend. |
+| `bun run check-types` | Verifica TypeScript no monorepo. |
+| `bun run check` / `bun run fix` | Verifica ou aplica padrões Ultracite. |
+| `bun run db:generate` | Regenera o cliente Prisma. |
+| `bun run db:migrate` | Cria/aplica migrações de desenvolvimento. |
+| `bun run db:migrate:deploy` | Aplica migrações versionadas no banco configurado. |
+| `bun run db:inspect` | Inspeciona conexão e estado do banco. |
+| `bun run db:studio` | Abre o Prisma Studio. |
 
-Import the generated `ENV` accessor in application code. Shared database and auth packages receive configuration or initialized clients from the application. See [Varlock's monorepo guide](https://varlock.dev/guides/monorepos/).
+`apps/web/src/domains/` organiza interfaces por domínio; `shared/` reúne a estrutura visual. `packages/api/` contém procedimentos e autorização; `packages/auth/`, autenticação e e-mails; `packages/db/`, schema e migrações; `packages/ui/`, componentes e tokens. Importações de UI são diretas, por exemplo `@privana/ui/components/button`.
 
-Bun's automatic env loading is disabled in `bunfig.toml`; the framework integration or server bootstrap loads Varlock. Node deployments must include Varlock and its dependencies alongside the app schema.
+## Vercel
 
-Run standalone Node/Bun tools that use Varlock from the owning app directory so they load that app's schema and env files. `env:generate` only generates TypeScript files; it does not initialize environment values in a subsequent command.
+O [vercel.json](vercel.json) na raiz define o serviço `web` com root `apps/web`, instalação por Bun na raiz e build que gera o cliente Prisma antes de compilar o aplicativo. O tráfego é encaminhado ao serviço web. Mantenha essa configuração no fluxo Vercel Services.
 
-## Deployment
+1. Vincule o projeto com `bun run deploy:setup`.
+2. Configure em Preview/Production a conexão Prisma Postgres, o segredo, Resend, Upstash Redis e o bucket privado Upstash Blob. Configure `BETTER_AUTH_URL` com a origem HTTPS exata; o schema pode usar os metadados de URL da Vercel sem um valor explícito. Não use curingas para contornar a validação de origem.
+3. Aplique migrações ao banco correto em etapa controlada com `bun run db:migrate:deploy`. O build não aplica migrações nem seed.
+4. Use `bun run deploy:check` para verificar o deploy localmente, `bun run deploy` para publicar um preview e `bun run deploy:prod` para publicar em produção. `bun run dev:vercel` inicia o ambiente local Vercel.
 
-### Vercel Services
+`bun run env:preview` e `bun run env:production` sincronizam variáveis declaradas de arquivos locais e aceitam um caminho de arquivo específico. Esses comandos escrevem na configuração Vercel. Não sincronizam `BETTER_AUTH_URL` nem `NODE_ENV`: configure a URL na plataforma ou use o valor derivado pelo schema. Ajuste `EMAIL_DELIVERY_MODE` para `resend` antes de sincronizar um arquivo local para ambientes hospedados. Arquivos `.env` locais não são publicados automaticamente.
 
-- Target: web + server
-- Config: `vercel.json`
-- Link the project first: bun run deploy:setup
-- Local Vercel dev: bun run dev:vercel
-- Sync preview env: bun run env:preview
-- Sync production env: bun run env:production
-- Dry-run check (no upload): bun run deploy:check
-- Preview deploy: bun run deploy
-- Production deploy: bun run deploy:prod
-  Vercel Services share project environment variables, but deploys do not upload local `.env` files automatically. Link the project with `vercel link`, then run the env sync command before your first deploy (otherwise the deployment starts with no env vars), or pass one-off envs with `vercel deploy -e KEY=value`.
-  Pass Vercel CLI flags to the env sync command directly, for example: `bun run env:production --scope your-team`.
+## Validação e limites
 
-For more details, see the guide on [Deploying to Vercel](https://www.better-t-stack.dev/docs/guides/vercel).
+Os testes cobrem autorização, suspensão, isolamento de conversas, conteúdo exclusivo, mídia, e-mail e elegibilidade do proprietário. Eles não comprovam credenciais, entrega real de e-mail, upload/reprodução em Blob ou uma implantação Vercel. Valide esses fluxos com os serviços configurados antes do lançamento; falhas de autenticação do banco exigem renovar a conexão no console do Prisma.
 
-## Project Structure
+As credenciais demo e os fluxos HTTP locais também são verificados separadamente. Consulte [o estado atual de integração](docs/verification.md) para distinguir os testes automatizados, verificações do banco real e serviços externos ainda pendentes.
 
-```
-privana/
-├── apps/
-│   └── web/         # Fullstack application (Next.js)
-├── packages/
-│   ├── ui/          # Shared shadcn/ui components and styles
-│   ├── api/         # API layer / business logic
-│   ├── auth/        # Authentication configuration & logic
-│   └── db/          # Database schema & queries
-```
-
-## Available Scripts
-
-- `bun run dev`: Start all applications in development mode
-- `bun run build`: Build all applications
-- `bun run dev:web`: Start only the web application
-- `bun run check-types`: Check TypeScript types across all apps
-- `bun run db:push`: Push schema changes to database
-- `bun run db:generate`: Generate database client/types
-- `bun run db:migrate`: Run database migrations
-- `bun run db:studio`: Open database studio UI
-- `cd apps/web && bun run generate-pwa-assets`: Generate PWA assets
-- `bun run deploy:setup`: Link this repo to a Vercel project (first-time setup)
-- `bun run dev:vercel`: Run the Vercel Services dev environment locally
-- `bun run env:preview`: Sync local env files to the Vercel preview environment
-- `bun run env:production`: Sync local env files to the Vercel production environment
-- `bun run deploy`: Create a Vercel preview deployment
-- `bun run deploy:prod`: Deploy to Vercel production
-- `bun run deploy:check`: Dry-run a deploy to preview framework detection and included files without uploading
-
-## Better Auth Schema Generation
-
-After changing auth plugins or schema options, run `bun run auth:generate` from the project root. The script runs the Better Auth CLI through `varlock run` from the owning app directory, loading the auth instance from `src/services.ts`. Review the schema changes, then use your ORM's migration workflow to apply them.
+Pagamentos/repasses, verificação de identidade por provedor, transcodificação, transmissões ao vivo e limpeza automática de uploads abandonados permanecem fora desta entrega. Consulte os relatórios em [docs/](docs/) para contratos, decisões e evidências de validação.

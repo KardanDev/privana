@@ -1,0 +1,92 @@
+{
+  "nodes": [
+    {
+      "id": "agents_nextjs_agent_rules",
+      "label": "Next.js Agent Rules",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The file directs contributors to consult the installed Next.js documentation because this project uses breaking framework changes."
+    },
+    {
+      "id": "offline_page",
+      "label": "Offline Page",
+      "file_type": "document",
+      "source_file": "public/offline.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Provides a minimal recovery page that tells visitors they are offline and offers a retry link."
+    },
+    {
+      "id": "favicon_apple_touch_icon",
+      "label": "Apple Touch Icon",
+      "file_type": "image",
+      "source_file": "public/favicon/apple-touch-icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "favicon_96x96",
+      "label": "96×96 Favicon",
+      "file_type": "image",
+      "source_file": "public/favicon/favicon-96x96.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "privana_favicon_svg",
+      "label": "Privana Favicon",
+      "file_type": "image",
+      "source_file": "public/favicon/favicon.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "web_app_manifest_192_icon",
+      "label": "192px Web App Icon",
+      "file_type": "image",
+      "source_file": "public/favicon/web-app-manifest-192x192.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "web_app_manifest_512_icon",
+      "label": "512px Web App Icon",
+      "file_type": "image",
+      "source_file": "public/favicon/web-app-manifest-512x512.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    }
+  ],
+  "edges": [],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

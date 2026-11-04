@@ -1,1 +1,5 @@
-export { cn } from "cn";
+import { cn as mergeClassNames } from "cn";
+
+export function cn(...inputs: Parameters<typeof mergeClassNames>): string {
+  return mergeClassNames(...inputs);
+}

@@ -1,0 +1,1934 @@
+{
+  "C:/Users/D.Kruger/Documents/privana/apps/web/instrumentation.ts": {
+    "mtime": 1792852621148.6533,
+    "hash": "47ede19c283b8b8720e045699c13abbf"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/next-env.d.ts": {
+    "mtime": 1792930735796.13,
+    "hash": "8195d2c60ce847a459ae9d308d6a5724"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/next.config.ts": {
+    "mtime": 1792852621147.6536,
+    "hash": "27cbe0e21f8ee3e4b4306bd96f3ae70d"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/postcss.config.mjs": {
+    "mtime": 1792776443999.0632,
+    "hash": "675899342e765a4d16acd75a53389101"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/public/sw.js": {
+    "mtime": 1792852621149.6528,
+    "hash": "832beeff4724061b608d7d086b1f200b"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/pwa.config.ts": {
+    "mtime": 1792852621149.6528,
+    "hash": "a144615a90fb9bdf9f6cb697be63cdea"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/scripts/check-media-storage.ts": {
+    "mtime": 1793816206112.7668,
+    "hash": "ebbc53d8b02fbd785eaf0838f4240017"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/scripts/media/check-stored-media.ts": {
+    "mtime": 1793816206112.7668,
+    "hash": "caf238b7f2bf9fb2941258e27f560876"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/admin/page.tsx": {
+    "mtime": 1793014428286.3599,
+    "hash": "b9f487d3e6af5aac4214cf8804969677"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/api/auth/[...all]/route.ts": {
+    "mtime": 1792776664949.5076,
+    "hash": "b85821c982b7f7f622a0e4e0dcee6d28"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/api/media/[postId]/route.ts": {
+    "mtime": 1793814518397.2522,
+    "hash": "4498e92576a3f99ca6bb521e145e3491"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/api/media/complete/route.ts": {
+    "mtime": 1793814522595.417,
+    "hash": "535043f2f9b62e8643e8b4e2fd7e95b9"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/api/media/upload/route.ts": {
+    "mtime": 1793814516366.7834,
+    "hash": "40263786e371628f128d9a44c85669c1"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/api/rpc/[[...rest]]/route.ts": {
+    "mtime": 1792852621179.9844,
+    "hash": "f2dfd1d0a2cdefbdf28fb3efea0ef398"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/checkout/[handle]/page.tsx": {
+    "mtime": 1793100543957.6487,
+    "hash": "8a880b804ef8296ae997a567ba3c1b2e"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/checkout/page.tsx": {
+    "mtime": 1793041431823.6042,
+    "hash": "e22e56c4800bd8b14142b16f82ce63f5"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/creators/[handle]/page.tsx": {
+    "mtime": 1792777948309.468,
+    "hash": "b18021f71ca1be49bf6fc3e67789f0c2"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/dashboard/page.tsx": {
+    "mtime": 1792852621150.6533,
+    "hash": "08b7db0efe1203560e0256250f326a89"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/error.tsx": {
+    "mtime": 1792852621149.6528,
+    "hash": "4ae854e2b3bf8c7cd459ed7505b17be1"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/explore/page.tsx": {
+    "mtime": 1793013886480.2366,
+    "hash": "b8444218705c98af73cbcd20751f6bf1"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/feed/page.tsx": {
+    "mtime": 1792778212754.4343,
+    "hash": "b44326a57e4825c7429c5b628166cb35"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/forgot-password/page.tsx": {
+    "mtime": 1792931001616.329,
+    "hash": "ab74681283b8e557d473b9abdced572c"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/layout.tsx": {
+    "mtime": 1793815205604.3682,
+    "hash": "61f62e07fe15e933b67c9bfbd0774b12"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/loading.tsx": {
+    "mtime": 1792852621157.6519,
+    "hash": "5aa957ab14999688213b0bbeb775bc62"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/login/page.tsx": {
+    "mtime": 1792930997864.5413,
+    "hash": "5d0e4df55a524afa2feaf2f246a6bdb8"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/manifest.ts": {
+    "mtime": 1793041319803.942,
+    "hash": "55d7cb406b7f0a4b09eb02bb67a578c7"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/memberships/page.tsx": {
+    "mtime": 1792778211095.702,
+    "hash": "94582c16ed8e8a915ae00d219228006c"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/messages/page.tsx": {
+    "mtime": 1792778211095.702,
+    "hash": "d22b21bbbb39209f2a4ead9ea59c8239"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/not-found.tsx": {
+    "mtime": 1792852621155.654,
+    "hash": "be7b59cb89daf30782241e096b0053d4"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/notifications/page.tsx": {
+    "mtime": 1792778211095.702,
+    "hash": "22b2d4892325cad18de7be45ba13dd10"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/page.tsx": {
+    "mtime": 1793013887254.6045,
+    "hash": "62911cdd6fce1eb3e907382ab8732a9a"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/pages/[slug]/page.tsx": {
+    "mtime": 1793015817702.19,
+    "hash": "d12080cbb373b5af212ec4d3b3da5bc0"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/register/page.tsx": {
+    "mtime": 1792930999726.5422,
+    "hash": "675fef0c775949114bd771bb9ecc3b78"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/reset-password/page.tsx": {
+    "mtime": 1792931003516.6704,
+    "hash": "f4ae24ae3c43464d20536ac28c1f321e"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/saved/page.tsx": {
+    "mtime": 1792778212757.9514,
+    "hash": "ce79bc9737162424878675671fd7ad9d"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/settings/page.tsx": {
+    "mtime": 1792778211096.7134,
+    "hash": "0abef495825eec4d2ec44f389d90a2b2"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/studio/page.tsx": {
+    "mtime": 1792852621159.1604,
+    "hash": "d2c571bcfd0b74dcf564e8d75efbc3a8"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/success/page.tsx": {
+    "mtime": 1792852621157.6519,
+    "hash": "25ec258dabd49a8fd08c4b68dcafdb5f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/verify-email/page.tsx": {
+    "mtime": 1792931005482.9822,
+    "hash": "a4d0276b54940e3e0b21baddc618fa2b"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/components/loader.tsx": {
+    "mtime": 1792776443984.0059,
+    "hash": "649746e59fcbc7de774ec412610921b7"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/components/providers.tsx": {
+    "mtime": 1793015817702.19,
+    "hash": "e8caf15f8c4c120e9d5dc094e2347acb"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/components/pwa-registration.tsx": {
+    "mtime": 1792852621161.1726,
+    "hash": "986570f09383489170f9350f7a0b9a30"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/components/theme-provider.tsx": {
+    "mtime": 1792852621161.8806,
+    "hash": "f0637989b236542db6c88c8e300c1952"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/context.ts": {
+    "mtime": 1792852621161.8806,
+    "hash": "1c7a28da7d247f31bafda148056ef59f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/admin-action-button.tsx": {
+    "mtime": 1792852250307.0037,
+    "hash": "9157c7f92ecd3454c76022d166103fdb"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/admin-audits.tsx": {
+    "mtime": 1793015990341.375,
+    "hash": "2177fbc8c0cade2e8c0595addefbde7e"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/admin-confirmation.tsx": {
+    "mtime": 1792852374812.2166,
+    "hash": "ad93b4597e0ed926f737715f3fe0f721"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/admin-creators.tsx": {
+    "mtime": 1792852250311.5273,
+    "hash": "b5396384e8840c34f4de24b97dd3ff1c"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/admin-report-details.tsx": {
+    "mtime": 1792852946723.9807,
+    "hash": "3577345b925c0cf08799d5e8abfb0d8f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/admin-report-inspection.tsx": {
+    "mtime": 1792853006659.1758,
+    "hash": "11b13cce18ea71a7f4631a089518a047"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/admin-report-row.tsx": {
+    "mtime": 1792852943810.893,
+    "hash": "4099d5dd014340cfd6367292ab822afe"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/admin-reports.tsx": {
+    "mtime": 1792852194549.5347,
+    "hash": "834e59bbd4906f62164df3067d02a0e5"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/admin-screen.tsx": {
+    "mtime": 1793014470253.9102,
+    "hash": "0030e06a2d0ae073c999319572e9f960"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/admin-status.tsx": {
+    "mtime": 1793015990328.944,
+    "hash": "920561e46a1f39d5b1bfc99738903a26"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/admin-types.ts": {
+    "mtime": 1793015638056.5383,
+    "hash": "ab45635c84ffe0d963682b2896a33904"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/analytics-currencies.tsx": {
+    "mtime": 1793014428289.8848,
+    "hash": "a640469c45b3d3bee800ee5bed611e68"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/analytics-series.tsx": {
+    "mtime": 1793014428291.8926,
+    "hash": "c22d1a354fec5209608f32face1584b6"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/cms/cms-brand-fields.tsx": {
+    "mtime": 1793014428288.3743,
+    "hash": "47987bda9a3b8f52681ce72e872c10df"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/cms/cms-content-fields.tsx": {
+    "mtime": 1793100665564.1812,
+    "hash": "56b4d38758fb036b578658e3652d873c"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/cms/cms-error-message.ts": {
+    "mtime": 1793014462876.0046,
+    "hash": "ddf27857c095ab9e67fdae6671850c4d"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/cms/cms-feature-fields.tsx": {
+    "mtime": 1793014428289.8848,
+    "hash": "cd8c162760c7a8db19fb14c8c1b0d716"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/cms/cms-field-text.ts": {
+    "mtime": 1793014313212.6226,
+    "hash": "a61e923df27dba26abb93949690a17a4"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/cms/cms-history.tsx": {
+    "mtime": 1793015712452.673,
+    "hash": "1c8b5fda4e5957931ca5163f88f0c52b"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/cms/cms-navigation-fields.tsx": {
+    "mtime": 1793014428293.901,
+    "hash": "95267e7127c52026c61bcf306b974512"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/cms/cms-page-fields.tsx": {
+    "mtime": 1793014428291.8926,
+    "hash": "fad1109e628009eff759c2d2f0e26ae5"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/cms/cms-preview.tsx": {
+    "mtime": 1793014428293.901,
+    "hash": "f00a3bb1187ba946354e90174e8de290"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/cms/cms-rows.tsx": {
+    "mtime": 1793014470264.5066,
+    "hash": "3b3d601b03a8867ed7a878e9b751fdae"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/cms/cms-screen.tsx": {
+    "mtime": 1793014611628.4163,
+    "hash": "333fb24fa0e6d8bbac75d5e12e59a9d9"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/cms/cms-textarea.tsx": {
+    "mtime": 1793014470263.6084,
+    "hash": "99fd501fd38c151e524864492220daaa"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/cms/cms-workspace.tsx": {
+    "mtime": 1793014428297.9155,
+    "hash": "7dd992808e7d0a3119c43270ae194de5"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/cms/execute-cms-command.ts": {
+    "mtime": 1793014428295.9084,
+    "hash": "a550c4f310b66e749f8680347467374f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/cms/parse-cms-form-data.ts": {
+    "mtime": 1793014534177.8127,
+    "hash": "eea6a637dc1850285511e41aac00ffc8"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/cms/read-cms-form.ts": {
+    "mtime": 1793014536022.437,
+    "hash": "58ed8824e204b265a6dc8caedea95b32"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/cms/use-cms-rows.ts": {
+    "mtime": 1793014466172.8574,
+    "hash": "16aa0b91d6327ce651af85fa2a263b50"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/cms/use-cms-tabs.ts": {
+    "mtime": 1793014428295.9084,
+    "hash": "67bd2dd6ba5e0a09c8a04b684131baef"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/cms/use-cms-workspace.ts": {
+    "mtime": 1793015990346.311,
+    "hash": "4e4320fb3ce682a00cdf928d150ab985"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/execute-admin-command.ts": {
+    "mtime": 1792852194549.5347,
+    "hash": "a8b594d91b5457d497ef134e17095c91"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/format-minor-currency.ts": {
+    "mtime": 1793015714322.482,
+    "hash": "f86c05fd6cc5a647563efd01d60cfadb"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/operations-analytics.tsx": {
+    "mtime": 1793816100405.4453,
+    "hash": "995c7c31dbcaf5385711ed7a751acbb1"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/operations-content.tsx": {
+    "mtime": 1793015990354.181,
+    "hash": "0939619049433c6c19701e546cae4ed0"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/operations-filters.tsx": {
+    "mtime": 1793100756270.8945,
+    "hash": "a4a1beed96d5b6e6e295191c20bba35f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/operations-list.tsx": {
+    "mtime": 1793100664480.2615,
+    "hash": "00095ef69082edc6a79c2a7a24ed4bdd"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/operations-navigation.ts": {
+    "mtime": 1793016051105.3672,
+    "hash": "570893875898333f7aff03fde75b061b"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/operations-results.tsx": {
+    "mtime": 1793014428303.2095,
+    "hash": "fe6066e94c25f05f3fc3f56ee9bf1b64"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/operations-shell.tsx": {
+    "mtime": 1793014461908.5977,
+    "hash": "c0b84dfb46c5a046713d5de67918944a"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/operations-subscriptions.tsx": {
+    "mtime": 1793014428305.216,
+    "hash": "14a62caad3981bb44b5937f80677f1b0"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/operations-transactions.tsx": {
+    "mtime": 1793014428305.216,
+    "hash": "f6ecde741c04715644ea4c11d8466214"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/operations-types.ts": {
+    "mtime": 1793014428301.6465,
+    "hash": "9a8aa57e05d3005085982aed56673d06"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/operations-users.tsx": {
+    "mtime": 1793016051106.3672,
+    "hash": "fc143145c3701fc5d93d509c120f0e73"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/read-operations.ts": {
+    "mtime": 1793014428307.2244,
+    "hash": "d5bdc22d8e3dcdd9d6a4729d366e3411"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/require-operator.ts": {
+    "mtime": 1793014428309.2327,
+    "hash": "e300fa1a40259d8889fefd5456c998a6"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/revoke-access-form.tsx": {
+    "mtime": 1793014470279.6238,
+    "hash": "dd4a4cc76eb5b7489261cc9ac2eb6979"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/team-role-form.tsx": {
+    "mtime": 1793016051109.953,
+    "hash": "76faa1fe46ff631c907b0bc3492cea18"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/use-admin-actions.ts": {
+    "mtime": 1792852194554.0679,
+    "hash": "b882165e1b1133cda339551611f9e391"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/use-admin-command.ts": {
+    "mtime": 1792852250307.0037,
+    "hash": "bb84be2a3db909650065e7f757984144"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/use-admin-report-details.ts": {
+    "mtime": 1792852946727.982,
+    "hash": "426583398031dc4e7affc675c4eb7365"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/use-confirmation-dialog.ts": {
+    "mtime": 1792852250328.542,
+    "hash": "30d89e618fdf2280fe2d903ec734c456"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/use-operations-analytics.ts": {
+    "mtime": 1793014470279.6238,
+    "hash": "0cfee3d712946dadf3b7ba1a94d44b47"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/use-operations-list.ts": {
+    "mtime": 1793100668136.098,
+    "hash": "e6a1f16d232ca088c6fdeb59965f71dc"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/use-operations-navigation.ts": {
+    "mtime": 1793015990351.4353,
+    "hash": "8cb7df1e5cc205af575a22cf0b51bdb3"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/use-report-expansion.ts": {
+    "mtime": 1792852940805.045,
+    "hash": "1bd62b4fea00d037864143efc36d7a9c"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/use-revoke-access.ts": {
+    "mtime": 1793014428291.8926,
+    "hash": "9e6b7ae02fa0c370b8567fa95faf5386"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/admin/use-team-role.ts": {
+    "mtime": 1793014428288.3743,
+    "hash": "15080283d6381fec3426ce8e4c16a124"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/auth/auth-copy.ts": {
+    "mtime": 1792777864096.693,
+    "hash": "39d215d425ecc812b59083b114f0906d"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/auth/auth-error.ts": {
+    "mtime": 1792777864101.229,
+    "hash": "9a635eb3c01d4d650a87d4b3d4fc2433"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/auth/auth-field.tsx": {
+    "mtime": 1792777864099.2075,
+    "hash": "de27a45e91a147f0f9b1eba355741cb2"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/auth/auth-fields.tsx": {
+    "mtime": 1792777904281.5122,
+    "hash": "7ccd05faec991071d27691928117d841"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/auth/auth-form.tsx": {
+    "mtime": 1793815203595.3882,
+    "hash": "740ae12082c6112aa3cb092f19b9669b"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/auth/auth-mode.ts": {
+    "mtime": 1792777768501.9697,
+    "hash": "5e083a4c173c7612a47db0384fe01972"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/auth/submit-auth.ts": {
+    "mtime": 1792929354913.5825,
+    "hash": "53ecda12fe76691f76f00c3b3767212a"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/creators/creator-actions.tsx": {
+    "mtime": 1793015906611.753,
+    "hash": "c56ff3d64e2e91586941156a2ffa1eca"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/creators/creator-card.tsx": {
+    "mtime": 1793015906630.8918,
+    "hash": "b66f30837df9a66133630843e6569431"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/creators/creator-page.tsx": {
+    "mtime": 1793016082844.811,
+    "hash": "d07038f87cc1c134ea6fe59743e6a021"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/creators/creator-profile-header.tsx": {
+    "mtime": 1793015906634.9082,
+    "hash": "ac58d089ab41216e69dcb4c3389c7ec5"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/creators/follow-button.tsx": {
+    "mtime": 1793015906611.753,
+    "hash": "0662b485844aa2077bd52ada46eb3243"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/discovery/creator-search.tsx": {
+    "mtime": 1793016003182.0237,
+    "hash": "60abfed218a77b0cea14ac7f870a1b07"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/discovery/discovery-content.tsx": {
+    "mtime": 1793035087866.532,
+    "hash": "a0af2b82d0c1c184f056b9d2bffbd2e7"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/discovery/discovery-page.tsx": {
+    "mtime": 1793015906609.7478,
+    "hash": "d7bc5ed287bf787b3658776b9d76f58d"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/discovery/featured-creators.tsx": {
+    "mtime": 1793015906628.88,
+    "hash": "cd1e77d0f0538e938fae22ab33453b34"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/feed/components/content-skeleton.tsx": {
+    "mtime": 1793015957144.3853,
+    "hash": "914f32e524227036da6dc0a34591fa53"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/feed/components/query-feedback.tsx": {
+    "mtime": 1792929032721.2112,
+    "hash": "e5b22f16c93594f6d78d7b19039f6dec"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/feed/creator-suggestions.tsx": {
+    "mtime": 1793475048382.6426,
+    "hash": "6ad2d6de6167f275874abd69f694be3e"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/feed/feed-empty.tsx": {
+    "mtime": 1792929032721.2112,
+    "hash": "25a4519c5e8cad5d84e4fe8971b714db"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/feed/feed-page.tsx": {
+    "mtime": 1793016081952.4338,
+    "hash": "cacd13fec1df9ff345c1b971781333cf"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/feed/handle-action-error.ts": {
+    "mtime": 1792777948311.4685,
+    "hash": "b905b5a009f5c62f0e36986a8a04fb95"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/feed/post-stream-skeleton.tsx": {
+    "mtime": 1793015906612.7544,
+    "hash": "758be10a2b8ac92f9ca15ec82421b534"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/feed/post-stream.tsx": {
+    "mtime": 1793015906624.7605,
+    "hash": "86918c097a71f34bbdd3f272864b45c5"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/feed/require-member.ts": {
+    "mtime": 1792778413712.5864,
+    "hash": "658882991dc78bf05881b7ba6511f5ce"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/feed/social-heading.tsx": {
+    "mtime": 1793475048381.9546,
+    "hash": "99b6f34b08016ef83f77ab74917fce39"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/feed/social-home.tsx": {
+    "mtime": 1793016081085.402,
+    "hash": "a041deef52007277a087965cab16e87f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/feed/social-tabs.tsx": {
+    "mtime": 1793015906636.917,
+    "hash": "7a609cae5e10201b9abf78f47eaef193"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/feed/suggested-creator.tsx": {
+    "mtime": 1793015906630.8918,
+    "hash": "469290d1ad4e8380ca0bcf8264af52d1"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/media/assert-media-origin.ts": {
+    "mtime": 1792778460375.8875,
+    "hash": "7a6953db7dbb39343aac0946ffc83c5c"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/media/authorize-upload-actor.ts": {
+    "mtime": 1792852109261.0264,
+    "hash": "5b602a3ca480c4342919cec47147a592"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/media/complete-media-upload.ts": {
+    "mtime": 1792778460377.8977,
+    "hash": "720ad01d93dc75bb37391cb84d900613"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/media/handle-media-upload.ts": {
+    "mtime": 1793815604380.933,
+    "hash": "460d7f341471c322b86336c98223c06b"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/media/media-error-response.ts": {
+    "mtime": 1793815606642.1199,
+    "hash": "67813c2826c63f44fcc8d64a4c117154"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/media/media-policy.ts": {
+    "mtime": 1793814634822.128,
+    "hash": "306121f10277d43ef2bc301887a2d330"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/media/partial-media-length.ts": {
+    "mtime": 1793814908991.9111,
+    "hash": "a368bfaf562a5e7756cf301acb6c6cd4"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/media/prepare-media-upload.ts": {
+    "mtime": 1793814522595.417,
+    "hash": "4125103336a6b14b25a9ee292cd298cd"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/media/read-media-json.ts": {
+    "mtime": 1792852157316.822,
+    "hash": "ef46498559cec91ff3f13f4dc25686a1"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/media/read-media-metadata.ts": {
+    "mtime": 1793815602977.7307,
+    "hash": "818efdeb8c20752c7896ad49610d3d71"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/media/read-private-media.ts": {
+    "mtime": 1793815665032.4548,
+    "hash": "2f53383ca7f0a7a3149b242486e5de2b"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/media/read-stream-prefix.ts": {
+    "mtime": 1793815608057.2969,
+    "hash": "ac48d3207a2467e5f3a0ec19f1049d52"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/media/serve-post-media.ts": {
+    "mtime": 1793814909003.4153,
+    "hash": "e22b41e776654f1d950a6382b84ed646"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/media/types.ts": {
+    "mtime": 1793814522595.417,
+    "hash": "a8cb059e4cb76a572ab00b4c0784be0f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/media/upload-media.ts": {
+    "mtime": 1793814522595.417,
+    "hash": "516b7467a777fb0aea8f3537fcedff4e"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/media/validate-media-metadata.ts": {
+    "mtime": 1792778460379.7358,
+    "hash": "5c04e8733b85ad30aab23326c8ba470c"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/media/validate-media-path.ts": {
+    "mtime": 1792778460375.8875,
+    "hash": "c1dd5ea6805793a57380e6b5ae5c5f16"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/media/validate-media-signature.ts": {
+    "mtime": 1793815608057.2969,
+    "hash": "4e709e6e5f04e8613ee19697d889db3d"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/media/verify-stored-media.ts": {
+    "mtime": 1793815608057.2969,
+    "hash": "7c52a1ab6aed136c1f71f6bb81b947f3"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/interest-button.tsx": {
+    "mtime": 1792778212762.954,
+    "hash": "a68979b6bb9a2f032d841b52027122c5"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/membership-panel.tsx": {
+    "mtime": 1793100543959.6487,
+    "hash": "26ae5d217dd847734df8547c3ae3744c"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/membership-status-label.ts": {
+    "mtime": 1792778212760.9514,
+    "hash": "654198f85937f128fbd183c1da5653f8"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/memberships-page.tsx": {
+    "mtime": 1793016003190.2458,
+    "hash": "e07951587552ebcbff96877535119cd4"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/payment-demo/checkout-demo.tsx": {
+    "mtime": 1793100543962.1365,
+    "hash": "0b937f92a9eb48109171f3d5e93f04aa"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/payment-demo/checkout-flow.tsx": {
+    "mtime": 1793100663143.6067,
+    "hash": "29e1c632ced97882af6cebe87b1c0360"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/payment-demo/checkout-steps.tsx": {
+    "mtime": 1793100668109.5156,
+    "hash": "b926bcecaacbe02bff09c84bf80f4627"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/payment-demo/demo-card-fields.tsx": {
+    "mtime": 1793100543963.145,
+    "hash": "6a067d5961aed321a504254b138efff5"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/payment-demo/demo-checkout-reducer.ts": {
+    "mtime": 1793100543958.6487,
+    "hash": "cb1183f39de959e3e84fb24d5cf6e7f3"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/payment-demo/demo-currency-select.tsx": {
+    "mtime": 1793100644449.8142,
+    "hash": "9acc49a222fd634884f65e8bf87b27bb"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/payment-demo/demo-method-form.tsx": {
+    "mtime": 1793100591196.9773,
+    "hash": "6e97ef8b0ae13c6c68b41bc79ce7ef86"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/payment-demo/demo-method-picker.tsx": {
+    "mtime": 1793100590172.8054,
+    "hash": "40aaf3e24cc95575a9b01f801d0cbeb8"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/payment-demo/demo-notice.tsx": {
+    "mtime": 1793100543957.6487,
+    "hash": "2330b98073dc3ec4def3203921d3ddf8"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/payment-demo/demo-outcome.tsx": {
+    "mtime": 1793100543957.6487,
+    "hash": "eab4a021836fde2847993b277435a054"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/payment-demo/demo-pix.tsx": {
+    "mtime": 1793100543958.6487,
+    "hash": "2dfdab849cc6e9464d3d64dafcc3850a"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/payment-demo/demo-review.tsx": {
+    "mtime": 1793100543963.145,
+    "hash": "f0326d779c64f2af01d53e449cfca825"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/payment-demo/demo-summary.tsx": {
+    "mtime": 1793100543964.1426,
+    "hash": "bb65cdcd53085347c25cff3b67b47004"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/payment-demo/demo-types.ts": {
+    "mtime": 1793100543960.649,
+    "hash": "218cba975e713d55096de11fdca467a6"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/payment-demo/format-demo-currency.ts": {
+    "mtime": 1793100543960.649,
+    "hash": "d5cb88ff0fc7c610e649d2fe3d46836c"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/payment-demo/get-demo-price.ts": {
+    "mtime": 1793100543959.6487,
+    "hash": "af535291e7f243d936d9b66d4c5b0569"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/payment-demo/update-demo-selection.ts": {
+    "mtime": 1793100543959.6487,
+    "hash": "bb3c678c2d6760fbfc0a6da2bc90e748"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/payment-demo/use-checkout-step-focus.ts": {
+    "mtime": 1793100664460.7546,
+    "hash": "f2f2df68419a08ea211c3619373fd04e"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/payment-demo/use-demo-pix-timer.ts": {
+    "mtime": 1793100543960.649,
+    "hash": "5ada5aca3cba06f582869756117b295d"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/memberships/payment-demo/validate-test-card.ts": {
+    "mtime": 1793100543960.649,
+    "hash": "d19fdf22402c3f3432ba70b390462282"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/messages/conversation-panel.tsx": {
+    "mtime": 1793815950527.551,
+    "hash": "f36efdaa98500a9283889a903dd2e853"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/messages/merge-message-pages.ts": {
+    "mtime": 1792852664901.025,
+    "hash": "0510bbd010170105342e5622f7f232ce"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/messages/messages-page.tsx": {
+    "mtime": 1793815948355.9849,
+    "hash": "cfeee12b3c1cea7ef417a02c7ae155cb"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/notifications/notifications-page.tsx": {
+    "mtime": 1793016003206.7065,
+    "hash": "8be8cce53df52103b3047b2f5ea2e6f0"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/posts/locked-post-preview.tsx": {
+    "mtime": 1793015906634.9082,
+    "hash": "5fb60191f1c945938c85ad076455b8a0"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/posts/post-actions.tsx": {
+    "mtime": 1793015906644.2478,
+    "hash": "c285c25ed608509fc5ab179d71f5d722"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/posts/post-author.tsx": {
+    "mtime": 1793015906645.2556,
+    "hash": "1ebf4a4663d7fb58f7a38aa9b119b489"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/posts/post-body.tsx": {
+    "mtime": 1793475048381.9546,
+    "hash": "e14fd2df39f007fdbeabc37715bd24d9"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/posts/post-card.tsx": {
+    "mtime": 1793015906636.917,
+    "hash": "6c4dec94eb8f545d46500c1f4dc15810"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/posts/post-comments.tsx": {
+    "mtime": 1792778285439.6443,
+    "hash": "8df374ced88a3754e19656f8970ed723"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/posts/post-media.tsx": {
+    "mtime": 1792852664883.7373,
+    "hash": "784c77c9fc40aa332165ec58a7e058cd"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/posts/post-overflow-menu.tsx": {
+    "mtime": 1793015906638.9253,
+    "hash": "0efbe63a0cb23b52923a340d2a412d7f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/posts/report-content.tsx": {
+    "mtime": 1793015906640.8538,
+    "hash": "86a8c01161573f05397f86f407e464a3"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/settings/settings-form.tsx": {
+    "mtime": 1793815702772.2905,
+    "hash": "82ca497377b3da8b57dde774f640a73b"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/settings/settings-page.tsx": {
+    "mtime": 1793016003206.7065,
+    "hash": "bdb9a306c28986f23e3d34c9660819c9"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/studio/creator-application-closed.tsx": {
+    "mtime": 1793100671716.6245,
+    "hash": "72da662fb7cf7165dabee20dc27798a7"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/studio/post-editor.tsx": {
+    "mtime": 1793100631071.2913,
+    "hash": "7835dbc022fb765ab98b01027b7d4aaf"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/studio/profile-form.tsx": {
+    "mtime": 1793100701841.971,
+    "hash": "6b89080d4dc5a7a3692aae0ccd719f98"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/studio/profile-guidance.tsx": {
+    "mtime": 1793100671716.6245,
+    "hash": "dd5169d28d343ba2a75af6d8b04d07e6"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/studio/studio-category-field.tsx": {
+    "mtime": 1793100816695.1995,
+    "hash": "865591eb667efb34b3fbcb73669822c6"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/studio/studio-load-more.tsx": {
+    "mtime": 1792852946735.5007,
+    "hash": "f1c007b73a6305e835d19323eba2c6b7"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/studio/studio-media-field.tsx": {
+    "mtime": 1793100631075.2898,
+    "hash": "141d8e54caeb0afca1473eb20bcd6ef1"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/studio/studio-post-row.tsx": {
+    "mtime": 1793816100376.6978,
+    "hash": "7811e39889c299227c9600a92228f3a9"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/studio/studio-posts.tsx": {
+    "mtime": 1793815700464.0042,
+    "hash": "8f4bbc2aab81f1cba02e45dda8614b77"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/studio/studio-screen.tsx": {
+    "mtime": 1793815645686.4521,
+    "hash": "8b789dd1298cc4260541df2d7b321036"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/studio/studio-status-notice.tsx": {
+    "mtime": 1793100668109.5156,
+    "hash": "5903fa4beb5a4f02356af62ecb0cb422"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/studio/use-post-form.ts": {
+    "mtime": 1793100815536.6763,
+    "hash": "db8a17d1a0f713a28c9bb04239f3f8a8"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/studio/use-profile-form.ts": {
+    "mtime": 1793100631095.4495,
+    "hash": "29fef4baf4f09d5b8472b07c4d86aace"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/studio/use-studio-post-actions.ts": {
+    "mtime": 1792852592040.1592,
+    "hash": "60aff55ccfbbbc71b1e9694c2ee35617"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/domains/studio/use-studio-screen.ts": {
+    "mtime": 1793815718457.0369,
+    "hash": "ae411a44f1f73fcbbbde48e3caba9f08"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/env.server.ts": {
+    "mtime": 1792852617125.608,
+    "hash": "5ca449ffafa0c84c6713dbf0935cc785"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/env.ts": {
+    "mtime": 1793814539228.4011,
+    "hash": "4867827dafe1ae1e0c68de6aeb5a2c4f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/lib/auth-client.ts": {
+    "mtime": 1792777626517.3384,
+    "hash": "7e5ffd0852aee321277975c6e0ef14a2"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/lib/evlog-auth.ts": {
+    "mtime": 1792852833060.776,
+    "hash": "5ed57c0796dd862efdf855bfef04ddb1"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/lib/evlog.ts": {
+    "mtime": 1792852621163.8906,
+    "hash": "ff0b4d8516f24df0581139c1b18cbfc2"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/proxy.ts": {
+    "mtime": 1792776664823.7505,
+    "hash": "2bf02038f032f71976ef249b4e6edf5f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/services.ts": {
+    "mtime": 1793541516242.2427,
+    "hash": "16f2dfb75fd35deca0791047e5f8caab"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/auth/require-admin.ts": {
+    "mtime": 1792852517851.2126,
+    "hash": "c3a09515473d3f099d96d5bd07dde28d"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/auth/require-member.ts": {
+    "mtime": 1792852572944.546,
+    "hash": "709f0daae3868f75e0c30b4afdf9bec5"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/components/avatar.tsx": {
+    "mtime": 1792852592035.391,
+    "hash": "e9f69cc2f074149d67e9117d4a6eb3cc"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/components/brand.tsx": {
+    "mtime": 1793475003942.3396,
+    "hash": "12abab4ce97c12aebde984412c67a23f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/components/empty-state.tsx": {
+    "mtime": 1792852586189.478,
+    "hash": "2593e4e7d6eb00919e093cabdc893d47"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/components/page-heading.tsx": {
+    "mtime": 1793015624391.6963,
+    "hash": "1d10543250b0013b83c72b3a404d4f36"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/components/query-feedback.tsx": {
+    "mtime": 1792852587643.5266,
+    "hash": "d31f35de3403d69eccaf78b70ac3fc22"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/components/stat-card.tsx": {
+    "mtime": 1793815208004.8086,
+    "hash": "7c06791b916bd450d360f8d9ff4f82e3"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/components/text-field.tsx": {
+    "mtime": 1792852589101.48,
+    "hash": "51a4ea41ca2c0b7a2ffa815ad43e2198"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/components/use-avatar-image.ts": {
+    "mtime": 1792852569875.3162,
+    "hash": "06038e9de4cf3ed97b7ff07a583c40fd"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/formatting/format-currency.ts": {
+    "mtime": 1792852517852.4646,
+    "hash": "e027c3f1ce83b302159a35b7a03d3ec0"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/formatting/format-date.ts": {
+    "mtime": 1792852517853.4731,
+    "hash": "178f910ddc01f06b1408807c0a719a3b"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/layout/app-shell.tsx": {
+    "mtime": 1793816094484.8025,
+    "hash": "93c8e57d4ab1c29f0e17276b5b5dee95"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/layout/is-navigation-active.ts": {
+    "mtime": 1793475040752.313,
+    "hash": "398c2aa13597a6d5093432836175e7cf"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/layout/mobile-account-menu.tsx": {
+    "mtime": 1793475114450.9326,
+    "hash": "c08c7e298b0cbd22e227621ecadb7ae9"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/layout/mobile-navigation.tsx": {
+    "mtime": 1793475048397.442,
+    "hash": "e7fee25cc4be803e8731ab74f059c696"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/layout/nav-link.tsx": {
+    "mtime": 1793475041731.681,
+    "hash": "20085cc4be20b01745a66f9e8c1dbb2c"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/layout/navigation.ts": {
+    "mtime": 1793013956858.0237,
+    "hash": "4c97e596e22f1d01cbee41b4385db8fb"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/layout/sidebar-account.tsx": {
+    "mtime": 1793475112071.4868,
+    "hash": "258396f1539670e7921b905732b3f9e3"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/layout/sidebar.tsx": {
+    "mtime": 1793475048397.442,
+    "hash": "f3e96a2ee6b2eaa0054e866207d1536a"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/layout/topbar.tsx": {
+    "mtime": 1793475114461.8687,
+    "hash": "71a22dfe9d9c4fe18c8e6fe1b2f76867"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/layout/use-sign-out.ts": {
+    "mtime": 1792852592064.3965,
+    "hash": "6619227764ef20287f39749b2791adc7"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/platform/load-platform.ts": {
+    "mtime": 1793015809543.8745,
+    "hash": "29bd1f46086048a21ec811b8a49fc55a"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/platform/platform-announcement.tsx": {
+    "mtime": 1793015624391.6963,
+    "hash": "4ac523ed1ae3c943bbd61a7170e01acf"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/platform/platform-context.ts": {
+    "mtime": 1793013880251.776,
+    "hash": "f6ef0d5d8ac09de99083811fde44f2c9"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/platform/platform-footer.tsx": {
+    "mtime": 1793015654866.7065,
+    "hash": "d8dea41594b416262dfb55b0dfed8205"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/platform/platform-metadata.ts": {
+    "mtime": 1793015817714.3748,
+    "hash": "2890867a36658c5728dad54a1f3a88f6"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/platform/platform-provider.tsx": {
+    "mtime": 1793100624411.6843,
+    "hash": "88260ceaa9f295c7d1d3d423512e0e09"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/platform/use-platform.ts": {
+    "mtime": 1793013881131.2568,
+    "hash": "487684c5d02c1bf1cf2bef53783d40bd"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/query/create-query-client.ts": {
+    "mtime": 1792852517854.474,
+    "hash": "804f26047ec871ec7780cc232e410d03"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/shared/query/get-query-client.ts": {
+    "mtime": 1792852517851.2126,
+    "hash": "738df6ca7ec6b8b6ae881cef63bfd798"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/utils/orpc.ts": {
+    "mtime": 1792852621165.8994,
+    "hash": "e0c377fd2e8afbd98204d1c1e1f8e766"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/tests/admin/cms-workspace.test.js": {
+    "mtime": 1793015987628.363,
+    "hash": "a1bd97659244e80ebff3330f329f3ed1"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/tests/admin/format-minor-currency.test.js": {
+    "mtime": 1793015984331.8618,
+    "hash": "7859884f58531d3bfef6c2a07bb46e73"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/tests/admin/parse-cms-form-data.test.js": {
+    "mtime": 1793015985891.7644,
+    "hash": "1399e2d6bbff481ffb91d51f00f78122"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/tests/media/media-handlers.test.ts": {
+    "mtime": 1793815669925.9822,
+    "hash": "aa09a86aab7924847bc29a9da29596e3"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/tests/media/media-policy.test.ts": {
+    "mtime": 1793814574076.8481,
+    "hash": "5edc10e479c73bffac20f431230a083f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/tests/media/media-signature.test.ts": {
+    "mtime": 1793815669925.9822,
+    "hash": "dd491dba37c12730d0cde9555ef0c9ba"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/tests/media/media-streaming.test.ts": {
+    "mtime": 1793815765648.1555,
+    "hash": "28c81cccf07e4eb3aa3c44a3da083445"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/tests/messages/merge-message-pages.test.ts": {
+    "mtime": 1792852664881.7375,
+    "hash": "f2543237ee9813d67e410050c63893da"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/tests/payments/payment-demo.test.ts": {
+    "mtime": 1793100733700.5952,
+    "hash": "6c9abcc7bea45396c999d4727b64c4b1"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/tests/posts/post-media.test.tsx": {
+    "mtime": 1792852700781.0981,
+    "hash": "3982782c058dce87a4a1a7ac58b390f2"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/scripts/smoke/expect-denied.ts": {
+    "mtime": 1793475021703.082,
+    "hash": "2f11740c177a5770e269435df2aeccd9"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/scripts/smoke/request-demo-session.ts": {
+    "mtime": 1793625507560.743,
+    "hash": "f62dbd5152b5252ab7c37d900f22fce5"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/scripts/smoke/sign-in-demo.ts": {
+    "mtime": 1793541634887.3547,
+    "hash": "2c85cc65b2ad1d067a42a00cfa87e1b5"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/scripts/smoke/verify-cms-flow.ts": {
+    "mtime": 1793475021703.082,
+    "hash": "7e6358e542cf9f37993db43479096e36"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/scripts/smoke/verify-creator-flow.ts": {
+    "mtime": 1793815553672.2935,
+    "hash": "d2f4f30dbb139b0e6f69907480546ef6"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/scripts/smoke/verify-member-flow.ts": {
+    "mtime": 1793475021703.082,
+    "hash": "ef387d2a291a2f70bed610b2a1e59597"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/scripts/smoke/verify-role-access.ts": {
+    "mtime": 1793475017713.1995,
+    "hash": "cff17d07f4101a7ffa17d8d7ae60147f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/scripts/verify-demo-http.ts": {
+    "mtime": 1793625611634.8801,
+    "hash": "acead220ff1b41d794c1c003b0367d61"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/context.ts": {
+    "mtime": 1792777880017.746,
+    "hash": "ea68853718cdb80ba28028a162eb7f77"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/contracts/has-readable-accent.ts": {
+    "mtime": 1793015843735.3801,
+    "hash": "4109b2cb5879a228d76cdba386d36ddf"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/contracts/is-safe-platform-url.ts": {
+    "mtime": 1793015913562.1018,
+    "hash": "deeb9e0c1250aacafb67af9c9e3147e1"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/contracts/platform.ts": {
+    "mtime": 1793016153004.836,
+    "hash": "00d43312055849e86922fc55641b08b8"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/contracts/product.ts": {
+    "mtime": 1792777880014.745,
+    "hash": "746b367e83badebde299cf16c11b3ecd"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/access/authorize-post-media.ts": {
+    "mtime": 1793100751884.9045,
+    "hash": "04cb1b740aa02e1dde2791db2c2a8327"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/access/can-access-post.ts": {
+    "mtime": 1792777879174.2131,
+    "hash": "aa2d0c29e424f3bee63973cd30a66026"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/access/can-review-reported-media.ts": {
+    "mtime": 1793100745058.8528,
+    "hash": "43f3c3d624d8800c4f0fa8d619f4c8d4"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/access/require-owner.ts": {
+    "mtime": 1792777880014.745,
+    "hash": "b66a3dac15d4baaa2d8725f8dda4bf1a"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/access/require-participant.ts": {
+    "mtime": 1792777879175.6472,
+    "hash": "c158b121a562145db36c918f72158b79"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/analytics/build-currency-totals.ts": {
+    "mtime": 1793015843738.38,
+    "hash": "a21cba485998614f37bd65fcf0611020"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/analytics/build-daily-series.ts": {
+    "mtime": 1793015913560.0938,
+    "hash": "00f0abb6e1dc10a93495883fd2c684b2"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/analytics/overview.ts": {
+    "mtime": 1793015843736.3794,
+    "hash": "29b56dda1c123703a318f1c24036a286"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/cms/get.ts": {
+    "mtime": 1793015843732.378,
+    "hash": "1447732332d522df9418dabeb6cb3a26"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/cms/history.ts": {
+    "mtime": 1793015843737.38,
+    "hash": "89465157291231cc7ce961c0bc9071b4"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/cms/publish.ts": {
+    "mtime": 1793015843736.3794,
+    "hash": "138a0da89789477598effb8a33902b34"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/cms/restore-draft.ts": {
+    "mtime": 1793015843738.38,
+    "hash": "c05c8b1752b7ae5d2014bf7193c90d28"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/cms/save-draft.ts": {
+    "mtime": 1793015843738.38,
+    "hash": "22840e44a791870342e41f07dd3c2cb3"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/cms/serialize-document.ts": {
+    "mtime": 1793015843741.3787,
+    "hash": "00bafa356be1eae836f885686662735a"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/cms/update-document.ts": {
+    "mtime": 1793015913566.1177,
+    "hash": "1cc8705940e30280a28fd3c147924e5c"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/lock-creator-moderation-target.ts": {
+    "mtime": 1793100749369.7468,
+    "hash": "52a8e241805de3bb95148b2ded815413"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/operations/audits.ts": {
+    "mtime": 1793015913578.2832,
+    "hash": "23565b26a7e0015bcb560c59f1db1f3a"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/operations/creators.ts": {
+    "mtime": 1793015843745.38,
+    "hash": "8ebe8b345c17d28017866b9d9e3a2b76"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/operations/query-shapes.ts": {
+    "mtime": 1793015843766.3625,
+    "hash": "2f283db40b166eea31e1caa6061b9bee"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/operations/reports.ts": {
+    "mtime": 1793015913594.204,
+    "hash": "b43cc76615dd8e96ded24bf57d3f0a39"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/operations/subscriptions.ts": {
+    "mtime": 1793815567079.2844,
+    "hash": "23a581e1aa2a1c903865e7ad097fb9cd"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/operations/transactions.ts": {
+    "mtime": 1793015913580.2825,
+    "hash": "909771f397678c43d533c16133ef8e28"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/operations/users.ts": {
+    "mtime": 1793015913592.2815,
+    "hash": "3b472297c72e280806199e49a6ed64b1"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/overview.ts": {
+    "mtime": 1792852248324.3384,
+    "hash": "10ea691c24c238ad63dc263106104350"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/report-creator-select.ts": {
+    "mtime": 1792852881472.3503,
+    "hash": "95f6da29e1f46a6a0c8f65ba6ba00dcf"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/report-details.ts": {
+    "mtime": 1793015839163.0508,
+    "hash": "3235b88e4f2106cb6698e07e4208d127"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/resolve-report.ts": {
+    "mtime": 1793015839163.0508,
+    "hash": "d377ec692b8226e0e1d48884be31df55"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/revoke-subscription.ts": {
+    "mtime": 1793015843756.2126,
+    "hash": "b6b32253171836b83f4b1b889e43daed"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/set-creator-status.ts": {
+    "mtime": 1793815648910.9797,
+    "hash": "02b0473aed4dfd66e3b9585d5bb5c5de"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/set-team-role.ts": {
+    "mtime": 1793100751885.9043,
+    "hash": "e83591472e43a47b184ac65e0ff21395"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/admin/set-user-status.ts": {
+    "mtime": 1793100751885.9043,
+    "hash": "fd5d5f6c191e465d778dc7c8867bdff3"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/creators/get.ts": {
+    "mtime": 1792777879177.652,
+    "hash": "8d9c3f3a5127e335ac9e9f8f7460c30a"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/creators/list.ts": {
+    "mtime": 1792777879177.652,
+    "hash": "95b125a1246d75062939ff52281f5f26"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/creators/serialize-creator.ts": {
+    "mtime": 1792931048146.2175,
+    "hash": "7c3a31c770d9aa447f84dc147507562b"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/creators/set-follow.ts": {
+    "mtime": 1792777879178.6526,
+    "hash": "1be9b76097a46ab40ba55ae98c5e9da8"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/feed/list.ts": {
+    "mtime": 1793625607070.5405,
+    "hash": "e77c28e2641335a1bd22a214de15954e"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/memberships/effective-status.ts": {
+    "mtime": 1793815565033.135,
+    "hash": "2bdeca36193742475de6a996449bf66c"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/memberships/list.ts": {
+    "mtime": 1793815566034.0889,
+    "hash": "c12c96472d4c195d35ca50a5f4095a3f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/memberships/request.ts": {
+    "mtime": 1792777879179.1565,
+    "hash": "8d49f9f2690e265580e11bff893e052a"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/messages/get.ts": {
+    "mtime": 1792852664882.7356,
+    "hash": "d6ad718b310e7263cda2a57a38686ebe"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/messages/list.ts": {
+    "mtime": 1792777879179.1565,
+    "hash": "c9ade048c9dc9fade1a28111d2f6a9f1"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/messages/send.ts": {
+    "mtime": 1793015843762.2114,
+    "hash": "3373cb041468eb685db20c09b1209672"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/messages/start.ts": {
+    "mtime": 1793015843760.2122,
+    "hash": "4b22e7b7a926f8087a21df3fed5becfe"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/notifications/list.ts": {
+    "mtime": 1792777879180.1624,
+    "hash": "f4691f8d9d3c04c8ccec0d61ff7795fb"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/notifications/mark-read.ts": {
+    "mtime": 1792777879180.1624,
+    "hash": "0a7c699826d43c1f80bc1c729308399a"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/platform/get.ts": {
+    "mtime": 1793015843759.2126,
+    "hash": "9f74972e1fbc872bd12c3e7ab5a62e39"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/platform/read-published-config.ts": {
+    "mtime": 1793015843760.2122,
+    "hash": "0cb0b1b80abc3bdd88d880e0b656bf9b"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/platform/require-feature.ts": {
+    "mtime": 1793015843782.3672,
+    "hash": "285b166f4e972263f061750561475210"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/posts/add-comment.ts": {
+    "mtime": 1792777879180.1624,
+    "hash": "7f64610e23318e2ecd99a68e27a22525"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/posts/comments.ts": {
+    "mtime": 1793815683552.274,
+    "hash": "e128637898feab8f429022e358c22172"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/posts/load-post-serialization-state.ts": {
+    "mtime": 1792931048197.3015,
+    "hash": "191438cf108ad3f83d0b03054902e68b"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/posts/require-visible-post.ts": {
+    "mtime": 1792777879181.162,
+    "hash": "cec964c83900cb88b05d846777c7be9a"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/posts/serialize-post.ts": {
+    "mtime": 1792931048191.7705,
+    "hash": "99712adddef573644a8a2621dd966632"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/posts/serialize-posts.ts": {
+    "mtime": 1792931048188.2466,
+    "hash": "843d50fe0c5451f554aa8fdc1347c35a"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/posts/set-bookmark.ts": {
+    "mtime": 1792777879181.162,
+    "hash": "a79308f8749b084ab591f13acafafe17"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/posts/set-like.ts": {
+    "mtime": 1792777879181.162,
+    "hash": "a93aba7841783a9bdc38db25e04a777f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/reports/create.ts": {
+    "mtime": 1792777879182.162,
+    "hash": "2d1756da6b97099f729781e6ba92a5dd"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/settings/get.ts": {
+    "mtime": 1792777879182.162,
+    "hash": "674fcc6d504c351e35bc6f7e5e2768bb"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/settings/update.ts": {
+    "mtime": 1792777879182.162,
+    "hash": "96704f4c0e3426c6933e181e19a7c10a"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/shared/query-shapes.ts": {
+    "mtime": 1792777879182.162,
+    "hash": "77e2236468b7d8bd8aac58c627aed244"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/studio/delete-post.ts": {
+    "mtime": 1792777879182.162,
+    "hash": "b041de5d6f25fdba0e8d78130598f987"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/studio/overview.ts": {
+    "mtime": 1793815401632.805,
+    "hash": "662eee88e40af5396ff71d19ab096568"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/studio/save-post.ts": {
+    "mtime": 1792778024163.8774,
+    "hash": "87a182d57355a3045079e7aac53bca3f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/studio/save-profile.ts": {
+    "mtime": 1793015843779.372,
+    "hash": "f08b67f1da125a7b4d935cdc43877826"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/domains/viewer/get.ts": {
+    "mtime": 1792777879183.666,
+    "hash": "2cce6c078140199b3becb5b432ed4fe1"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/index.ts": {
+    "mtime": 1793015843773.3682,
+    "hash": "fda0724b7b4d44c780e04371fe232176"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/routers/index.ts": {
+    "mtime": 1793015843782.7417,
+    "hash": "d6240ed1317feeea32b1c32426b800d2"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/tests/access.test.ts": {
+    "mtime": 1792777845328.9863,
+    "hash": "ad4b1a52ff17f5801a5542bed604eb6c"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/tests/admin-concurrency-fixture.ts": {
+    "mtime": 1793100783264.3523,
+    "hash": "27d5cfd6e78daeaf81d918a443d551a4"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/tests/admin-concurrency.test.ts": {
+    "mtime": 1793100784420.6228,
+    "hash": "5312500180f3db968cf5ce2ee75bdd17"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/tests/admin-overview.test.ts": {
+    "mtime": 1792852399189.3179,
+    "hash": "b6764be5c0976e57b647f8a16f32ba04"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/tests/admin-report-details.test.ts": {
+    "mtime": 1793100632447.329,
+    "hash": "5d6bb680c7c55d0ad4920d955d5e31f8"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/tests/cms-fixture.ts": {
+    "mtime": 1793016153058.174,
+    "hash": "65b684988729cee3c3a80e3081c5b358"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/tests/creator-approval-role.test.ts": {
+    "mtime": 1793815637693.7166,
+    "hash": "6f192606f27133dd20f098738b145b1c"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/tests/membership-expiry.test.ts": {
+    "mtime": 1793815569459.624,
+    "hash": "2ad03ba6273aa58ef55fe70cc93b23c7"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/tests/message-history.test.ts": {
+    "mtime": 1792852699342.2588,
+    "hash": "295fe87cb86dcb30faa7c98bbb8b4b9b"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/tests/platform-analytics.test.ts": {
+    "mtime": 1793016153046.5647,
+    "hash": "38ad5cb83d649deb844eed3c0b98909e"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/tests/platform-cms.test.ts": {
+    "mtime": 1793016153052.116,
+    "hash": "3bf47a0030a5bcfb8238921e9cd5ecb7"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/tests/platform-features.test.ts": {
+    "mtime": 1793016153049.4272,
+    "hash": "90e1c01d70f730f5c92808d0036daefe"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/tests/platform-operations.test.ts": {
+    "mtime": 1793016314618.9485,
+    "hash": "7ae527984a83b88a08867f5c53be7c77"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/tests/platform-permissions.test.ts": {
+    "mtime": 1793016153053.7375,
+    "hash": "5e8f494721206f4d226e82ab0d501d61"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/tests/post-serialization-fixture.ts": {
+    "mtime": 1792931092401.7493,
+    "hash": "68778f945b9ff56eb9f82bace3e85856"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/tests/post-serialization.test.ts": {
+    "mtime": 1792931094944.7896,
+    "hash": "23712b672a353900e4116e76c3120b95"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/tests/procedures.test.ts": {
+    "mtime": 1792931048189.7566,
+    "hash": "fd8ea98085df05aa184bc083dcf825ca"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/tests/studio-pagination.test.ts": {
+    "mtime": 1792931094930.704,
+    "hash": "ef25c0df40bf1a7cde304993803b852f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/scripts/bootstrap-owner.ts": {
+    "mtime": 1792777864100.2188,
+    "hash": "26b6c94e1f19850c6da06cbca1d63fe7"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/scripts/check-auth-email.ts": {
+    "mtime": 1793815664335.5981,
+    "hash": "22dbd721e20bcd8a22c6987943cfe9b6"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/scripts/check-email.ts": {
+    "mtime": 1793474948573.9072,
+    "hash": "56ed4ba29179c4e8eb0b1cb9d98106e1"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/scripts/email/verify-reset-flow.ts": {
+    "mtime": 1793815526340.5854,
+    "hash": "939e6a1444d138409d9f98c7b8702e70"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/src/assert-registration-enabled.ts": {
+    "mtime": 1793015843779.372,
+    "hash": "2addca5aa7d024f3843e017d22d146d5"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/src/can-bootstrap-owner.ts": {
+    "mtime": 1792777864098.6946,
+    "hash": "7b2f07536a1ba603e604cb5485d6c819"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/src/email/config.ts": {
+    "mtime": 1792777864098.6946,
+    "hash": "3fedc84cdef840948e2a88e29b8b85e0"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/src/email/create-email-delivery-error.ts": {
+    "mtime": 1793035142027.2495,
+    "hash": "962e3ee571c18318b8880e453bdad286"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/src/email/create-resend-provider.ts": {
+    "mtime": 1793035075617.6267,
+    "hash": "a56b97c1e56c09bfe74bd24853dda619"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/src/email/email-provider.ts": {
+    "mtime": 1793035074676.2942,
+    "hash": "d149a922e7defd75f7f4fc5ff4c85df6"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/src/email/escape-html.ts": {
+    "mtime": 1792777864099.2075,
+    "hash": "475af1a93ae76c390a13f711d616add4"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/src/email/render-auth-email.ts": {
+    "mtime": 1793016153048.5635,
+    "hash": "407b83c6231745df3a68d41e3d1bd6c6"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/src/email/send-email.ts": {
+    "mtime": 1793041247516.2668,
+    "hash": "dfc42f793640754fa2716768e71e10e9"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/src/email/validate-email-config.ts": {
+    "mtime": 1793035078537.7546,
+    "hash": "80f9297aafe192b03f0e41eade0143fb"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/src/index.ts": {
+    "mtime": 1793814440083.4658,
+    "hash": "5c4f97bc85191469b85f54cb2a1b12c4"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/src/lib/payments.ts": {
+    "mtime": 1792777864101.229,
+    "hash": "9b034879ff6e9a8f34fc88101df05824"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/src/rate-limit/consume-script.ts": {
+    "mtime": 1793814432607.6345,
+    "hash": "98dae0eba9e18157cb6883faeac7b490"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/src/rate-limit/create-redis-rate-limit.ts": {
+    "mtime": 1793815669922.786,
+    "hash": "90abc97c2134e905d6406c48b4510242"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/src/read-auth-config.ts": {
+    "mtime": 1793814440062.8801,
+    "hash": "d2cb767794f5b6c91b21ee9553eed9df"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/tests/email.test.ts": {
+    "mtime": 1793035096445.1118,
+    "hash": "c49142b752fe95623162e004ee7c2374"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/tests/read-auth-config.test.ts": {
+    "mtime": 1793814575334.613,
+    "hash": "3ce2648a87b190970571e9f40bcfd094"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/tests/redis-rate-limit.test.ts": {
+    "mtime": 1793815669928.2588,
+    "hash": "d74700d61d4e80378e03d7e669ae1ee6"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/tests/registration-feature.test.ts": {
+    "mtime": 1793016314617.9255,
+    "hash": "53487562abe018c0817f6ae58e4e4bf0"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/tests/resend-transport.test.ts": {
+    "mtime": 1793035271590.8132,
+    "hash": "fa7262ece70f44e5534e91e5bd3f2abb"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma.config.ts": {
+    "mtime": 1792852621163.8906,
+    "hash": "0152075bee8596126094f11f7f455c8c"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/browser.ts": {
+    "mtime": 1793016352377.4294,
+    "hash": "01023fb4b09d80db531fbf728a4c554f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/client.ts": {
+    "mtime": 1793016352377.4294,
+    "hash": "c5f1afd3896bc1ed4ec1ea40b9b39e5b"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/commonInputTypes.ts": {
+    "mtime": 1793016352377.4294,
+    "hash": "cd8d20ebd2d9f7acb5c847930edfa5d8"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/enums.ts": {
+    "mtime": 1793016352380.2717,
+    "hash": "fa6c58ad2d5526df3ff4f7e351d5f2f2"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/internal/class.ts": {
+    "mtime": 1793016352385.0398,
+    "hash": "c4d506d9c7602dfa35a15d47741c4054"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/internal/prismaNamespace.ts": {
+    "mtime": 1793016352385.0398,
+    "hash": "e3fa931a9fb098eac32dbc5d1304f9fa"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/internal/prismaNamespaceBrowser.ts": {
+    "mtime": 1793016352385.0398,
+    "hash": "0e3234fb667b0c3cb33bb630c3c915b3"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models.ts": {
+    "mtime": 1793016352377.4294,
+    "hash": "4678bece5748f4881618d61dc3a0fdb2"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/Account.ts": {
+    "mtime": 1793016352385.0398,
+    "hash": "a2eeb54fdc27ea361be45995c4f4c7d6"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/AuditEvent.ts": {
+    "mtime": 1793016352386.0457,
+    "hash": "3bde37a4c6ba478edc1f5a18b4acbed5"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/Bookmark.ts": {
+    "mtime": 1793016352386.0457,
+    "hash": "f7ac1227d31ba098452a0e1e6170c6ff"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/Comment.ts": {
+    "mtime": 1793016352386.0457,
+    "hash": "d00ca8bfff6b7f76a890ddaa4bd1539e"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/Conversation.ts": {
+    "mtime": 1793016352386.0457,
+    "hash": "7872f38882cddd4fcefe36c72c729361"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/CreatorProfile.ts": {
+    "mtime": 1793016352386.0457,
+    "hash": "04def4541f6da7c1283edf002d722695"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/Follow.ts": {
+    "mtime": 1793016352386.0457,
+    "hash": "981672cbf575e4217c78b2dacd792a05"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/Like.ts": {
+    "mtime": 1793016352386.0457,
+    "hash": "d803440fbcb53e8fc63ee6e756af2bc5"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/MediaAsset.ts": {
+    "mtime": 1793016352386.0457,
+    "hash": "158ef3368bfc134e7d48670aff9b8990"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/MembershipInterest.ts": {
+    "mtime": 1793016352386.0457,
+    "hash": "715c3335b486042f621fd20250aa88bf"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/Message.ts": {
+    "mtime": 1793016352386.0457,
+    "hash": "f08c21c3e9c142e051354976d087a909"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/Notification.ts": {
+    "mtime": 1793016352386.0457,
+    "hash": "df98db25a2e940a2375659a5fbf06166"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/PlatformRevision.ts": {
+    "mtime": 1793016352385.0398,
+    "hash": "48bd4be47855fec2d40f4b5e2e15f24d"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/PlatformSettings.ts": {
+    "mtime": 1793016352386.0457,
+    "hash": "3edc18c1961ffe961aef20194af43e8c"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/Post.ts": {
+    "mtime": 1793016352386.0457,
+    "hash": "d5fa3ee29fda2eaf77702ba518ccd495"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/RateLimit.ts": {
+    "mtime": 1793016352386.0457,
+    "hash": "7356b5273580e62416b08238dc83c09e"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/Report.ts": {
+    "mtime": 1793016352386.0457,
+    "hash": "0098ffd54b31aa05247246bc7febbdb6"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/Session.ts": {
+    "mtime": 1793016352385.0398,
+    "hash": "88a88e921fd2301053dedf6e66705220"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/Subscription.ts": {
+    "mtime": 1793016352386.0457,
+    "hash": "de44b513b50616ad514b650caad370e5"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/TransactionRecord.ts": {
+    "mtime": 1793016352386.0457,
+    "hash": "a4815e3a4d50b24bad1e797ae7c41188"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/User.ts": {
+    "mtime": 1793016352385.0398,
+    "hash": "87a290efb752cdf980022bb7420b6750"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/generated/models/Verification.ts": {
+    "mtime": 1793016352385.0398,
+    "hash": "68d1e8b01c5c306ff2cdefc512156f91"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/migrations/20261023160000_initial/migration.sql": {
+    "mtime": 1792778128499.036,
+    "hash": "8d836defc81f1bf50a31a39126e1ab90"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma/migrations/20261026090000_platform_cms/migration.sql": {
+    "mtime": 1793016126411.1619,
+    "hash": "9e688d5904ce50388f6ccd2953cacb8e"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/scripts/demo/additional-creators.ts": {
+    "mtime": 1793814862604.3352,
+    "hash": "31ead4f94895d04a4cd5c93e69048b17"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/scripts/demo/assert-demo-record-owner.ts": {
+    "mtime": 1793035526834.5776,
+    "hash": "71ddb928de88d27fd9828f24d2508a6c"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/scripts/demo/assert-demo-seed-allowed.ts": {
+    "mtime": 1793035526848.5105,
+    "hash": "88a6a3c6afcc35e769d02d449c4d447c"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/scripts/demo/definitions.ts": {
+    "mtime": 1793814857604.7126,
+    "hash": "f0ef4d5d9be7b2271ebdebaafba5d44e"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/scripts/demo/describe-demo-seed-error.ts": {
+    "mtime": 1793100892253.9617,
+    "hash": "16fdb5a4bfff3061cc7950507272fea7"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/scripts/demo/is-owned-demo-user.ts": {
+    "mtime": 1793035739133.1345,
+    "hash": "5a5440e53211d642df46d053036b1d7c"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/scripts/demo/seed-community-history.ts": {
+    "mtime": 1793814905670.5906,
+    "hash": "dd267f013c3e2aaf52bc1244289e3f43"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/scripts/demo/seed-creator-history.ts": {
+    "mtime": 1793814908988.8452,
+    "hash": "98d2099eef8da321f1824180e2e2c56b"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/scripts/demo/seed-demo-data.ts": {
+    "mtime": 1793815208018.1992,
+    "hash": "25e80e72bfe12d8b7e533e8aeb154a40"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/scripts/demo/seed-demo-profile.ts": {
+    "mtime": 1793035526853.901,
+    "hash": "7bcb2019a516555b05dffe090d1e280d"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/scripts/demo/seed-demo-social.ts": {
+    "mtime": 1793035526857.911,
+    "hash": "775afd3d7e8fb29963c7c1a47317a846"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/scripts/demo/seed-demo-user.ts": {
+    "mtime": 1793035739147.601,
+    "hash": "1af5fd290ad66afd97b82925f6f48394"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/scripts/seed-demo.ts": {
+    "mtime": 1793100890091.098,
+    "hash": "f3b7bdf07feba6ace227f650fd8cf428"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/scripts/verify-demo.ts": {
+    "mtime": 1793474959075.8203,
+    "hash": "e75acc2076a1f0cbff7748b6dddd4442"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/src/config.ts": {
+    "mtime": 1792777880017.746,
+    "hash": "aa3b311d40a9b9d166c1ca3fb2cdc92f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/src/env.ts": {
+    "mtime": 1792776680778.9248,
+    "hash": "22c31cfdc98ee54acb670f070a54147b"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/src/index.ts": {
+    "mtime": 1793815603246.5652,
+    "hash": "bbcd2cb5908817091461f98c7e183c45"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/src/read-platform-brand.ts": {
+    "mtime": 1793016153032.846,
+    "hash": "c7a992ccc67b04c5c116695732eced19"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/src/read-platform-features.ts": {
+    "mtime": 1793015843736.3794,
+    "hash": "5dd105c8e9216142d4bf4f9171cebb69"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/tests/demo-seed-error.test.ts": {
+    "mtime": 1793100892253.9617,
+    "hash": "0bfd50caf73610efbc05a1547e3b4106"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/tests/demo-seed-fixture.ts": {
+    "mtime": 1793035526854.9062,
+    "hash": "a9abd7cd1372ca1ea1e0baff9be5e60a"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/tests/demo-seed.test.ts": {
+    "mtime": 1793035771619.569,
+    "hash": "2f00890da5ad14c839319b8dcd52c5b5"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/postcss.config.mjs": {
+    "mtime": 1792776444033.935,
+    "hash": "0f8aa602547b154dc06be77b007c51d2"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/attachment.tsx": {
+    "mtime": 1792852621198.1655,
+    "hash": "10e526f32250713b5cbe062fd78f1f16"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/bubble.tsx": {
+    "mtime": 1792852621197.163,
+    "hash": "2b8421052c2f89432c5b7ceb8ebf65b3"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/button.tsx": {
+    "mtime": 1792852621178.989,
+    "hash": "ac55c8d3235049dad956c6374884d841"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/card.tsx": {
+    "mtime": 1792852621181.9836,
+    "hash": "fb92478dd532b0466f68ae4629432388"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/checkbox.tsx": {
+    "mtime": 1792852621167.909,
+    "hash": "6e28036acff240738c258b853a3563e2"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/dropdown-menu.tsx": {
+    "mtime": 1792852621195.165,
+    "hash": "b8a57965c15f74b1691908e19f865c04"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/empty.tsx": {
+    "mtime": 1792852621175.9463,
+    "hash": "81e274657204e1bf8527802ddaceeae9"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/input-group.tsx": {
+    "mtime": 1792852833822.8018,
+    "hash": "2609e99fa4b7602d66d7f5fb963606f6"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/input.tsx": {
+    "mtime": 1793041316513.77,
+    "hash": "7510415f1d7e9607c7065ea438fd4a60"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/label.tsx": {
+    "mtime": 1792929354913.5825,
+    "hash": "42e73fd155fd4a331399e03a19b14fd7"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/marker.tsx": {
+    "mtime": 1792852621186.9868,
+    "hash": "91c9684f67bc8e4d98678f1534b16a52"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/message-scroller.tsx": {
+    "mtime": 1792929354913.5825,
+    "hash": "8292d89da40904aca33269ad6a176401"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/message.tsx": {
+    "mtime": 1792852621186.9868,
+    "hash": "aca162a5f99a754f12b59648a1426ba4"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/skeleton.tsx": {
+    "mtime": 1792852621184.983,
+    "hash": "26e67cfb891af54326a49f47eda145c3"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/sonner.tsx": {
+    "mtime": 1792852621190.1538,
+    "hash": "92d42ae7c6d292fdcbb9eba378107adc"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/textarea.tsx": {
+    "mtime": 1793041317475.5818,
+    "hash": "4a74b192514fa8063ef3b12fd42a5521"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/tooltip.tsx": {
+    "mtime": 1792852621192.1626,
+    "hash": "1af37bb4f7a31ebe84076998694be944"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/lib/utils.ts": {
+    "mtime": 1792928996445.5876,
+    "hash": "8b66c8d018dd913130503129826bdccd"
+  },
+  "C:/Users/D.Kruger/Documents/privana/scripts/inspect-database.ts": {
+    "mtime": 1793100659930.5632,
+    "hash": "39d7e306d89513cf7739676b32c01c24"
+  },
+  "C:/Users/D.Kruger/Documents/privana/scripts/sql/reconcile-platform-guards.sql": {
+    "mtime": 1793100664504.8003,
+    "hash": "dc7e1765a0a94780c9d7dec61db99cd0"
+  },
+  "C:/Users/D.Kruger/Documents/privana/scripts/sync-vercel-env.ts": {
+    "mtime": 1792852621161.1726,
+    "hash": "363bb19dfbc0e7054e46105e6e163d68"
+  },
+  "C:/Users/D.Kruger/Documents/privana/AGENTS.md": {
+    "mtime": 1792776664866.3035,
+    "hash": "ce22a2c78eac5ec0f2e356de8615632f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/README.md": {
+    "mtime": 1793815647855.9634,
+    "hash": "03d249e14c236dfb44ffc2dea15d6267"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/AGENTS.md": {
+    "mtime": 1792776443995.1897,
+    "hash": "01e8142356e15c3404e0d84c48187cd0"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/public/offline.html": {
+    "mtime": 1792852621181.9836,
+    "hash": "b5a435fdd7858f2b556f92e5b3dd5c23"
+  },
+  "C:/Users/D.Kruger/Documents/privana/docs/admin-cms-api.md": {
+    "mtime": 1793013817317.9146,
+    "hash": "eb9e32fdc0f740478beb2af615e7fcf8"
+  },
+  "C:/Users/D.Kruger/Documents/privana/docs/admin-ui-report.md": {
+    "mtime": 1792853008095.1177,
+    "hash": "d378a5317cdb4aebb08aab3e91eaa91b"
+  },
+  "C:/Users/D.Kruger/Documents/privana/docs/api-contract.md": {
+    "mtime": 1792853007391.3398,
+    "hash": "a35fb75a234971e6864dd8c4454d9a27"
+  },
+  "C:/Users/D.Kruger/Documents/privana/docs/auth-report.md": {
+    "mtime": 1793815836645.8584,
+    "hash": "f9fe7cf5bba7d9f3c24190aa5e241571"
+  },
+  "C:/Users/D.Kruger/Documents/privana/docs/backend-report.md": {
+    "mtime": 1792778208819.576,
+    "hash": "9a91d6c42a39c8b9442cd9cbc576fbc1"
+  },
+  "C:/Users/D.Kruger/Documents/privana/docs/demo-accounts.md": {
+    "mtime": 1793815837672.1287,
+    "hash": "9f5d201405aa36f51e29d3e6c3e8e525"
+  },
+  "C:/Users/D.Kruger/Documents/privana/docs/media-report.md": {
+    "mtime": 1793815834612.247,
+    "hash": "05fb171d546f0c6da39ca4d976c9b9e5"
+  },
+  "C:/Users/D.Kruger/Documents/privana/docs/member-ui-report.md": {
+    "mtime": 1792852741480.7214,
+    "hash": "9fe442120982c2168266865532ff9f9d"
+  },
+  "C:/Users/D.Kruger/Documents/privana/docs/payment-demo.md": {
+    "mtime": 1793100732539.1697,
+    "hash": "0ad0d1553d928a05eee85b8773587ee8"
+  },
+  "C:/Users/D.Kruger/Documents/privana/docs/payments-research.md": {
+    "mtime": 1792931327526.7617,
+    "hash": "1a1a0cdafa3f55b0bc8c094a30c234ac"
+  },
+  "C:/Users/D.Kruger/Documents/privana/docs/platform-backend-report.md": {
+    "mtime": 1793016416190.0288,
+    "hash": "7858e14444be482abed2a22df109a89a"
+  },
+  "C:/Users/D.Kruger/Documents/privana/docs/platform-review.md": {
+    "mtime": 1793100811101.4485,
+    "hash": "629b7cd998e0ec58facd0300585e8d16"
+  },
+  "C:/Users/D.Kruger/Documents/privana/docs/review-report.md": {
+    "mtime": 1792931040284.821,
+    "hash": "a04d087891fa551da7fcc61624592c35"
+  },
+  "C:/Users/D.Kruger/Documents/privana/docs/studio-ui-report.md": {
+    "mtime": 1793100817831.0852,
+    "hash": "5e2b3b5abcbd8f3185d7cbbd4e9f38fb"
+  },
+  "C:/Users/D.Kruger/Documents/privana/docs/superpowers/plans/2026-10-23-privana.md": {
+    "mtime": 1792777406539.7341,
+    "hash": "54fa71915d7ef4f348797eb780256032"
+  },
+  "C:/Users/D.Kruger/Documents/privana/docs/superpowers/plans/2026-10-25-platform-cms.md": {
+    "mtime": 1792931304714.5674,
+    "hash": "3faf903c9a309499bcc7fe81611d6aea"
+  },
+  "C:/Users/D.Kruger/Documents/privana/docs/superpowers/progress.md": {
+    "mtime": 1793815838812.5579,
+    "hash": "aae882c14c6687f2de94cde3a3fdf434"
+  },
+  "C:/Users/D.Kruger/Documents/privana/docs/superpowers/specs/2026-10-23-privana-design.md": {
+    "mtime": 1792777404510.3086,
+    "hash": "99a225b0cc4444d7448f42d3c8964cb0"
+  },
+  "C:/Users/D.Kruger/Documents/privana/docs/superpowers/specs/2026-10-25-platform-cms-design.md": {
+    "mtime": 1792931302653.8557,
+    "hash": "3232519f842dbbda29541a515a5f7f03"
+  },
+  "C:/Users/D.Kruger/Documents/privana/docs/ui-redesign-notes.md": {
+    "mtime": 1792931304036.244,
+    "hash": "b9f92dd6dc0920991ba5ddea400c8967"
+  },
+  "C:/Users/D.Kruger/Documents/privana/docs/verification.md": {
+    "mtime": 1793815835615.5747,
+    "hash": "c9b9ccbddb7729b1ef3b08751b10144c"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/public/favicon/apple-touch-icon.png": {
+    "mtime": 1792700642201.789,
+    "hash": "3284a0c9113e929fde0f542fac9ebc15"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/public/favicon/favicon-96x96.png": {
+    "mtime": 1792700642201.789,
+    "hash": "e69809a133c3a57e1291efe4075b7d74"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/public/favicon/favicon.svg": {
+    "mtime": 1792929354890.7312,
+    "hash": "5e0a28c7c2b57855275cc3ba9f9a59b8"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/public/favicon/web-app-manifest-192x192.png": {
+    "mtime": 1792700642215.0876,
+    "hash": "9bd340eba77e397460f1de6978fac002"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/public/favicon/web-app-manifest-512x512.png": {
+    "mtime": 1792700642215.0876,
+    "hash": "e9fe308c5bc8fd2f2fac32b1667dc243"
+  }
+}

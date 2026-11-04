@@ -1,0 +1,130 @@
+{
+  "C:/Users/D.Kruger/Documents/privana/apps/web/instrumentation.ts": {
+    "mtime": 1792852621148.6533,
+    "hash": "47ede19c283b8b8720e045699c13abbf"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/next.config.ts": {
+    "mtime": 1792852621147.6536,
+    "hash": "27cbe0e21f8ee3e4b4306bd96f3ae70d"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/postcss.config.mjs": {
+    "mtime": 1792776443999.0632,
+    "hash": "675899342e765a4d16acd75a53389101"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/public/sw.js": {
+    "mtime": 1792852621149.6528,
+    "hash": "832beeff4724061b608d7d086b1f200b"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/pwa.config.ts": {
+    "mtime": 1792852621149.6528,
+    "hash": "a144615a90fb9bdf9f6cb697be63cdea"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/api/auth/[...all]/route.ts": {
+    "mtime": 1792776664949.5076,
+    "hash": "b85821c982b7f7f622a0e4e0dcee6d28"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/api/rpc/[[...rest]]/route.ts": {
+    "mtime": 1792852621179.9844,
+    "hash": "f2dfd1d0a2cdefbdf28fb3efea0ef398"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/dashboard/page.tsx": {
+    "mtime": 1792852621150.6533,
+    "hash": "08b7db0efe1203560e0256250f326a89"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/layout.tsx": {
+    "mtime": 1793815205604.3682,
+    "hash": "61f62e07fe15e933b67c9bfbd0774b12"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/login/page.tsx": {
+    "mtime": 1792930997864.5413,
+    "hash": "5d0e4df55a524afa2feaf2f246a6bdb8"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/manifest.ts": {
+    "mtime": 1793041319803.942,
+    "hash": "55d7cb406b7f0a4b09eb02bb67a578c7"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/page.tsx": {
+    "mtime": 1793013887254.6045,
+    "hash": "62911cdd6fce1eb3e907382ab8732a9a"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/app/success/page.tsx": {
+    "mtime": 1792852621157.6519,
+    "hash": "25ec258dabd49a8fd08c4b68dcafdb5f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/components/loader.tsx": {
+    "mtime": 1792776443984.0059,
+    "hash": "649746e59fcbc7de774ec412610921b7"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/components/providers.tsx": {
+    "mtime": 1793015817702.19,
+    "hash": "e8caf15f8c4c120e9d5dc094e2347acb"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/components/pwa-registration.tsx": {
+    "mtime": 1792852621161.1726,
+    "hash": "986570f09383489170f9350f7a0b9a30"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/components/theme-provider.tsx": {
+    "mtime": 1792852621161.8806,
+    "hash": "f0637989b236542db6c88c8e300c1952"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/context.ts": {
+    "mtime": 1792852621161.8806,
+    "hash": "1c7a28da7d247f31bafda148056ef59f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/env.server.ts": {
+    "mtime": 1792852617125.608,
+    "hash": "5ca449ffafa0c84c6713dbf0935cc785"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/lib/auth-client.ts": {
+    "mtime": 1792777626517.3384,
+    "hash": "7e5ffd0852aee321277975c6e0ef14a2"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/lib/evlog-auth.ts": {
+    "mtime": 1792852833060.776,
+    "hash": "5ed57c0796dd862efdf855bfef04ddb1"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/lib/evlog.ts": {
+    "mtime": 1792852621163.8906,
+    "hash": "ff0b4d8516f24df0581139c1b18cbfc2"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/proxy.ts": {
+    "mtime": 1792776664823.7505,
+    "hash": "2bf02038f032f71976ef249b4e6edf5f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/services.ts": {
+    "mtime": 1793541516242.2427,
+    "hash": "16f2dfb75fd35deca0791047e5f8caab"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/src/utils/orpc.ts": {
+    "mtime": 1792852621165.8994,
+    "hash": "e0c377fd2e8afbd98204d1c1e1f8e766"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/AGENTS.md": {
+    "mtime": 1792776443995.1897,
+    "hash": "01e8142356e15c3404e0d84c48187cd0"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/public/offline.html": {
+    "mtime": 1792852621181.9836,
+    "hash": "b5a435fdd7858f2b556f92e5b3dd5c23"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/public/favicon/apple-touch-icon.png": {
+    "mtime": 1792700642201.789,
+    "hash": "3284a0c9113e929fde0f542fac9ebc15"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/public/favicon/favicon-96x96.png": {
+    "mtime": 1792700642201.789,
+    "hash": "e69809a133c3a57e1291efe4075b7d74"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/public/favicon/favicon.svg": {
+    "mtime": 1792929354890.7312,
+    "hash": "5e0a28c7c2b57855275cc3ba9f9a59b8"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/public/favicon/web-app-manifest-192x192.png": {
+    "mtime": 1792700642215.0876,
+    "hash": "9bd340eba77e397460f1de6978fac002"
+  },
+  "C:/Users/D.Kruger/Documents/privana/apps/web/public/favicon/web-app-manifest-512x512.png": {
+    "mtime": 1792700642215.0876,
+    "hash": "e9fe308c5bc8fd2f2fac32b1667dc243"
+  }
+}

@@ -1,16 +1,22 @@
-"use client";
+import { AuthForm } from "@/domains/auth/auth-form";
 
-import { useState } from "react";
+export const metadata = { robots: { index: false }, title: "Entrar" };
 
-import SignInForm from "@/components/sign-in-form";
-import SignUpForm from "@/components/sign-up-form";
-
-export default function LoginPage() {
-  const [showSignIn, setShowSignIn] = useState(false);
-
-  return showSignIn ? (
-    <SignInForm onSwitchToSignUp={() => setShowSignIn(false)} />
-  ) : (
-    <SignUpForm onSwitchToSignIn={() => setShowSignIn(true)} />
+export default async function LoginPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ verified?: string; error?: string }>;
+}) {
+  const params = await searchParams;
+  return (
+    <AuthForm
+      initialMessage={
+        !params.error && params.verified === "1"
+          ? "E-mail confirmado. Agora você já pode entrar!"
+          : undefined
+      }
+      invalidLink={Boolean(params.error)}
+      mode="login"
+    />
   );
 }

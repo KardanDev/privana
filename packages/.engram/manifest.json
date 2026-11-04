@@ -1,0 +1,110 @@
+{
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/context.ts": {
+    "mtime": 1792777880017.746,
+    "hash": "ea68853718cdb80ba28028a162eb7f77"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/index.ts": {
+    "mtime": 1793015843773.3682,
+    "hash": "fda0724b7b4d44c780e04371fe232176"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/api/src/routers/index.ts": {
+    "mtime": 1793015843782.7417,
+    "hash": "d6240ed1317feeea32b1c32426b800d2"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/src/index.ts": {
+    "mtime": 1793814440083.4658,
+    "hash": "5c4f97bc85191469b85f54cb2a1b12c4"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/auth/src/lib/payments.ts": {
+    "mtime": 1792777864101.229,
+    "hash": "9b034879ff6e9a8f34fc88101df05824"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/prisma.config.ts": {
+    "mtime": 1792852621163.8906,
+    "hash": "0152075bee8596126094f11f7f455c8c"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/src/config.ts": {
+    "mtime": 1792777880017.746,
+    "hash": "aa3b311d40a9b9d166c1ca3fb2cdc92f"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/db/src/index.ts": {
+    "mtime": 1793815603246.5652,
+    "hash": "bbcd2cb5908817091461f98c7e183c45"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/postcss.config.mjs": {
+    "mtime": 1792776444033.935,
+    "hash": "0f8aa602547b154dc06be77b007c51d2"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/attachment.tsx": {
+    "mtime": 1792852621198.1655,
+    "hash": "10e526f32250713b5cbe062fd78f1f16"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/bubble.tsx": {
+    "mtime": 1792852621197.163,
+    "hash": "2b8421052c2f89432c5b7ceb8ebf65b3"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/button.tsx": {
+    "mtime": 1792852621178.989,
+    "hash": "ac55c8d3235049dad956c6374884d841"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/card.tsx": {
+    "mtime": 1792852621181.9836,
+    "hash": "fb92478dd532b0466f68ae4629432388"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/checkbox.tsx": {
+    "mtime": 1792852621167.909,
+    "hash": "6e28036acff240738c258b853a3563e2"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/dropdown-menu.tsx": {
+    "mtime": 1792852621195.165,
+    "hash": "b8a57965c15f74b1691908e19f865c04"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/empty.tsx": {
+    "mtime": 1792852621175.9463,
+    "hash": "81e274657204e1bf8527802ddaceeae9"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/input-group.tsx": {
+    "mtime": 1792852833822.8018,
+    "hash": "2609e99fa4b7602d66d7f5fb963606f6"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/input.tsx": {
+    "mtime": 1793041316513.77,
+    "hash": "7510415f1d7e9607c7065ea438fd4a60"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/label.tsx": {
+    "mtime": 1792929354913.5825,
+    "hash": "42e73fd155fd4a331399e03a19b14fd7"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/marker.tsx": {
+    "mtime": 1792852621186.9868,
+    "hash": "91c9684f67bc8e4d98678f1534b16a52"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/message-scroller.tsx": {
+    "mtime": 1792929354913.5825,
+    "hash": "8292d89da40904aca33269ad6a176401"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/message.tsx": {
+    "mtime": 1792852621186.9868,
+    "hash": "aca162a5f99a754f12b59648a1426ba4"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/skeleton.tsx": {
+    "mtime": 1792852621184.983,
+    "hash": "26e67cfb891af54326a49f47eda145c3"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/sonner.tsx": {
+    "mtime": 1792852621190.1538,
+    "hash": "92d42ae7c6d292fdcbb9eba378107adc"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/textarea.tsx": {
+    "mtime": 1793041317475.5818,
+    "hash": "4a74b192514fa8063ef3b12fd42a5521"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/components/tooltip.tsx": {
+    "mtime": 1792852621192.1626,
+    "hash": "1af37bb4f7a31ebe84076998694be944"
+  },
+  "C:/Users/D.Kruger/Documents/privana/packages/ui/src/lib/utils.ts": {
+    "mtime": 1792928996445.5876,
+    "hash": "8b66c8d018dd913130503129826bdccd"
+  }
+}

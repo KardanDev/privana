@@ -1,4 +1,19 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-  "extends": ["ultracite/biome/core", "ultracite/biome/react", "ultracite/biome/next"],
+  "files": {
+    "includes": [
+      "!!**/.agents",
+      "!!**/.claude",
+      "!!**/.qwen",
+      "!!**/.codex",
+      "!!**/prisma/generated",
+      "!!**/.next",
+      "!!**/dist"
+    ]
+  },
+  "extends": [
+    "ultracite/biome/core",
+    "ultracite/biome/react",
+    "ultracite/biome/next"
+  ]
 }

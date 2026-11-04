@@ -1,0 +1,2020 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "community_labels": {
+      "0": "Application Shell Providers",
+      "1": "RPC HTTP Handlers",
+      "2": "Authentication Service Context",
+      "3": "Error Logging Instrumentation",
+      "4": "oRPC Client Setup",
+      "5": "Login Screen",
+      "6": "Next.js Configuration",
+      "7": "Request Proxy",
+      "8": "Web App Manifest",
+      "9": "Landing Page",
+      "10": "Loading Indicator",
+      "11": "Dashboard Screen",
+      "12": "Browser Auth Client",
+      "13": "PostCSS Configuration",
+      "14": "Progressive Web App Config",
+      "15": "Success Screen",
+      "16": "Next.js Agent Guidance",
+      "17": "96px Favicon",
+      "18": "Apple Touch Icon",
+      "19": "Offline Recovery Page",
+      "20": "Privana Vector Favicon",
+      "21": "Service Worker",
+      "22": "Server Environment Config",
+      "23": "192px Web App Icon",
+      "24": "512px Web App Icon"
+    },
+    "built_from_commit": "18eaf315be7c4418076b50f0f6b171ce1158d30c"
+  },
+  "topology_signature": "n=73;e=60;agents_nextjs_agent_rules,all_route,all_route_get_post,app_layout,app_layout_bodyfont,app_layout_headingfont,app_layout_rootlayout,app_manifest,app_manifest_manifest,app_page,app_page_page,components_loader,components_loader_loader,components_providers,components_providers_providers,components_pwa_registration,components_pwa_registration_pwaregistration,components_theme_provider,components_theme_provider_themeprovider,dashboard_page,dashboard_page_dashboardpage,favicon_96x96,favicon_apple_touch_icon,instrumentation,instrumentation_register_onrequesterror,lib_auth_client,lib_auth_client_authclient,lib_evlog,lib_evlog_auth,lib_evlog_auth_identifyevloguser,lib_evlog_auth_identifyuser,lib_evlog_register_onrequesterror,lib_evlog_withevlog_uselogger_log_createerror,login_page,login_page_loginpage,login_page_metadata,next_config,next_config_nextconfig,next_config_withvarlock,offline_page,postcss_config,postcss_config_config,privana_favicon_svg,public_sw,pwa_config,pwa_config_withpwa,rest_route,rest_route_apihandler,rest_route_delete,rest_route_get,rest_route_handlerequest,rest_route_patch,rest_route_post,rest_route_put,rest_route_rpchandler,src_context,src_context_context,src_context_createcontext,src_env_server,src_proxy,src_proxy_config,src_proxy_proxy,src_services,src_services_auth,src_services_db,success_page,success_page_successpage,utils_orpc,utils_orpc_client,utils_orpc_link,utils_orpc_orpc,web_app_manifest_192_icon,web_app_manifest_512_icon|all_route\tall_route_get_post\tcontains;all_route\tsrc_services\timports_from;all_route\tsrc_services_auth\timports;app_layout\tapp_layout_bodyfont\tcontains;app_layout\tapp_layout_headingfont\tcontains;app_layout\tapp_layout_rootlayout\tcontains;app_layout\tcomponents_providers\timports_from;app_layout\tcomponents_pwa_registration\timports_from;app_manifest\tapp_manifest_manifest\tcontains;app_page\tapp_page_page\tcontains;components_loader\tcomponents_loader_loader\tcontains;components_providers\tcomponents_providers_providers\tcontains;components_providers\tcomponents_theme_provider\timports_from;components_providers\tcomponents_theme_provider_themeprovider\timports;components_pwa_registration\tcomponents_pwa_registration_pwaregistration\tcontains;components_theme_provider\tcomponents_theme_provider_themeprovider\tcontains;dashboard_page\tdashboard_page_dashboardpage\tcontains;instrumentation\tinstrumentation_register_onrequesterror\tcontains;instrumentation\tlib_evlog\timports_from;lib_auth_client\tlib_auth_client_authclient\tcontains;lib_evlog\tlib_evlog_auth\timports_from;lib_evlog\tlib_evlog_register_onrequesterror\tcontains;lib_evlog\tlib_evlog_withevlog_uselogger_log_createerror\tcontains;lib_evlog\trest_route\timports_from;lib_evlog_auth\tlib_evlog_auth_identifyevloguser\tcontains;lib_evlog_auth\tlib_evlog_auth_identifyuser\tcontains;lib_evlog_auth\trest_route\timports_from;lib_evlog_auth\tsrc_services\timports_from;lib_evlog_auth\tsrc_services_auth\timports;lib_evlog_auth_identifyevloguser\tlib_evlog_auth_identifyuser\tcalls;lib_evlog_auth_identifyevloguser\trest_route\timports;login_page\tlogin_page_loginpage\tcontains;login_page\tlogin_page_metadata\tcontains;next_config\tnext_config_nextconfig\tcontains;next_config\tnext_config_withvarlock\tcontains;postcss_config\tpostcss_config_config\tcontains;pwa_config\tpwa_config_withpwa\tcontains;rest_route\trest_route_apihandler\tcontains;rest_route\trest_route_delete\tcontains;rest_route\trest_route_get\tcontains;rest_route\trest_route_handlerequest\tcontains;rest_route\trest_route_patch\tcontains;rest_route\trest_route_post\tcontains;rest_route\trest_route_put\tcontains;rest_route\trest_route_rpchandler\tcontains;rest_route\tsrc_context\timports_from;rest_route\tsrc_context_createcontext\timports;src_context\tsrc_context_context\tcontains;src_context\tsrc_context_createcontext\tcontains;src_context\tsrc_services\timports_from;src_context\tsrc_services_auth\timports;src_context\tsrc_services_db\timports;src_proxy\tsrc_proxy_config\tcontains;src_proxy\tsrc_proxy_proxy\tcontains;src_services\tsrc_services_auth\tcontains;src_services\tsrc_services_db\tcontains;success_page\tsuccess_page_successpage\tcontains;utils_orpc\tutils_orpc_client\tcontains;utils_orpc\tutils_orpc_link\tcontains;utils_orpc\tutils_orpc_orpc\tcontains",
+  "nodes": [
+    {
+      "id": "instrumentation",
+      "label": "instrumentation.ts",
+      "file_type": "code",
+      "source_file": "instrumentation.ts",
+      "source_location": "L1",
+      "community": 3,
+      "community_name": "Error Logging Instrumentation"
+    },
+    {
+      "id": "instrumentation_register_onrequesterror",
+      "label": "{ register, onRequestError }",
+      "file_type": "code",
+      "source_file": "instrumentation.ts",
+      "source_location": "L3",
+      "community": 3,
+      "community_name": "Error Logging Instrumentation",
+      "citations": [
+        {
+          "source_file": "instrumentation.ts",
+          "source_location": "document",
+          "quote": "export const { register, onRequestError } = defineNodeInstrumentation( () => import(\"./src/lib/evlog\") );",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "next_config",
+      "label": "next.config.ts",
+      "file_type": "code",
+      "source_file": "next.config.ts",
+      "source_location": "L1",
+      "community": 6,
+      "community_name": "Next.js Configuration"
+    },
+    {
+      "id": "next_config_withvarlock",
+      "label": "withVarlock",
+      "file_type": "code",
+      "source_file": "next.config.ts",
+      "source_location": "L3",
+      "community": 6,
+      "community_name": "Next.js Configuration",
+      "citations": [
+        {
+          "source_file": "next.config.ts",
+          "source_location": "document",
+          "quote": "const withVarlock = varlockNextConfigPlugin();",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        },
+        {
+          "source_file": "next.config.ts",
+          "source_location": "document",
+          "quote": "export default withVarlock(withPwa(nextConfig));",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p5"
+        }
+      ],
+      "citation_count": 2
+    },
+    {
+      "id": "next_config_nextconfig",
+      "label": "nextConfig",
+      "file_type": "code",
+      "source_file": "next.config.ts",
+      "source_location": "L9",
+      "community": 6,
+      "community_name": "Next.js Configuration",
+      "citations": [
+        {
+          "source_file": "next.config.ts",
+          "source_location": "document",
+          "quote": "import { varlockNextConfigPlugin } from \"@varlock/nextjs-integration/plugin\";",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "next.config.ts",
+          "source_location": "document",
+          "quote": "const withVarlock = varlockNextConfigPlugin();",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        },
+        {
+          "source_file": "next.config.ts",
+          "source_location": "document",
+          "quote": "import type { NextConfig } from \"next\";",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        },
+        {
+          "source_file": "next.config.ts",
+          "source_location": "document",
+          "quote": "const nextConfig: NextConfig = { reactCompiler: true, typedRoutes: true, };",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p4"
+        },
+        {
+          "source_file": "next.config.ts",
+          "source_location": "document",
+          "quote": "export default withVarlock(withPwa(nextConfig));",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p5"
+        }
+      ],
+      "citation_count": 5
+    },
+    {
+      "id": "postcss_config",
+      "label": "postcss.config.mjs",
+      "file_type": "code",
+      "source_file": "postcss.config.mjs",
+      "source_location": "L1",
+      "community": 13,
+      "community_name": "PostCSS Configuration"
+    },
+    {
+      "id": "postcss_config_config",
+      "label": "config",
+      "file_type": "code",
+      "source_file": "postcss.config.mjs",
+      "source_location": "L1",
+      "community": 13,
+      "community_name": "PostCSS Configuration",
+      "citations": [
+        {
+          "source_file": "postcss.config.mjs",
+          "source_location": "document",
+          "quote": "const config = { plugins: [\"@tailwindcss/postcss\"], };",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "postcss.config.mjs",
+          "source_location": "document",
+          "quote": "export default config;",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ],
+      "citation_count": 2
+    },
+    {
+      "id": "public_sw",
+      "label": "sw.js",
+      "file_type": "code",
+      "source_file": "public/sw.js",
+      "source_location": "L1",
+      "community": 21,
+      "community_name": "Service Worker"
+    },
+    {
+      "id": "pwa_config",
+      "label": "pwa.config.ts",
+      "file_type": "code",
+      "source_file": "pwa.config.ts",
+      "source_location": "L1",
+      "community": 14,
+      "community_name": "Progressive Web App Config"
+    },
+    {
+      "id": "pwa_config_withpwa",
+      "label": "withPwa()",
+      "file_type": "code",
+      "source_file": "pwa.config.ts",
+      "source_location": "L3",
+      "community": 14,
+      "community_name": "Progressive Web App Config",
+      "citations": [
+        {
+          "source_file": "pwa.config.ts",
+          "source_location": "document",
+          "quote": "export function withPwa(config: NextConfig): NextConfig { // Static exports need these headers configured at the hosting layer. if (config.output === \"export\") { return config; } return { ...config, async headers() { return [ …",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "all_route",
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "src/app/api/auth/[...all]/route.ts",
+      "source_location": "L1",
+      "community": 2,
+      "community_name": "Authentication Service Context"
+    },
+    {
+      "id": "all_route_get_post",
+      "label": "{ GET, POST }",
+      "file_type": "code",
+      "source_file": "src/app/api/auth/[...all]/route.ts",
+      "source_location": "L5",
+      "community": 2,
+      "community_name": "Authentication Service Context",
+      "citations": [
+        {
+          "source_file": "src/app/api/auth/[...all]/route.ts",
+          "source_location": "document",
+          "quote": "export const { GET, POST } = toNextJsHandler(auth);",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "rest_route",
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L1",
+      "community": 1,
+      "community_name": "RPC HTTP Handlers"
+    },
+    {
+      "id": "rest_route_rpchandler",
+      "label": "rpcHandler",
+      "file_type": "code",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L13",
+      "community": 1,
+      "community_name": "RPC HTTP Handlers",
+      "citations": [
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "… OpenAPIHandler } from \"@orpc/openapi/fetch\"; import { OpenAPIReferencePlugin } from \"@orpc/openapi/plugins\"; import { RPCHandler } from \"@orpc/server/fetch\"; import { ZodToJsonSchemaConverter } from \"@orpc/zod/zod4\"; import { appRouter } from \"@privana/api/routers/index\"; import type { NextRequest } from \"next/server",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "const rpcHandler = new RPCHandler(appRouter); const apiHandler = new OpenAPIHandler(appRouter, { plugins: [ new OpenAPIReferencePlugin({ schemaConverters: [new ZodToJsonSchemaConverter()], }), ], });",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p3"
+        },
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "… NextRequest) { await identifyEvlogUser(req); const context = await createContext(req); const rpcResult = await rpcHandler.handle(req, { context, prefix: \"/api/rpc\", }); if (rpcResult.response) { return rpcResult.response; }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p4"
+        }
+      ],
+      "citation_count": 3
+    },
+    {
+      "id": "rest_route_apihandler",
+      "label": "apiHandler",
+      "file_type": "code",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L14",
+      "community": 1,
+      "community_name": "RPC HTTP Handlers",
+      "citations": [
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "import { OpenAPIHandler } from \"@orpc/openapi/fetch\"; import { OpenAPIReferencePlugin } from \"@orpc/openapi/plugins\"; import { RPCHandler } from \"@orpc/server/fetch\"; import { ZodToJsonSchemaConverter } from \"@orpc/zod/zod4 …",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "const rpcHandler = new RPCHandler(appRouter); const apiHandler = new OpenAPIHandler(appRouter, { plugins: [ new OpenAPIReferencePlugin({ schemaConverters: [new ZodToJsonSchemaConverter()], }), ], });",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p3"
+        },
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "const apiResult = await apiHandler.handle(req, { context, prefix: \"/api/rpc/api-reference\", }); if (apiResult.response) { return apiResult.response; }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p5"
+        }
+      ],
+      "citation_count": 3
+    },
+    {
+      "id": "rest_route_handlerequest",
+      "label": "handleRequest()",
+      "file_type": "code",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L22",
+      "community": 1,
+      "community_name": "RPC HTTP Handlers",
+      "citations": [
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "async function handleRequest(req: NextRequest) { await identifyEvlogUser(req); const context = await createContext(req); const rpcResult = await rpcHandler.handle(req, { context, prefix: \"/api/rpc\", }); if (rpcResult.response …",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p4"
+        },
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "export const GET = withEvlog(handleRequest); export const POST = withEvlog(handleRequest); export const PUT = withEvlog(handleRequest); export const PATCH = withEvlog(handleRequest); export const DELETE = withEvlog(handleRequest);",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p7"
+        }
+      ],
+      "citation_count": 2
+    },
+    {
+      "id": "rest_route_get",
+      "label": "GET",
+      "file_type": "code",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L44",
+      "community": 1,
+      "community_name": "RPC HTTP Handlers",
+      "citations": [
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "export const GET = withEvlog(handleRequest); export const POST = withEvlog(handleRequest); export const PUT = withEvlog(handleRequest); export const PATCH = withEvlog(handleRequest); export const DELETE = withEvlog(handleRequest …",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p7"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "rest_route_post",
+      "label": "POST",
+      "file_type": "code",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L45",
+      "community": 1,
+      "community_name": "RPC HTTP Handlers",
+      "citations": [
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "export const GET = withEvlog(handleRequest); export const POST = withEvlog(handleRequest); export const PUT = withEvlog(handleRequest); export const PATCH = withEvlog(handleRequest); export const DELETE = withEvlog(handleRequest);",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p7"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "rest_route_put",
+      "label": "PUT",
+      "file_type": "code",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L46",
+      "community": 1,
+      "community_name": "RPC HTTP Handlers",
+      "citations": [
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "export const GET = withEvlog(handleRequest); export const POST = withEvlog(handleRequest); export const PUT = withEvlog(handleRequest); export const PATCH = withEvlog(handleRequest); export const DELETE = withEvlog(handleRequest);",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p7"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "rest_route_patch",
+      "label": "PATCH",
+      "file_type": "code",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L47",
+      "community": 1,
+      "community_name": "RPC HTTP Handlers",
+      "citations": [
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "… (handleRequest); export const POST = withEvlog(handleRequest); export const PUT = withEvlog(handleRequest); export const PATCH = withEvlog(handleRequest); export const DELETE = withEvlog(handleRequest);",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p7"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "rest_route_delete",
+      "label": "DELETE",
+      "file_type": "code",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L48",
+      "community": 1,
+      "community_name": "RPC HTTP Handlers",
+      "citations": [
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "… (handleRequest); export const PUT = withEvlog(handleRequest); export const PATCH = withEvlog(handleRequest); export const DELETE = withEvlog(handleRequest);",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p7"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "dashboard_page",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "src/app/dashboard/page.tsx",
+      "source_location": "L1",
+      "community": 11,
+      "community_name": "Dashboard Screen"
+    },
+    {
+      "id": "dashboard_page_dashboardpage",
+      "label": "DashboardPage()",
+      "file_type": "code",
+      "source_file": "src/app/dashboard/page.tsx",
+      "source_location": "L2",
+      "community": 11,
+      "community_name": "Dashboard Screen",
+      "citations": [
+        {
+          "source_file": "src/app/dashboard/page.tsx",
+          "source_location": "document",
+          "quote": "import { redirect } from \"next/navigation\"; export default function DashboardPage() { redirect(\"/studio\"); }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "app_layout",
+      "label": "layout.tsx",
+      "file_type": "code",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L1",
+      "community": 0,
+      "community_name": "Application Shell Providers"
+    },
+    {
+      "id": "app_layout_bodyfont",
+      "label": "bodyFont",
+      "file_type": "code",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L11",
+      "community": 0,
+      "community_name": "Application Shell Providers",
+      "citations": [
+        {
+          "source_file": "src/app/layout.tsx",
+          "source_location": "document",
+          "quote": "const bodyFont = DM_Sans({ display: \"swap\", subsets: [\"latin\"], variable: \"--font-dm-sans\", });",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        },
+        {
+          "source_file": "src/app/layout.tsx",
+          "source_location": "document",
+          "quote": "… const config = await loadPlatform(); return ( <html lang=\"pt-BR\" suppressHydrationWarning> <body className={`${bodyFont.variable} ${headingFont.variable} antialiased`} > <PwaRegistration />",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p5"
+        }
+      ],
+      "citation_count": 2
+    },
+    {
+      "id": "app_layout_headingfont",
+      "label": "headingFont",
+      "file_type": "code",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L17",
+      "community": 0,
+      "community_name": "Application Shell Providers",
+      "citations": [
+        {
+          "source_file": "src/app/layout.tsx",
+          "source_location": "document",
+          "quote": "const headingFont = Manrope({ display: \"swap\", subsets: [\"latin\"], variable: \"--font-manrope\", });",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p3"
+        },
+        {
+          "source_file": "src/app/layout.tsx",
+          "source_location": "document",
+          "quote": "… loadPlatform(); return ( <html lang=\"pt-BR\" suppressHydrationWarning> <body className={`${bodyFont.variable} ${headingFont.variable} antialiased`} > <PwaRegistration />",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p5"
+        }
+      ],
+      "citation_count": 2
+    },
+    {
+      "id": "app_layout_rootlayout",
+      "label": "RootLayout()",
+      "file_type": "code",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L25",
+      "community": 0,
+      "community_name": "Application Shell Providers",
+      "citations": [
+        {
+          "source_file": "src/app/layout.tsx",
+          "source_location": "document",
+          "quote": "export default async function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) { await connection(); const config = await loadPlatform(); return ( <html lang=\"pt-BR\" suppressHydrationWarning> <body className={`${bodyFont.variable} …",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p5"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "login_page",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "src/app/login/page.tsx",
+      "source_location": "L1",
+      "community": 5,
+      "community_name": "Login Screen"
+    },
+    {
+      "id": "login_page_metadata",
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "src/app/login/page.tsx",
+      "source_location": "L3",
+      "community": 5,
+      "community_name": "Login Screen",
+      "citations": [
+        {
+          "source_file": "src/app/login/page.tsx",
+          "source_location": "document",
+          "quote": "export const metadata = { robots: { index: false }, title: \"Entrar\" };",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "login_page_loginpage",
+      "label": "LoginPage()",
+      "file_type": "code",
+      "source_file": "src/app/login/page.tsx",
+      "source_location": "L5",
+      "community": 5,
+      "community_name": "Login Screen",
+      "citations": [
+        {
+          "source_file": "src/app/login/page.tsx",
+          "source_location": "document",
+          "quote": "export default async function LoginPage({ searchParams, }: { searchParams: Promise<{ verified?: string; error?: string }>; }) { const params = await searchParams; return ( <AuthForm initialMessage={ !params.error && params.verified === \"1\" …",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "app_manifest",
+      "label": "manifest.ts",
+      "file_type": "code",
+      "source_file": "src/app/manifest.ts",
+      "source_location": "L1",
+      "community": 8,
+      "community_name": "Web App Manifest"
+    },
+    {
+      "id": "app_manifest_manifest",
+      "label": "manifest()",
+      "file_type": "code",
+      "source_file": "src/app/manifest.ts",
+      "source_location": "L6",
+      "community": 8,
+      "community_name": "Web App Manifest",
+      "citations": [
+        {
+          "source_file": "src/app/manifest.ts",
+          "source_location": "document",
+          "quote": "export default async function manifest(): Promise<MetadataRoute.Manifest> { const config = await loadPlatform(); return { background_color: \"#ffffff\", description: config.discovery.description, display: \"standalone\", icons: [ { purpose: \"any …",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "app_page",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L1",
+      "community": 9,
+      "community_name": "Landing Page"
+    },
+    {
+      "id": "app_page_page",
+      "label": "Page()",
+      "file_type": "code",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L3",
+      "community": 9,
+      "community_name": "Landing Page",
+      "citations": [
+        {
+          "source_file": "src/app/page.tsx",
+          "source_location": "document",
+          "quote": "export default function Page() { return <SocialHome />; }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "success_page",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "src/app/success/page.tsx",
+      "source_location": "L1",
+      "community": 15,
+      "community_name": "Success Screen"
+    },
+    {
+      "id": "success_page_successpage",
+      "label": "SuccessPage()",
+      "file_type": "code",
+      "source_file": "src/app/success/page.tsx",
+      "source_location": "L2",
+      "community": 15,
+      "community_name": "Success Screen",
+      "citations": [
+        {
+          "source_file": "src/app/success/page.tsx",
+          "source_location": "document",
+          "quote": "import { redirect } from \"next/navigation\"; export default function SuccessPage() { redirect(\"/memberships\"); }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "components_loader",
+      "label": "loader.tsx",
+      "file_type": "code",
+      "source_file": "src/components/loader.tsx",
+      "source_location": "L1",
+      "community": 10,
+      "community_name": "Loading Indicator"
+    },
+    {
+      "id": "components_loader_loader",
+      "label": "Loader()",
+      "file_type": "code",
+      "source_file": "src/components/loader.tsx",
+      "source_location": "L3",
+      "community": 10,
+      "community_name": "Loading Indicator",
+      "citations": [
+        {
+          "source_file": "src/components/loader.tsx",
+          "source_location": "document",
+          "quote": "import { Loader2 } from \"lucide-react\";",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "src/components/loader.tsx",
+          "source_location": "document",
+          "quote": "export default function Loader() { return ( <div className=\"flex h-full items-center justify-center pt-8\"> <Loader2 className=\"animate-spin\" /> </div> ); }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ],
+      "citation_count": 2
+    },
+    {
+      "id": "components_providers",
+      "label": "providers.tsx",
+      "file_type": "code",
+      "source_file": "src/components/providers.tsx",
+      "source_location": "L1",
+      "community": 0,
+      "community_name": "Application Shell Providers"
+    },
+    {
+      "id": "components_providers_providers",
+      "label": "Providers()",
+      "file_type": "code",
+      "source_file": "src/components/providers.tsx",
+      "source_location": "L12",
+      "community": 0,
+      "community_name": "Application Shell Providers",
+      "citations": [
+        {
+          "source_file": "src/components/providers.tsx",
+          "source_location": "document",
+          "quote": "export default function Providers({ children, platformConfig, }: { children: React.ReactNode; platformConfig: PlatformConfig; }) { const queryClient = getQueryClient();",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p3"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "components_pwa_registration",
+      "label": "pwa-registration.tsx",
+      "file_type": "code",
+      "source_file": "src/components/pwa-registration.tsx",
+      "source_location": "L1",
+      "community": 0,
+      "community_name": "Application Shell Providers"
+    },
+    {
+      "id": "components_pwa_registration_pwaregistration",
+      "label": "PwaRegistration()",
+      "file_type": "code",
+      "source_file": "src/components/pwa-registration.tsx",
+      "source_location": "L5",
+      "community": 0,
+      "community_name": "Application Shell Providers",
+      "citations": [
+        {
+          "source_file": "src/components/pwa-registration.tsx",
+          "source_location": "document",
+          "quote": "export default function PwaRegistration() { useEffect(() => { if (!(\"serviceWorker\" in navigator)) { return; } navigator.serviceWorker .register(\"/sw.js\", { scope: \"/\", updateViaCache: \"none\" }) .catch((error) => console.error(\"Service …",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "components_theme_provider",
+      "label": "theme-provider.tsx",
+      "file_type": "code",
+      "source_file": "src/components/theme-provider.tsx",
+      "source_location": "L1",
+      "community": 0,
+      "community_name": "Application Shell Providers"
+    },
+    {
+      "id": "components_theme_provider_themeprovider",
+      "label": "ThemeProvider()",
+      "file_type": "code",
+      "source_file": "src/components/theme-provider.tsx",
+      "source_location": "L6",
+      "community": 0,
+      "community_name": "Application Shell Providers",
+      "citations": [
+        {
+          "source_file": "src/components/theme-provider.tsx",
+          "source_location": "document",
+          "quote": "import { ThemeProvider as NextThemesProvider } from \"next-themes\"; import type * as React from \"react\";",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        },
+        {
+          "source_file": "src/components/theme-provider.tsx",
+          "source_location": "document",
+          "quote": "export function ThemeProvider({ children, ...props }: React.ComponentProps<typeof NextThemesProvider>) { return <NextThemesProvider {...props}>{children}</NextThemesProvider>; }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        }
+      ],
+      "citation_count": 2
+    },
+    {
+      "id": "src_context",
+      "label": "context.ts",
+      "file_type": "code",
+      "source_file": "src/context.ts",
+      "source_location": "L1",
+      "community": 2,
+      "community_name": "Authentication Service Context"
+    },
+    {
+      "id": "src_context_createcontext",
+      "label": "createContext()",
+      "file_type": "code",
+      "source_file": "src/context.ts",
+      "source_location": "L5",
+      "community": 2,
+      "community_name": "Authentication Service Context",
+      "citations": [
+        {
+          "source_file": "src/context.ts",
+          "source_location": "document",
+          "quote": "export async function createContext(req: NextRequest): Promise<ApiContext> { const session = await auth.api.getSession({ headers: req.headers, }); return { db, session, }; }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        },
+        {
+          "source_file": "src/context.ts",
+          "source_location": "document",
+          "quote": "export type Context = Awaited<ReturnType<typeof createContext>>;",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        }
+      ],
+      "citation_count": 2
+    },
+    {
+      "id": "src_context_context",
+      "label": "Context",
+      "file_type": "code",
+      "source_file": "src/context.ts",
+      "source_location": "L15",
+      "community": 2,
+      "community_name": "Authentication Service Context",
+      "citations": [
+        {
+          "source_file": "src/context.ts",
+          "source_location": "document",
+          "quote": "import type { Context as ApiContext } from \"@privana/api/context\"; import type { NextRequest } from \"next/server\"; import { auth, db } from \"./services\";",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "src/context.ts",
+          "source_location": "document",
+          "quote": "export async function createContext(req: NextRequest): Promise<ApiContext> { const session = await auth.api.getSession({ headers: req.headers, }); return { db, session, }; }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        },
+        {
+          "source_file": "src/context.ts",
+          "source_location": "document",
+          "quote": "export type Context = Awaited<ReturnType<typeof createContext>>;",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        }
+      ],
+      "citation_count": 3
+    },
+    {
+      "id": "src_env_server",
+      "label": "env.server.ts",
+      "file_type": "code",
+      "source_file": "src/env.server.ts",
+      "source_location": "L1",
+      "community": 22,
+      "community_name": "Server Environment Config"
+    },
+    {
+      "id": "lib_auth_client",
+      "label": "auth-client.ts",
+      "file_type": "code",
+      "source_file": "src/lib/auth-client.ts",
+      "source_location": "L1",
+      "community": 12,
+      "community_name": "Browser Auth Client"
+    },
+    {
+      "id": "lib_auth_client_authclient",
+      "label": "authClient",
+      "file_type": "code",
+      "source_file": "src/lib/auth-client.ts",
+      "source_location": "L3",
+      "community": 12,
+      "community_name": "Browser Auth Client",
+      "citations": [
+        {
+          "source_file": "src/lib/auth-client.ts",
+          "source_location": "document",
+          "quote": "import { createAuthClient } from \"better-auth/react\";",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "src/lib/auth-client.ts",
+          "source_location": "document",
+          "quote": "export const authClient = createAuthClient();",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ],
+      "citation_count": 2
+    },
+    {
+      "id": "lib_evlog_auth",
+      "label": "evlog-auth.ts",
+      "file_type": "code",
+      "source_file": "src/lib/evlog-auth.ts",
+      "source_location": "L1",
+      "community": 3,
+      "community_name": "Error Logging Instrumentation"
+    },
+    {
+      "id": "lib_evlog_auth_identifyuser",
+      "label": "identifyUser",
+      "file_type": "code",
+      "source_file": "src/lib/evlog-auth.ts",
+      "source_location": "L10",
+      "community": 3,
+      "community_name": "Error Logging Instrumentation",
+      "citations": [
+        {
+          "source_file": "src/lib/evlog-auth.ts",
+          "source_location": "document",
+          "quote": "const identifyUser = createAuthMiddleware(auth as BetterAuthInstance, { exclude: [\"/api/auth/**\"], maskEmail: true, });",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p3"
+        },
+        {
+          "source_file": "src/lib/evlog-auth.ts",
+          "source_location": "document",
+          "quote": "export async function identifyEvlogUser(request: Request) { await identifyUser( getRequestLogger(), request.headers, new URL(request.url).pathname ); }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p4"
+        }
+      ],
+      "citation_count": 2
+    },
+    {
+      "id": "lib_evlog_auth_identifyevloguser",
+      "label": "identifyEvlogUser()",
+      "file_type": "code",
+      "source_file": "src/lib/evlog-auth.ts",
+      "source_location": "L15",
+      "community": 3,
+      "community_name": "Error Logging Instrumentation",
+      "citations": [
+        {
+          "source_file": "src/lib/evlog-auth.ts",
+          "source_location": "document",
+          "quote": "export async function identifyEvlogUser(request: Request) { await identifyUser( getRequestLogger(), request.headers, new URL(request.url).pathname ); }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p4"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "lib_evlog",
+      "label": "evlog.ts",
+      "file_type": "code",
+      "source_file": "src/lib/evlog.ts",
+      "source_location": "L1",
+      "community": 3,
+      "community_name": "Error Logging Instrumentation"
+    },
+    {
+      "id": "lib_evlog_withevlog_uselogger_log_createerror",
+      "label": "{ withEvlog, useLogger, log, createError }",
+      "file_type": "code",
+      "source_file": "src/lib/evlog.ts",
+      "source_location": "L5",
+      "community": 3,
+      "community_name": "Error Logging Instrumentation",
+      "citations": [
+        {
+          "source_file": "src/lib/evlog.ts",
+          "source_location": "document",
+          "quote": "export const { withEvlog, useLogger, log, createError } = createEvlog({ drain: process.env.NODE_ENV === \"production\" ? undefined : createFsDrain(), service: \"privana-web\", });",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "lib_evlog_register_onrequesterror",
+      "label": "{ register, onRequestError }",
+      "file_type": "code",
+      "source_file": "src/lib/evlog.ts",
+      "source_location": "L10",
+      "community": 3,
+      "community_name": "Error Logging Instrumentation",
+      "citations": [
+        {
+          "source_file": "src/lib/evlog.ts",
+          "source_location": "document",
+          "quote": "export const { register, onRequestError } = createInstrumentation({ service: \"privana-web\", });",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "src_proxy",
+      "label": "proxy.ts",
+      "file_type": "code",
+      "source_file": "src/proxy.ts",
+      "source_location": "L1",
+      "community": 7,
+      "community_name": "Request Proxy"
+    },
+    {
+      "id": "src_proxy_proxy",
+      "label": "proxy",
+      "file_type": "code",
+      "source_file": "src/proxy.ts",
+      "source_location": "L3",
+      "community": 7,
+      "community_name": "Request Proxy",
+      "citations": [
+        {
+          "source_file": "src/proxy.ts",
+          "source_location": "document",
+          "quote": "export const proxy = evlogMiddleware();",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "src_proxy_config",
+      "label": "config",
+      "file_type": "code",
+      "source_file": "src/proxy.ts",
+      "source_location": "L5",
+      "community": 7,
+      "community_name": "Request Proxy",
+      "citations": [
+        {
+          "source_file": "src/proxy.ts",
+          "source_location": "document",
+          "quote": "export const config = { matcher: [\"/api/:path*\"], };",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        }
+      ],
+      "citation_count": 1
+    },
+    {
+      "id": "src_services",
+      "label": "services.ts",
+      "file_type": "code",
+      "source_file": "src/services.ts",
+      "source_location": "L1",
+      "community": 2,
+      "community_name": "Authentication Service Context"
+    },
+    {
+      "id": "src_services_db",
+      "label": "db",
+      "file_type": "code",
+      "source_file": "src/services.ts",
+      "source_location": "L8",
+      "community": 2,
+      "community_name": "Authentication Service Context"
+    },
+    {
+      "id": "src_services_auth",
+      "label": "auth",
+      "file_type": "code",
+      "source_file": "src/services.ts",
+      "source_location": "L9",
+      "community": 2,
+      "community_name": "Authentication Service Context",
+      "citations": [
+        {
+          "source_file": "src/services.ts",
+          "source_location": "document",
+          "quote": "import { resolve } from \"node:path\"; import { createAuth } from \"@privana/auth\"; import { readAuthConfig } from \"@privana/auth/read-auth-config\"; import { createPrismaClient } from \"@privana/db\";",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "src/services.ts",
+          "source_location": "document",
+          "quote": "export const db = createPrismaClient(ENV); export const auth = createAuth( readAuthConfig(ENV, resolve(process.cwd(), \".local-mail\")), db );",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        }
+      ],
+      "citation_count": 2
+    },
+    {
+      "id": "utils_orpc",
+      "label": "orpc.ts",
+      "file_type": "code",
+      "source_file": "src/utils/orpc.ts",
+      "source_location": "L1",
+      "community": 4,
+      "community_name": "oRPC Client Setup"
+    },
+    {
+      "id": "utils_orpc_link",
+      "label": "link",
+      "file_type": "code",
+      "source_file": "src/utils/orpc.ts",
+      "source_location": "L7",
+      "community": 4,
+      "community_name": "oRPC Client Setup",
+      "citations": [
+        {
+          "source_file": "src/utils/orpc.ts",
+          "source_location": "document",
+          "quote": "\"use client\"; import { createORPCClient } from \"@orpc/client\"; import { RPCLink } from \"@orpc/client/fetch\"; import { createTanstackQueryUtils } from \"@orpc/tanstack-query\"; import type { AppRouterClient } from \"@privana/api/routers/index\";",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "src/utils/orpc.ts",
+          "source_location": "document",
+          "quote": "const link = new RPCLink({ url: () => `${window.location.origin}/api/rpc` }); export const client: AppRouterClient = createORPCClient(link); export const orpc = createTanstackQueryUtils(client);",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ],
+      "citation_count": 2
+    },
+    {
+      "id": "utils_orpc_client",
+      "label": "client",
+      "file_type": "code",
+      "source_file": "src/utils/orpc.ts",
+      "source_location": "L8",
+      "community": 4,
+      "community_name": "oRPC Client Setup",
+      "citations": [
+        {
+          "source_file": "src/utils/orpc.ts",
+          "source_location": "document",
+          "quote": "\"use client\"; import { createORPCClient } from \"@orpc/client\"; import { RPCLink } from \"@orpc/client/fetch\"; import { createTanstackQueryUtils } from \"@orpc/tanstack-query\"; import type { AppRouterClient } from \"@privana/api/routers/index …",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "src/utils/orpc.ts",
+          "source_location": "document",
+          "quote": "const link = new RPCLink({ url: () => `${window.location.origin}/api/rpc` }); export const client: AppRouterClient = createORPCClient(link); export const orpc = createTanstackQueryUtils(client);",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ],
+      "citation_count": 2
+    },
+    {
+      "id": "utils_orpc_orpc",
+      "label": "orpc",
+      "file_type": "code",
+      "source_file": "src/utils/orpc.ts",
+      "source_location": "L9",
+      "community": 4,
+      "community_name": "oRPC Client Setup",
+      "citations": [
+        {
+          "source_file": "src/utils/orpc.ts",
+          "source_location": "document",
+          "quote": "\"use client\"; import { createORPCClient } from \"@orpc/client\"; import { RPCLink } from \"@orpc/client/fetch\"; import { createTanstackQueryUtils } from \"@orpc/tanstack-query\"; import type { AppRouterClient } from \"@privana/api/routers/index\";",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "src/utils/orpc.ts",
+          "source_location": "document",
+          "quote": "… new RPCLink({ url: () => `${window.location.origin}/api/rpc` }); export const client: AppRouterClient = createORPCClient(link); export const orpc = createTanstackQueryUtils(client);",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ],
+      "citation_count": 2
+    },
+    {
+      "id": "agents_nextjs_agent_rules",
+      "label": "Next.js Agent Rules",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The file directs contributors to consult the installed Next.js documentation because this project uses breaking framework changes.",
+      "community": 16,
+      "community_name": "Next.js Agent Guidance"
+    },
+    {
+      "id": "offline_page",
+      "label": "Offline Page",
+      "file_type": "document",
+      "source_file": "public/offline.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Provides a minimal recovery page that tells visitors they are offline and offers a retry link.",
+      "community": 19,
+      "community_name": "Offline Recovery Page"
+    },
+    {
+      "id": "favicon_apple_touch_icon",
+      "label": "Apple Touch Icon",
+      "file_type": "image",
+      "source_file": "public/favicon/apple-touch-icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null,
+      "community": 18,
+      "community_name": "Apple Touch Icon"
+    },
+    {
+      "id": "favicon_96x96",
+      "label": "96×96 Favicon",
+      "file_type": "image",
+      "source_file": "public/favicon/favicon-96x96.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null,
+      "community": 17,
+      "community_name": "96px Favicon"
+    },
+    {
+      "id": "privana_favicon_svg",
+      "label": "Privana Favicon",
+      "file_type": "image",
+      "source_file": "public/favicon/favicon.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null,
+      "community": 20,
+      "community_name": "Privana Vector Favicon"
+    },
+    {
+      "id": "web_app_manifest_192_icon",
+      "label": "192px Web App Icon",
+      "file_type": "image",
+      "source_file": "public/favicon/web-app-manifest-192x192.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null,
+      "community": 23,
+      "community_name": "192px Web App Icon"
+    },
+    {
+      "id": "web_app_manifest_512_icon",
+      "label": "512px Web App Icon",
+      "file_type": "image",
+      "source_file": "public/favicon/web-app-manifest-512x512.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null,
+      "community": 24,
+      "community_name": "512px Web App Icon"
+    }
+  ],
+  "links": [
+    {
+      "source": "all_route",
+      "target": "all_route_get_post",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/auth/[...all]/route.ts",
+      "source_location": "L5",
+      "weight": 1,
+      "_src": "all_route",
+      "_tgt": "all_route_get_post",
+      "confidence_score": 1
+    },
+    {
+      "source": "all_route",
+      "target": "src_services",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/auth/[...all]/route.ts",
+      "source_location": "L3",
+      "weight": 1,
+      "_src": "all_route",
+      "_tgt": "src_services",
+      "confidence_score": 1
+    },
+    {
+      "source": "all_route",
+      "target": "src_services_auth",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/auth/[...all]/route.ts",
+      "source_location": "L3",
+      "weight": 1,
+      "_src": "all_route",
+      "_tgt": "src_services_auth",
+      "confidence_score": 1
+    },
+    {
+      "source": "app_layout",
+      "target": "app_layout_bodyfont",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L11",
+      "weight": 1,
+      "_src": "app_layout",
+      "_tgt": "app_layout_bodyfont",
+      "confidence_score": 1
+    },
+    {
+      "source": "app_layout",
+      "target": "app_layout_headingfont",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L17",
+      "weight": 1,
+      "_src": "app_layout",
+      "_tgt": "app_layout_headingfont",
+      "confidence_score": 1
+    },
+    {
+      "source": "app_layout",
+      "target": "app_layout_rootlayout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L25",
+      "weight": 1,
+      "_src": "app_layout",
+      "_tgt": "app_layout_rootlayout",
+      "confidence_score": 1
+    },
+    {
+      "source": "app_layout",
+      "target": "components_providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L5",
+      "weight": 1,
+      "_src": "app_layout",
+      "_tgt": "components_providers",
+      "confidence_score": 1
+    },
+    {
+      "source": "app_layout",
+      "target": "components_pwa_registration",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L6",
+      "weight": 1,
+      "_src": "app_layout",
+      "_tgt": "components_pwa_registration",
+      "confidence_score": 1
+    },
+    {
+      "source": "app_manifest",
+      "target": "app_manifest_manifest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/manifest.ts",
+      "source_location": "L6",
+      "weight": 1,
+      "_src": "app_manifest",
+      "_tgt": "app_manifest_manifest",
+      "confidence_score": 1
+    },
+    {
+      "source": "app_page",
+      "target": "app_page_page",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L3",
+      "weight": 1,
+      "_src": "app_page",
+      "_tgt": "app_page_page",
+      "confidence_score": 1
+    },
+    {
+      "source": "components_loader",
+      "target": "components_loader_loader",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/loader.tsx",
+      "source_location": "L3",
+      "weight": 1,
+      "_src": "components_loader",
+      "_tgt": "components_loader_loader",
+      "confidence_score": 1
+    },
+    {
+      "source": "components_providers",
+      "target": "components_providers_providers",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/providers.tsx",
+      "source_location": "L12",
+      "weight": 1,
+      "_src": "components_providers",
+      "_tgt": "components_providers_providers",
+      "confidence_score": 1
+    },
+    {
+      "source": "components_providers",
+      "target": "components_theme_provider",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/providers.tsx",
+      "source_location": "L10",
+      "weight": 1,
+      "_src": "components_providers",
+      "_tgt": "components_theme_provider",
+      "confidence_score": 1
+    },
+    {
+      "source": "components_providers",
+      "target": "components_theme_provider_themeprovider",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/providers.tsx",
+      "source_location": "L10",
+      "weight": 1,
+      "_src": "components_providers",
+      "_tgt": "components_theme_provider_themeprovider",
+      "confidence_score": 1
+    },
+    {
+      "source": "components_pwa_registration",
+      "target": "components_pwa_registration_pwaregistration",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/pwa-registration.tsx",
+      "source_location": "L5",
+      "weight": 1,
+      "_src": "components_pwa_registration",
+      "_tgt": "components_pwa_registration_pwaregistration",
+      "confidence_score": 1
+    },
+    {
+      "source": "components_theme_provider",
+      "target": "components_theme_provider_themeprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/theme-provider.tsx",
+      "source_location": "L6",
+      "weight": 1,
+      "_src": "components_theme_provider",
+      "_tgt": "components_theme_provider_themeprovider",
+      "confidence_score": 1
+    },
+    {
+      "source": "dashboard_page",
+      "target": "dashboard_page_dashboardpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/dashboard/page.tsx",
+      "source_location": "L2",
+      "weight": 1,
+      "_src": "dashboard_page",
+      "_tgt": "dashboard_page_dashboardpage",
+      "confidence_score": 1
+    },
+    {
+      "source": "instrumentation",
+      "target": "instrumentation_register_onrequesterror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "instrumentation.ts",
+      "source_location": "L3",
+      "weight": 1,
+      "_src": "instrumentation",
+      "_tgt": "instrumentation_register_onrequesterror",
+      "confidence_score": 1
+    },
+    {
+      "source": "instrumentation",
+      "target": "lib_evlog",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "instrumentation.ts",
+      "source_location": "L4",
+      "weight": 1,
+      "_src": "instrumentation",
+      "_tgt": "lib_evlog",
+      "confidence_score": 1
+    },
+    {
+      "source": "lib_auth_client",
+      "target": "lib_auth_client_authclient",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/auth-client.ts",
+      "source_location": "L3",
+      "weight": 1,
+      "_src": "lib_auth_client",
+      "_tgt": "lib_auth_client_authclient",
+      "confidence_score": 1
+    },
+    {
+      "source": "lib_evlog",
+      "target": "lib_evlog_register_onrequesterror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/evlog.ts",
+      "source_location": "L10",
+      "weight": 1,
+      "_src": "lib_evlog",
+      "_tgt": "lib_evlog_register_onrequesterror",
+      "confidence_score": 1
+    },
+    {
+      "source": "lib_evlog",
+      "target": "lib_evlog_withevlog_uselogger_log_createerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/evlog.ts",
+      "source_location": "L5",
+      "weight": 1,
+      "_src": "lib_evlog",
+      "_tgt": "lib_evlog_withevlog_uselogger_log_createerror",
+      "confidence_score": 1
+    },
+    {
+      "source": "lib_evlog_auth",
+      "target": "lib_evlog",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/evlog-auth.ts",
+      "source_location": "L6",
+      "weight": 1,
+      "_src": "lib_evlog_auth",
+      "_tgt": "lib_evlog",
+      "confidence_score": 1
+    },
+    {
+      "source": "lib_evlog_auth",
+      "target": "lib_evlog_auth_identifyevloguser",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/evlog-auth.ts",
+      "source_location": "L15",
+      "weight": 1,
+      "_src": "lib_evlog_auth",
+      "_tgt": "lib_evlog_auth_identifyevloguser",
+      "confidence_score": 1
+    },
+    {
+      "source": "lib_evlog_auth",
+      "target": "lib_evlog_auth_identifyuser",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/evlog-auth.ts",
+      "source_location": "L10",
+      "weight": 1,
+      "_src": "lib_evlog_auth",
+      "_tgt": "lib_evlog_auth_identifyuser",
+      "confidence_score": 1
+    },
+    {
+      "source": "lib_evlog_auth",
+      "target": "src_services",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/evlog-auth.ts",
+      "source_location": "L8",
+      "weight": 1,
+      "_src": "lib_evlog_auth",
+      "_tgt": "src_services",
+      "confidence_score": 1
+    },
+    {
+      "source": "lib_evlog_auth",
+      "target": "src_services_auth",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/evlog-auth.ts",
+      "source_location": "L8",
+      "weight": 1,
+      "_src": "lib_evlog_auth",
+      "_tgt": "src_services_auth",
+      "confidence_score": 1
+    },
+    {
+      "source": "lib_evlog_auth_identifyevloguser",
+      "target": "lib_evlog_auth_identifyuser",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/evlog-auth.ts",
+      "source_location": "L16",
+      "weight": 1,
+      "_src": "lib_evlog_auth_identifyevloguser",
+      "_tgt": "lib_evlog_auth_identifyuser",
+      "confidence_score": 1
+    },
+    {
+      "source": "login_page",
+      "target": "login_page_loginpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/login/page.tsx",
+      "source_location": "L5",
+      "weight": 1,
+      "_src": "login_page",
+      "_tgt": "login_page_loginpage",
+      "confidence_score": 1
+    },
+    {
+      "source": "login_page",
+      "target": "login_page_metadata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/login/page.tsx",
+      "source_location": "L3",
+      "weight": 1,
+      "_src": "login_page",
+      "_tgt": "login_page_metadata",
+      "confidence_score": 1
+    },
+    {
+      "source": "next_config",
+      "target": "next_config_nextconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "next.config.ts",
+      "source_location": "L9",
+      "weight": 1,
+      "_src": "next_config",
+      "_tgt": "next_config_nextconfig",
+      "confidence_score": 1
+    },
+    {
+      "source": "next_config",
+      "target": "next_config_withvarlock",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "next.config.ts",
+      "source_location": "L3",
+      "weight": 1,
+      "_src": "next_config",
+      "_tgt": "next_config_withvarlock",
+      "confidence_score": 1
+    },
+    {
+      "source": "postcss_config",
+      "target": "postcss_config_config",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "postcss.config.mjs",
+      "source_location": "L1",
+      "weight": 1,
+      "_src": "postcss_config",
+      "_tgt": "postcss_config_config",
+      "confidence_score": 1
+    },
+    {
+      "source": "pwa_config",
+      "target": "pwa_config_withpwa",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pwa.config.ts",
+      "source_location": "L3",
+      "weight": 1,
+      "_src": "pwa_config",
+      "_tgt": "pwa_config_withpwa",
+      "confidence_score": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "lib_evlog",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L8",
+      "weight": 1,
+      "_src": "rest_route",
+      "_tgt": "lib_evlog",
+      "confidence_score": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "lib_evlog_auth",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L9",
+      "weight": 1,
+      "_src": "rest_route",
+      "_tgt": "lib_evlog_auth",
+      "confidence_score": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "lib_evlog_auth_identifyevloguser",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L9",
+      "weight": 1,
+      "_src": "rest_route",
+      "_tgt": "lib_evlog_auth_identifyevloguser",
+      "confidence_score": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "rest_route_apihandler",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L14",
+      "weight": 1,
+      "_src": "rest_route",
+      "_tgt": "rest_route_apihandler",
+      "confidence_score": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "rest_route_delete",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L48",
+      "weight": 1,
+      "_src": "rest_route",
+      "_tgt": "rest_route_delete",
+      "confidence_score": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "rest_route_get",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L44",
+      "weight": 1,
+      "_src": "rest_route",
+      "_tgt": "rest_route_get",
+      "confidence_score": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "rest_route_handlerequest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L22",
+      "weight": 1,
+      "_src": "rest_route",
+      "_tgt": "rest_route_handlerequest",
+      "confidence_score": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "rest_route_patch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L47",
+      "weight": 1,
+      "_src": "rest_route",
+      "_tgt": "rest_route_patch",
+      "confidence_score": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "rest_route_post",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L45",
+      "weight": 1,
+      "_src": "rest_route",
+      "_tgt": "rest_route_post",
+      "confidence_score": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "rest_route_put",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L46",
+      "weight": 1,
+      "_src": "rest_route",
+      "_tgt": "rest_route_put",
+      "confidence_score": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "rest_route_rpchandler",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L13",
+      "weight": 1,
+      "_src": "rest_route",
+      "_tgt": "rest_route_rpchandler",
+      "confidence_score": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "src_context",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L11",
+      "weight": 1,
+      "_src": "rest_route",
+      "_tgt": "src_context",
+      "confidence_score": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "src_context_createcontext",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+      "source_location": "L11",
+      "weight": 1,
+      "_src": "rest_route",
+      "_tgt": "src_context_createcontext",
+      "confidence_score": 1
+    },
+    {
+      "source": "src_context",
+      "target": "src_context_context",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/context.ts",
+      "source_location": "L15",
+      "weight": 1,
+      "_src": "src_context",
+      "_tgt": "src_context_context",
+      "confidence_score": 1
+    },
+    {
+      "source": "src_context",
+      "target": "src_context_createcontext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/context.ts",
+      "source_location": "L5",
+      "weight": 1,
+      "_src": "src_context",
+      "_tgt": "src_context_createcontext",
+      "confidence_score": 1
+    },
+    {
+      "source": "src_context",
+      "target": "src_services",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/context.ts",
+      "source_location": "L3",
+      "weight": 1,
+      "_src": "src_context",
+      "_tgt": "src_services",
+      "confidence_score": 1
+    },
+    {
+      "source": "src_context",
+      "target": "src_services_auth",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src/context.ts",
+      "source_location": "L3",
+      "weight": 1,
+      "_src": "src_context",
+      "_tgt": "src_services_auth",
+      "confidence_score": 1
+    },
+    {
+      "source": "src_context",
+      "target": "src_services_db",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src/context.ts",
+      "source_location": "L3",
+      "weight": 1,
+      "_src": "src_context",
+      "_tgt": "src_services_db",
+      "confidence_score": 1
+    },
+    {
+      "source": "src_proxy",
+      "target": "src_proxy_config",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/proxy.ts",
+      "source_location": "L5",
+      "weight": 1,
+      "_src": "src_proxy",
+      "_tgt": "src_proxy_config",
+      "confidence_score": 1
+    },
+    {
+      "source": "src_proxy",
+      "target": "src_proxy_proxy",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/proxy.ts",
+      "source_location": "L3",
+      "weight": 1,
+      "_src": "src_proxy",
+      "_tgt": "src_proxy_proxy",
+      "confidence_score": 1
+    },
+    {
+      "source": "src_services",
+      "target": "src_services_auth",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services.ts",
+      "source_location": "L9",
+      "weight": 1,
+      "_src": "src_services",
+      "_tgt": "src_services_auth",
+      "confidence_score": 1
+    },
+    {
+      "source": "src_services",
+      "target": "src_services_db",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services.ts",
+      "source_location": "L8",
+      "weight": 1,
+      "_src": "src_services",
+      "_tgt": "src_services_db",
+      "confidence_score": 1
+    },
+    {
+      "source": "success_page",
+      "target": "success_page_successpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/success/page.tsx",
+      "source_location": "L2",
+      "weight": 1,
+      "_src": "success_page",
+      "_tgt": "success_page_successpage",
+      "confidence_score": 1
+    },
+    {
+      "source": "utils_orpc",
+      "target": "utils_orpc_client",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/orpc.ts",
+      "source_location": "L8",
+      "weight": 1,
+      "_src": "utils_orpc",
+      "_tgt": "utils_orpc_client",
+      "confidence_score": 1
+    },
+    {
+      "source": "utils_orpc",
+      "target": "utils_orpc_link",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/orpc.ts",
+      "source_location": "L7",
+      "weight": 1,
+      "_src": "utils_orpc",
+      "_tgt": "utils_orpc_link",
+      "confidence_score": 1
+    },
+    {
+      "source": "utils_orpc",
+      "target": "utils_orpc_orpc",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/orpc.ts",
+      "source_location": "L9",
+      "weight": 1,
+      "_src": "utils_orpc",
+      "_tgt": "utils_orpc_orpc",
+      "confidence_score": 1
+    }
+  ],
+  "hyperedges": []
+}

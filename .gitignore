@@ -30,6 +30,8 @@ local.db-*
 .DS_Store
 
 # Logs
+.local-mail/
+.local-demo-credentials.json*
 logs
 .evlog/
 *.log
@@ -54,5 +56,8 @@ coverage
 # Misc
 *.tgz
 .cache
+.playwright-cli/
+output/playwright/
 tmp
 temp
+.playwright-mcp/

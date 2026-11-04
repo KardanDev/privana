@@ -7,7 +7,7 @@ self.addEventListener("install", (event) => {
     caches.open(CACHE_NAME).then(async (cache) => {
       await cache.add(new Request(OFFLINE_URL, { cache: "reload" }));
       await self.skipWaiting();
-    }),
+    })
   );
 });
 
@@ -16,21 +16,25 @@ self.addEventListener("activate", (event) => {
     caches.keys().then(async (keys) => {
       await Promise.all(
         keys
-          .filter((key) => key.startsWith("bts-pwa-offline-") && key !== CACHE_NAME)
-          .map((key) => caches.delete(key)),
+          .filter(
+            (key) => key.startsWith("bts-pwa-offline-") && key !== CACHE_NAME
+          )
+          .map((key) => caches.delete(key))
       );
       await self.clients.claim();
-    }),
+    })
   );
 });
 
 // Never cache authenticated HTML or API responses. Server-rendered pages need
 // a connection; a precached page keeps offline navigation understandable.
 self.addEventListener("fetch", (event) => {
-  if (event.request.mode !== "navigate" || event.request.method !== "GET") return;
+  if (event.request.mode !== "navigate" || event.request.method !== "GET") {
+    return;
+  }
   event.respondWith(
-    fetch(event.request).catch(async () => {
-      return (await caches.match(OFFLINE_URL)) ?? Response.error();
-    }),
+    fetch(event.request).catch(
+      async () => (await caches.match(OFFLINE_URL)) ?? Response.error()
+    )
   );
 });

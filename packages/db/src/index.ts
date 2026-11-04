@@ -8,7 +8,12 @@ export function createPrismaClient(env: DatabaseConfig) {
     connectionString: env.DATABASE_URL,
   });
 
-  return new PrismaClient({ adapter });
+  return new PrismaClient({
+    adapter,
+    // Cloud round trips can exceed Prisma's 5s default during multi-step signup.
+    // Keep a bounded budget; long-running maintenance uses explicit batch limits.
+    transactionOptions: { maxWait: 10_000, timeout: 20_000 },
+  });
 }
 
 export type Database = ReturnType<typeof createPrismaClient>;

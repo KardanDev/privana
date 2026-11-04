@@ -1,0 +1,6 @@
+{
+  "runtime": "typescript",
+  "version": "0.23.1",
+  "node": "C:\\nvm4w\\nodejs\\node.exe",
+  "script": "C:\\Users\\D.Kruger\\AppData\\Local\\nvm\\v24.22.1\\node_modules\\@sentropic\\engram\\dist\\skill-runtime.js"
+}

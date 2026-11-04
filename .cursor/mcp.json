@@ -19,8 +19,9 @@
     "better-auth": {
       "url": "https://mcp.better-auth.com/mcp"
     },
-    "polar": {
-      "url": "https://mcp.polar.sh/mcp/polar-mcp"
+    "resend": {
+      "type": "http",
+      "url": "https://mcp.resend.com/mcp"
     }
   }
 }

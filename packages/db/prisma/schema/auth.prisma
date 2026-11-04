@@ -6,6 +6,26 @@ model User {
   image         String?
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
+  role String @default("member")
+  status String @default("ACTIVE")
+  locale String @default("pt-BR")
+  emailNotifications Boolean @default(true)
+  mediaAssets MediaAsset[]
+  creatorProfile CreatorProfile?
+  follows Follow[]
+  likes Like[]
+  bookmarks Bookmark[]
+  comments Comment[]
+  membershipInterests MembershipInterest[]
+  subscriptions Subscription[]
+  conversationsA Conversation[] @relation("ParticipantA")
+  conversationsB Conversation[] @relation("ParticipantB")
+  messages Message[]
+  notifications Notification[]
+  reports Report[]
+  auditEvents AuditEvent[]
+  platformRevisions PlatformRevision[]
+  transactionRecords TransactionRecord[]
   sessions      Session[]
   accounts      Account[]
 
@@ -60,3 +80,5 @@ model Verification {
   @@index([identifier])
   @@map("verification")
 }
+
+

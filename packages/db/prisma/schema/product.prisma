@@ -1,0 +1,181 @@
+model CreatorProfile {
+ id String @id @default(cuid())
+ userId String @unique
+ user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+ handle String @unique
+ displayName String
+ bio String @default("")
+ category String @default("Estilo de vida")
+ location String @default("")
+ avatarUrl String?
+ coverUrl String?
+ monthlyPriceCents Int @default(0)
+ status String @default("PENDING")
+ isDemo Boolean @default(false)
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+ posts Post[]
+ followers Follow[]
+ interests MembershipInterest[]
+ subscriptions Subscription[]
+ transactionRecords TransactionRecord[]
+ reports Report[]
+ @@index([status, category])
+}
+model Post {
+ id String @id @default(cuid())
+ creatorId String
+ creator CreatorProfile @relation(fields:[creatorId], references:[id], onDelete:Cascade)
+ title String
+ excerpt String @default("")
+ body String
+ visibility String @default("PUBLIC")
+ status String @default("DRAFT")
+ previewUrl String?
+ mediaKey String?
+ mediaType String?
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+ likes Like[]
+ bookmarks Bookmark[]
+ comments Comment[]
+ reports Report[]
+ @@index([creatorId,status,createdAt])
+ @@index([status,createdAt])
+}
+model Follow {
+ id String @id @default(cuid())
+ userId String
+ user User @relation(fields:[userId], references:[id], onDelete:Cascade)
+ creatorId String
+ creator CreatorProfile @relation(fields:[creatorId], references:[id], onDelete:Cascade)
+ createdAt DateTime @default(now())
+ @@unique([userId,creatorId])
+ @@index([creatorId])
+}
+model Like {
+ id String @id @default(cuid())
+ userId String
+ user User @relation(fields:[userId], references:[id], onDelete:Cascade)
+ postId String
+ post Post @relation(fields:[postId], references:[id], onDelete:Cascade)
+ @@unique([userId,postId])
+ @@index([postId])
+}
+model Bookmark {
+ id String @id @default(cuid())
+ userId String
+ user User @relation(fields:[userId], references:[id], onDelete:Cascade)
+ postId String
+ post Post @relation(fields:[postId], references:[id], onDelete:Cascade)
+ createdAt DateTime @default(now())
+ @@unique([userId,postId])
+ @@index([postId])
+}
+model Comment {
+ id String @id @default(cuid())
+ userId String
+ user User @relation(fields:[userId], references:[id], onDelete:Cascade)
+ postId String
+ post Post @relation(fields:[postId], references:[id], onDelete:Cascade)
+ body String
+ createdAt DateTime @default(now())
+ @@index([postId,createdAt])
+}
+model MembershipInterest {
+ id String @id @default(cuid())
+ userId String
+ user User @relation(fields:[userId], references:[id], onDelete:Cascade)
+ creatorId String
+ creator CreatorProfile @relation(fields:[creatorId], references:[id], onDelete:Cascade)
+ createdAt DateTime @default(now())
+ @@unique([userId,creatorId])
+ @@index([creatorId])
+}
+model Subscription {
+ transactionRecords TransactionRecord[]
+ id String @id @default(cuid())
+ userId String
+ user User @relation(fields:[userId], references:[id], onDelete:Cascade)
+ creatorId String
+ creator CreatorProfile @relation(fields:[creatorId], references:[id], onDelete:Cascade)
+ status String
+ expiresAt DateTime
+ createdAt DateTime @default(now())
+ @@unique([userId,creatorId])
+ @@index([creatorId,status,expiresAt])
+}
+model Conversation {
+ id String @id @default(cuid())
+ participantAId String
+ participantA User @relation("ParticipantA",fields:[participantAId],references:[id],onDelete:Cascade)
+ participantBId String
+ participantB User @relation("ParticipantB",fields:[participantBId],references:[id],onDelete:Cascade)
+ updatedAt DateTime @default(now())
+ messages Message[]
+ @@unique([participantAId,participantBId])
+ @@index([participantBId,updatedAt])
+ @@index([participantAId,updatedAt])
+}
+model Message {
+ id String @id @default(cuid())
+ conversationId String
+ conversation Conversation @relation(fields:[conversationId],references:[id],onDelete:Cascade)
+ senderId String
+ sender User @relation(fields:[senderId],references:[id],onDelete:Cascade)
+ body String
+ createdAt DateTime @default(now())
+ @@index([conversationId,createdAt])
+}
+model Notification {
+ id String @id @default(cuid())
+ userId String
+ user User @relation(fields:[userId],references:[id],onDelete:Cascade)
+ title String
+ body String
+ href String @default("/notifications")
+ readAt DateTime?
+ createdAt DateTime @default(now())
+ @@index([userId,readAt,createdAt])
+}
+model Report {
+ id String @id @default(cuid())
+ reporterId String
+ reporter User @relation(fields:[reporterId],references:[id],onDelete:Cascade)
+ postId String?
+ post Post? @relation(fields:[postId],references:[id],onDelete:SetNull)
+ creatorId String?
+ creator CreatorProfile? @relation(fields:[creatorId],references:[id],onDelete:SetNull)
+ reason String
+ status String @default("OPEN")
+ createdAt DateTime @default(now())
+ resolvedAt DateTime?
+ @@index([status,createdAt])
+}
+model AuditEvent {
+ id String @id @default(cuid())
+ actorId String
+ actor User @relation(fields:[actorId],references:[id],onDelete:Restrict)
+ action String
+ targetId String
+ metadata Json?
+ createdAt DateTime @default(now())
+ @@index([createdAt])
+ @@index([targetId])
+}
+model RateLimit {
+ id String @id @default(cuid())
+ key String @unique
+ count Int
+ lastRequest Float
+ @@map("rateLimit")
+}
+model MediaAsset {
+ key String @id
+ userId String
+ user User @relation(fields:[userId],references:[id],onDelete:Cascade)
+ mimeType String
+ sizeBytes Int
+ createdAt DateTime @default(now())
+ @@index([userId,createdAt])
+}

@@ -1,4 +1,4 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 @source "../../../apps/**/*.{ts,tsx}";
@@ -7,29 +7,29 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: oklch(0.982 0.003 295);
+  --foreground: oklch(0.22 0.012 285);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
+  --card-foreground: var(--foreground);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --popover-foreground: var(--foreground);
+  --primary: oklch(0.51 0.23 295);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0.002 295);
+  --muted-foreground: oklch(0.5 0.012 285);
+  --accent: oklch(0.94 0.032 295);
+  --accent-foreground: oklch(0.42 0.18 295);
   --destructive: oklch(0.58 0.22 27);
-  --border: oklch(0.922 0 0);
+  --border: oklch(0.925 0.003 295);
   --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.809 0.105 251.813);
-  --chart-2: oklch(0.623 0.214 259.815);
-  --chart-3: oklch(0.546 0.245 262.881);
-  --chart-4: oklch(0.488 0.243 264.376);
-  --chart-5: oklch(0.424 0.199 265.638);
+  --ring: oklch(0.6 0.2 295);
+  --chart-1: var(--primary);
+  --chart-2: oklch(0.65 0.13 175);
+  --chart-3: oklch(0.7 0.14 70);
+  --chart-4: oklch(0.6 0.17 250);
+  --chart-5: oklch(0.65 0.17 345);
   --radius: 0.625rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
@@ -42,11 +42,11 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
+  --background: oklch(0.16 0.012 295);
   --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
+  --card: oklch(0.2 0.014 295);
   --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
+  --popover: oklch(0.2 0.014 295);
   --popover-foreground: oklch(0.985 0 0);
   --primary: oklch(0.87 0 0);
   --primary-foreground: oklch(0.205 0 0);
@@ -76,7 +76,9 @@
 }
 
 @theme inline {
-  --font-sans: "Inter Variable", sans-serif;
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-heading:
+    var(--font-manrope), var(--font-dm-sans), ui-sans-serif, sans-serif;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -122,9 +124,53 @@
     @apply border-border outline-ring/50;
   }
   body {
+    font-feature-settings: "ss01";
     @apply font-sans bg-background text-foreground;
   }
   html {
+    scroll-padding-block: 5rem;
     @apply font-sans;
   }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+  }
+  button,
+  input,
+  textarea,
+  select,
+  a {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  a:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 3px;
+    border-radius: 0.25rem;
+  }
+  html.dark {
+    color-scheme: dark;
+  }
+  ::selection {
+    background: color-mix(in srgb, var(--primary) 18%, transparent);
+  }
+}
+
+[data-platform-theme] {
+  --primary: var(--brand-accent);
+  --primary-foreground: #ffffff;
+  --accent: color-mix(in srgb, var(--brand-accent) 9%, var(--card));
+  --accent-foreground: var(--brand-accent);
+  --ring: var(--brand-accent);
+}
+
+.dark [data-platform-theme] {
+  --primary: color-mix(in srgb, var(--brand-accent) 60%, white);
+  --primary-foreground: #15131b;
+  --accent-foreground: var(--primary);
+  --ring: var(--primary);
 }

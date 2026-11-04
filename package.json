@@ -1,6 +1,7 @@
 {
   "name": "privana",
   "private": true,
+  "type": "module",
   "workspaces": {
     "packages": [
       "apps/*",
@@ -22,38 +23,46 @@
       "@orpc/openapi": "^1.15.6",
       "@orpc/zod": "^1.15.6",
       "better-auth": "1.7.10",
-      "@polar-sh/better-auth": "^1.8.4",
-      "@polar-sh/sdk": "^0.47.0",
       "@tailwindcss/postcss": "^4.3.3",
       "@types/react": "^19.2.18",
       "@types/react-dom": "^19.2.7",
       "tailwindcss": "^4.3.3"
     }
   },
-  "type": "module",
   "scripts": {
-    "dev": "turbo run dev",
+    "auth:generate": "cd apps/web && bun run auth:generate",
     "build": "turbo run build",
+    "check": "ultracite check",
     "check-types": "turbo run check-types",
-    "dev:web": "turbo run dev -F web --",
-    "db:push": "turbo run db:push -F @privana/db --",
-    "db:studio": "turbo run db:studio -F @privana/db --",
     "db:generate": "turbo run db:generate -F @privana/db --",
+    "db:inspect": "cd apps/web && varlock run -- bun ../../scripts/inspect-database.ts",
     "db:migrate": "turbo run db:migrate -F @privana/db --",
+    "db:migrate:deploy": "bun run --cwd packages/db db:migrate:deploy",
+    "db:push": "turbo run db:push -F @privana/db --",
+    "db:seed:demo": "cd apps/web && varlock run -- bun ../../packages/db/scripts/seed-demo.ts",
+    "db:studio": "turbo run db:studio -F @privana/db --",
+    "deploy": "bunx vercel deploy",
+    "deploy:check": "bunx vercel deploy --dry",
+    "deploy:prod": "bunx vercel deploy --prod",
     "deploy:setup": "bunx vercel link",
+    "dev": "turbo run dev",
     "dev:vercel": "bunx vercel dev -L",
+    "dev:web": "turbo run dev -F @privana/web --",
+    "env:generate": "varlock codegen --path ./apps/web/ && varlock codegen --path ./packages/db/",
     "env:preview": "tsx scripts/sync-vercel-env.ts preview",
     "env:production": "tsx scripts/sync-vercel-env.ts production",
-    "deploy": "bunx vercel deploy",
-    "deploy:prod": "bunx vercel deploy --prod",
-    "deploy:check": "bunx vercel deploy --dry",
-    "env:generate": "varlock codegen --path ./apps/web/ && varlock codegen --path ./packages/db/",
+    "fix": "ultracite fix",
     "postinstall": "varlock codegen --path ./apps/web/ && varlock codegen --path ./packages/db/",
-    "auth:generate": "cd apps/web && bun run auth:generate",
-    "check": "ultracite check",
-    "fix": "ultracite fix"
+    "owner:bootstrap": "cd apps/web && varlock run -- bun ../../packages/auth/scripts/bootstrap-owner.ts",
+    "start:dev": "turbo run dev",
+    "test": "bun test packages/api/tests packages/auth/tests packages/db/tests apps/web/tests",
+    "test:smoke": "bun packages/api/scripts/verify-demo-http.ts"
+  },
+  "overrides": {
+    "@next/env": "npm:@varlock/nextjs-integration@1.2.2"
   },
   "dependencies": {
+    "resend": "^6.34.1",
     "zod": "catalog:"
   },
   "devDependencies": {
@@ -65,9 +74,6 @@
     "typescript": "catalog:",
     "ultracite": "8.0.0",
     "varlock": "catalog:"
-  },
-  "overrides": {
-    "@next/env": "npm:@varlock/nextjs-integration@1.2.2"
   },
   "packageManager": "bun@1.3.14"
 }

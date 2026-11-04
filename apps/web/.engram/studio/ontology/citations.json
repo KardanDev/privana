@@ -1,0 +1,654 @@
+{
+  "schema": "engram_ontology_citations_v1",
+  "graph_signature": "26b732ebceb9eff232aa4adcdb0314db6fe45f051aec9a72bb9bc94239c9dfe9",
+  "nodes": {
+    "all_route_get_post": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "src/app/api/auth/[...all]/route.ts",
+          "source_location": "document",
+          "quote": "export const { GET, POST } = toNextJsHandler(auth);",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        }
+      ]
+    },
+    "app_layout_bodyfont": {
+      "count": 2,
+      "citations": [
+        {
+          "source_file": "src/app/layout.tsx",
+          "source_location": "document",
+          "quote": "const bodyFont = DM_Sans({ display: \"swap\", subsets: [\"latin\"], variable: \"--font-dm-sans\", });",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        },
+        {
+          "source_file": "src/app/layout.tsx",
+          "source_location": "document",
+          "quote": "… const config = await loadPlatform(); return ( <html lang=\"pt-BR\" suppressHydrationWarning> <body className={`${bodyFont.variable} ${headingFont.variable} antialiased`} > <PwaRegistration />",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p5"
+        }
+      ]
+    },
+    "app_layout_headingfont": {
+      "count": 2,
+      "citations": [
+        {
+          "source_file": "src/app/layout.tsx",
+          "source_location": "document",
+          "quote": "const headingFont = Manrope({ display: \"swap\", subsets: [\"latin\"], variable: \"--font-manrope\", });",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p3"
+        },
+        {
+          "source_file": "src/app/layout.tsx",
+          "source_location": "document",
+          "quote": "… loadPlatform(); return ( <html lang=\"pt-BR\" suppressHydrationWarning> <body className={`${bodyFont.variable} ${headingFont.variable} antialiased`} > <PwaRegistration />",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p5"
+        }
+      ]
+    },
+    "app_layout_rootlayout": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "src/app/layout.tsx",
+          "source_location": "document",
+          "quote": "export default async function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) { await connection(); const config = await loadPlatform(); return ( <html lang=\"pt-BR\" suppressHydrationWarning> <body className={`${bodyFont.variable} …",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p5"
+        }
+      ]
+    },
+    "app_manifest_manifest": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "src/app/manifest.ts",
+          "source_location": "document",
+          "quote": "export default async function manifest(): Promise<MetadataRoute.Manifest> { const config = await loadPlatform(); return { background_color: \"#ffffff\", description: config.discovery.description, display: \"standalone\", icons: [ { purpose: \"any …",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        }
+      ]
+    },
+    "app_page_page": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "src/app/page.tsx",
+          "source_location": "document",
+          "quote": "export default function Page() { return <SocialHome />; }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ]
+    },
+    "components_loader_loader": {
+      "count": 2,
+      "citations": [
+        {
+          "source_file": "src/components/loader.tsx",
+          "source_location": "document",
+          "quote": "import { Loader2 } from \"lucide-react\";",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "src/components/loader.tsx",
+          "source_location": "document",
+          "quote": "export default function Loader() { return ( <div className=\"flex h-full items-center justify-center pt-8\"> <Loader2 className=\"animate-spin\" /> </div> ); }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ]
+    },
+    "components_providers_providers": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "src/components/providers.tsx",
+          "source_location": "document",
+          "quote": "export default function Providers({ children, platformConfig, }: { children: React.ReactNode; platformConfig: PlatformConfig; }) { const queryClient = getQueryClient();",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p3"
+        }
+      ]
+    },
+    "components_pwa_registration_pwaregistration": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "src/components/pwa-registration.tsx",
+          "source_location": "document",
+          "quote": "export default function PwaRegistration() { useEffect(() => { if (!(\"serviceWorker\" in navigator)) { return; } navigator.serviceWorker .register(\"/sw.js\", { scope: \"/\", updateViaCache: \"none\" }) .catch((error) => console.error(\"Service …",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        }
+      ]
+    },
+    "components_theme_provider_themeprovider": {
+      "count": 2,
+      "citations": [
+        {
+          "source_file": "src/components/theme-provider.tsx",
+          "source_location": "document",
+          "quote": "import { ThemeProvider as NextThemesProvider } from \"next-themes\"; import type * as React from \"react\";",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        },
+        {
+          "source_file": "src/components/theme-provider.tsx",
+          "source_location": "document",
+          "quote": "export function ThemeProvider({ children, ...props }: React.ComponentProps<typeof NextThemesProvider>) { return <NextThemesProvider {...props}>{children}</NextThemesProvider>; }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        }
+      ]
+    },
+    "dashboard_page_dashboardpage": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "src/app/dashboard/page.tsx",
+          "source_location": "document",
+          "quote": "import { redirect } from \"next/navigation\"; export default function DashboardPage() { redirect(\"/studio\"); }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        }
+      ]
+    },
+    "instrumentation_register_onrequesterror": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "instrumentation.ts",
+          "source_location": "document",
+          "quote": "export const { register, onRequestError } = defineNodeInstrumentation( () => import(\"./src/lib/evlog\") );",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ]
+    },
+    "lib_auth_client_authclient": {
+      "count": 2,
+      "citations": [
+        {
+          "source_file": "src/lib/auth-client.ts",
+          "source_location": "document",
+          "quote": "import { createAuthClient } from \"better-auth/react\";",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "src/lib/auth-client.ts",
+          "source_location": "document",
+          "quote": "export const authClient = createAuthClient();",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ]
+    },
+    "lib_evlog_auth_identifyevloguser": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "src/lib/evlog-auth.ts",
+          "source_location": "document",
+          "quote": "export async function identifyEvlogUser(request: Request) { await identifyUser( getRequestLogger(), request.headers, new URL(request.url).pathname ); }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p4"
+        }
+      ]
+    },
+    "lib_evlog_auth_identifyuser": {
+      "count": 2,
+      "citations": [
+        {
+          "source_file": "src/lib/evlog-auth.ts",
+          "source_location": "document",
+          "quote": "const identifyUser = createAuthMiddleware(auth as BetterAuthInstance, { exclude: [\"/api/auth/**\"], maskEmail: true, });",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p3"
+        },
+        {
+          "source_file": "src/lib/evlog-auth.ts",
+          "source_location": "document",
+          "quote": "export async function identifyEvlogUser(request: Request) { await identifyUser( getRequestLogger(), request.headers, new URL(request.url).pathname ); }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p4"
+        }
+      ]
+    },
+    "lib_evlog_register_onrequesterror": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "src/lib/evlog.ts",
+          "source_location": "document",
+          "quote": "export const { register, onRequestError } = createInstrumentation({ service: \"privana-web\", });",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        }
+      ]
+    },
+    "lib_evlog_withevlog_uselogger_log_createerror": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "src/lib/evlog.ts",
+          "source_location": "document",
+          "quote": "export const { withEvlog, useLogger, log, createError } = createEvlog({ drain: process.env.NODE_ENV === \"production\" ? undefined : createFsDrain(), service: \"privana-web\", });",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ]
+    },
+    "login_page_loginpage": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "src/app/login/page.tsx",
+          "source_location": "document",
+          "quote": "export default async function LoginPage({ searchParams, }: { searchParams: Promise<{ verified?: string; error?: string }>; }) { const params = await searchParams; return ( <AuthForm initialMessage={ !params.error && params.verified === \"1\" …",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        }
+      ]
+    },
+    "login_page_metadata": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "src/app/login/page.tsx",
+          "source_location": "document",
+          "quote": "export const metadata = { robots: { index: false }, title: \"Entrar\" };",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ]
+    },
+    "next_config_nextconfig": {
+      "count": 5,
+      "citations": [
+        {
+          "source_file": "next.config.ts",
+          "source_location": "document",
+          "quote": "import { varlockNextConfigPlugin } from \"@varlock/nextjs-integration/plugin\";",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "next.config.ts",
+          "source_location": "document",
+          "quote": "const withVarlock = varlockNextConfigPlugin();",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        },
+        {
+          "source_file": "next.config.ts",
+          "source_location": "document",
+          "quote": "import type { NextConfig } from \"next\";",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        },
+        {
+          "source_file": "next.config.ts",
+          "source_location": "document",
+          "quote": "const nextConfig: NextConfig = { reactCompiler: true, typedRoutes: true, };",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p4"
+        },
+        {
+          "source_file": "next.config.ts",
+          "source_location": "document",
+          "quote": "export default withVarlock(withPwa(nextConfig));",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p5"
+        }
+      ]
+    },
+    "next_config_withvarlock": {
+      "count": 2,
+      "citations": [
+        {
+          "source_file": "next.config.ts",
+          "source_location": "document",
+          "quote": "const withVarlock = varlockNextConfigPlugin();",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        },
+        {
+          "source_file": "next.config.ts",
+          "source_location": "document",
+          "quote": "export default withVarlock(withPwa(nextConfig));",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p5"
+        }
+      ]
+    },
+    "postcss_config_config": {
+      "count": 2,
+      "citations": [
+        {
+          "source_file": "postcss.config.mjs",
+          "source_location": "document",
+          "quote": "const config = { plugins: [\"@tailwindcss/postcss\"], };",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "postcss.config.mjs",
+          "source_location": "document",
+          "quote": "export default config;",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ]
+    },
+    "pwa_config_withpwa": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "pwa.config.ts",
+          "source_location": "document",
+          "quote": "export function withPwa(config: NextConfig): NextConfig { // Static exports need these headers configured at the hosting layer. if (config.output === \"export\") { return config; } return { ...config, async headers() { return [ …",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ]
+    },
+    "rest_route_apihandler": {
+      "count": 3,
+      "citations": [
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "import { OpenAPIHandler } from \"@orpc/openapi/fetch\"; import { OpenAPIReferencePlugin } from \"@orpc/openapi/plugins\"; import { RPCHandler } from \"@orpc/server/fetch\"; import { ZodToJsonSchemaConverter } from \"@orpc/zod/zod4 …",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "const rpcHandler = new RPCHandler(appRouter); const apiHandler = new OpenAPIHandler(appRouter, { plugins: [ new OpenAPIReferencePlugin({ schemaConverters: [new ZodToJsonSchemaConverter()], }), ], });",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p3"
+        },
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "const apiResult = await apiHandler.handle(req, { context, prefix: \"/api/rpc/api-reference\", }); if (apiResult.response) { return apiResult.response; }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p5"
+        }
+      ]
+    },
+    "rest_route_delete": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "… (handleRequest); export const PUT = withEvlog(handleRequest); export const PATCH = withEvlog(handleRequest); export const DELETE = withEvlog(handleRequest);",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p7"
+        }
+      ]
+    },
+    "rest_route_get": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "export const GET = withEvlog(handleRequest); export const POST = withEvlog(handleRequest); export const PUT = withEvlog(handleRequest); export const PATCH = withEvlog(handleRequest); export const DELETE = withEvlog(handleRequest …",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p7"
+        }
+      ]
+    },
+    "rest_route_handlerequest": {
+      "count": 2,
+      "citations": [
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "async function handleRequest(req: NextRequest) { await identifyEvlogUser(req); const context = await createContext(req); const rpcResult = await rpcHandler.handle(req, { context, prefix: \"/api/rpc\", }); if (rpcResult.response …",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p4"
+        },
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "export const GET = withEvlog(handleRequest); export const POST = withEvlog(handleRequest); export const PUT = withEvlog(handleRequest); export const PATCH = withEvlog(handleRequest); export const DELETE = withEvlog(handleRequest);",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p7"
+        }
+      ]
+    },
+    "rest_route_patch": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "… (handleRequest); export const POST = withEvlog(handleRequest); export const PUT = withEvlog(handleRequest); export const PATCH = withEvlog(handleRequest); export const DELETE = withEvlog(handleRequest);",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p7"
+        }
+      ]
+    },
+    "rest_route_post": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "export const GET = withEvlog(handleRequest); export const POST = withEvlog(handleRequest); export const PUT = withEvlog(handleRequest); export const PATCH = withEvlog(handleRequest); export const DELETE = withEvlog(handleRequest);",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p7"
+        }
+      ]
+    },
+    "rest_route_put": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "export const GET = withEvlog(handleRequest); export const POST = withEvlog(handleRequest); export const PUT = withEvlog(handleRequest); export const PATCH = withEvlog(handleRequest); export const DELETE = withEvlog(handleRequest);",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p7"
+        }
+      ]
+    },
+    "rest_route_rpchandler": {
+      "count": 3,
+      "citations": [
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "… OpenAPIHandler } from \"@orpc/openapi/fetch\"; import { OpenAPIReferencePlugin } from \"@orpc/openapi/plugins\"; import { RPCHandler } from \"@orpc/server/fetch\"; import { ZodToJsonSchemaConverter } from \"@orpc/zod/zod4\"; import { appRouter } from \"@privana/api/routers/index\"; import type { NextRequest } from \"next/server",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "const rpcHandler = new RPCHandler(appRouter); const apiHandler = new OpenAPIHandler(appRouter, { plugins: [ new OpenAPIReferencePlugin({ schemaConverters: [new ZodToJsonSchemaConverter()], }), ], });",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p3"
+        },
+        {
+          "source_file": "src/app/api/rpc/[[...rest]]/route.ts",
+          "source_location": "document",
+          "quote": "… NextRequest) { await identifyEvlogUser(req); const context = await createContext(req); const rpcResult = await rpcHandler.handle(req, { context, prefix: \"/api/rpc\", }); if (rpcResult.response) { return rpcResult.response; }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p4"
+        }
+      ]
+    },
+    "src_context_context": {
+      "count": 3,
+      "citations": [
+        {
+          "source_file": "src/context.ts",
+          "source_location": "document",
+          "quote": "import type { Context as ApiContext } from \"@privana/api/context\"; import type { NextRequest } from \"next/server\"; import { auth, db } from \"./services\";",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "src/context.ts",
+          "source_location": "document",
+          "quote": "export async function createContext(req: NextRequest): Promise<ApiContext> { const session = await auth.api.getSession({ headers: req.headers, }); return { db, session, }; }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        },
+        {
+          "source_file": "src/context.ts",
+          "source_location": "document",
+          "quote": "export type Context = Awaited<ReturnType<typeof createContext>>;",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        }
+      ]
+    },
+    "src_context_createcontext": {
+      "count": 2,
+      "citations": [
+        {
+          "source_file": "src/context.ts",
+          "source_location": "document",
+          "quote": "export async function createContext(req: NextRequest): Promise<ApiContext> { const session = await auth.api.getSession({ headers: req.headers, }); return { db, session, }; }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        },
+        {
+          "source_file": "src/context.ts",
+          "source_location": "document",
+          "quote": "export type Context = Awaited<ReturnType<typeof createContext>>;",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        }
+      ]
+    },
+    "src_proxy_config": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "src/proxy.ts",
+          "source_location": "document",
+          "quote": "export const config = { matcher: [\"/api/:path*\"], };",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        }
+      ]
+    },
+    "src_proxy_proxy": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "src/proxy.ts",
+          "source_location": "document",
+          "quote": "export const proxy = evlogMiddleware();",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ]
+    },
+    "src_services_auth": {
+      "count": 2,
+      "citations": [
+        {
+          "source_file": "src/services.ts",
+          "source_location": "document",
+          "quote": "import { resolve } from \"node:path\"; import { createAuth } from \"@privana/auth\"; import { readAuthConfig } from \"@privana/auth/read-auth-config\"; import { createPrismaClient } from \"@privana/db\";",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "src/services.ts",
+          "source_location": "document",
+          "quote": "export const db = createPrismaClient(ENV); export const auth = createAuth( readAuthConfig(ENV, resolve(process.cwd(), \".local-mail\")), db );",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p2"
+        }
+      ]
+    },
+    "success_page_successpage": {
+      "count": 1,
+      "citations": [
+        {
+          "source_file": "src/app/success/page.tsx",
+          "source_location": "document",
+          "quote": "import { redirect } from \"next/navigation\"; export default function SuccessPage() { redirect(\"/memberships\"); }",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        }
+      ]
+    },
+    "utils_orpc_client": {
+      "count": 2,
+      "citations": [
+        {
+          "source_file": "src/utils/orpc.ts",
+          "source_location": "document",
+          "quote": "\"use client\"; import { createORPCClient } from \"@orpc/client\"; import { RPCLink } from \"@orpc/client/fetch\"; import { createTanstackQueryUtils } from \"@orpc/tanstack-query\"; import type { AppRouterClient } from \"@privana/api/routers/index …",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "src/utils/orpc.ts",
+          "source_location": "document",
+          "quote": "const link = new RPCLink({ url: () => `${window.location.origin}/api/rpc` }); export const client: AppRouterClient = createORPCClient(link); export const orpc = createTanstackQueryUtils(client);",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ]
+    },
+    "utils_orpc_link": {
+      "count": 2,
+      "citations": [
+        {
+          "source_file": "src/utils/orpc.ts",
+          "source_location": "document",
+          "quote": "\"use client\"; import { createORPCClient } from \"@orpc/client\"; import { RPCLink } from \"@orpc/client/fetch\"; import { createTanstackQueryUtils } from \"@orpc/tanstack-query\"; import type { AppRouterClient } from \"@privana/api/routers/index\";",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "src/utils/orpc.ts",
+          "source_location": "document",
+          "quote": "const link = new RPCLink({ url: () => `${window.location.origin}/api/rpc` }); export const client: AppRouterClient = createORPCClient(link); export const orpc = createTanstackQueryUtils(client);",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ]
+    },
+    "utils_orpc_orpc": {
+      "count": 2,
+      "citations": [
+        {
+          "source_file": "src/utils/orpc.ts",
+          "source_location": "document",
+          "quote": "\"use client\"; import { createORPCClient } from \"@orpc/client\"; import { RPCLink } from \"@orpc/client/fetch\"; import { createTanstackQueryUtils } from \"@orpc/tanstack-query\"; import type { AppRouterClient } from \"@privana/api/routers/index\";",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p0"
+        },
+        {
+          "source_file": "src/utils/orpc.ts",
+          "source_location": "document",
+          "quote": "… new RPCLink({ url: () => `${window.location.origin}/api/rpc` }); export const client: AppRouterClient = createORPCClient(link); export const orpc = createTanstackQueryUtils(client);",
+          "confidence": "EXTRACTED",
+          "paragraph_id": "p1"
+        }
+      ]
+    }
+  }
+}

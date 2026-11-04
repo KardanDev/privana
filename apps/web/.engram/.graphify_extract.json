@@ -1,0 +1,1698 @@
+{
+  "nodes": [
+    {
+      "id": "instrumentation",
+      "label": "instrumentation.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\instrumentation.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "instrumentation_register_onrequesterror",
+      "label": "{ register, onRequestError }",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\instrumentation.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "next_config",
+      "label": "next.config.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\next.config.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "next_config_withvarlock",
+      "label": "withVarlock",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\next.config.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "next_config_nextconfig",
+      "label": "nextConfig",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\next.config.ts",
+      "source_location": "L9"
+    },
+    {
+      "id": "postcss_config",
+      "label": "postcss.config.mjs",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\postcss.config.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "postcss_config_config",
+      "label": "config",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\postcss.config.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "public_sw",
+      "label": "sw.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\public\\sw.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "pwa_config",
+      "label": "pwa.config.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\pwa.config.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "pwa_config_withpwa",
+      "label": "withPwa()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\pwa.config.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "all_route",
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\auth\\[...all]\\route.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "all_route_get_post",
+      "label": "{ GET, POST }",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\auth\\[...all]\\route.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "rest_route",
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "rest_route_rpchandler",
+      "label": "rpcHandler",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L13"
+    },
+    {
+      "id": "rest_route_apihandler",
+      "label": "apiHandler",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L14"
+    },
+    {
+      "id": "rest_route_handlerequest",
+      "label": "handleRequest()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L22"
+    },
+    {
+      "id": "rest_route_get",
+      "label": "GET",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L44"
+    },
+    {
+      "id": "rest_route_post",
+      "label": "POST",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L45"
+    },
+    {
+      "id": "rest_route_put",
+      "label": "PUT",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L46"
+    },
+    {
+      "id": "rest_route_patch",
+      "label": "PATCH",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L47"
+    },
+    {
+      "id": "rest_route_delete",
+      "label": "DELETE",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L48"
+    },
+    {
+      "id": "dashboard_page",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\dashboard\\page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "dashboard_page_dashboardpage",
+      "label": "DashboardPage()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\dashboard\\page.tsx",
+      "source_location": "L2"
+    },
+    {
+      "id": "app_layout",
+      "label": "layout.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\layout.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_layout_bodyfont",
+      "label": "bodyFont",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\layout.tsx",
+      "source_location": "L11"
+    },
+    {
+      "id": "app_layout_headingfont",
+      "label": "headingFont",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\layout.tsx",
+      "source_location": "L17"
+    },
+    {
+      "id": "app_layout_rootlayout",
+      "label": "RootLayout()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\layout.tsx",
+      "source_location": "L25"
+    },
+    {
+      "id": "login_page",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\login\\page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "login_page_metadata",
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\login\\page.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "login_page_loginpage",
+      "label": "LoginPage()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\login\\page.tsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "app_manifest",
+      "label": "manifest.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\manifest.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_manifest_manifest",
+      "label": "manifest()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\manifest.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "app_page",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_page_page",
+      "label": "Page()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\page.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "success_page",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\success\\page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "success_page_successpage",
+      "label": "SuccessPage()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\success\\page.tsx",
+      "source_location": "L2"
+    },
+    {
+      "id": "components_loader",
+      "label": "loader.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\loader.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_loader_loader",
+      "label": "Loader()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\loader.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "components_providers",
+      "label": "providers.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\providers.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_providers_providers",
+      "label": "Providers()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\providers.tsx",
+      "source_location": "L12"
+    },
+    {
+      "id": "components_pwa_registration",
+      "label": "pwa-registration.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\pwa-registration.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_pwa_registration_pwaregistration",
+      "label": "PwaRegistration()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\pwa-registration.tsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "components_theme_provider",
+      "label": "theme-provider.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\theme-provider.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_theme_provider_themeprovider",
+      "label": "ThemeProvider()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\theme-provider.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "src_context",
+      "label": "context.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\context.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_context_createcontext",
+      "label": "createContext()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\context.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "src_context_context",
+      "label": "Context",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\context.ts",
+      "source_location": "L15"
+    },
+    {
+      "id": "src_env_server",
+      "label": "env.server.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\env.server.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "lib_auth_client",
+      "label": "auth-client.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\auth-client.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "lib_auth_client_authclient",
+      "label": "authClient",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\auth-client.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "lib_evlog_auth",
+      "label": "evlog-auth.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\evlog-auth.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "lib_evlog_auth_identifyuser",
+      "label": "identifyUser",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\evlog-auth.ts",
+      "source_location": "L10"
+    },
+    {
+      "id": "lib_evlog_auth_identifyevloguser",
+      "label": "identifyEvlogUser()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\evlog-auth.ts",
+      "source_location": "L15"
+    },
+    {
+      "id": "lib_evlog",
+      "label": "evlog.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\evlog.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "lib_evlog_withevlog_uselogger_log_createerror",
+      "label": "{ withEvlog, useLogger, log, createError }",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\evlog.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "lib_evlog_register_onrequesterror",
+      "label": "{ register, onRequestError }",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\evlog.ts",
+      "source_location": "L10"
+    },
+    {
+      "id": "src_proxy",
+      "label": "proxy.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\proxy.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_proxy_proxy",
+      "label": "proxy",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\proxy.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "src_proxy_config",
+      "label": "config",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\proxy.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "src_services",
+      "label": "services.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\services.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_services_db",
+      "label": "db",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\services.ts",
+      "source_location": "L8"
+    },
+    {
+      "id": "src_services_auth",
+      "label": "auth",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\services.ts",
+      "source_location": "L9"
+    },
+    {
+      "id": "utils_orpc",
+      "label": "orpc.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\utils\\orpc.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "utils_orpc_link",
+      "label": "link",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\utils\\orpc.ts",
+      "source_location": "L7"
+    },
+    {
+      "id": "utils_orpc_client",
+      "label": "client",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\utils\\orpc.ts",
+      "source_location": "L8"
+    },
+    {
+      "id": "utils_orpc_orpc",
+      "label": "orpc",
+      "file_type": "code",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\utils\\orpc.ts",
+      "source_location": "L9"
+    },
+    {
+      "id": "agents_nextjs_agent_rules",
+      "label": "Next.js Agent Rules",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The file directs contributors to consult the installed Next.js documentation because this project uses breaking framework changes."
+    },
+    {
+      "id": "offline_page",
+      "label": "Offline Page",
+      "file_type": "document",
+      "source_file": "public/offline.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Provides a minimal recovery page that tells visitors they are offline and offers a retry link."
+    },
+    {
+      "id": "favicon_apple_touch_icon",
+      "label": "Apple Touch Icon",
+      "file_type": "image",
+      "source_file": "public/favicon/apple-touch-icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "favicon_96x96",
+      "label": "96×96 Favicon",
+      "file_type": "image",
+      "source_file": "public/favicon/favicon-96x96.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "privana_favicon_svg",
+      "label": "Privana Favicon",
+      "file_type": "image",
+      "source_file": "public/favicon/favicon.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "web_app_manifest_192_icon",
+      "label": "192px Web App Icon",
+      "file_type": "image",
+      "source_file": "public/favicon/web-app-manifest-192x192.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "web_app_manifest_512_icon",
+      "label": "512px Web App Icon",
+      "file_type": "image",
+      "source_file": "public/favicon/web-app-manifest-512x512.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "instrumentation",
+      "target": "ref_evlog_next_instrumentation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\instrumentation.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "instrumentation",
+      "target": "instrumentation_register_onrequesterror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\instrumentation.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "instrumentation",
+      "target": "lib_evlog",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\instrumentation.ts",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "next_config",
+      "target": "ref_varlock_nextjs_integration_plugin",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\next.config.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "next_config",
+      "target": "next_config_withvarlock",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\next.config.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "next_config",
+      "target": "ref_next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\next.config.ts",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "next_config",
+      "target": "c_users_d_kruger_documents_privana_apps_web_pwa_config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\next.config.ts",
+      "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "next_config",
+      "target": "pwa_withpwa",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\next.config.ts",
+      "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "next_config",
+      "target": "next_config_nextconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\next.config.ts",
+      "source_location": "L9",
+      "weight": 1
+    },
+    {
+      "source": "postcss_config",
+      "target": "postcss_config_config",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\postcss.config.mjs",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "pwa_config",
+      "target": "ref_next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\pwa.config.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "pwa_config",
+      "target": "pwa_config_withpwa",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\pwa.config.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "all_route",
+      "target": "ref_better_auth_next_js",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\auth\\[...all]\\route.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "all_route",
+      "target": "src_services",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\auth\\[...all]\\route.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "all_route",
+      "target": "src_services_auth",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\auth\\[...all]\\route.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "all_route",
+      "target": "all_route_get_post",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\auth\\[...all]\\route.ts",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "ref_orpc_openapi_fetch",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "ref_orpc_openapi_plugins",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "ref_orpc_server_fetch",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "ref_orpc_zod_zod4",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "ref_privana_api_routers_index",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "ref_next_server",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "lib_evlog",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L8",
+      "weight": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "lib_evlog_withevlog",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L8",
+      "weight": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "lib_evlog_auth",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L9",
+      "weight": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "lib_evlog_auth_identifyevloguser",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L9",
+      "weight": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "src_context",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L11",
+      "weight": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "src_context_createcontext",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L11",
+      "weight": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "rest_route_rpchandler",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L13",
+      "weight": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "rest_route_apihandler",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L14",
+      "weight": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "rest_route_handlerequest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L22",
+      "weight": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "rest_route_get",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L44",
+      "weight": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "rest_route_post",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L45",
+      "weight": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "rest_route_put",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L46",
+      "weight": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "rest_route_patch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L47",
+      "weight": 1
+    },
+    {
+      "source": "rest_route",
+      "target": "rest_route_delete",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\api\\rpc\\[[...rest]]\\route.ts",
+      "source_location": "L48",
+      "weight": 1
+    },
+    {
+      "source": "dashboard_page",
+      "target": "ref_next_navigation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\dashboard\\page.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "dashboard_page",
+      "target": "dashboard_page_dashboardpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\dashboard\\page.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "app_layout",
+      "target": "ref_next_font_google",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\layout.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "app_layout",
+      "target": "ref_next_server",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\layout.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "app_layout",
+      "target": "c_users_d_kruger_documents_privana_apps_web_src_index_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\layout.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "app_layout",
+      "target": "components_providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\layout.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "app_layout",
+      "target": "components_pwa_registration",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\layout.tsx",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "app_layout",
+      "target": "c_users_d_kruger_documents_privana_apps_web_src_shared_layout_app_shell_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\layout.tsx",
+      "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "app_layout",
+      "target": "layout_app_shell_appshell",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\layout.tsx",
+      "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "app_layout",
+      "target": "c_users_d_kruger_documents_privana_apps_web_src_shared_platform_load_platform_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\layout.tsx",
+      "source_location": "L8",
+      "weight": 1
+    },
+    {
+      "source": "app_layout",
+      "target": "platform_load_platform_loadplatform",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\layout.tsx",
+      "source_location": "L8",
+      "weight": 1
+    },
+    {
+      "source": "app_layout",
+      "target": "c_users_d_kruger_documents_privana_apps_web_src_shared_platform_platform_metadata_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\layout.tsx",
+      "source_location": "L9",
+      "weight": 1
+    },
+    {
+      "source": "app_layout",
+      "target": "platform_platform_metadata_platformmetadata",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\layout.tsx",
+      "source_location": "L9",
+      "weight": 1
+    },
+    {
+      "source": "app_layout",
+      "target": "app_layout_bodyfont",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\layout.tsx",
+      "source_location": "L11",
+      "weight": 1
+    },
+    {
+      "source": "app_layout",
+      "target": "app_layout_headingfont",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\layout.tsx",
+      "source_location": "L17",
+      "weight": 1
+    },
+    {
+      "source": "app_layout",
+      "target": "app_layout_rootlayout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\layout.tsx",
+      "source_location": "L25",
+      "weight": 1
+    },
+    {
+      "source": "login_page",
+      "target": "c_users_d_kruger_documents_privana_apps_web_src_domains_auth_auth_form_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\login\\page.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "login_page",
+      "target": "auth_auth_form_authform",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\login\\page.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "login_page",
+      "target": "login_page_metadata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\login\\page.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "login_page",
+      "target": "login_page_loginpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\login\\page.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "app_manifest",
+      "target": "ref_next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\manifest.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "app_manifest",
+      "target": "c_users_d_kruger_documents_privana_apps_web_src_shared_platform_load_platform_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\manifest.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "app_manifest",
+      "target": "platform_load_platform_loadplatform",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\manifest.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "app_manifest",
+      "target": "app_manifest_manifest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\manifest.ts",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "app_page",
+      "target": "c_users_d_kruger_documents_privana_apps_web_src_domains_feed_social_home_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\page.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "app_page",
+      "target": "feed_social_home_socialhome",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\page.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "app_page",
+      "target": "app_page_page",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\page.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "success_page",
+      "target": "ref_next_navigation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\success\\page.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "success_page",
+      "target": "success_page_successpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\app\\success\\page.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "components_loader",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\loader.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "components_loader",
+      "target": "components_loader_loader",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\loader.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_providers",
+      "target": "ref_privana_api_contracts_platform",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\providers.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_providers",
+      "target": "c_users_d_kruger_documents_privana_packages_ui_src_components_sonner_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\providers.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_providers",
+      "target": "components_sonner_toaster",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\providers.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_providers",
+      "target": "ref_tanstack_react_query",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\providers.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "components_providers",
+      "target": "ref_tanstack_react_query_devtools",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\providers.tsx",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "components_providers",
+      "target": "c_users_d_kruger_documents_privana_apps_web_src_shared_platform_platform_provider_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\providers.tsx",
+      "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "components_providers",
+      "target": "platform_platform_provider_platformprovider",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\providers.tsx",
+      "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "components_providers",
+      "target": "c_users_d_kruger_documents_privana_apps_web_src_shared_query_get_query_client_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\providers.tsx",
+      "source_location": "L8",
+      "weight": 1
+    },
+    {
+      "source": "components_providers",
+      "target": "query_get_query_client_getqueryclient",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\providers.tsx",
+      "source_location": "L8",
+      "weight": 1
+    },
+    {
+      "source": "components_providers",
+      "target": "components_theme_provider",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\providers.tsx",
+      "source_location": "L10",
+      "weight": 1
+    },
+    {
+      "source": "components_providers",
+      "target": "components_theme_provider_themeprovider",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\providers.tsx",
+      "source_location": "L10",
+      "weight": 1
+    },
+    {
+      "source": "components_providers",
+      "target": "components_providers_providers",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\providers.tsx",
+      "source_location": "L12",
+      "weight": 1
+    },
+    {
+      "source": "components_pwa_registration",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\pwa-registration.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_pwa_registration",
+      "target": "components_pwa_registration_pwaregistration",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\pwa-registration.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "components_theme_provider",
+      "target": "ref_next_themes",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\theme-provider.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "components_theme_provider",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\theme-provider.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "components_theme_provider",
+      "target": "components_theme_provider_themeprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\components\\theme-provider.tsx",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "src_context",
+      "target": "ref_privana_api_context",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\context.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "src_context",
+      "target": "ref_next_server",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\context.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "src_context",
+      "target": "src_services",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\context.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "src_context",
+      "target": "src_services_auth",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\context.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "src_context",
+      "target": "src_services_db",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\context.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "src_context",
+      "target": "src_context_createcontext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\context.ts",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "src_context",
+      "target": "src_context_context",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\context.ts",
+      "source_location": "L15",
+      "weight": 1
+    },
+    {
+      "source": "src_env_server",
+      "target": "ref_server_only",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\env.server.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "src_env_server",
+      "target": "c_users_d_kruger_documents_privana_apps_web_src_env_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\env.server.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "src_env_server",
+      "target": "src_env_env",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\env.server.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "lib_auth_client",
+      "target": "ref_better_auth_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\auth-client.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "lib_auth_client",
+      "target": "lib_auth_client_authclient",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\auth-client.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "lib_evlog_auth",
+      "target": "ref_evlog_better_auth",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\evlog-auth.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "lib_evlog_auth",
+      "target": "lib_evlog",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\evlog-auth.ts",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "lib_evlog_auth",
+      "target": "lib_evlog_uselogger",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\evlog-auth.ts",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "lib_evlog_auth",
+      "target": "src_services",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\evlog-auth.ts",
+      "source_location": "L8",
+      "weight": 1
+    },
+    {
+      "source": "lib_evlog_auth",
+      "target": "src_services_auth",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\evlog-auth.ts",
+      "source_location": "L8",
+      "weight": 1
+    },
+    {
+      "source": "lib_evlog_auth",
+      "target": "lib_evlog_auth_identifyuser",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\evlog-auth.ts",
+      "source_location": "L10",
+      "weight": 1
+    },
+    {
+      "source": "lib_evlog_auth",
+      "target": "lib_evlog_auth_identifyevloguser",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\evlog-auth.ts",
+      "source_location": "L15",
+      "weight": 1
+    },
+    {
+      "source": "lib_evlog_auth_identifyevloguser",
+      "target": "lib_evlog_auth_identifyuser",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\evlog-auth.ts",
+      "source_location": "L16",
+      "weight": 1
+    },
+    {
+      "source": "lib_evlog",
+      "target": "ref_evlog_fs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\evlog.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "lib_evlog",
+      "target": "ref_evlog_next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\evlog.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "lib_evlog",
+      "target": "ref_evlog_next_instrumentation_create",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\evlog.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "lib_evlog",
+      "target": "lib_evlog_withevlog_uselogger_log_createerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\evlog.ts",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "lib_evlog",
+      "target": "lib_evlog_register_onrequesterror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\lib\\evlog.ts",
+      "source_location": "L10",
+      "weight": 1
+    },
+    {
+      "source": "src_proxy",
+      "target": "ref_evlog_next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\proxy.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "src_proxy",
+      "target": "src_proxy_proxy",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\proxy.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "src_proxy",
+      "target": "src_proxy_config",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\proxy.ts",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "src_services",
+      "target": "ref_node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\services.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "src_services",
+      "target": "ref_privana_auth",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\services.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "src_services",
+      "target": "ref_privana_auth_read_auth_config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\services.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "src_services",
+      "target": "ref_privana_db",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\services.ts",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "src_services",
+      "target": "c_users_d_kruger_documents_privana_apps_web_src_env_server",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\services.ts",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "src_services",
+      "target": "src_env_env",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\services.ts",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "src_services",
+      "target": "src_services_db",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\services.ts",
+      "source_location": "L8",
+      "weight": 1
+    },
+    {
+      "source": "src_services",
+      "target": "src_services_auth",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\services.ts",
+      "source_location": "L9",
+      "weight": 1
+    },
+    {
+      "source": "utils_orpc",
+      "target": "ref_orpc_client",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\utils\\orpc.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "utils_orpc",
+      "target": "ref_orpc_client_fetch",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\utils\\orpc.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "utils_orpc",
+      "target": "ref_orpc_tanstack_query",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\utils\\orpc.ts",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "utils_orpc",
+      "target": "ref_privana_api_routers_index",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\utils\\orpc.ts",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "utils_orpc",
+      "target": "utils_orpc_link",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\utils\\orpc.ts",
+      "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "utils_orpc",
+      "target": "utils_orpc_client",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\utils\\orpc.ts",
+      "source_location": "L8",
+      "weight": 1
+    },
+    {
+      "source": "utils_orpc",
+      "target": "utils_orpc_orpc",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\D.Kruger\\Documents\\privana\\apps\\web\\src\\utils\\orpc.ts",
+      "source_location": "L9",
+      "weight": 1
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
