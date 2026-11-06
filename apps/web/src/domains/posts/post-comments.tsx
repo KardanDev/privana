@@ -1,56 +1,21 @@
 "use client";
 
-import type { CommentDTO, PageDTO } from "@privana/api/contracts/product";
 import { Button } from "@privana/ui/components/button";
 import { Input } from "@privana/ui/components/input";
-import {
-  useInfiniteQuery,
-  useMutation,
-  useQueryClient,
-} from "@tanstack/react-query";
 import { Send } from "lucide-react";
-import { useCallback, useState } from "react";
 import { QueryFeedback } from "@/domains/feed/components/query-feedback";
-import { handleActionError } from "@/domains/feed/handle-action-error";
 import { Avatar } from "@/shared/components/avatar";
 import { formatDate } from "@/shared/formatting/format-date";
-import { client, orpc } from "@/utils/orpc";
-export function PostComments({ postId }: { postId: string }) {
-  const [body, setBody] = useState("");
-  const queryClient = useQueryClient();
-  const comments = useInfiniteQuery({
-    getNextPageParam: (page: PageDTO<CommentDTO>) =>
-      page.nextCursor ?? undefined,
-    initialPageParam: undefined as string | undefined,
-    queryFn: ({ pageParam }) =>
-      client.posts.comments({ cursor: pageParam, postId }),
-    queryKey: ["post-comments", postId],
-  });
-  const items = comments.data?.pages.flatMap((page) => page.items) ?? [];
-  const add = useMutation(
-    orpc.posts.addComment.mutationOptions({
-      onError: handleActionError,
-      onSuccess: async () => {
-        setBody("");
-        await queryClient.invalidateQueries();
-      },
-    })
-  );
-  const retryComments = useCallback(() => comments.refetch(), [comments]);
-  const loadMore = useCallback(() => comments.fetchNextPage(), [comments]);
-  const submitComment = useCallback(
-    (event: React.FormEvent<HTMLFormElement>) => {
-      event.preventDefault();
-      if (body.trim()) {
-        add.mutate({ body: body.trim(), postId });
-      }
-    },
-    [body, add, postId]
-  );
-  const changeComment = useCallback(
-    (event: React.ChangeEvent<HTMLInputElement>) => setBody(event.target.value),
-    []
-  );
+import { usePostComments } from "./use-post-comments";
+export function PostComments({
+  postId,
+  locked = false,
+}: {
+  postId: string;
+  locked?: boolean;
+}) {
+  const state = usePostComments(postId, locked);
+  const { body, comments, items } = state;
   return (
     <section
       aria-label="Comentários"
@@ -62,7 +27,7 @@ export function PostComments({ postId }: { postId: string }) {
         </p>
       ) : null}
       {comments.isError ? (
-        <QueryFeedback error={comments.error} retry={retryComments} />
+        <QueryFeedback error={comments.error} retry={state.retry} />
       ) : null}
       {comments.isSuccess && items.length === 0 ? (
         <p className="text-muted-foreground text-sm">
@@ -70,7 +35,11 @@ export function PostComments({ postId }: { postId: string }) {
         </p>
       ) : null}
       {items.map((comment) => (
-        <div className="flex gap-3" key={comment.id}>
+        <div
+          aria-busy={comment.id.startsWith("pending-comment-")}
+          className="flex gap-3"
+          key={comment.id}
+        >
           <Avatar
             name={comment.author.name}
             size={32}
@@ -83,7 +52,9 @@ export function PostComments({ postId }: { postId: string }) {
                 className="ml-2 text-muted-foreground text-xs"
                 dateTime={comment.createdAt}
               >
-                {formatDate(comment.createdAt)}
+                {comment.id.startsWith("pending-comment-")
+                  ? "Enviando…"
+                  : formatDate(comment.createdAt)}
               </time>
             </p>
             <p className="mt-1 whitespace-pre-wrap break-words text-sm leading-relaxed">
@@ -95,27 +66,29 @@ export function PostComments({ postId }: { postId: string }) {
       {comments.hasNextPage ? (
         <Button
           disabled={comments.isFetchingNextPage}
-          onClick={loadMore}
+          onClick={state.loadMore}
           variant="ghost"
         >
           Ver mais comentários
         </Button>
       ) : null}
-      <form className="flex gap-2" onSubmit={submitComment}>
+      <form className="flex gap-2" onSubmit={state.submit}>
         <label className="sr-only" htmlFor={`comment-${postId}`}>
           Seu comentário
         </label>
         <Input
+          disabled={state.pending || locked}
           id={`comment-${postId}`}
           maxLength={2000}
-          onChange={changeComment}
+          onChange={state.change}
           placeholder="Faça parte da conversa…"
           required
           value={body}
         />
         <Button
+          aria-busy={state.pending}
           aria-label="Enviar comentário"
-          disabled={add.isPending || !body.trim()}
+          disabled={state.pending || locked || !body.trim()}
           size="icon"
           type="submit"
         >

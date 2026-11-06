@@ -5,6 +5,7 @@ import { cn } from "@privana/ui/lib/utils";
 import { ArrowUpRight, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import type { MouseEventHandler, ReactNode } from "react";
+import { ThemeToggle } from "@/shared/appearance/theme-toggle";
 import { Brand } from "@/shared/components/brand";
 import { usePlatform } from "@/shared/platform/use-platform";
 import {
@@ -87,15 +88,18 @@ export function OperationsShell({
               {teamRoleLabels[viewerRole] ?? viewerRole}
             </p>
           </div>
-          <Button
-            nativeButton={false}
-            render={<Link href="/" />}
-            size="sm"
-            variant="outline"
-          >
-            Ver plataforma
-            <ArrowUpRight data-icon="inline-end" />
-          </Button>
+          <div className="flex shrink-0 items-center gap-2">
+            <ThemeToggle />
+            <Button
+              nativeButton={false}
+              render={<Link href="/" />}
+              size="sm"
+              variant="outline"
+            >
+              Ver plataforma
+              <ArrowUpRight data-icon="inline-end" />
+            </Button>
+          </div>
         </header>
         <main
           className="mx-auto flex max-w-[1440px] flex-col gap-6 p-5 sm:p-8"

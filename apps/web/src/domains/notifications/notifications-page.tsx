@@ -2,46 +2,23 @@
 
 import { Button } from "@privana/ui/components/button";
 import { cn } from "@privana/ui/lib/utils";
-import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { Bell, CheckCheck } from "lucide-react";
 import type { Route } from "next";
 import Link from "next/link";
-import { useCallback } from "react";
 import { ContentSkeleton } from "@/domains/feed/components/content-skeleton";
 import { QueryFeedback } from "@/domains/feed/components/query-feedback";
-import { handleActionError } from "@/domains/feed/handle-action-error";
 import { SocialHeading } from "@/domains/feed/social-heading";
 import { EmptyState } from "@/shared/components/empty-state";
 import { formatDate } from "@/shared/formatting/format-date";
-import { client, orpc } from "@/utils/orpc";
+import { useNotifications } from "./use-notifications";
 export function NotificationsPage() {
-  const queryClient = useQueryClient();
-  const notifications = useQuery({
-    queryFn: () => client.notifications.list(),
-    queryKey: ["notifications"],
-  });
-  const markRead = useMutation(
-    orpc.notifications.markRead.mutationOptions({
-      onError: handleActionError,
-      onSuccess: async () => {
-        await queryClient.invalidateQueries();
-      },
-    })
-  );
-  const markAllRead = useCallback(() => markRead.mutate({}), [markRead]);
-  const markNotificationRead = useCallback(
-    (event: React.MouseEvent<HTMLElement>) => {
-      const id = event.currentTarget.dataset.notificationId;
-      if (id) {
-        markRead.mutate({ id });
-      }
-    },
-    [markRead]
-  );
-  const retryNotifications = useCallback(
-    () => notifications.refetch(),
-    [notifications]
-  );
+  const {
+    notifications,
+    markRead,
+    markAllRead,
+    markNotificationRead,
+    retryNotifications,
+  } = useNotifications();
   return (
     <div className="mx-auto flex max-w-3xl flex-col gap-4">
       <SocialHeading title="Notificações">
@@ -69,7 +46,10 @@ export function NotificationsPage() {
           title="Tudo em dia por aqui"
         />
       ) : null}
-      <div className="divide-y overflow-hidden rounded-lg border bg-card">
+      <div
+        aria-busy={markRead.isPending}
+        className="divide-y overflow-hidden rounded-lg border bg-card"
+      >
         {notifications.data?.map((notification) => (
           <article
             className={cn(

@@ -2,11 +2,8 @@
 
 import type { PostDTO } from "@privana/api/contracts/product";
 import { Button } from "@privana/ui/components/button";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { Bookmark, Heart, MessageCircle } from "lucide-react";
-import { useCallback } from "react";
-import { handleActionError } from "@/domains/feed/handle-action-error";
-import { orpc } from "@/utils/orpc";
+import { useSocialToggle } from "@/shared/query/use-social-toggle";
 
 export function PostActions({
   post,
@@ -17,38 +14,24 @@ export function PostActions({
   commentsOpen: boolean;
   onComments: () => void;
 }) {
-  const queryClient = useQueryClient();
-  const like = useMutation(
-    orpc.posts.setLike.mutationOptions({
-      onError: handleActionError,
-      onSuccess: async () => {
-        await queryClient.invalidateQueries();
-      },
-    })
-  );
-  const bookmark = useMutation(
-    orpc.posts.setBookmark.mutationOptions({
-      onError: handleActionError,
-      onSuccess: async () => {
-        await queryClient.invalidateQueries();
-      },
-    })
-  );
-  const toggleLike = useCallback(
-    () => like.mutate({ liked: !post.isLiked, postId: post.id }),
-    [like, post]
-  );
-  const toggleBookmark = useCallback(
-    () => bookmark.mutate({ bookmarked: !post.isBookmarked, postId: post.id }),
-    [bookmark, post]
-  );
+  const like = useSocialToggle({
+    kind: "like",
+    liked: !post.isLiked,
+    postId: post.id,
+  });
+  const bookmark = useSocialToggle({
+    bookmarked: !post.isBookmarked,
+    kind: "bookmark",
+    postId: post.id,
+  });
   return (
     <div className="flex items-center gap-2 px-3 py-2 sm:px-4">
       <Button
+        aria-busy={like.pending}
         aria-label={post.isLiked ? "Descurtir publicação" : "Curtir publicação"}
         aria-pressed={post.isLiked}
-        disabled={like.isPending}
-        onClick={toggleLike}
+        disabled={like.pending}
+        onClick={like.run}
         size="sm"
         variant="ghost"
       >
@@ -70,13 +53,14 @@ export function PostActions({
         <span className="tabular-nums">{post.commentCount}</span>
       </Button>
       <Button
+        aria-busy={bookmark.pending}
         aria-label={
           post.isBookmarked ? "Remover dos salvos" : "Salvar publicação"
         }
         aria-pressed={post.isBookmarked}
         className="ml-auto"
-        disabled={bookmark.isPending}
-        onClick={toggleBookmark}
+        disabled={bookmark.pending}
+        onClick={bookmark.run}
         size="icon"
         variant="ghost"
       >

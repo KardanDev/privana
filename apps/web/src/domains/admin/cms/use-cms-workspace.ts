@@ -27,7 +27,13 @@ export function useCmsWorkspace(document: CmsDocumentDTO) {
   const [confirmPublish, setConfirmPublish] = useState(false);
   const mutation = useMutation({
     mutationFn: executeCmsCommand,
+    mutationKey: ["admin-cms-write"],
     onError: (failure) => setError(cmsErrorMessage(failure)),
+    onMutate: (command) => {
+      if (command.kind === "save") {
+        setPreview(command.config);
+      }
+    },
     onSuccess: async (next, command) => {
       queryClient.setQueryData(["admin-cms"], next);
       await queryClient.invalidateQueries({ queryKey: ["admin-cms-history"] });
@@ -42,6 +48,7 @@ export function useCmsWorkspace(document: CmsDocumentDTO) {
           : "Rascunho salvo. A versão pública continua independente."
       );
     },
+    retry: false,
   });
   const changed = useCallback(() => {
     setDirty(true);
@@ -50,6 +57,9 @@ export function useCmsWorkspace(document: CmsDocumentDTO) {
   const save = useCallback(
     (event: FormEvent<HTMLFormElement>) => {
       event.preventDefault();
+      if (queryClient.isMutating({ mutationKey: ["admin-cms-write"] }) > 0) {
+        return;
+      }
       setError(null);
       try {
         mutation.mutate({
@@ -61,7 +71,7 @@ export function useCmsWorkspace(document: CmsDocumentDTO) {
         setError(cmsErrorMessage(failure));
       }
     },
-    [document.version, mutation]
+    [document.version, mutation, queryClient]
   );
   const showPreview = useCallback(() => {
     if (!formRef.current) {
@@ -81,14 +91,21 @@ export function useCmsWorkspace(document: CmsDocumentDTO) {
   }, [dirty]);
   const cancelPublish = useCallback(() => setConfirmPublish(false), []);
   const publish = useCallback(() => {
-    if (!dirty && confirmPublish) {
+    if (
+      !dirty &&
+      confirmPublish &&
+      queryClient.isMutating({ mutationKey: ["admin-cms-write"] }) === 0
+    ) {
       setError(null);
       mutation.mutate({ expectedVersion: document.version, kind: "publish" });
     }
-  }, [confirmPublish, dirty, document.version, mutation]);
+  }, [confirmPublish, dirty, document.version, mutation, queryClient]);
   const restore = useCallback(
     (event: MouseEvent<HTMLButtonElement>) => {
-      if (!dirty) {
+      if (
+        !dirty &&
+        queryClient.isMutating({ mutationKey: ["admin-cms-write"] }) === 0
+      ) {
         setError(null);
         mutation.mutate({
           expectedVersion: document.version,
@@ -97,7 +114,7 @@ export function useCmsWorkspace(document: CmsDocumentDTO) {
         });
       }
     },
-    [dirty, document.version, mutation]
+    [dirty, document.version, mutation, queryClient]
   );
   return {
     cancelPublish,
@@ -107,6 +124,7 @@ export function useCmsWorkspace(document: CmsDocumentDTO) {
     error,
     formRef,
     pending: mutation.isPending,
+    pendingKind: mutation.isPending ? mutation.variables.kind : undefined,
     preview,
     publish,
     requestPublish,

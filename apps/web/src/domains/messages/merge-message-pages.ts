@@ -1,7 +1,7 @@
 import type { MessageDTO } from "@privana/api/contracts/product";
 
-export function mergeMessagePages(pages: MessageDTO[][]): MessageDTO[] {
-  const unique = new Map<string, MessageDTO>();
+export function mergeMessagePages<T extends MessageDTO>(pages: T[][]): T[] {
+  const unique = new Map<string, T>();
   for (const page of pages) {
     for (const message of page) {
       if (!unique.has(message.id)) {

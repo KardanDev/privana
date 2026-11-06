@@ -40,7 +40,7 @@ export function PostCard({ post }: { post: PostDTO }) {
       />
       {commentsOpen && !post.locked ? (
         <div className="px-4 pb-4 sm:px-5">
-          <PostComments postId={post.id} />
+          <PostComments locked={post.locked} postId={post.id} />
         </div>
       ) : null}
       {reportOpen ? (

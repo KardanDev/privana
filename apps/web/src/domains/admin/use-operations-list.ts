@@ -1,6 +1,6 @@
 "use client";
 
-import { useQuery } from "@tanstack/react-query";
+import { keepPreviousData, useQuery } from "@tanstack/react-query";
 import { type FormEvent, useCallback, useState } from "react";
 import type {
   OperationsFilters,
@@ -18,7 +18,8 @@ export function useOperationsList(section: OperationsListSection) {
     status: "",
   });
   const query = useQuery({
-    gcTime: 0,
+    gcTime: 60_000,
+    placeholderData: keepPreviousData,
     queryFn: () => readOperations(section, filters),
     queryKey: ["admin-operations", section, filters],
     retry: false,

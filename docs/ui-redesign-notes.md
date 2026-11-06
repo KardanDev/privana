@@ -1,5 +1,7 @@
 # Member experience: social product redesign
 
+> Historical design proposal. The current implementation and November 6 browser evidence are documented in [verification.md](verification.md) and [optimistic-updates.md](optimistic-updates.md). Findings below describe the earlier design, not the current screens.
+
 Read-only audit and proposed implementation boundaries. No application code changed. The target is a creator social network with a subscription relationship, using Privana's royal purple identity. This proposal uses the current repository and the owner's stated references; it does not claim a current screen-by-screen comparison of OnlyFans, Fansly or Fanvue.
 
 ## Findings in the current implementation

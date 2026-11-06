@@ -2,6 +2,7 @@ import { ORPCError } from "@orpc/server";
 import { protectedProcedure } from "../../index";
 import { requireOwner } from "../access/require-owner";
 import { postInput } from "../shared/query-shapes";
+import { createStudioPost } from "./create-studio-post";
 export const savePost = protectedProcedure
   .input(postInput)
   .handler(async ({ context, input }) => {
@@ -13,7 +14,13 @@ export const savePost = protectedProcedure
         message: "A publicação requer um perfil aprovado e ativo.",
       });
     }
-    const { id, ...data } = input;
+    const { id, clientPostId, ...data } = input;
+    if (id && clientPostId) {
+      throw new ORPCError("BAD_REQUEST", {
+        message:
+          "O identificador de tentativa é utilizado somente para novas publicações.",
+      });
+    }
     if (data.mediaKey) {
       const asset = await context.db.mediaAsset.findUnique({
         where: { key: data.mediaKey },
@@ -45,8 +52,5 @@ export const savePost = protectedProcedure
       await context.db.post.update({ data, where: { id } });
       return { id };
     }
-    const post = await context.db.post.create({
-      data: { ...data, creatorId: creator.id },
-    });
-    return { id: post.id };
+    return await createStudioPost(context.db, creator.id, data, clientPostId);
   });

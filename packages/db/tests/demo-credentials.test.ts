@@ -39,7 +39,7 @@ test("credential generation is strong, private-file based and preserves password
   const path = join(directory, "credentials.json");
   try {
     const first = await prepareDemoCredentials(path, demoAccounts);
-    expect(first.accounts.length).toBe(10);
+    expect(first.accounts.length).toBe(demoAccounts.length);
     expect(
       first.accounts.every((account) => account.password.length >= 32)
     ).toBe(true);

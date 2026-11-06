@@ -43,6 +43,10 @@ export const profileInput = z.object({
 });
 export const postInput = z.object({
   body: z.string().trim().min(1).max(50_000),
+  clientPostId: z
+    .uuid()
+    .transform((id) => id.toLowerCase())
+    .optional(),
   excerpt: z.string().trim().max(500),
   id: z.string().optional(),
   mediaKey: z

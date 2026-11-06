@@ -6,7 +6,7 @@ if (process.env.ALLOW_MEDIA_CHECK !== "1") {
     "Use ALLOW_MEDIA_CHECK=1 para executar a verificação de leitura."
   );
 }
-const postId = process.argv[2];
+const [, , postId] = process.argv;
 const { DATABASE_URL, UPSTASH_BLOB_TOKEN } = process.env;
 if (!(postId && DATABASE_URL && UPSTASH_BLOB_TOKEN)) {
   throw new Error(

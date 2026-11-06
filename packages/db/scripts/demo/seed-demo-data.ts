@@ -27,7 +27,7 @@ export async function seedDemoData(
       };
     })
   );
-  await db.$transaction(
+  const seededCreators = await db.$transaction(
     async (tx) => {
       await Promise.all(
         hashes.map(
@@ -43,17 +43,25 @@ export async function seedDemoData(
         )
       );
       await seedDemoSocial(tx, creators, now);
+      return creators;
     },
     { maxWait: 10_000, timeout: 60_000 }
   );
   const now = new Date();
+  const profileIds = new Map(
+    seededCreators.map(({ profile }) => [profile.userId, profile.id])
+  );
   // Commit each creator's history independently so large seeds fit cloud transaction limits.
   for (const [index, creator] of demoCreators.entries()) {
+    const creatorId = profileIds.get(creator.userId);
+    if (!creatorId) {
+      throw new Error("O perfil de demonstração não foi preparado.");
+    }
     // biome-ignore lint/performance/noAwaitInLoops: Bound cloud connections and make each batch independently retryable.
     await db.$transaction(
       async (tx) => {
-        await seedCreatorHistory(tx, creator, index, now);
-        await seedCommunityHistory(tx, creator, index, now);
+        await seedCreatorHistory(tx, creator, creatorId, index, now);
+        await seedCommunityHistory(tx, creator, creatorId, index, now);
       },
       { maxWait: 10_000, timeout: 30_000 }
     );

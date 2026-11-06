@@ -5,6 +5,7 @@ import { Button } from "@privana/ui/components/button";
 import { Skeleton } from "@privana/ui/components/skeleton";
 import { Bell, LogIn, LogOut } from "lucide-react";
 import Link from "next/link";
+import { ThemeToggle } from "@/shared/appearance/theme-toggle";
 import { Avatar } from "@/shared/components/avatar";
 import { usePlatform } from "@/shared/platform/use-platform";
 import { useSignOut } from "./use-sign-out";
@@ -67,6 +68,7 @@ export function SidebarAccount({
         >
           <LogOut aria-hidden="true" />
         </Button>
+        <ThemeToggle />
       </div>
       <Link
         aria-label="Minha conta"

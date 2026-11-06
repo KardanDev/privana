@@ -46,7 +46,9 @@ export function MobileNavigation() {
               aria-current={active ? "page" : undefined}
               className={cn(
                 "flex min-h-11 min-w-0 flex-1 flex-col items-center gap-1 rounded-lg px-1 py-1 text-[10px]",
-                active ? "font-semibold text-primary" : "text-muted-foreground"
+                active
+                  ? "bg-accent font-semibold text-primary"
+                  : "text-muted-foreground"
               )}
               href={href}
               key={href}

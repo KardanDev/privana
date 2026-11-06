@@ -1,4 +1,5 @@
 import type { Database } from "../src/index";
+import { assertDemoFixtureRelations } from "./assert-demo-fixture-relations";
 
 type DemoRow = Record<string, unknown>;
 interface Query {
@@ -55,6 +56,7 @@ export function createDemoDatabaseFixture() {
       if (table.has(row.id)) {
         throw new Error("Duplicate fixture identifier");
       }
+      assertDemoFixtureRelations(tables, model, row);
       table.set(row.id, row);
       return row;
     };

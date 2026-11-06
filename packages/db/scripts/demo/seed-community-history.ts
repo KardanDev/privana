@@ -5,6 +5,7 @@ import type { DemoCreatorDefinition } from "./definitions";
 export async function seedCommunityHistory(
   tx: Prisma.TransactionClient,
   creator: DemoCreatorDefinition,
+  creatorId: string,
   index: number,
   now: Date
 ): Promise<void> {
@@ -12,7 +13,6 @@ export async function seedCommunityHistory(
     return;
   }
   const memberId = "demo-role-member";
-  const creatorId = `demo-profile-${creator.handle}`;
   const [participantAId, participantBId] = [memberId, creator.userId].sort();
   if (!(participantAId && participantBId)) {
     throw new Error("Participantes ausentes.");

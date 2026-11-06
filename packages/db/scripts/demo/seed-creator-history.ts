@@ -44,10 +44,10 @@ const JOURNAL = [
 export async function seedCreatorHistory(
   tx: Prisma.TransactionClient,
   creator: DemoCreatorDefinition,
+  creatorId: string,
   index: number,
   now: Date
 ): Promise<void> {
-  const creatorId = `demo-profile-${creator.handle}`;
   await Promise.all(
     JOURNAL.map(async (entry, position) => {
       const id = `demo-history-${creator.handle}-${position}`;

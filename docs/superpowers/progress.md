@@ -1,5 +1,9 @@
 # Privana implementation progress
 
+- November 6: shared royal-purple tokens, control contrast, light/dark selection, mobile touch targets and compact studio layout refined. Browser computed styles caught and fixed the unused heading-font token; Manrope now applies to headings.
+- Optimistic actions now use domain hooks, selective reconciliation, duplicate guards and field/row rollbacks. Messaging uses stable IDs to survive lost responses without duplicate delivery; new-post/comment creation follows the same ownership-bound pattern. See `docs/optimistic-updates.md`.
+- The complete 18-account HTTP smoke run passed; live private Upstash signature/range checks passed. Resend's full SDK auth flow was already verified on November 4. Payments remain simulated.
+
 Plan: plans/2026-10-23-privana.md
 
 - Discovery complete. The initial starter had no product records beyond authentication; the current database now contains demo product fixtures.

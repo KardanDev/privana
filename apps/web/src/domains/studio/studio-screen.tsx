@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@privana/ui/components/button";
 import { cn } from "@privana/ui/lib/utils";
+import { useIsMutating } from "@tanstack/react-query";
 import {
   ArrowUpRight,
   BellRing,
@@ -14,12 +15,15 @@ import { PageHeading } from "@/shared/components/page-heading";
 import { QueryFeedback } from "@/shared/components/query-feedback";
 import { StatCard } from "@/shared/components/stat-card";
 import { ProfileForm } from "./profile-form";
+import { STUDIO_WRITE_KEY } from "./studio-cache-types";
 import { StudioLoadMore } from "./studio-load-more";
 import { StudioPosts } from "./studio-posts";
 import { StudioStatusNotice } from "./studio-status-notice";
+import { StudioWriteNotice } from "./studio-write-notice";
 import { useStudioScreen } from "./use-studio-screen";
 export function StudioScreen() {
   const state = useStudioScreen();
+  const pending = useIsMutating({ mutationKey: STUDIO_WRITE_KEY }) > 0;
   const { query, tab, editor } = state;
   if (query.isPending) {
     return <QueryFeedback loading />;
@@ -36,7 +40,7 @@ export function StudioScreen() {
   return (
     <>
       <PageHeading
-        description="Gerencie seu perfil, suas publicações e sua comunidade."
+        description="Seu conteúdo e sua comunidade, de perto."
         title="Meu estúdio"
       >
         {profile?.status === "ACTIVE" && (
@@ -49,16 +53,17 @@ export function StudioScreen() {
               Ver perfil{" "}
               <ArrowUpRight aria-hidden="true" data-icon="inline-end" />
             </Button>
-            <Button onClick={state.openEditor}>
+            <Button disabled={pending} onClick={state.openEditor}>
               <Plus aria-hidden="true" data-icon="inline-start" />
               Nova publicação
             </Button>
           </div>
         )}
       </PageHeading>
+      <StudioWriteNotice />
       {profile ? (
-        <div className="flex flex-col gap-5">
-          <div className="grid grid-cols-2 gap-3 xl:grid-cols-4">
+        <div className="flex flex-col gap-4 sm:gap-5">
+          <div className="grid grid-cols-2 gap-x-4 gap-y-0 sm:gap-3 xl:grid-cols-4">
             <StatCard
               icon={Users}
               label="Seguidores"
@@ -75,7 +80,6 @@ export function StudioScreen() {
               value={metrics.interests}
             />
             <StatCard
-              detail="Cobranças ainda não estão disponíveis"
               icon={Heart}
               label="Assinaturas ativas"
               value={metrics.activeSubscriptions}
@@ -93,6 +97,7 @@ export function StudioScreen() {
               <Button
                 aria-pressed={tab === item.id}
                 className={cn(tab === item.id && "shadow-sm")}
+                disabled={pending}
                 key={item.id}
                 onClick={state.selectTab}
                 size="sm"
@@ -113,6 +118,7 @@ export function StudioScreen() {
                   Mostrar
                   <select
                     className="h-10 rounded-lg border border-input bg-card px-3 text-foreground outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                    disabled={pending}
                     onChange={state.changeStatus}
                     value={state.status}
                   >

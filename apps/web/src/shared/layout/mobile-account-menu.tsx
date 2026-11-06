@@ -11,8 +11,16 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@privana/ui/components/dropdown-menu";
-import { Bookmark, Heart, LogOut, Settings, ShieldCheck } from "lucide-react";
+import {
+  Bookmark,
+  Heart,
+  LogOut,
+  Moon,
+  Settings,
+  ShieldCheck,
+} from "lucide-react";
 import Link from "next/link";
+import { useToggleTheme } from "@/shared/appearance/use-toggle-theme";
 import { Avatar } from "@/shared/components/avatar";
 import { usePlatform } from "@/shared/platform/use-platform";
 import { useSignOut } from "./use-sign-out";
@@ -20,6 +28,7 @@ import { useSignOut } from "./use-sign-out";
 export function MobileAccountMenu({ viewer }: { viewer: ViewerDTO }) {
   const config = usePlatform();
   const signOut = useSignOut();
+  const toggleTheme = useToggleTheme();
   const isStaff = ["admin", "editor", "moderator", "analyst"].includes(
     viewer.role
   );
@@ -70,6 +79,9 @@ export function MobileAccountMenu({ viewer }: { viewer: ViewerDTO }) {
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
+          <DropdownMenuItem className="min-h-11" onClick={toggleTheme}>
+            <Moon aria-hidden="true" /> Alternar tema claro ou escuro
+          </DropdownMenuItem>
           <DropdownMenuItem
             className="min-h-11"
             disabled={signOut.pending}

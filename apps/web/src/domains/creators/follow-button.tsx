@@ -2,11 +2,8 @@
 
 import type { CreatorDTO } from "@privana/api/contracts/product";
 import { Button } from "@privana/ui/components/button";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { Check, Plus } from "lucide-react";
-import { useCallback } from "react";
-import { handleActionError } from "@/domains/feed/handle-action-error";
-import { orpc } from "@/utils/orpc";
+import { useSocialToggle } from "@/shared/query/use-social-toggle";
 
 export function FollowButton({
   creator,
@@ -15,26 +12,18 @@ export function FollowButton({
   creator: CreatorDTO;
   compact?: boolean;
 }) {
-  const queryClient = useQueryClient();
-  const follow = useMutation(
-    orpc.creators.setFollow.mutationOptions({
-      onError: handleActionError,
-      onSuccess: async () => {
-        await queryClient.invalidateQueries();
-      },
-    })
-  );
-  const toggleFollow = useCallback(
-    () =>
-      follow.mutate({ creatorId: creator.id, following: !creator.isFollowing }),
-    [follow, creator]
-  );
+  const follow = useSocialToggle({
+    creatorId: creator.id,
+    following: !creator.isFollowing,
+    kind: "follow",
+  });
   return (
     <Button
+      aria-busy={follow.pending}
       aria-label={`${creator.isFollowing ? "Deixar de seguir" : "Seguir"} ${creator.displayName}`}
       aria-pressed={creator.isFollowing}
-      disabled={follow.isPending}
-      onClick={toggleFollow}
+      disabled={follow.pending}
+      onClick={follow.run}
       size={compact ? "sm" : "default"}
       variant={creator.isFollowing ? "outline" : "default"}
     >

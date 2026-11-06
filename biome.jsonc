@@ -6,6 +6,7 @@
       "!!**/.claude",
       "!!**/.qwen",
       "!!**/.codex",
+      "!!**/.engram",
       "!!**/prisma/generated",
       "!!**/.next",
       "!!**/dist"

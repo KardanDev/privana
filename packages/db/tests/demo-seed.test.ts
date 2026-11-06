@@ -1,9 +1,29 @@
 import { expect, test } from "bun:test";
 import { verifyPassword } from "better-auth/crypto";
-import { demoAccounts } from "../scripts/demo/definitions";
+import { demoAccounts, demoCreators } from "../scripts/demo/definitions";
 import type { DemoCredentials } from "../scripts/demo/prepare-demo-credentials";
 import { seedDemoData } from "../scripts/demo/seed-demo-data";
 import { createDemoDatabaseFixture } from "./demo-seed-fixture";
+
+test("the seed fixture rejects orphaned creator references before inserting posts", () => {
+  const fixture = createDemoDatabaseFixture();
+  expect(() =>
+    fixture.db.post.upsert({
+      create: {
+        body: "Example",
+        creatorId: "missing-profile",
+        excerpt: "Preview",
+        id: "orphaned-history",
+        status: "PUBLISHED",
+        title: "History",
+        visibility: "PUBLIC",
+      },
+      update: {},
+      where: { id: "orphaned-history" },
+    })
+  ).toThrow("Foreign key violation: post.creatorId");
+  expect(fixture.tables.get("post")?.size).toBe(0);
+});
 
 test("repeat seeding preserves existing creator data, authenticates roles and creates no financial records", async () => {
   const fixture = createDemoDatabaseFixture();
@@ -50,7 +70,24 @@ test("repeat seeding preserves existing creator data, authenticates roles and cr
   expect(fixture.tables.get("creatorProfile")?.get("legacy-luna")?.bio).toBe(
     "Bio customizada"
   );
-  expect(fixture.tables.get("user")?.size).toBe(10);
+  expect(
+    fixture.tables.get("creatorProfile")?.has("demo-profile-luna-demo")
+  ).toBe(false);
+  const lunaPosts = [...(fixture.tables.get("post")?.values() ?? [])].filter(
+    (row) => String(row.id).includes("luna")
+  );
+  expect(lunaPosts.length).toBe(13);
+  expect(lunaPosts.every((row) => row.creatorId === "legacy-luna")).toBe(true);
+  const lunaInterests = [
+    ...(fixture.tables.get("membershipInterest")?.values() ?? []),
+  ].filter((row) => row.creatorId === "legacy-luna");
+  expect(lunaInterests.length).toBe(1);
+  expect(
+    [...(fixture.tables.get("post")?.values() ?? [])].every((row) =>
+      fixture.tables.get("creatorProfile")?.has(String(row.creatorId))
+    )
+  ).toBe(true);
+  expect(fixture.tables.get("user")?.size).toBe(demoAccounts.length);
   expect(fixture.tables.get("user")?.get("demo-role-member")?.name).toBe(
     "Nome editado no perfil"
   );
@@ -60,7 +97,7 @@ test("repeat seeding preserves existing creator data, authenticates roles and cr
         (user) => user.emailVerified === true
       )
   ).toBe(true);
-  expect(fixture.tables.get("account")?.size).toBe(10);
+  expect(fixture.tables.get("account")?.size).toBe(demoAccounts.length);
   const account = fixture.tables
     .get("account")
     ?.get("demo-credential-demo-role-member");
@@ -80,8 +117,11 @@ test("repeat seeding preserves existing creator data, authenticates roles and cr
   ).toBe(true);
   expect(fixture.tables.get("subscription")).toBeUndefined();
   expect(fixture.tables.get("transactionRecord")).toBeUndefined();
-  expect(fixture.tables.get("membershipInterest")?.size).toBe(1);
-  expect(fixture.tables.get("message")?.size).toBe(2);
+  const approvedCreators = demoCreators.filter(
+    (creator) => creator.status === "ACTIVE"
+  ).length;
+  expect(fixture.tables.get("membershipInterest")?.size).toBe(approvedCreators);
+  expect(fixture.tables.get("message")?.size).toBe(2 + approvedCreators * 8);
 }, 30_000);
 
 test("a conflicting post identifier rolls back users and credentials instead of claiming real content", async () => {

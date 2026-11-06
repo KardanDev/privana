@@ -5,6 +5,7 @@ import { Label } from "@privana/ui/components/label";
 import { Textarea } from "@privana/ui/components/textarea";
 import { LoaderCircle, Send, X } from "lucide-react";
 import { TextField } from "@/shared/components/text-field";
+import { PendingPostPreview } from "./pending-post-preview";
 import { StudioMediaField } from "./studio-media-field";
 import { usePostForm } from "./use-post-form";
 export function PostEditor({
@@ -135,6 +136,7 @@ export function PostEditor({
             {form.pending ? "Salvando…" : "Publicar"}
           </Button>
         </div>
+        {form.preview ? <PendingPostPreview {...form.preview} /> : null}
       </form>
     </section>
   );

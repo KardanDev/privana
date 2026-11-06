@@ -12,7 +12,7 @@ export function PageHeading({
   children?: ReactNode;
 }) {
   return (
-    <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
+    <div className="mb-4 flex flex-wrap items-end justify-between gap-4 sm:mb-6">
       <div className="flex flex-col gap-2">
         {eyebrow ? (
           <p className="font-semibold text-[11px] text-primary uppercase tracking-[0.16em]">

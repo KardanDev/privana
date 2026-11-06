@@ -4,49 +4,29 @@ import type { SettingsDTO } from "@privana/api/contracts/product";
 import { Button } from "@privana/ui/components/button";
 import { Checkbox } from "@privana/ui/components/checkbox";
 import { Input } from "@privana/ui/components/input";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { Save } from "lucide-react";
-import { useCallback, useState } from "react";
-import { toast } from "sonner";
-import { handleActionError } from "@/domains/feed/handle-action-error";
 import { Avatar } from "@/shared/components/avatar";
-import { orpc } from "@/utils/orpc";
+import { useSettingsForm } from "./use-settings-form";
 export function SettingsForm({ settings }: { settings: SettingsDTO }) {
-  const [name, setName] = useState(settings.name);
-  const [emailNotifications, setEmailNotifications] = useState(
-    settings.emailNotifications
-  );
-  const queryClient = useQueryClient();
-  const update = useMutation(
-    orpc.settings.update.mutationOptions({
-      onError: handleActionError,
-      onSuccess: async () => {
-        toast.success("Suas preferências foram salvas.");
-        await queryClient.invalidateQueries();
-      },
-    })
-  );
-  const submitSettings = useCallback(
-    (event: React.FormEvent<HTMLFormElement>) => {
-      event.preventDefault();
-      update.mutate({
-        emailNotifications,
-        locale: "pt-BR",
-        name: name.trim(),
-      });
-    },
-    [update, emailNotifications, name]
-  );
-  const changeName = useCallback(
-    (event: React.ChangeEvent<HTMLInputElement>) => setName(event.target.value),
-    []
-  );
-  const changeEmailNotifications = useCallback(
-    (checked: boolean) => setEmailNotifications(checked),
-    []
-  );
+  const {
+    name,
+    emailNotifications,
+    changeName,
+    changeEmailNotifications,
+    dirty,
+    submitSettings,
+    update,
+  } = useSettingsForm(settings);
+  const savedStatus = dirty
+    ? "Você tem alterações não salvas."
+    : "Suas preferências estão atualizadas.";
+  const status = update.isPending ? "Salvando suas alterações…" : savedStatus;
   return (
-    <form className="flex flex-col gap-5" onSubmit={submitSettings}>
+    <form
+      aria-busy={update.isPending}
+      className="flex flex-col gap-5"
+      onSubmit={submitSettings}
+    >
       <section className="flex flex-col gap-5 rounded-lg border bg-card p-5">
         <div className="flex items-center gap-4">
           <Avatar name={name} size={64} src={settings.image} />
@@ -63,6 +43,7 @@ export function SettingsForm({ settings }: { settings: SettingsDTO }) {
           </label>
           <Input
             autoComplete="name"
+            disabled={update.isPending}
             id="settings-name"
             maxLength={80}
             minLength={2}
@@ -86,6 +67,7 @@ export function SettingsForm({ settings }: { settings: SettingsDTO }) {
           <Checkbox
             checked={emailNotifications}
             className="mt-1 rounded"
+            disabled={update.isPending}
             id="email-notifications"
             onCheckedChange={changeEmailNotifications}
           />
@@ -105,12 +87,21 @@ export function SettingsForm({ settings }: { settings: SettingsDTO }) {
       </section>
       <Button
         className="self-start"
-        disabled={update.isPending || name.trim().length < 2}
+        disabled={update.isPending || name.trim().length < 2 || !dirty}
         type="submit"
       >
         <Save data-icon="inline-start" />
         {update.isPending ? "Salvando…" : "Salvar alterações"}
       </Button>
+      {update.isError ? (
+        <p className="text-destructive text-sm" role="alert">
+          Não foi possível salvar. Suas alterações continuam no formulário para
+          tentar novamente.
+        </p>
+      ) : null}
+      <p aria-live="polite" className="text-muted-foreground text-xs">
+        {status}
+      </p>
     </form>
   );
 }

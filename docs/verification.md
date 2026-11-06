@@ -1,5 +1,7 @@
 # Current integration status
 
+November 6 continuation: domain-owned optimistic mutations now cover social actions, messaging, notification reads, settings, creator edits/archives and pending operations feedback. See [optimistic-updates.md](optimistic-updates.md) for immediate/confirmed behavior, rollback boundaries and browser failure tests. The complete 18-account HTTP run passed login/permissions, member flows, creator flows and CMS revision/conflict checks. Private Upstash stored-signature validation, 16-byte range reads (206), and invalid-range rejection (416) also passed against the configured bucket.
+
 ## Running the product
 
 Run `bun run dev:web` and open `http://localhost:3001`. The configured database is Prisma Postgres in the cloud. All 18 demonstration accounts are in `apps/web/.local-demo-credentials.json`; its status is `ready`. A readable handoff also lives in `apps/web/.local-demo-credentials.json.md`. Both files are ignored by Git. The accounts include a customer, 12 approved creators/models, one pending creator, superadmin, editor, moderator and analyst.
@@ -36,7 +38,7 @@ Prisma `migrate diff` reported no schema differences before baselining. The addi
 
 The product uses self-hosted Google DM Sans for body text and Manrope for headings via Next.js font optimization. The mobile account menu exposes saved posts, memberships, settings, staff operations and sign-out. Desktop account actions sit in the sidebar. Duplicate topbar headings/footer content and the extra discovery search were removed. Dark-mode brand colors now inherit through CSS tokens correctly.
 
-`/checkout/demo` provides card approval/refusal and Pix illustration flows in BRL, plus illustrative card prices in USD/EUR. Six automated flow tests verify allowed test data and that no outcome charges or grants access. See `payment-demo.md`. Browser access became available on November 4: desktop feed/profile and 390px creator-studio screens were inspected, and actual media upload/read/range requests passed. The mobile review identified crowded studio rows, which are being corrected separately from compilation checks.
+`/checkout/demo` provides card approval/refusal and Pix illustration flows in BRL, plus illustrative card prices in USD/EUR. Six automated flow tests verify allowed test data and that no outcome charges or grants access. See `payment-demo.md`. Card and Pix approvals also passed in the browser. The mobile studio now has readable post rows, compact metrics, draft/archive filters and a visible sync notice. The technical upload fixture was archived after its private-storage and access checks; its bytes remain available to authorized operators for repeatable storage verification.
 
 ## Email delivery
 

@@ -23,7 +23,10 @@ export function OperationsList({
   const actions = useAdminActions();
   const { query } = state;
   return (
-    <div className="flex flex-col gap-4">
+    <div
+      aria-busy={query.isFetching || actions.pending}
+      className="flex flex-col gap-4"
+    >
       <OperationsFiltersForm
         onReset={state.reset}
         onSubmit={state.search}
@@ -47,6 +50,11 @@ export function OperationsList({
           Salvando alteração…
         </p>
       ) : null}
+      {query.isFetching && !query.isPending && !actions.pending ? (
+        <p className="text-muted-foreground text-sm" role="status">
+          Atualizando registros…
+        </p>
+      ) : null}
       {actions.error && !actions.confirmation ? (
         <p className="text-destructive text-sm" role="alert">
           A alteração não foi salva. Verifique seu acesso e tente novamente.
@@ -54,7 +62,7 @@ export function OperationsList({
       ) : null}
       {query.isPending ? <QueryFeedback loading /> : null}
       {query.isError ? <QueryFeedback retry={query.refetch} /> : null}
-      {query.isSuccess ? (
+      {query.data && !query.isError ? (
         <OperationsResults
           onAction={actions.onAction}
           pending={actions.pending || query.isFetching}

@@ -1,40 +1,26 @@
 "use client";
 
 import { Button } from "@privana/ui/components/button";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { Bell, Check } from "lucide-react";
-import { useCallback } from "react";
-import { toast } from "sonner";
-import { handleActionError } from "@/domains/feed/handle-action-error";
-import { orpc } from "@/utils/orpc";
+import { useMembershipInterest } from "./use-membership-interest";
 export function InterestButton({ creatorId }: { creatorId: string }) {
-  const queryClient = useQueryClient();
-  const interest = useMutation(
-    orpc.memberships.request.mutationOptions({
-      onError: handleActionError,
-      onSuccess: async () => {
-        toast.success(
-          "Interesse registrado. Você será avisado quando as assinaturas chegarem."
-        );
-        await queryClient.invalidateQueries();
-      },
-    })
-  );
-  const requestInterest = useCallback(
-    () => interest.mutate({ creatorId }),
-    [interest, creatorId]
-  );
+  const interest = useMembershipInterest(creatorId);
   return (
     <Button
-      disabled={interest.isPending || interest.isSuccess}
-      onClick={requestInterest}
+      aria-busy={interest.pending}
+      disabled={interest.pending || interest.registered}
+      onClick={interest.request}
     >
-      {interest.isSuccess ? (
+      {interest.registered && !interest.pending ? (
         <Check data-icon="inline-start" />
       ) : (
         <Bell data-icon="inline-start" />
       )}
-      {interest.isSuccess ? "Você está na lista" : "Avise-me no lançamento"}
+      {interest.pending ? "Registrando interesse…" : null}
+      {!interest.pending && interest.registered ? "Você está na lista" : null}
+      {interest.pending || interest.registered
+        ? null
+        : "Avise-me no lançamento"}
     </Button>
   );
 }

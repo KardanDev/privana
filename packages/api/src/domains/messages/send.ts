@@ -3,33 +3,44 @@ import { z } from "zod";
 import { protectedProcedure } from "../../index";
 import { requireParticipant } from "../access/require-participant";
 import { requirePlatformFeature } from "../platform/require-feature";
+import { createMessage } from "./create-message";
 export const sendMessage = protectedProcedure
   .input(
     z.object({
       body: z.string().trim().min(1).max(5000),
+      clientMessageId: z
+        .uuid()
+        .transform((id) => id.toLowerCase())
+        .optional(),
       conversationId: z.string(),
     })
   )
   .handler(async ({ context, input }) => {
     await requirePlatformFeature(context.db, "messaging");
-    const c = await context.db.conversation.findUnique({
-      include: { participantA: true, participantB: true },
-      where: { id: input.conversationId },
-    });
-    if (!c) {
-      throw new ORPCError("NOT_FOUND");
-    }
-    requireParticipant(context.viewer.id, c);
-    if (
-      c.participantA.status !== "ACTIVE" ||
-      c.participantB.status !== "ACTIVE"
-    ) {
-      throw new ORPCError("FORBIDDEN");
-    }
     const row = await context.db.$transaction(async (tx) => {
-      const message = await tx.message.create({
-        data: { ...input, senderId: context.viewer.id },
+      // Recheck the conversation and both accounts for every request, including
+      // a retry whose message already exists. An ID is never an access token.
+      const c = await tx.conversation.findUnique({
+        include: { participantA: true, participantB: true },
+        where: { id: input.conversationId },
       });
+      if (!c) {
+        throw new ORPCError("NOT_FOUND");
+      }
+      requireParticipant(context.viewer.id, c);
+      if (
+        c.participantA.status !== "ACTIVE" ||
+        c.participantB.status !== "ACTIVE"
+      ) {
+        throw new ORPCError("FORBIDDEN");
+      }
+      const { message, created } = await createMessage(tx, {
+        ...input,
+        senderId: context.viewer.id,
+      });
+      if (!created) {
+        return message;
+      }
       await tx.conversation.update({
         data: { updatedAt: new Date() },
         where: { id: c.id },

@@ -15,6 +15,9 @@ import { EmptyState } from "@/shared/components/empty-state";
 import { formatDate } from "@/shared/formatting/format-date";
 import { usePlatform } from "@/shared/platform/use-platform";
 import { client } from "@/utils/orpc";
+import { CONVERSATIONS_KEY } from "./message-query-keys";
+import { updateConversationPreview } from "./update-conversation-preview";
+import { useMessageOutbox } from "./use-message-outbox";
 export function MessagesPage({
   initialConversation,
 }: {
@@ -22,13 +25,24 @@ export function MessagesPage({
 }) {
   const [selectedId, setSelectedId] = useState(initialConversation);
   const platform = usePlatform();
+  const outbox = useMessageOutbox();
   const conversations = useQuery({
     enabled: platform.features.messaging,
     queryFn: () => client.messages.list(),
-    queryKey: ["conversations"],
+    queryKey: CONVERSATIONS_KEY,
     refetchInterval: 30_000,
   });
-  const selected = conversations.data?.find(
+  let visibleConversations = conversations.data;
+  for (const { attempt, status } of outbox) {
+    if (status === "pending") {
+      visibleConversations = updateConversationPreview(
+        visibleConversations,
+        attempt.conversationId,
+        attempt
+      );
+    }
+  }
+  const selected = visibleConversations?.find(
     (conversation) => conversation.id === selectedId
   );
   const retryConversations = useCallback(
@@ -93,7 +107,7 @@ export function MessagesPage({
             <h2 className="border-b px-4 py-3 font-semibold text-sm">
               Conversas
             </h2>
-            {conversations.data.map((conversation) => (
+            {visibleConversations?.map((conversation) => (
               <button
                 aria-current={
                   selectedId === conversation.id ? "true" : undefined
@@ -116,6 +130,13 @@ export function MessagesPage({
                     {conversation.otherUser.name}
                   </span>
                   <span className="mt-1 block truncate text-muted-foreground text-xs">
+                    {outbox.some(
+                      (message) =>
+                        message.status === "pending" &&
+                        message.attempt.conversationId === conversation.id
+                    )
+                      ? "Enviando… "
+                      : ""}
                     {conversation.lastMessage ?? "Comece uma conversa"}
                   </span>
                   <time

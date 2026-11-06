@@ -27,6 +27,7 @@ export function ReportContent({
         setReason("");
         toast.success("Sua denúncia foi recebida e será analisada.");
       },
+      retry: false,
     })
   );
   const changeReason = useCallback(
@@ -37,7 +38,11 @@ export function ReportContent({
   const submitReport = useCallback(
     (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      if (reason.trim().length >= 10) {
+      if (
+        reason.trim().length >= 10 &&
+        !report.isPending &&
+        !report.isSuccess
+      ) {
         report.mutate({ creatorId, postId, reason: reason.trim() });
       }
     },
@@ -64,7 +69,7 @@ export function ReportContent({
           a analisar.
         </p>
         <Textarea
-          disabled={report.isSuccess}
+          disabled={report.isPending || report.isSuccess}
           id={id}
           maxLength={2000}
           minLength={10}
@@ -73,6 +78,7 @@ export function ReportContent({
           value={reason}
         />
         <Button
+          aria-busy={report.isPending}
           className="self-start"
           disabled={
             report.isPending || report.isSuccess || reason.trim().length < 10
@@ -80,7 +86,9 @@ export function ReportContent({
           type="submit"
           variant="outline"
         >
-          {report.isSuccess ? "Denúncia recebida" : "Enviar denúncia"}
+          {report.isPending ? "Enviando denúncia…" : null}
+          {!report.isPending && report.isSuccess ? "Denúncia recebida" : null}
+          {report.isPending || report.isSuccess ? null : "Enviar denúncia"}
         </Button>
       </form>
     </details>

@@ -22,7 +22,7 @@ export function NavLink({
       aria-current={active ? "page" : undefined}
       aria-label={label}
       className={cn(
-        "group flex h-12 items-center justify-center gap-4 rounded-xl px-3 font-medium text-[15px] transition-colors xl:justify-start",
+        "group flex h-12 items-center justify-center gap-3 rounded-lg px-3 font-medium text-[15px] transition-colors xl:justify-start",
         active
           ? "bg-accent text-primary"
           : "text-muted-foreground hover:bg-muted hover:text-foreground"

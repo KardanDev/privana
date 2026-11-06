@@ -38,6 +38,7 @@ export function useStudioScreen() {
   const [editor, setEditor] = useState<PostDTO | "new" | null>(null);
   const closeEditor = useCallback(() => setEditor(null), []);
   const openEditor = useCallback(() => {
+    setStatus("ACTIVE");
     setTab("posts");
     setEditor("new");
   }, []);

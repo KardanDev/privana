@@ -1,0 +1,38 @@
+import type { CreatorDTO, PostDTO } from "@privana/api/contracts/product";
+
+export const creator: CreatorDTO = {
+  avatarUrl: null,
+  bio: "Demo",
+  category: "Fotografia",
+  coverUrl: null,
+  displayName: "Luna",
+  followerCount: 5,
+  handle: "luna",
+  id: "creator-a",
+  isDemo: true,
+  isFollowing: false,
+  location: "São Paulo",
+  monthlyPriceCents: 2990,
+  postCount: 4,
+  status: "ACTIVE",
+  userId: "user-a",
+};
+export const post: PostDTO = {
+  body: "Public post",
+  bookmarkCount: 2,
+  commentCount: 3,
+  createdAt: "2026-11-04T12:00:00Z",
+  creator,
+  excerpt: "Public",
+  id: "post-a",
+  isBookmarked: false,
+  isLiked: false,
+  likeCount: 4,
+  locked: false,
+  mediaType: null,
+  mediaUrl: null,
+  previewUrl: null,
+  status: "PUBLISHED",
+  title: "Light",
+  visibility: "PUBLIC",
+};

@@ -11,7 +11,7 @@ export function StatCard({
   detail?: string;
 }) {
   return (
-    <div className="min-w-0 border-border/70 border-b px-1 py-4 sm:px-4">
+    <div className="min-w-0 border-border/70 border-b px-1 py-3 sm:px-4 sm:py-4">
       <div className="flex items-center justify-between gap-3">
         <p className="font-medium text-muted-foreground text-xs sm:text-sm">
           {label}
@@ -21,7 +21,7 @@ export function StatCard({
           className="size-4 shrink-0 text-muted-foreground/70"
         />
       </div>
-      <p className="mt-2 font-heading font-semibold text-3xl tabular-nums tracking-tight">
+      <p className="mt-1 font-heading font-semibold text-2xl tabular-nums tracking-tight sm:mt-2 sm:text-3xl">
         {value.toLocaleString("pt-BR")}
       </p>
       {detail ? (

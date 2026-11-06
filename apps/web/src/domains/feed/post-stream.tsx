@@ -35,7 +35,17 @@ export function PostStream({
       }),
     queryKey: ["social-stream", mode],
   });
-  const posts = feed.data?.pages.flatMap((page) => page.items) ?? [];
+  const posts = (feed.data?.pages.flatMap((page) => page.items) ?? []).filter(
+    (post) => {
+      if (mode === "saved") {
+        return post.isBookmarked;
+      }
+      if (mode === "following") {
+        return post.creator.isFollowing;
+      }
+      return true;
+    }
+  );
   const retry = useCallback(() => feed.refetch(), [feed]);
   const loadMore = useCallback(() => feed.fetchNextPage(), [feed]);
   if (feed.isPending) {

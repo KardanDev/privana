@@ -51,6 +51,7 @@ export function CmsWorkspace({ document }: { document: CmsDocumentDTO }) {
         </Button>
       </div>
       <form
+        aria-busy={state.pending}
         className="rounded-xl border bg-card"
         noValidate
         onChange={state.changed}
@@ -119,7 +120,9 @@ export function CmsWorkspace({ document }: { document: CmsDocumentDTO }) {
               variant="outline"
             >
               <Save data-icon="inline-start" />
-              {state.pending ? "Salvando…" : "Salvar rascunho"}
+              {state.pendingKind === "save"
+                ? "Salvando rascunho…"
+                : "Salvar rascunho"}
             </Button>
             <Button
               disabled={state.pending || state.dirty}
@@ -128,7 +131,9 @@ export function CmsWorkspace({ document }: { document: CmsDocumentDTO }) {
               type="button"
             >
               <Send data-icon="inline-start" />
-              Publicar versão
+              {state.pendingKind === "publish"
+                ? "Publicando…"
+                : "Publicar versão"}
             </Button>
           </div>
         </div>
@@ -152,7 +157,9 @@ export function CmsWorkspace({ document }: { document: CmsDocumentDTO }) {
               Cancelar
             </Button>
             <Button disabled={state.pending} onClick={state.publish} size="sm">
-              Confirmar publicação
+              {state.pendingKind === "publish"
+                ? "Publicando…"
+                : "Confirmar publicação"}
             </Button>
           </div>
         </section>

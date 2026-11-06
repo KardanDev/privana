@@ -12,7 +12,7 @@ import { StudioCategoryField } from "./studio-category-field";
 import { useProfileForm } from "./use-profile-form";
 
 export function ProfileForm({ profile }: { profile: CreatorDTO | null }) {
-  const form = useProfileForm();
+  const form = useProfileForm(profile);
   const config = usePlatform();
   const disabled = form.pending || profile?.status === "SUSPENDED";
   const submitLabel = profile ? "Salvar alterações" : "Enviar candidatura";
