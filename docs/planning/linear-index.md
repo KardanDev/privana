@@ -2,7 +2,7 @@
 
 Snapshot: November 6, 2026. The live board owns current status and acceptance evidence. See [roadmap](roadmap.md), [scope and decisions](scope-and-decisions.md) and the [Linear project](https://linear.app/kardandev/project/privana-onlyfans-inspired-platform-eab4888a909b).
 
-95 executable stories grouped under 10 milestone deliverables. Each story has testable acceptance criteria and three implementation checklist items. Only M01 is in the current implementation scope. KAR-8 is superseded planning material, not delivered work.
+118 executable stories grouped under 12 milestone deliverables, including the subsequent redesign, Yoti and Sentry planning additions. Each story has testable acceptance criteria and three implementation checklist items. Only M01 is in the current implementation scope. KAR-8 is superseded planning material, not delivered work.
 
 ## M01 — Delivery foundation
 
@@ -17,9 +17,26 @@ Deliverable: [KAR-9](https://linear.app/kardandev/issue/KAR-9/m01-delivery-found
 | [KAR-21](https://linear.app/kardandev/issue/KAR-21/define-data-safe-deployment-and-migration-contracts) | Define data-safe deployment and migration contracts | KAR-18 |
 | [KAR-22](https://linear.app/kardandev/issue/KAR-22/make-the-github-linear-delivery-lifecycle-reviewable) | Make the GitHub–Linear delivery lifecycle reviewable | KAR-17, KAR-18, KAR-19, KAR-20, KAR-21 |
 
+## M01.5 — Brand, UX and platform redesign
+
+Deliverable: [KAR-126](https://linear.app/kardandev/issue/KAR-126). Depends on M01; precedes M02–M07 feature expansion. Implementation remains in Backlog.
+
+| Issue | User outcome / implementation story | Depends on |
+| --- | --- | --- |
+| [KAR-127](https://linear.app/kardandev/issue/KAR-127) | Audit current UI and discover agent design, marketing and QA capabilities | See live issue dependencies |
+| [KAR-128](https://linear.app/kardandev/issue/KAR-128) | Define Privana brand positioning, audience strategy and conversion-led creative direction | See live issue dependencies |
+| [KAR-129](https://linear.app/kardandev/issue/KAR-129) | Design distinctive Privana logo, color system, typography and brand assets | See live issue dependencies |
+| [KAR-130](https://linear.app/kardandev/issue/KAR-130) | Redesign information architecture, navigation and end-to-end UX prototypes | See live issue dependencies |
+| [KAR-131](https://linear.app/kardandev/issue/KAR-131) | Build accessible production design tokens and reusable React component library | See live issue dependencies |
+| [KAR-132](https://linear.app/kardandev/issue/KAR-132) | Implement polished public marketing, landing, registration and trust experience | See live issue dependencies |
+| [KAR-133](https://linear.app/kardandev/issue/KAR-133) | Implement modern fan app shell, feed, discovery, profiles and subscriber UX | See live issue dependencies |
+| [KAR-134](https://linear.app/kardandev/issue/KAR-134) | Implement premium Creator Studio redesign for daily creator workflows | See live issue dependencies |
+| [KAR-135](https://linear.app/kardandev/issue/KAR-135) | Redesign Owner Control Center dashboard, navigation and operational workspaces | See live issue dependencies |
+| [KAR-136](https://linear.app/kardandev/issue/KAR-136) | Validate redesign end-to-end and establish design governance for later milestones | See live issue dependencies |
+
 ## M02 — Accounts, eligibility and onboarding
 
-Deliverable: [KAR-6](https://linear.app/kardandev/issue/KAR-6/m02-accounts-eligibility-and-onboarding). Dependencies: M01.
+Deliverable: [KAR-6](https://linear.app/kardandev/issue/KAR-6/m02-accounts-eligibility-and-onboarding). Dependencies: M01, M01.5.
 
 | Issue | User outcome / implementation story | Depends on |
 | --- | --- | --- |
@@ -132,6 +149,7 @@ Deliverable: [KAR-14](https://linear.app/kardandev/issue/KAR-14/m08-brazil-beta-
 | [KAR-54](https://linear.app/kardandev/issue/KAR-54/automate-the-complete-beta-journey-matrix) | Automate the complete beta journey matrix | Milestone prerequisites |
 | [KAR-55](https://linear.app/kardandev/issue/KAR-55/meet-measured-performance-and-accessibility-budgets) | Meet measured performance and accessibility budgets | Milestone prerequisites |
 | [KAR-56](https://linear.app/kardandev/issue/KAR-56/establish-monitoring-alerts-and-incident-response) | Establish monitoring, alerts and incident response | Milestone prerequisites |
+| [KAR-125](https://linear.app/kardandev/issue/KAR-125) | Integrate Sentry MCP onboarding, Next.js monitoring and incident alerts | KAR-56 |
 | [KAR-57](https://linear.app/kardandev/issue/KAR-57/validate-backups-restores-and-retention-operations) | Validate backups, restores and retention operations | Milestone prerequisites |
 | [KAR-58](https://linear.app/kardandev/issue/KAR-58/run-the-beta-readiness-and-acceptance-gate) | Run the beta readiness and acceptance gate | KAR-53, KAR-54, KAR-55, KAR-56, KAR-57, KAR-107 |
 | [KAR-107](https://linear.app/kardandev/issue/KAR-107/activate-approved-real-age-and-identity-assurance-before-external-beta) | Activate approved real age and identity assurance before external beta | KAR-23, KAR-66 |
@@ -168,3 +186,22 @@ Deliverable: [KAR-16](https://linear.app/kardandev/issue/KAR-16/m10-advanced-par
 | [KAR-109](https://linear.app/kardandev/issue/KAR-109/plan-and-measure-a-brazil-launch-and-creator-acquisition-experiments) | Plan and measure a Brazil launch and creator acquisition experiments | KAR-14, KAR-88 |
 | [KAR-110](https://linear.app/kardandev/issue/KAR-110/qualify-south-america-markets-locales-and-currency-operations) | Qualify South America markets, locales and currency operations | KAR-14, KAR-59 |
 | [KAR-111](https://linear.app/kardandev/issue/KAR-111/deliver-approved-downloadable-and-scheduled-reports) | Deliver approved downloadable and scheduled reports | KAR-51, KAR-93, KAR-39 |
+
+## M11 — Yoti Age Verification Integration
+
+Deliverable: [KAR-124](https://linear.app/kardandev/issue/KAR-124). Depends on M02 eligibility contracts and M07 operations conventions. Requires owner/provider approval and verified integration evidence before M08 external-beta activation; numbering preserves the original references.
+
+| Issue | User outcome / implementation story | Depends on |
+| --- | --- | --- |
+| [KAR-112](https://linear.app/kardandev/issue/KAR-112) | Approve Yoti AVS onboarding, Brazil verification policy and service configuration | See live issue dependencies |
+| [KAR-113](https://linear.app/kardandev/issue/KAR-113) | Audit eligibility and map safe sandbox-to-Yoti integration boundaries | See live issue dependencies |
+| [KAR-114](https://linear.app/kardandev/issue/KAR-114) | Persist minimal Yoti attempts and versioned age-entitlement policy | See live issue dependencies |
+| [KAR-115](https://linear.app/kardandev/issue/KAR-115) | Implement authenticated Yoti AVS session creation and hosted redirect | See live issue dependencies |
+| [KAR-116](https://linear.app/kardandev/issue/KAR-116) | Verify Yoti session results and RSA-PSS-signed webhook notifications | See live issue dependencies |
+| [KAR-117](https://linear.app/kardandev/issue/KAR-117) | Enforce expiring jurisdiction-aware age entitlement across restricted access | See live issue dependencies |
+| [KAR-118](https://linear.app/kardandev/issue/KAR-118) | Enable Brazil CPF hosted verification under approved Yoti configuration | See live issue dependencies |
+| [KAR-119](https://linear.app/kardandev/issue/KAR-119) | Build responsive fan and creator Yoti age-verification journey | See live issue dependencies |
+| [KAR-120](https://linear.app/kardandev/issue/KAR-120) | Add real Yoti operations and audit reporting to Owner Control Center | See live issue dependencies |
+| [KAR-121](https://linear.app/kardandev/issue/KAR-121) | Harden age-verification retries, expiry, outages and production cutover | See live issue dependencies |
+| [KAR-122](https://linear.app/kardandev/issue/KAR-122) | Automate Yoti integration, security and jurisdiction acceptance tests | See live issue dependencies |
+| [KAR-123](https://linear.app/kardandev/issue/KAR-123) | Prove real Yoti communication and sign off controlled Brazil rollout | See live issue dependencies |

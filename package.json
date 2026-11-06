@@ -58,7 +58,7 @@
     "start:dev": "turbo run dev",
     "test": "bun test packages/api/tests packages/auth/tests packages/db/tests apps/web/tests e2e/read-browser-target.test.ts",
     "test:browser": "playwright test",
-    "test:smoke": "bun packages/api/scripts/verify-demo-http.ts"
+    "test:smoke": "cd apps/web && varlock run -- bun ../../packages/api/scripts/verify-demo-http.ts"
   },
   "overrides": {
     "@next/env": "npm:@varlock/nextjs-integration@1.2.2"

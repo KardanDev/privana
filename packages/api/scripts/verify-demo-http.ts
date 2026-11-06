@@ -1,16 +1,16 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { z } from "zod";
+import { requireDemoSmokeEnvironment } from "./smoke/require-demo-smoke-environment";
 import { signInDemo } from "./smoke/sign-in-demo";
 import { verifyCmsFlow } from "./smoke/verify-cms-flow";
 import { verifyCreatorFlow } from "./smoke/verify-creator-flow";
 import { verifyMemberFlow } from "./smoke/verify-member-flow";
 import { verifyRoleAccess } from "./smoke/verify-role-access";
 
-assert.equal(
-  process.env.ALLOW_DEMO_SMOKE,
-  "1",
-  "Set ALLOW_DEMO_SMOKE=1 to exercise local demo data"
+requireDemoSmokeEnvironment(process.env);
+process.stdout.write(
+  `Demo HTTP smoke: ${process.env.NODE_ENV}; local target http://localhost:3001. Review the server's development resources before continuing.\n`
 );
 const manifest = z
   .object({

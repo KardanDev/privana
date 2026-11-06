@@ -78,6 +78,8 @@ Turbo's `check-types` default caches `dist/**` because DB/auth/API use `tsc -b` 
 
 ## Changes and review
 
+The stable required-check candidate for `main` is **Repository checks**, provided by the **Quality** workflow. The owner or repository administrator configures and maintains GitHub rules after the workflow is available on the protected branch. This change demonstrates the check on a real PR; it does not claim that branch protection or bypass permissions were configured or independently verified. Until repository rules are confirmed, the same passing-check and reviewer requirements remain the documented merge policy. The opt-in browser/service suites are not secretless PR jobs.
+
 Create a branch using the actual Linear issue, keep functions/components focused in domain files, and use direct UI imports. Preserve the shared authorization, notification and ledger contracts rather than adding parallel implementations. Include additive migration/recovery details with any data change.
 
 The PR must link its issue, describe observable behavior and show meaningful validation. Attach relevant desktop/mobile evidence for UI changes, including failure recovery. Reviewers assess permission boundaries, concurrency and data preservation as well as appearance. Resolve findings and rerun affected checks before changing issue state. Required checks, human review, merge and deployment are distinct gates; an agent does not independently approve its own PR.

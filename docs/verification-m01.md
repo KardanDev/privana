@@ -17,12 +17,14 @@ Prepared November 6, 2026. Scope: [KAR-9 delivery foundation](https://linear.app
 | Formatting/lint | `bun run check`: success after narrowly excluding editor skill/agent assets. |
 | Package types | `bun run check-types`: five workspace tasks successful; web/UI outputs now match their compiler behavior. |
 | Maintenance/tooling types | `bun run check-types:scripts`: success, including root scripts and the committed browser harness. |
-| Deterministic suite | `bun run test`: 264 passed, zero failed, 827 assertions across 53 files. The recorded unrestricted run avoids Bun's parent-directory permission diagnostic from the filesystem sandbox. |
+| Deterministic suite | `bun run test`: 271 passed, zero failed, 834 assertions across 54 files, including refusal of mutating demo checks in production or unidentified environments. The recorded unrestricted run avoids Bun's parent-directory permission diagnostic from the filesystem sandbox. |
 | Production compilation | `bun run build`: four tasks successful, Next.js 16.4.3 compilation/type/static-generation completed. No database migration/seed ran. |
 | Environment dry-run | `bun run env:production --dry-run`: eight allowlisted names and skipped count only; no values printed and no remote writes. Fixture tests separately prove no subprocess invocation during dry-run. |
 | Browser smoke | All 15 anonymous checks passed in 25.5 seconds across desktop/tablet/mobile Chromium, against the compiled local app at `http://127.0.0.1:3011` using development resources. Card validation/approval/decline, Pix/currency/expiry, no persisted grant and overflow checks passed. This is not an authenticated/provider E2E gate. |
 
-The cloud-backed browser runtime reads published CMS configuration. Browser artifacts remain ignored/private. Synthetic CI artifacts are disposable and cannot be promoted to production. Local checks do not prove a clean Linux CI run; the real workflow result must be attached to the PR.
+The initial clean Linux [quality run](https://github.com/KardanDev/privana/actions/runs/42305436017) passed every step at `ccd1664`, including frozen installation, generation, lint, types, tests and production compilation without real service credentials. Follow-up review guards are included in the latest PR checks; the current head must remain green before merge.
+
+The cloud-backed browser runtime reads published CMS configuration. Browser artifacts remain ignored/private. Synthetic CI artifacts are disposable and cannot be promoted to production. The expanded roadmap now also indexes the later M01.5, M11 and Sentry planning additions; none is implemented by this PR.
 
 On this Windows host, initial requests through `localhost` timed out in the test runtime while explicit IPv4 loopback returned HTTP 200 in approximately one second. The successful suite used explicit IPv4 and a read-only readiness preflight. No application performance claim is inferred from that environment-specific routing issue.
 
