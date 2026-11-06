@@ -7,7 +7,8 @@ import { verifyResetFlow } from "./email/verify-reset-flow";
 // Never print credentials, verification tokens, reset links, or cookie headers.
 if (
   process.env.ALLOW_EMAIL_CHECK !== "1" ||
-  process.env.NODE_ENV === "production"
+  !["development", "test"].includes(process.env.NODE_ENV ?? "") ||
+  process.env.VERCEL_ENV === "production"
 ) {
   throw new Error("Use ALLOW_EMAIL_CHECK=1 em desenvolvimento.");
 }

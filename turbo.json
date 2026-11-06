@@ -14,6 +14,14 @@
       "dependsOn": ["^check-types"],
       "outputs": ["dist/**"]
     },
+    "@privana/ui#check-types": {
+      "dependsOn": ["^check-types"],
+      "outputs": []
+    },
+    "@privana/web#check-types": {
+      "dependsOn": ["^check-types"],
+      "outputs": ["tsconfig.tsbuildinfo"]
+    },
     "dev": {
       "cache": false,
       "persistent": true
@@ -44,7 +52,6 @@
   "globalEnv": [
     "BETTER_AUTH_SECRET",
     "BETTER_AUTH_URL",
-    "BLOB_READ_WRITE_TOKEN",
     "CI",
     "DATABASE_URL",
     "EMAIL_DELIVERY_MODE",
@@ -52,6 +59,9 @@
     "EMAIL_PREVIEW_DIRECTORY",
     "NODE_ENV",
     "RESEND_API_KEY",
+    "UPSTASH_BLOB_TOKEN",
+    "UPSTASH_REDIS_REST_TOKEN",
+    "UPSTASH_REDIS_REST_URL",
     "VERCEL",
     "VERCEL_ENV",
     "VERCEL_PROJECT_PRODUCTION_URL",
