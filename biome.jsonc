@@ -6,6 +6,8 @@
       "!!**/.claude",
       "!!**/.qwen",
       "!!**/.codex",
+      "!!**/.cursor/skills",
+      "!!**/.cursor/agents",
       "!!**/.engram",
       "!!**/prisma/generated",
       "!!**/.next",

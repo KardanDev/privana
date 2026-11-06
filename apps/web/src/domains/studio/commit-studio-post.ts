@@ -26,7 +26,6 @@ export function commitStudioPost(
       )
     )
   );
-  )
   for (const [key, cache] of entries) {
     const profile = cache?.pages[0]?.profile;
     if (!(cache && profile)) {

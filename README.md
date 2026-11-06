@@ -1,6 +1,8 @@
-﻿# Privana
+# Privana
 
 Marketplace de comunidades e criadores em português do Brasil, com interface roxa, contas por e-mail e dados persistidos no PostgreSQL. Usa Next.js 16, React 19, Better Auth 1.7.10, oRPC, Prisma 7, shadcn/Base UI, Bun e Turborepo.
+
+O planejamento atual está no [roadmap](docs/planning/roadmap.md), com [índice dos issues no Linear](docs/planning/linear-index.md) e [decisões de escopo](docs/planning/scope-and-decisions.md). A implementação desta etapa cobre somente M01, a base de entrega e validação. Consulte também os guias de [contribuição](docs/contributing.md), [testes](docs/testing.md) e [deploy](docs/deployment.md).
 
 ## Produto
 
@@ -18,7 +20,7 @@ Marketplace de comunidades e criadores em português do Brasil, com interface ro
 
 Requisitos: Bun **1.3.14**, Node.js compatível com Next.js 16 e um banco **Prisma Postgres na nuvem**. O projeto usa `@prisma/adapter-ppg`: obtenha no console do Prisma a **URL de conexão direta TCP**, no formato `postgres://…@…:5432/…?sslmode=require`. Preserve as credenciais e parâmetros fornecidos pelo console. Não substitua por uma URL HTTP/Accelerate ou por um banco local.
 
-1. Execute `bun install`.
+1. Execute `bun install --frozen-lockfile`.
 2. Copie [apps/web/.env.example](apps/web/.env.example) para `apps/web/.env` somente se esse arquivo ainda não existir. Preencha `DATABASE_URL`, gere `BETTER_AUTH_SECRET` e confira `BETTER_AUTH_URL=http://localhost:3001`.
 3. Gere os tipos de ambiente e o cliente Prisma:
 

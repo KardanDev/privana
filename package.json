@@ -34,6 +34,7 @@
     "build": "turbo run build",
     "check": "ultracite check",
     "check-types": "turbo run check-types",
+    "check-types:scripts": "tsc -p packages/api/tsconfig.scripts.json --pretty false && tsc -p packages/db/tsconfig.seed.json --pretty false && tsc -p packages/auth/tsconfig.scripts.json --pretty false && tsc -p tsconfig.tooling.json --pretty false",
     "db:generate": "turbo run db:generate -F @privana/db --",
     "db:inspect": "cd apps/web && varlock run -- bun ../../scripts/inspect-database.ts",
     "db:migrate": "turbo run db:migrate -F @privana/db --",
@@ -55,7 +56,8 @@
     "postinstall": "varlock codegen --path ./apps/web/ && varlock codegen --path ./packages/db/",
     "owner:bootstrap": "cd apps/web && varlock run -- bun ../../packages/auth/scripts/bootstrap-owner.ts",
     "start:dev": "turbo run dev",
-    "test": "bun test packages/api/tests packages/auth/tests packages/db/tests apps/web/tests",
+    "test": "bun test packages/api/tests packages/auth/tests packages/db/tests apps/web/tests e2e/read-browser-target.test.ts",
+    "test:browser": "playwright test",
     "test:smoke": "bun packages/api/scripts/verify-demo-http.ts"
   },
   "overrides": {
@@ -67,6 +69,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.15",
+    "@playwright/test": "1.65.0",
     "@privana/config": "workspace:*",
     "@types/node": "catalog:",
     "tsx": "^4.23.13",
