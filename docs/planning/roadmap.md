@@ -31,13 +31,13 @@ Dependencies establish a delivery sequence, not calendar commitments. Cross-cutt
 | M10 — Advanced parity, growth and expansion | Selected tiers/offers, advanced Vault/queue, broadcasts, acquisition/exports, Brazil marketing experiments and qualified market expansion; future-format specifications | Each selected slice has its own access, commercial, operating and test gate; live rooms/stories/custom requests/delegation start with explicit decisions; incomplete features stay outside navigation | M8; M9 when real commercial operation is involved |
 | M11 — Yoti Age Verification Integration | Provider-gated real age-assurance implementation tracked in KAR-124 and its stories | Approved provider communication and eligibility evidence before M08 external restricted-content onboarding; no synthetic approval in production | M2 and M7 contracts; feeds the M8 gate |
 
-The live roadmap includes 12 milestones, including M01.5, M11 Yoti and the M08 Sentry work. M01 is Done. M01.5 is the next redesigned-product foundation, organized into ten workstreams and 36 actionable stories; this revision plans it only. See the execution brief and live index for detailed acceptance and dependencies.
+The live roadmap includes 12 milestones, including M01.5, M11 Yoti and the M08 Sentry work. M01 is Done. M01.5 is organized into ten workstreams and 36 actionable stories. It now executes one owner-authorized group at a time; the live index records the current boundary. See the execution brief and Linear for detailed acceptance and dependencies.
 
 ## Current implementation boundary
 
 M01 is complete: [PR #1](https://github.com/KardanDev/privana/pull/1) is merged and KAR-9/KAR-17–22 are Done. Its historical starting blockers are resolved; the evidence is recorded in the M01 verification handoff. Those historical observations are not current failure claims.
 
-The current request authorizes planning M01.5, not starting implementation. The [redesign execution brief](m015-redesign-plan.md) and its Linear stories define scope, route/state coverage, owner decision gates, coded references and final acceptance. All 36 redesign stories remain Backlog. No later milestone starts automatically after M01.5, and deployment/provider decisions remain separate.
+On November 7, the owner accepted the merged KAR-127 baseline and authorized KAR-128 next. Its [positioning brief](m015-positioning/brief.md), vocabulary and dependent copy proposal require review before KAR-129. The [redesign execution brief](m015-redesign-plan.md) and Linear stories define the remaining gates; consult the [live delivery index](linear-index.md) for current authorization. No later group or milestone starts automatically, and deployment/provider decisions remain separate.
 
 ## What the beta must demonstrate
 
