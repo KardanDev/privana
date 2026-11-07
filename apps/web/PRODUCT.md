@@ -36,7 +36,7 @@ Brazil is the initial market, followed by wider South American and international
 
 ## Brand Commitments
 
-Privana is the current product name. The owner requested a royal purple identity, professional typography, a distinctive creator-platform experience, and a polished alternative to generic dashboard or Facebook-like styling. A logo, precise palette, typefaces, and final visual direction are not yet approved.
+Privana is the current product name. The owner requested a royal purple identity, professional typography, a distinctive creator-platform experience, and a polished alternative to generic dashboard or Facebook-like styling. On November 7, 2026 the owner selected Proximidade: Hanken Grotesk UI, Bricolage Grotesque brand/major headings and a royal purple/violet palette. DESIGN.md records the selected target; application rollout and final logo approval remain separate issue/PR gates.
 
 ## Evidence on Hand
 
