@@ -5,7 +5,7 @@ import { reviewState } from "./state.mjs";
 
 export function createFieldInput(field, group, invalid) {
   if (field.type === "select") {
-    return createFieldSelect(field);
+    return createFieldSelect(field, group);
   }
   const tag = field.type === "textarea" ? "textarea" : "input";
   const input = element(tag, "", {
@@ -27,11 +27,17 @@ export function createFieldInput(field, group, invalid) {
       reviewState.fields.get(input.dataset.key) ?? field.value
     );
   }
-  if (field.min) {
-    input.minLength = field.min;
-  }
-  if (field.max) {
-    input.maxLength = field.max;
+  for (const [name, value] of Object.entries({
+    max: field.maxValue,
+    maxlength: field.max,
+    min: field.minValue,
+    minlength: field.min,
+    pattern: field.pattern,
+    step: field.step,
+  })) {
+    if (value !== undefined) {
+      input.setAttribute(name, String(value));
+    }
   }
   if (field.scope === "creators") {
     input.dataset.filterCreators = "true";

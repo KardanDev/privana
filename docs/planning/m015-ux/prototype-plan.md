@@ -11,11 +11,12 @@ The owner accepted KAR-129 in PRs #7/#8 and authorized KAR-130 on November 7, 20
 | KAR-178 | Public/member discovery, named creator profiles and account entry/recovery | KAR-177/143/140. Read-only test credentials, local filtering and useful return context. |
 | KAR-181 | Fan feed/saved, recorded memberships, conversations and account preferences | KAR-178. Independent access fixtures; failed mutations retain useful input/context. |
 | KAR-182 | No-charge card and Pix checkout, reference currencies and recovery | KAR-178/181. Fixed test inputs, zero charge and no access grant. |
-| KAR-179 | Mobile/desktop creator application, profile, editor interruption and draft/publish/archive cases | KAR-177/143/140. Public preview and private media remain distinct. |
+| KAR-179 | Creator applications, profile editing and responsive Studio entry | KAR-177/143/140. Public profile, account settings and verification remain distinct. |
+| KAR-183 | Creator composing, interrupted editing, upload/save recovery and draft/publish/archive | KAR-179. Public preview/private media, list/filter/empty states; no real upload or publication. |
 | KAR-180 | Staff-role operations/confirmation/audit and CMS draft/preview/publish/restore/conflict cases | KAR-177/143/140. No real records, messages or media inspection. |
 | KAR-145 | Builder review, source/token/component/screen mapping, three reference-screen definitions and G1 approval record | All critical prototypes and accepted identity. Owner approval remains explicit, never inferred from CI. |
 
-KAR-144 is the prototype container for six bounded child stories. The formatted fan source exceeded the hard PR budget before layout; separating public, community and checkout retains all original acceptance. Each actionable issue has one short-lived branch and ordinary PR; dependent PRs identify their base and merge order. The group review precedes KAR-131 or any later group.
+KAR-144 is the prototype container for seven bounded child stories. Formatted fan and Studio source exceeded the hard PR budget; separating public, community, checkout, profile and composing retains all original acceptance. Each actionable issue has one short-lived branch and ordinary PR; dependent PRs identify their base and merge order. The group review precedes KAR-131 or any later group.
 
 ## Review medium and fixture contract
 

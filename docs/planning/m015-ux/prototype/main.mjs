@@ -1,4 +1,5 @@
 import { element } from "./element.mjs";
+import { guardClose } from "./guard-close.mjs";
 import { renderScreen } from "./render-screen.mjs";
 import { scenarios } from "./scenarios.mjs";
 import { toggleTheme } from "./toggle-theme.mjs";
@@ -11,6 +12,7 @@ select.addEventListener("change", (event) => {
   location.hash = event.currentTarget.value;
 });
 document.getElementById("theme").addEventListener("click", toggleTheme);
+document.querySelector(".sidebar .brand").addEventListener("click", guardClose);
 window.addEventListener("hashchange", () => {
   if (location.hash !== "#screen-title") {
     renderScreen();

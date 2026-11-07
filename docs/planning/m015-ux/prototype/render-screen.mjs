@@ -3,6 +3,7 @@ import { element } from "./element.mjs";
 import { renderActions } from "./render-actions.mjs";
 import { renderCard } from "./render-card.mjs";
 import { renderFields } from "./render-fields.mjs";
+import { renderHeading } from "./render-heading.mjs";
 import { renderNavigation } from "./render-navigation.mjs";
 import { renderSecondary } from "./render-secondary.mjs";
 import { scenarios } from "./scenarios.mjs";
@@ -21,15 +22,12 @@ export function renderScreen() {
   stage.dataset.layout = scenario.layout ?? "list";
   stage.querySelector(".sidebar .brand").href =
     `#${scenario.navigation[0].target}`;
+  stage.querySelector(".sidebar .brand").dataset.guardGroup =
+    scenario.guardGroup ?? "";
+  stage.querySelector(".sidebar .brand").dataset.guardTarget =
+    scenario.guardTarget ?? "";
   const screen = document.getElementById("screen");
-  const heading = element("h1", scenario.title, {
-    id: "screen-title",
-    tabindex: "-1",
-  });
-  screen.replaceChildren(
-    heading,
-    element("p", scenario.intro, { class: "intro" })
-  );
+  screen.replaceChildren(renderHeading(scenario));
   if (scenario.feedback) {
     screen.append(
       element("p", scenario.feedback, {
