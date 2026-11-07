@@ -1,6 +1,6 @@
 # Privana scope and decisions
 
-[The Linear roadmap](https://linear.app/kardandev/document/privana-delivery-roadmap-and-release-gates-1b866a380ec5) and [issue index](linear-index.md) are the current delivery plan. [The roadmap](roadmap.md) describes 12 milestones, including M01.5 and M11. The earlier eight-milestone draft is superseded. M01 is Done; the current revision plans [M01.5](m015-redesign-plan.md) only.
+[The Linear roadmap](https://linear.app/kardandev/document/privana-delivery-roadmap-and-release-gates-1b866a380ec5) and [issue index](linear-index.md) are the current delivery plan. [The roadmap](roadmap.md) describes 12 milestones, including M01.5 and M11. The earlier eight-milestone draft is superseded. M01 is Done; [M01.5](m015-redesign-plan.md) executes one owner-authorized group at a time.
 
 ## Source reconciliation
 
@@ -69,4 +69,4 @@ Existing code is classified as verify/harden, extend or missing implementation. 
 
 Completion requires acceptance evidence tied to the actual issue and PR: meaningful checks, negative authorization tests, mobile/accessibility behavior, optimistic failure recovery and migration/data-preservation verification where relevant. Service checks are opt-in and target isolated environments. Credentials, tokens, claim links, identity evidence and private media stay out of committed artifacts and logs.
 
-Only M1 is authorized for immediate implementation. Planning later milestones, creating their issues or recording dependencies does not authorize starting them.
+Current execution authority is recorded in the [delivery index](linear-index.md) and live Linear issues. On November 7 the owner advanced from accepted KAR-127 to KAR-128 only; review is required before KAR-129. Planning later work or recording its dependencies does not authorize starting it.

@@ -1,8 +1,8 @@
 # Linear delivery index
 
-Snapshot: November 6, 2026. The live board owns current status and acceptance evidence. See [roadmap](roadmap.md), [scope and decisions](scope-and-decisions.md) and the [Linear project](https://linear.app/kardandev/project/privana-onlyfans-inspired-platform-eab4888a909b).
+Execution note: November 7, 2026; backlog structure recorded November 6. The live board owns current status and acceptance evidence. See [roadmap](roadmap.md), [scope and decisions](scope-and-decisions.md) and the [Linear project](https://linear.app/kardandev/project/privana-onlyfans-inspired-platform-eab4888a909b).
 
-The project has 12 roadmap milestones. M01.5 is refined into ten workstream deliverables and 36 actionable stories with user outcomes, acceptance criteria, implementation checklists and native dependencies. M01 is merged and Done; M01.5 refinement is planning only, and later work stays unstarted. KAR-8 is superseded planning material, not delivered work. Live issue status is authoritative.
+The project has 12 roadmap milestones. M01.5 is refined into ten workstream deliverables and 36 actionable stories with user outcomes, acceptance criteria, implementation checklists and native dependencies. M01 is merged and Done. M01.5 now executes one owner-authorized group at a time; later groups/milestones stay unstarted. KAR-8 is superseded planning material, not delivered work. Live issue status is authoritative.
 
 ## M01 — Delivery foundation
 
@@ -19,9 +19,9 @@ Deliverable: [KAR-9](https://linear.app/kardandev/issue/KAR-9/m01-delivery-found
 
 ## M01.5 — Platform redesign and polish
 
-Deliverable: [KAR-126](https://linear.app/kardandev/issue/KAR-126). M01 is merged and Done. This is planning only: ten workstream deliverables and 36 actionable stories remain Backlog. See the [execution brief](m015-redesign-plan.md), [audit](m015-design-audit.md) and [Linear source](https://linear.app/kardandev/document/m015-redesign-execution-brief-coverage-and-acceptance-16b1acc50787).
+Deliverable: [KAR-126](https://linear.app/kardandev/issue/KAR-126). M01 is merged and Done. KAR-127's baseline is accepted and merged in [PR #2](https://github.com/KardanDev/privana/pull/2) and [PR #3](https://github.com/KardanDev/privana/pull/3). The owner authorized KAR-128 next: positioning and product language, then owner review before KAR-129. See its [working brief](m015-positioning/brief.md), the [execution brief](m015-redesign-plan.md), [audit](m015-design-audit.md) and [Linear source](https://linear.app/kardandev/document/m015-redesign-execution-brief-coverage-and-acceptance-16b1acc50787).
 
-[Execution brief in Linear](https://linear.app/kardandev/document/m015-redesign-execution-brief-coverage-and-acceptance-16b1acc50787). All 36 actionable stories and ten workstream deliverables remain Backlog. Each story contains a user story, four acceptance criteria, two implementation steps, relevant skill/tool guidance and native blocking relationships.
+[Execution brief in Linear](https://linear.app/kardandev/document/m015-redesign-execution-brief-coverage-and-acceptance-16b1acc50787). Each story contains a user story, four acceptance criteria, two implementation steps, relevant skill/tool guidance and native blocking relationships. Status below is structural; consult Linear for current execution and approvals.
 
 | Deliverable | Workstream | Stories |
 | --- | --- | --- |
