@@ -25,8 +25,9 @@ export async function publishComment({
   let issue;
   const cursors = new Set();
   for (let page = 0; page < 100; page += 1) {
+    // biome-ignore lint/performance/noAwaitInLoops: Each Linear cursor depends on the preceding page; publication follows the final duplicate check.
     const data = await requestLinear(issueQuery, { after, id: issueId });
-    issue = data.issue;
+    ({ issue } = data);
     if (
       !(
         issue &&

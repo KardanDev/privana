@@ -4,6 +4,10 @@ import { createCommentId } from "../create-comment-id.mjs";
 import { readLinkedIssue } from "../read-linked-issue.mjs";
 import { requestJson } from "../request-json.mjs";
 
+const configuredEndpoint = /Only the configured/;
+const uuidV4 =
+  /^[\da-f]{8}-[\da-f]{4}-4[\da-f]{3}-[89ab][\da-f]{3}-[\da-f]{12}$/;
+
 test("uses raw Linear API key authentication and GitHub bearer authentication", async () => {
   const calls = [];
   const fetcher = (url, options) => {
@@ -44,7 +48,7 @@ test("rejects redirected/foreign endpoints and never logs secret provider detail
         fetcher,
         token: "secret",
       }),
-    /Only the configured/
+    configuredEndpoint
   );
   await assert.rejects(
     () =>
@@ -52,7 +56,7 @@ test("rejects redirected/foreign endpoints and never logs secret provider detail
         fetcher,
         token: "secret",
       }),
-    /Only the configured/
+    configuredEndpoint
   );
   await assert.rejects(
     () =>
@@ -83,10 +87,7 @@ test("notification identity is stable, event-specific and valid UUID v4", () => 
   const id = createCommentId("ci:repo:4:sha");
   assert.equal(id, createCommentId("ci:repo:4:sha"));
   assert.notEqual(id, createCommentId("merge:repo:4:sha"));
-  assert.match(
-    id,
-    /^[\da-f]{8}-[\da-f]{4}-4[\da-f]{3}-[89ab][\da-f]{3}-[\da-f]{12}$/
-  );
+  assert.match(id, uuidV4);
 });
 
 test("reporting independently validates the issue boundary instead of trusting PR text", () => {

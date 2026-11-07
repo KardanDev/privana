@@ -5,6 +5,9 @@ import { confirmReport } from "../confirm-report.mjs";
 import { readRunJobs } from "../read-run-jobs.mjs";
 import { createGitHubFixture } from "./github-fixture.mjs";
 
+const positivePrNumber = /positive PR number/;
+const completeCiJobs = /complete CI job/;
+
 test("collects a current passing CI event from both authoritative workflows", async () => {
   const { options } = createGitHubFixture();
   const event = await collectEvent(options);
@@ -17,6 +20,7 @@ test("rejects failed, cancelled, skipped, pending and newer rerun results", asyn
   for (const conclusion of ["failure", "cancelled", "skipped", null]) {
     const { options, state } = createGitHubFixture();
     state.runs[1].conclusion = conclusion;
+    // biome-ignore lint/performance/noAwaitInLoops: Evaluate each isolated negative fixture before advancing to the next case.
     assert.equal((await collectEvent(options)).status, "checks-not-passed");
   }
   const { options, state } = createGitHubFixture();
@@ -38,6 +42,7 @@ test("rejects stale commits, changed bases and fake workflow identity", async ()
   ]) {
     const { options, state } = createGitHubFixture();
     Object.assign(state.runs[0], update);
+    // biome-ignore lint/performance/noAwaitInLoops: Evaluate each isolated negative fixture before advancing to the next case.
     assert.equal((await collectEvent(options)).status, "not-applicable");
   }
   const { options, state } = createGitHubFixture();
@@ -80,6 +85,7 @@ test("ignores forks, drafts, closed-unmerged and non-main PRs", async () => {
   ]) {
     const { options, state } = createGitHubFixture();
     mutate(state.pr);
+    // biome-ignore lint/performance/noAwaitInLoops: Evaluate each isolated negative fixture before advancing to the next case.
     assert.equal((await collectEvent(options)).status, "not-applicable");
   }
 });
@@ -109,7 +115,7 @@ test("manual reconciliation validates its number and current PR state", async ()
   options.event = { inputs: { pull_request: "4" } };
   assert.equal((await collectEvent(options)).status, "verified");
   options.event.inputs.pull_request = "4; execute";
-  await assert.rejects(() => collectEvent(options), /positive PR number/);
+  await assert.rejects(() => collectEvent(options), positivePrNumber);
 });
 
 test("final confirmation rejects a head/state change after evidence collection", async () => {
@@ -139,6 +145,6 @@ test("reads all job pages and refuses an incomplete response", async () => {
       readRunJobs({ id: 100 }, () =>
         Promise.resolve({ jobs: [], total_count: 1 })
       ),
-    /complete CI job/
+    completeCiJobs
   );
 });

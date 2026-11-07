@@ -8,6 +8,13 @@ import { readSections } from "../read-sections.mjs";
 import { requestGitHub } from "../request-github.mjs";
 import { validatePullRequest } from "../validate-pull-request.mjs";
 
+const ordinaryPr = /ordinary/;
+const summarySection = /Summary/;
+const evidenceSection = /Evidence/;
+const duplicateSection = /duplicate/;
+const completeFileList = /complete changed-file/;
+const splitRequired = /Split this PR/;
+
 const body = `Linear issue: KAR-174\n\n${requiredSections.map((name) => `## ${name}\n\nSpecific ${name.toLowerCase()} behavior and evidence for this issue.`).join("\n\n")}`;
 const pr = {
   body,
@@ -56,7 +63,7 @@ test("rejects mismatched or multiple branch/title/primary issue IDs", () => {
 test("rejects draft PRs, empty guidance and duplicate headings", () => {
   assert.throws(
     () => validatePullRequest({ ...pr, draft: true }, files),
-    /ordinary/
+    ordinaryPr
   );
   assert.throws(
     () =>
@@ -70,7 +77,7 @@ test("rejects draft PRs, empty guidance and duplicate headings", () => {
         },
         files
       ),
-    /Summary/
+    summarySection
   );
   assert.throws(
     () =>
@@ -84,11 +91,11 @@ test("rejects draft PRs, empty guidance and duplicate headings", () => {
         },
         files
       ),
-    /Evidence/
+    evidenceSection
   );
   assert.throws(
     () => readSections(`${body}\n## Summary\nDuplicate content.`),
-    /duplicate/
+    duplicateSection
   );
 });
 
@@ -107,7 +114,7 @@ test("flags the target budget and rejects an incomplete file list", () => {
   );
   assert.throws(
     () => validatePullRequest({ ...pr, changed_files: 2 }, files),
-    /complete changed-file/
+    completeFileList
   );
 });
 
@@ -135,18 +142,18 @@ test("oversize exceptions require both maintainer label and a real split reason"
   const largeFiles = [{ ...files[0], additions: 801 }];
   const reason =
     "\n## Large change reason\n\nThis atomic schema correction must be reviewed together because splitting it leaves the old and new invariants inconsistent.";
-  assert.throws(() => validatePullRequest(pr, largeFiles), /Split this PR/);
+  assert.throws(() => validatePullRequest(pr, largeFiles), splitRequired);
   assert.throws(
     () =>
       validatePullRequest(
         { ...pr, labels: [{ name: "review:large-approved" }] },
         largeFiles
       ),
-    /Split this PR/
+    splitRequired
   );
   assert.throws(
     () => validatePullRequest({ ...pr, body: body + reason }, largeFiles),
-    /Split this PR/
+    splitRequired
   );
   assert.equal(
     validatePullRequest(
@@ -169,7 +176,7 @@ test("oversize exceptions require both maintainer label and a real split reason"
           deletions: 0,
         }))
       ),
-    /Split this PR/
+    splitRequired
   );
 });
 
@@ -177,6 +184,7 @@ test("PR strings remain data, including shell and expression-like content", () =
   assert.equal(
     readPrimaryIssue({
       ...pr,
+      // biome-ignore lint/suspicious/noTemplateCurlyInString: This literal is the hostile PR metadata fixture; it must remain uninterpreted text.
       title: "KAR-174: Preserve $(do-not-run) `${{ malicious }}` as text",
     }),
     "KAR-174"
