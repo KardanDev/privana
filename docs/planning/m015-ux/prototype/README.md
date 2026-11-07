@@ -35,3 +35,11 @@ Start `#fan-feed` → Salvar → use the review-toolbar failure outcome → retr
 Assinaturas compares independent active/expired fixtures. Active opens a clearly labeled content example; expired opens the locked profile. `#fan-memberships-empty` is the no-access destination after a checkout demonstration, not an automatic subscription.
 
 Mensagens → Abrir conversa → edit the nonsecret text → send → select failure → retry/confirm. Failure retains text and focus; pending disables editing; confirmation shows the entered text. Empty and disabled-message cases are separate configuration examples. Conta exposes Salvos, Assinaturas and Configurações on phone. Settings covers only the existing name and email-notification preference, with pending/failure/confirmation; none of these examples sends email. Case selection can inspect independent fixtures and does not represent persistent global account state.
+
+## No-charge checkout walkthrough (KAR-182)
+
+From the signed-in Isabela profile, Testar assinatura → select BRL/USD/EUR → review → decline/retry or approve. Back/retry retains the chosen currency. Only the public test card `4242 4242 4242 4242`, expiry `12/30`, CVC `123` appears; fields are read-only. The toolbar can inspect an empty invalid-card fixture and recovery. USD 9.90 / EUR 8.90 are fixed reference prices, not FX quotes.
+
+Usar Pix em BRL deliberately switches method/currency → review → generate the nonpayable example → toolbar expiry → retry/confirm. Expiry is manually selected, not a running clock; the current product duration is 300 seconds. The code is exactly `DEMONSTRACAO-PIX-NAO-PAGAVEL-SEM-VALOR`, never a real Pix payload/QR. Results return to empty recorded access or a still-locked profile. These cases use a signed-in fan persona; the actual demo route is also public, and this prototype adds no new login guard.
+
+This browser review creates no provider, saved card, charge, commercial-sandbox transaction or entitlement. Server-owned simulated commerce remains a separate contract. Live payment onboarding, tokenization, webhooks, reconciliation, refunds and payouts are outside this group.
