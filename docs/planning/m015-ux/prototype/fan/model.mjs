@@ -1,6 +1,10 @@
 export const fanNavigation = [
   { icon: "home", label: "Início", target: "fan-feed" },
   { icon: "explore", label: "Explorar", target: "fan-discover-member" },
+  { icon: "saved", label: "Salvos", target: "fan-saved-empty" },
+  { icon: "messages", label: "Mensagens", target: "fan-inbox-list" },
+  { icon: "memberships", label: "Assinaturas", target: "fan-memberships" },
+  { icon: "account", label: "Conta", target: "fan-account" },
 ];
 export const publicFrame = {
   actions: [],
@@ -16,7 +20,9 @@ export const publicFrame = {
 };
 export const fanFrame = {
   ...publicFrame,
-  mobileNavigation: fanNavigation,
+  mobileNavigation: fanNavigation.filter(
+    (item) => !["Salvos", "Assinaturas"].includes(item.label)
+  ),
   navigation: fanNavigation,
   shell: "fan",
 };
