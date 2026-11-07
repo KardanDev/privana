@@ -2,7 +2,7 @@
 
 Snapshot: November 6, 2026. The live board owns current status and acceptance evidence. See [roadmap](roadmap.md), [scope and decisions](scope-and-decisions.md) and the [Linear project](https://linear.app/kardandev/project/privana-onlyfans-inspired-platform-eab4888a909b).
 
-118 executable stories grouped under 12 milestone deliverables, including the subsequent redesign, Yoti and Sentry planning additions. Each story has testable acceptance criteria and three implementation checklist items. Only M01 is in the current implementation scope. KAR-8 is superseded planning material, not delivered work.
+The project has 12 roadmap milestones. M01.5 is refined into ten workstream deliverables and 36 actionable stories with user outcomes, acceptance criteria, implementation checklists and native dependencies. M01 is merged and Done; M01.5 refinement is planning only, and later work stays unstarted. KAR-8 is superseded planning material, not delivered work. Live issue status is authoritative.
 
 ## M01 — Delivery foundation
 
@@ -17,22 +17,63 @@ Deliverable: [KAR-9](https://linear.app/kardandev/issue/KAR-9/m01-delivery-found
 | [KAR-21](https://linear.app/kardandev/issue/KAR-21/define-data-safe-deployment-and-migration-contracts) | Define data-safe deployment and migration contracts | KAR-18 |
 | [KAR-22](https://linear.app/kardandev/issue/KAR-22/make-the-github-linear-delivery-lifecycle-reviewable) | Make the GitHub–Linear delivery lifecycle reviewable | KAR-17, KAR-18, KAR-19, KAR-20, KAR-21 |
 
-## M01.5 — Brand, UX and platform redesign
+## M01.5 — Platform redesign and polish
 
-Deliverable: [KAR-126](https://linear.app/kardandev/issue/KAR-126). Depends on M01; precedes M02–M07 feature expansion. Implementation remains in Backlog.
+Deliverable: [KAR-126](https://linear.app/kardandev/issue/KAR-126). M01 is merged and Done. This is planning only: ten workstream deliverables and 36 actionable stories remain Backlog. See the [execution brief](m015-redesign-plan.md), [audit](m015-design-audit.md) and [Linear source](https://linear.app/kardandev/document/m015-redesign-execution-brief-coverage-and-acceptance-16b1acc50787).
 
-| Issue | User outcome / implementation story | Depends on |
+[Execution brief in Linear](https://linear.app/kardandev/document/m015-redesign-execution-brief-coverage-and-acceptance-16b1acc50787). All 36 actionable stories and ten workstream deliverables remain Backlog. Each story contains a user story, four acceptance criteria, two implementation steps, relevant skill/tool guidance and native blocking relationships.
+
+| Deliverable | Workstream | Stories |
 | --- | --- | --- |
-| [KAR-127](https://linear.app/kardandev/issue/KAR-127) | Audit current UI and discover agent design, marketing and QA capabilities | See live issue dependencies |
-| [KAR-128](https://linear.app/kardandev/issue/KAR-128) | Define Privana brand positioning, audience strategy and conversion-led creative direction | See live issue dependencies |
-| [KAR-129](https://linear.app/kardandev/issue/KAR-129) | Design distinctive Privana logo, color system, typography and brand assets | See live issue dependencies |
-| [KAR-130](https://linear.app/kardandev/issue/KAR-130) | Redesign information architecture, navigation and end-to-end UX prototypes | See live issue dependencies |
-| [KAR-131](https://linear.app/kardandev/issue/KAR-131) | Build accessible production design tokens and reusable React component library | See live issue dependencies |
-| [KAR-132](https://linear.app/kardandev/issue/KAR-132) | Implement polished public marketing, landing, registration and trust experience | See live issue dependencies |
-| [KAR-133](https://linear.app/kardandev/issue/KAR-133) | Implement modern fan app shell, feed, discovery, profiles and subscriber UX | See live issue dependencies |
-| [KAR-134](https://linear.app/kardandev/issue/KAR-134) | Implement premium Creator Studio redesign for daily creator workflows | See live issue dependencies |
-| [KAR-135](https://linear.app/kardandev/issue/KAR-135) | Redesign Owner Control Center dashboard, navigation and operational workspaces | See live issue dependencies |
-| [KAR-136](https://linear.app/kardandev/issue/KAR-136) | Validate redesign end-to-end and establish design governance for later milestones | See live issue dependencies |
+| [KAR-127](https://linear.app/kardandev/issue/KAR-127) | Baseline: current screens, states and technical constraints | [KAR-137](https://linear.app/kardandev/issue/KAR-137), [KAR-138](https://linear.app/kardandev/issue/KAR-138) |
+| [KAR-128](https://linear.app/kardandev/issue/KAR-128) | Positioning: Brazil-first product language and trust | [KAR-139](https://linear.app/kardandev/issue/KAR-139), [KAR-140](https://linear.app/kardandev/issue/KAR-140) |
+| [KAR-129](https://linear.app/kardandev/issue/KAR-129) | Brand: distinctive identity, typography and assets | [KAR-141](https://linear.app/kardandev/issue/KAR-141), [KAR-142](https://linear.app/kardandev/issue/KAR-142) |
+| [KAR-130](https://linear.app/kardandev/issue/KAR-130) | UX: navigation, prototypes and approved design handoff | [KAR-143](https://linear.app/kardandev/issue/KAR-143), [KAR-144](https://linear.app/kardandev/issue/KAR-144), [KAR-145](https://linear.app/kardandev/issue/KAR-145) |
+| [KAR-131](https://linear.app/kardandev/issue/KAR-131) | System: accessible themes, components and coded references | [KAR-146](https://linear.app/kardandev/issue/KAR-146), [KAR-147](https://linear.app/kardandev/issue/KAR-147), [KAR-148](https://linear.app/kardandev/issue/KAR-148), [KAR-149](https://linear.app/kardandev/issue/KAR-149), [KAR-150](https://linear.app/kardandev/issue/KAR-150) |
+| [KAR-132](https://linear.app/kardandev/issue/KAR-132) | Public: entry, authentication and supporting touchpoints | [KAR-151](https://linear.app/kardandev/issue/KAR-151), [KAR-152](https://linear.app/kardandev/issue/KAR-152), [KAR-153](https://linear.app/kardandev/issue/KAR-153) |
+| [KAR-133](https://linear.app/kardandev/issue/KAR-133) | Fan: discovery, content, conversations and account | [KAR-154](https://linear.app/kardandev/issue/KAR-154), [KAR-155](https://linear.app/kardandev/issue/KAR-155), [KAR-156](https://linear.app/kardandev/issue/KAR-156), [KAR-157](https://linear.app/kardandev/issue/KAR-157), [KAR-158](https://linear.app/kardandev/issue/KAR-158), [KAR-159](https://linear.app/kardandev/issue/KAR-159), [KAR-160](https://linear.app/kardandev/issue/KAR-160) |
+| [KAR-134](https://linear.app/kardandev/issue/KAR-134) | Studio: mobile profile, composer and content management | [KAR-161](https://linear.app/kardandev/issue/KAR-161), [KAR-162](https://linear.app/kardandev/issue/KAR-162), [KAR-163](https://linear.app/kardandev/issue/KAR-163) |
+| [KAR-135](https://linear.app/kardandev/issue/KAR-135) | Owner: operations, financial records and CMS | [KAR-164](https://linear.app/kardandev/issue/KAR-164), [KAR-165](https://linear.app/kardandev/issue/KAR-165), [KAR-166](https://linear.app/kardandev/issue/KAR-166), [KAR-167](https://linear.app/kardandev/issue/KAR-167), [KAR-168](https://linear.app/kardandev/issue/KAR-168) |
+| [KAR-136](https://linear.app/kardandev/issue/KAR-136) | Acceptance: visual, accessibility and performance evidence | [KAR-169](https://linear.app/kardandev/issue/KAR-169), [KAR-170](https://linear.app/kardandev/issue/KAR-170), [KAR-171](https://linear.app/kardandev/issue/KAR-171), [KAR-172](https://linear.app/kardandev/issue/KAR-172) |
+
+| Issue | Actionable story | Depends on |
+| --- | --- | --- |
+| [KAR-137](https://linear.app/kardandev/issue/KAR-137) | Inventory every existing route, role and rendered state | [KAR-9](https://linear.app/kardandev/issue/KAR-9) |
+| [KAR-138](https://linear.app/kardandev/issue/KAR-138) | Audit theme, components, state contracts and tool capabilities | [KAR-9](https://linear.app/kardandev/issue/KAR-9) |
+| [KAR-139](https://linear.app/kardandev/issue/KAR-139) | Define Brazil-first positioning and product language | [KAR-137](https://linear.app/kardandev/issue/KAR-137) |
+| [KAR-140](https://linear.app/kardandev/issue/KAR-140) | Specify honest public, access and recovery microcopy | [KAR-137](https://linear.app/kardandev/issue/KAR-137), [KAR-139](https://linear.app/kardandev/issue/KAR-139) |
+| [KAR-141](https://linear.app/kardandev/issue/KAR-141) | Approve a distinctive visual direction and Google Fonts | [KAR-139](https://linear.app/kardandev/issue/KAR-139), [KAR-140](https://linear.app/kardandev/issue/KAR-140), [KAR-138](https://linear.app/kardandev/issue/KAR-138) |
+| [KAR-142](https://linear.app/kardandev/issue/KAR-142) | Deliver the Privana logo and production brand assets | [KAR-141](https://linear.app/kardandev/issue/KAR-141) |
+| [KAR-143](https://linear.app/kardandev/issue/KAR-143) | Map role-aware navigation and workspace boundaries | [KAR-137](https://linear.app/kardandev/issue/KAR-137), [KAR-139](https://linear.app/kardandev/issue/KAR-139) |
+| [KAR-144](https://linear.app/kardandev/issue/KAR-144) | Prototype the critical fan, creator and owner workflows | [KAR-143](https://linear.app/kardandev/issue/KAR-143), [KAR-141](https://linear.app/kardandev/issue/KAR-141), [KAR-140](https://linear.app/kardandev/issue/KAR-140) |
+| [KAR-145](https://linear.app/kardandev/issue/KAR-145) | Approve redesign scope, prototypes and design-code handoff | [KAR-144](https://linear.app/kardandev/issue/KAR-144), [KAR-142](https://linear.app/kardandev/issue/KAR-142), [KAR-138](https://linear.app/kardandev/issue/KAR-138) |
+| [KAR-146](https://linear.app/kardandev/issue/KAR-146) | Implement semantic themes, fonts and CMS accent parity | [KAR-145](https://linear.app/kardandev/issue/KAR-145) |
+| [KAR-147](https://linear.app/kardandev/issue/KAR-147) | Polish shared controls, forms, overlays and data patterns | [KAR-146](https://linear.app/kardandev/issue/KAR-146) |
+| [KAR-148](https://linear.app/kardandev/issue/KAR-148) | Build consistent public, fan, Studio and owner shells | [KAR-147](https://linear.app/kardandev/issue/KAR-147), [KAR-143](https://linear.app/kardandev/issue/KAR-143) |
+| [KAR-149](https://linear.app/kardandev/issue/KAR-149) | Preserve fast feedback and safe mutation recovery | [KAR-138](https://linear.app/kardandev/issue/KAR-138), [KAR-147](https://linear.app/kardandev/issue/KAR-147) |
+| [KAR-150](https://linear.app/kardandev/issue/KAR-150) | Validate coded reference screens before platform rollout | [KAR-148](https://linear.app/kardandev/issue/KAR-148), [KAR-149](https://linear.app/kardandev/issue/KAR-149) |
+| [KAR-151](https://linear.app/kardandev/issue/KAR-151) | Redesign public entry and fan-versus-creator paths | [KAR-150](https://linear.app/kardandev/issue/KAR-150), [KAR-140](https://linear.app/kardandev/issue/KAR-140) |
+| [KAR-152](https://linear.app/kardandev/issue/KAR-152) | Polish registration, login and account recovery screens | [KAR-150](https://linear.app/kardandev/issue/KAR-150), [KAR-140](https://linear.app/kardandev/issue/KAR-140) |
+| [KAR-153](https://linear.app/kardandev/issue/KAR-153) | Align reading pages, fallbacks and existing email branding | [KAR-150](https://linear.app/kardandev/issue/KAR-150), [KAR-142](https://linear.app/kardandev/issue/KAR-142), [KAR-140](https://linear.app/kardandev/issue/KAR-140) |
+| [KAR-154](https://linear.app/kardandev/issue/KAR-154) | Polish feed, post cards and existing social interactions | [KAR-150](https://linear.app/kardandev/issue/KAR-150) |
+| [KAR-155](https://linear.app/kardandev/issue/KAR-155) | Refine discovery, search, categories and creator cards | [KAR-150](https://linear.app/kardandev/issue/KAR-150) |
+| [KAR-156](https://linear.app/kardandev/issue/KAR-156) | Redesign creator profiles and contextual membership actions | [KAR-150](https://linear.app/kardandev/issue/KAR-150), [KAR-154](https://linear.app/kardandev/issue/KAR-154) |
+| [KAR-157](https://linear.app/kardandev/issue/KAR-157) | Polish inbox, conversation history and message composer | [KAR-150](https://linear.app/kardandev/issue/KAR-150), [KAR-149](https://linear.app/kardandev/issue/KAR-149) |
+| [KAR-158](https://linear.app/kardandev/issue/KAR-158) | Clarify saved content and current membership states | [KAR-150](https://linear.app/kardandev/issue/KAR-150), [KAR-154](https://linear.app/kardandev/issue/KAR-154), [KAR-156](https://linear.app/kardandev/issue/KAR-156) |
+| [KAR-159](https://linear.app/kardandev/issue/KAR-159) | Polish notifications, preferences and account settings | [KAR-150](https://linear.app/kardandev/issue/KAR-150), [KAR-149](https://linear.app/kardandev/issue/KAR-149) |
+| [KAR-160](https://linear.app/kardandev/issue/KAR-160) | Refine the simulated card and Pix checkout experience | [KAR-150](https://linear.app/kardandev/issue/KAR-150), [KAR-156](https://linear.app/kardandev/issue/KAR-156) |
+| [KAR-161](https://linear.app/kardandev/issue/KAR-161) | Polish creator application, status and profile management | [KAR-150](https://linear.app/kardandev/issue/KAR-150) |
+| [KAR-162](https://linear.app/kardandev/issue/KAR-162) | Make mobile post editing and media feedback resilient | [KAR-150](https://linear.app/kardandev/issue/KAR-150), [KAR-149](https://linear.app/kardandev/issue/KAR-149), [KAR-161](https://linear.app/kardandev/issue/KAR-161) |
+| [KAR-163](https://linear.app/kardandev/issue/KAR-163) | Refine Studio overview, content list and post lifecycle | [KAR-162](https://linear.app/kardandev/issue/KAR-162), [KAR-150](https://linear.app/kardandev/issue/KAR-150) |
+| [KAR-164](https://linear.app/kardandev/issue/KAR-164) | Polish owner navigation and recorded overview metrics | [KAR-150](https://linear.app/kardandev/issue/KAR-150) |
+| [KAR-165](https://linear.app/kardandev/issue/KAR-165) | Improve people, team roles and access-action clarity | [KAR-164](https://linear.app/kardandev/issue/KAR-164) |
+| [KAR-166](https://linear.app/kardandev/issue/KAR-166) | Polish creator review and report inspection workflows | [KAR-164](https://linear.app/kardandev/issue/KAR-164) |
+| [KAR-167](https://linear.app/kardandev/issue/KAR-167) | Clarify subscriptions, transactions and audit records | [KAR-164](https://linear.app/kardandev/issue/KAR-164) |
+| [KAR-168](https://linear.app/kardandev/issue/KAR-168) | Refine CMS editing, preview, publication and history | [KAR-164](https://linear.app/kardandev/issue/KAR-164), [KAR-146](https://linear.app/kardandev/issue/KAR-146) |
+| [KAR-169](https://linear.app/kardandev/issue/KAR-169) | Close route coverage and visual parity across devices | [KAR-132](https://linear.app/kardandev/issue/KAR-132), [KAR-133](https://linear.app/kardandev/issue/KAR-133), [KAR-134](https://linear.app/kardandev/issue/KAR-134), [KAR-135](https://linear.app/kardandev/issue/KAR-135) |
+| [KAR-170](https://linear.app/kardandev/issue/KAR-170) | Verify accessibility, touch and assistive technology | [KAR-132](https://linear.app/kardandev/issue/KAR-132), [KAR-133](https://linear.app/kardandev/issue/KAR-133), [KAR-134](https://linear.app/kardandev/issue/KAR-134), [KAR-135](https://linear.app/kardandev/issue/KAR-135) |
+| [KAR-171](https://linear.app/kardandev/issue/KAR-171) | Verify production-build performance and recovery boundaries | [KAR-132](https://linear.app/kardandev/issue/KAR-132), [KAR-133](https://linear.app/kardandev/issue/KAR-133), [KAR-134](https://linear.app/kardandev/issue/KAR-134), [KAR-135](https://linear.app/kardandev/issue/KAR-135) |
+| [KAR-172](https://linear.app/kardandev/issue/KAR-172) | Accept M01.5 and publish design governance handoff | [KAR-169](https://linear.app/kardandev/issue/KAR-169), [KAR-170](https://linear.app/kardandev/issue/KAR-170), [KAR-171](https://linear.app/kardandev/issue/KAR-171) |
 
 ## M02 — Accounts, eligibility and onboarding
 

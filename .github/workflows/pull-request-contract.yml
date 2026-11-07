@@ -1,0 +1,36 @@
+name: Pull request contract
+
+on:
+  pull_request:
+    branches: [main, "codex/**"]
+    types: [opened, reopened, synchronize, edited, ready_for_review, converted_to_draft, labeled, unlabeled]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+concurrency:
+  group: pr-contract-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  contract:
+    name: Pull request contract
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Check out source without persisted credentials
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Set up Node
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version-file: .node-version
+          package-manager-cache: false
+      - name: Verify contract behavior
+        run: node --test scripts/pull-requests/tests/*.test.mjs
+      - name: Validate current PR metadata and complete diff
+        run: node scripts/pull-requests/check.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}

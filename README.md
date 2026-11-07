@@ -2,7 +2,7 @@
 
 Marketplace de comunidades e criadores em português do Brasil, com interface roxa, contas por e-mail e dados persistidos no PostgreSQL. Usa Next.js 16, React 19, Better Auth 1.7.10, oRPC, Prisma 7, shadcn/Base UI, Bun e Turborepo.
 
-O planejamento atual está no [roadmap](docs/planning/roadmap.md), com [índice dos issues no Linear](docs/planning/linear-index.md) e [decisões de escopo](docs/planning/scope-and-decisions.md). A implementação desta etapa cobre somente M01, a base de entrega e validação. Consulte também os guias de [contribuição](docs/contributing.md), [testes](docs/testing.md) e [deploy](docs/deployment.md).
+O planejamento atual está no [roadmap](docs/planning/roadmap.md), com [índice dos issues no Linear](docs/planning/linear-index.md) e [decisões de escopo](docs/planning/scope-and-decisions.md). M01 está concluído; cada nova implementação segue o issue e o milestone autorizados pelo proprietário. Use um issue por branch e PR comum, conforme os guias de [contribuição](docs/contributing.md), [testes](docs/testing.md) e [deploy](docs/deployment.md).
 
 ## Produto
 

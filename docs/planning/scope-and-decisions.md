@@ -1,6 +1,6 @@
 # Privana scope and decisions
 
-[The Linear roadmap](https://linear.app/kardandev/document/privana-delivery-roadmap-and-release-gates-1b866a380ec5) and [issue index](linear-index.md) are the current delivery plan. [The roadmap](roadmap.md) describes its ten milestones. The earlier eight-milestone draft is superseded.
+[The Linear roadmap](https://linear.app/kardandev/document/privana-delivery-roadmap-and-release-gates-1b866a380ec5) and [issue index](linear-index.md) are the current delivery plan. [The roadmap](roadmap.md) describes 12 milestones, including M01.5 and M11. The earlier eight-milestone draft is superseded. M01 is Done; the current revision plans [M01.5](m015-redesign-plan.md) only.
 
 ## Source reconciliation
 
@@ -50,7 +50,7 @@ Live rooms, stories/timed drops, custom requests and delegated creator teams sta
 
 ## Owner and team configuration
 
-The CMS and business-rule registry expose supported typed settings, pages/blocks, theme, navigation and operating rules with validation, permission checks, preview, versions, effective dates and rollback. Configuration cannot grant age/creator eligibility, bypass access policy, turn on an unapproved payment provider or rewrite historical financial agreements.
+The target CMS and business-rule registry will expose supported typed settings, pages/blocks, theme, navigation and operating rules with validation, permission checks, preview, versions, effective dates and rollback. Current CMS supports brand/name/logo/accent, content, navigation/categories/curation, pages and feature switches with draft/save/preview/publish/restore. A layout builder, configurable typography, scheduling and broader business rules remain future M07 work. M01.5 polishes existing controls and documents the design-system boundary. Configuration cannot grant age/creator eligibility, bypass access policy, turn on an unapproved payment provider or rewrite historical financial agreements.
 
 Separate ordinary editing from legal-policy publication and sensitive business changes. Staff roles, reasons, fresh authorization, independent approval where required and immutable audit evidence protect high-impact actions. Staff receive no passwords, unrestricted private inbox browsing, arbitrary SQL/shell access or production secrets through the dashboard. Financial inspection distinguishes local access revocation, synthetic operations and confirmed provider money movement.
 

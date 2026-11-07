@@ -2,9 +2,12 @@ name: Quality
 
 on:
   pull_request:
-    branches: [main]
+    branches: [main, "codex/**"]
   push:
     branches: [main]
+  merge_group:
+    types: [checks_requested]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -58,6 +61,8 @@ jobs:
         run: bun run check-types:scripts
       - name: Run deterministic tests
         run: bun run test
+      - name: Verify Linear automation with isolated API fixtures
+        run: node --test scripts/linear-ci/tests/*.test.mjs
       - name: Compile production build
         run: bun run build
         env:
@@ -65,3 +70,15 @@ jobs:
           EMAIL_DELIVERY_MODE: resend
       # Varlock resolves server configuration into the build. Synthetic CI
       # output is disposable: never upload/cache/promote .next or resolved env.
+
+  quality-gate:
+    name: Quality gate
+    if: always()
+    needs: [repository-checks]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 2
+    steps:
+      - name: Require every repository check to pass
+        env:
+          REPOSITORY_RESULT: ${{ needs.repository-checks.result }}
+        run: test "$REPOSITORY_RESULT" = success

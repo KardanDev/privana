@@ -124,3 +124,15 @@ Biome will catch most mechanical issues automatically. Focus your attention on:
 ---
 
 Most formatting and common issues are automatically fixed by Biome. Run `bunx ultracite fix` before committing to ensure compliance.
+
+## Issue-scoped GitHub delivery
+
+- Follow `docs/contributing.md` and `.github/pull_request_template.md` for all future work.
+- One actionable Linear issue per short-lived branch and PR; do not implement an epic/milestone as one PR. Refine oversized issues first.
+- Use a branch containing the issue ID (`codex/kar-123-description`), title `KAR-123: Resulting behavior`, and exactly one `Linear issue: KAR-123` body line.
+- Open ordinary ready-for-review PRs after local checks; do not create drafts unless the user explicitly requests one.
+- Target no more than 400 reviewable lines and 20 files. More than 800 lines or 30 files requires a documented split justification and a maintainer's `review:large-approved` label.
+- Stage explicit task-owned paths and inspect the staged diff. Preserve unrelated working-tree and index changes.
+- Keep corrections on the issue's existing PR; link prerequisites and land them before dependent PRs. Never advance the next milestone automatically.
+- PR descriptions must explain behavior, acceptance evidence, exact checks/results, relevant UI states, risks, configuration/data effects and rollback.
+- Passing CI permits review; it never implies accepted/merged work, successful live services, issue completion or production deployment. Keep Linear In Review until accepted and merged.

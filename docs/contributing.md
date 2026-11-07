@@ -1,6 +1,6 @@
 # Contributing to Privana
 
-Use [Linear's roadmap](planning/linear-index.md) for scope and acceptance criteria. Only M1 is currently authorized for implementation. Later issues remain planned work. Keep existing records, secrets and working domain boundaries intact.
+Use [Linear's roadmap](planning/linear-index.md) for scope and acceptance criteria. M01 is complete. Work only on the issue and milestone currently authorized by the owner; finishing one milestone never starts another automatically. Keep existing records, secrets and working domain boundaries intact.
 
 ## Toolchain and clean setup
 
@@ -78,10 +78,34 @@ Turbo's `check-types` default caches `dist/**` because DB/auth/API use `tsc -b` 
 
 ## Changes and review
 
+### One issue, one branch, one ordinary pull request
+
+Use a short-lived branch from current `main`, such as `codex/kar-137-screen-inventory`, and a title such as `KAR-137: Inventory existing screens and states`. The body must contain exactly one primary `Linear issue: KAR-137` line and follow [the PR template](../.github/pull_request_template.md).
+
+The primary issue is an actionable leaf story. Milestone/workstream containers collect evidence from their children; they are not invitations to ship an entire milestone in one PR. If an issue is too broad, refine it into smaller issues before implementation. Link other issue IDs under dependencies instead of treating them as additional primary scope.
+
+Open an **ordinary, ready-for-review PR** after local validation. Draft PRs are not the default. CI and reviewer feedback can still be pending on an ordinary PR. Push fixes for that issue to its existing branch/PR; do not open replacement PRs for review corrections. A later independent change gets a new issue and PR.
+
+Target at most **400 reviewable added/deleted lines and 20 changed files**. The CI contract rejects more than **800 reviewable lines or 30 files** unless a maintainer applies `review:large-approved` and the body explains why splitting would be unsafe under `## Large change reason`. Known lock/generated outputs are excluded from the line budget, but remain visible and reviewed. Binary assets still count toward the file budget. Never pad, hide or split files merely to game a budget.
+
+Keep behavior changes, necessary tests and their documentation together. Avoid unrelated formatting, tool bundles, generated reports or cleanup. Before committing, inspect the staged file list and diff; stage explicit paths when other work is present. Never include another issue's local edits just because they are already staged.
+
+Short-lived issue branches are sufficient for the repository. Optional Git worktrees provide separate working directories when concurrent issues need isolation; confirm the workspace convention before creating them. Git subtrees import another repository into a directory and do not make PRs smaller. No long-lived `develop` branch is required.
+
+Prefer independent PRs targeting `main`. When work genuinely depends on another PR, link it and land the prerequisite first. Stacked branches are an explicit exception: name the prerequisite/base in the body, keep each diff issue-scoped, and retarget after the prerequisite merges. Never merge a dependent PR before its prerequisite and acceptance evidence.
+
+### Descriptions and acceptance
+
+Lead with the problem and resulting behavior. Map the issue's acceptance criteria to evidence; list exact validation commands/results, important edge cases, UI screenshots when applicable, migration/configuration impact, rollback and the files or decisions needing reviewer attention. Write from the final diff, not the chat history. Remove unused template guidance and explain non-applicable evidence rather than leaving empty sections.
+
+Local validation, passing CI, independent review, merge and deployment are separate gates. Use Linear **In Progress** during implementation and **In Review** for an open reviewable PR. **Done** requires accepted criteria and merged work. CI comments never complete an issue, approve a PR, merge it or deploy it.
+
+Squash merge after the required checks and independent review are satisfied; keep the issue ID in the final commit title. Delete the merged issue branch when no dependent work needs it. Production deployment and migrations retain the explicit [deployment contract](deployment.md).
+
 The stable required-check candidate for `main` is **Repository checks**, provided by the **Quality** workflow. The owner or repository administrator configures and maintains GitHub rules after the workflow is available on the protected branch. This change demonstrates the check on a real PR; it does not claim that branch protection or bypass permissions were configured or independently verified. Until repository rules are confirmed, the same passing-check and reviewer requirements remain the documented merge policy. The opt-in browser/service suites are not secretless PR jobs.
 
 Create a branch using the actual Linear issue, keep functions/components focused in domain files, and use direct UI imports. Preserve the shared authorization, notification and ledger contracts rather than adding parallel implementations. Include additive migration/recovery details with any data change.
 
-The PR must link its issue, describe observable behavior and show meaningful validation. Attach relevant desktop/mobile evidence for UI changes, including failure recovery. Reviewers assess permission boundaries, concurrency and data preservation as well as appearance. Resolve findings and rerun affected checks before changing issue state. Required checks, human review, merge and deployment are distinct gates; an agent does not independently approve its own PR.
+Reviewers assess permission boundaries, concurrency, maintainability and data preservation as well as appearance. Resolve findings and rerun affected checks before changing issue state. An agent does not independently approve its own PR or dismiss unresolved review findings.
 
 Keep secrets, owner claim links, demo passwords, browser auth state, private media and identity evidence out of source, logs and review artifacts. The optional demo seed writes credentials to ignored local files; preserve their existing passwords when reseeding. Service checks and mutations always target a named, approved environment, as described in [testing.md](testing.md) and [deployment.md](deployment.md).

@@ -10,7 +10,7 @@ Planning used the 499-file current-source audit, `repomix-output.xml` and the or
 
 Email/password authentication, Resend SDK delivery, private Upstash media, Redis controls, community interactions, Studio, operations and versioned CMS already have substantial implementation. They need verification and targeted extension. Historical service/browser evidence does not establish that today's checks pass.
 
-The first observed blockers include the Studio save-helper parse error, missing repository CI, stale Blob/Turbo environment guidance and tooling assets entering lint scope. The existing checkout is a browser-only demonstration that grants no access. Server-driven synthetic entitlements are planned work in M4.
+The initial pre-M01 blockers included a Studio save-helper parse error, missing repository CI, stale Blob/Turbo environment guidance and tooling assets entering lint scope. M01 repaired and verified that baseline; see its merged handoff. The existing checkout is a browser-only demonstration that grants no access. Server-driven synthetic entitlements remain planned work in M4.
 
 ## Milestones and release gates
 
@@ -19,7 +19,7 @@ Dependencies establish a delivery sequence, not calendar commitments. Cross-cutt
 | Milestone | Deliverable | Exit evidence | Depends on |
 | --- | --- | --- | --- |
 | M1 — Delivery foundation | Reproducible setup, corrected baseline, safe CI, regression boundaries and review workflow | Fresh lint/types/unit/build results; checks demonstrated on a real PR; environment/migration contracts and reviewed handoff | None |
-| M1.5 — Brand, UX and platform redesign | Coherent brand, design system and responsive redesign of the implemented public, fan, Studio and owner screens | Design, usability, accessibility and regression evidence before feature expansion; see KAR-126 and its stories | M1 |
+| M1.5 — Platform redesign and polish | Distinct identity, accessible themes/components and complete responsive redesign of existing public, fan, Studio and owner/CMS screens | G0 baseline, G1 approved design, G2 coded references, G3 owner acceptance with route/state/accessibility/performance evidence; see the execution brief | M1 |
 | M2 — Accounts, eligibility and onboarding | Fan defaults, separate creator applications/capabilities, verification contracts, synthetic fixtures, account security, consent and privacy workflows | State transitions and direct route/API denials pass; applicant approval is independent of verification; synthetic results cannot establish production eligibility | M1.5 |
 | M3 — Protected media and content permissions | Recoverable private uploads, supported video, retention and one authoritative placement/audience/purchase policy | Two creators and separate fans prove isolation, safe previews, removal/revocation and recoverable failures across API/media/cache paths | M2 |
 | M4 — Sandbox commerce and entitlements | Server checkout, immutable ledger, monthly terms, PPV, tips, reversals, payout fixtures and durable jobs | Trusted events grant/revoke only synthetic access; pending/redirect states grant nothing; replay, expiry, refund and currency invariants pass | M2–M3 |
@@ -31,20 +31,13 @@ Dependencies establish a delivery sequence, not calendar commitments. Cross-cutt
 | M10 — Advanced parity, growth and expansion | Selected tiers/offers, advanced Vault/queue, broadcasts, acquisition/exports, Brazil marketing experiments and qualified market expansion; future-format specifications | Each selected slice has its own access, commercial, operating and test gate; live rooms/stories/custom requests/delegation start with explicit decisions; incomplete features stay outside navigation | M8; M9 when real commercial operation is involved |
 | M11 — Yoti Age Verification Integration | Provider-gated real age-assurance implementation tracked in KAR-124 and its stories | Approved provider communication and eligibility evidence before M08 external restricted-content onboarding; no synthetic approval in production | M2 and M7 contracts; feeds the M8 gate |
 
-The live roadmap now includes the subsequent M01.5 redesign and M11 Yoti planning additions, plus the M08 Sentry story. M01.5 is the immediate next milestone after M01. All remain planned; this change implements M01 only. The index reflects 118 executable stories across 12 deliverables.
+The live roadmap includes 12 milestones, including M01.5, M11 Yoti and the M08 Sentry work. M01 is Done. M01.5 is the next redesigned-product foundation, organized into ten workstreams and 36 actionable stories; this revision plans it only. See the execution brief and live index for detailed acceptance and dependencies.
 
-## M1 is the implementation boundary
+## Current implementation boundary
 
-Only the first milestone is authorized for implementation after planning. Later milestone issues can be refined, but remain unstarted until the owner advances the project.
+M01 is complete: [PR #1](https://github.com/KardanDev/privana/pull/1) is merged and KAR-9/KAR-17–22 are Done. Its historical starting blockers are resolved; the evidence is recorded in the M01 verification handoff. Those historical observations are not current failure claims.
 
-1. Restore the baseline: reproduce and repair the Studio save-helper syntax defect, retain confirmed-save/idempotency behavior, and exclude editor/generated tooling from lint without hiding application code.
-2. Make setup reproducible: align Bun/Node, frozen installation, generation, environment declarations, Upstash examples and safe secret setup; never provision/reset a database during install/build.
-3. Add the PR gate: run generation, lint, types, deterministic tests and build with minimal permissions and no live-service secrets or side effects.
-4. Define verification boundaries: classify deterministic versus opt-in service checks, preserve seed/data fixtures, and provide a minimal reproducible browser smoke path with private artifacts.
-5. Document safe deployment: validate existing Vercel build configuration, isolate environments and require reviewed data-preserving migrations with recovery instructions; builds do not migrate or seed.
-6. Complete the delivery lifecycle: link actual Linear issues to branches/PRs, include acceptance and validation evidence, address review findings and present a reviewable M1 handoff.
-
-M1 is complete only when its acceptance evidence is attached and its agreed review gate is satisfied. A local green run, a created workflow or an open PR alone does not prove the entire milestone complete. Human review, merge and deployment decisions remain explicit.
+The current request authorizes planning M01.5, not starting implementation. The [redesign execution brief](m015-redesign-plan.md) and its Linear stories define scope, route/state coverage, owner decision gates, coded references and final acceptance. All 36 redesign stories remain Backlog. No later milestone starts automatically after M01.5, and deployment/provider decisions remain separate.
 
 ## What the beta must demonstrate
 
