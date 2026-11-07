@@ -19,7 +19,9 @@ Deliverable: [KAR-9](https://linear.app/kardandev/issue/KAR-9/m01-delivery-found
 
 ## M01.5 — Platform redesign and polish
 
-Deliverable: [KAR-126](https://linear.app/kardandev/issue/KAR-126). M01 is merged and Done. KAR-127's baseline is accepted and merged in [PR #2](https://github.com/KardanDev/privana/pull/2) and [PR #3](https://github.com/KardanDev/privana/pull/3). The owner authorized KAR-128 next: positioning and product language, then owner review before KAR-129. See its [working brief](m015-positioning/brief.md), the [execution brief](m015-redesign-plan.md), [audit](m015-design-audit.md) and [Linear source](https://linear.app/kardandev/document/m015-redesign-execution-brief-coverage-and-acceptance-16b1acc50787).
+Deliverable: [KAR-126](https://linear.app/kardandev/issue/KAR-126). M01 is merged and Done. KAR-127's baseline is accepted in [PR #2](https://github.com/KardanDev/privana/pull/2) and [PR #3](https://github.com/KardanDev/privana/pull/3). The owner accepted and merged KAR-128's [PR #5](https://github.com/KardanDev/privana/pull/5) and [PR #6](https://github.com/KardanDev/privana/pull/6), then authorized **KAR-129 only**. Proximidade was selected on November 7, 2026; [KAR-141 / PR #7](https://github.com/KardanDev/privana/pull/7) and KAR-142's [asset kit](m015-brand/asset-guide.md) await owner PR review and merge. **KAR-130 and later groups remain unstarted.**
+
+See the [direction decision](m015-brand/direction-review.md), [positioning brief](m015-positioning/brief.md), [execution brief](m015-redesign-plan.md), [audit](m015-design-audit.md) and [Linear source](https://linear.app/kardandev/document/m015-redesign-execution-brief-coverage-and-acceptance-16b1acc50787). Direction/artwork approval, production adoption and group advancement are separate gates.
 
 [Execution brief in Linear](https://linear.app/kardandev/document/m015-redesign-execution-brief-coverage-and-acceptance-16b1acc50787). Each story contains a user story, four acceptance criteria, two implementation steps, relevant skill/tool guidance and native blocking relationships. Status below is structural; consult Linear for current execution and approvals.
 

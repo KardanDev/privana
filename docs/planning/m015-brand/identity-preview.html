@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Privana — proposta de identidade</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600&family=Hanken+Grotesk:wght@400;600&display=swap"
+      rel="stylesheet"
+    >
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      padding: 48px;
+      margin: 0;
+      font:
+        16px / 1.5 "Hanken Grotesk",
+        system-ui,
+        sans-serif;
+      color: #261a35;
+      background: #fbf9fe;
+    }
+    main {
+      max-width: 1120px;
+      margin: auto;
+    }
+    h1,
+    h2 {
+      font-family:
+        "Bricolage Grotesque", "Hanken Grotesk", system-ui, sans-serif;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 34px;
+      letter-spacing: -0.025em;
+    }
+    h2 {
+      margin: 36px 0 16px;
+      font-size: 22px;
+    }
+    p {
+      max-width: 70ch;
+      margin: 0 0 12px;
+    }
+    .sub {
+      color: #6e5c7c;
+    }
+    .variants {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    figure {
+      margin: 0;
+    }
+    .plate {
+      display: grid;
+      place-items: center;
+      min-height: 190px;
+      padding: 48px;
+      background: white;
+      border: 1px solid #e7dfed;
+      border-radius: 16px;
+    }
+    .plate.dark {
+      color: #fbf7ff;
+      background: #17111f;
+      border-color: #493855;
+    }
+    .plate img {
+      display: block;
+      width: 240px;
+      max-width: 100%;
+      height: auto;
+    }
+    figcaption {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #6e5c7c;
+    }
+    .mono {
+      filter: brightness(0);
+    }
+    .sizes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      align-items: end;
+      padding: 24px 0;
+    }
+    .sizes figure {
+      display: grid;
+      gap: 8px;
+      justify-items: center;
+    }
+    .sizes img {
+      display: block;
+    }
+    .sizes figcaption {
+      margin: 0;
+    }
+    .minimum {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 48px;
+      align-items: center;
+      padding: 24px 0;
+    }
+    .minimum img {
+      display: block;
+      width: 140px;
+      height: auto;
+    }
+    .app-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      align-items: start;
+    }
+    .app-icons img {
+      display: block;
+      width: 96px;
+      height: 96px;
+    }
+    .circle {
+      border-radius: 50%;
+    }
+    .rounded {
+      border-radius: 22%;
+    }
+    .social {
+      display: block;
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+    }
+    .fallbacks {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    .fallbacks .avatar {
+      width: 64px;
+      height: 64px;
+    }
+    .fallbacks .cover {
+      width: min(75%, 600px);
+      height: auto;
+      border-radius: 12px;
+    }
+    a {
+      color: #6929d4;
+      text-underline-offset: 3px;
+    }
+    a:focus-visible {
+      outline: 3px solid #6929d4;
+      outline-offset: 4px;
+    }
+    @media (max-width: 700px) {
+      body {
+        padding: 24px 18px;
+      }
+      .variants {
+        grid-template-columns: 1fr;
+      }
+      .plate {
+        padding: 30px;
+      }
+      h1 {
+        font-size: 28px;
+      }
+      .fallbacks {
+        align-items: start;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Uma identidade para estar mais perto.</h1>
+      <p>
+        Proximidade é a direção escolhida. Esta é a proposta de marca original
+        para a revisão de KAR-142; ainda não substitui a identidade na
+        aplicação.
+      </p>
+      <p class="sub">
+        O P aberto e a haste paralela criam uma assinatura simples para Privana.
+        A palavra usa Bricolage Grotesque com contornos vetoriais, sem depender
+        de fontes externas nos arquivos finais.
+      </p>
+      <h2>Marca principal e versão inversa</h2>
+      <div class="variants">
+        <figure>
+          <div class="plate">
+            <img
+              alt="Privana, marca principal"
+              src="../../../apps/web/public/brand/wordmark.svg"
+            >
+          </div>
+          <figcaption>Cor sobre superfície clara.</figcaption>
+        </figure>
+        <figure>
+          <div class="plate dark">
+            <img
+              alt="Privana, marca inversa"
+              src="../../../apps/web/public/brand/wordmark-inverse.svg"
+            >
+          </div>
+          <figcaption>Uma cor sobre superfície escura.</figcaption>
+        </figure>
+      </div>
+      <h2>Legibilidade em tamanhos pequenos</h2>
+      <div class="sizes">
+        <figure>
+          <img
+            alt="Símbolo de Privana com 16 pixels"
+            height="16"
+            src="../../../apps/web/public/brand/mark.svg"
+            width="16"
+          >
+          <figcaption>16px</figcaption>
+        </figure>
+        <figure>
+          <img
+            alt="Símbolo de Privana com 20 pixels"
+            height="20"
+            src="../../../apps/web/public/brand/mark.svg"
+            width="20"
+          >
+          <figcaption>20px</figcaption>
+        </figure>
+        <figure>
+          <img
+            alt="Símbolo de Privana com 24 pixels"
+            height="24"
+            src="../../../apps/web/public/brand/mark.svg"
+            width="24"
+          >
+          <figcaption>24px</figcaption>
+        </figure>
+        <figure>
+          <img
+            alt="Símbolo de Privana com 32 pixels"
+            height="32"
+            src="../../../apps/web/public/brand/mark.svg"
+            width="32"
+          >
+          <figcaption>32px</figcaption>
+        </figure>
+        <figure>
+          <img
+            alt="Símbolo de Privana com 48 pixels"
+            height="48"
+            src="../../../apps/web/public/brand/mark.svg"
+            width="48"
+          >
+          <figcaption>48px</figcaption>
+        </figure>
+        <figure>
+          <img
+            alt="Símbolo de Privana com 64 pixels"
+            height="64"
+            src="../../../apps/web/public/brand/mark.svg"
+            width="64"
+          >
+          <figcaption>64px</figcaption>
+        </figure>
+      </div>
+      <div class="minimum">
+        <figure>
+          <img
+            alt="Privana na largura mínima de 140 pixels"
+            src="../../../apps/web/public/brand/wordmark.svg"
+          >
+          <figcaption>Assinatura com 140px de largura.</figcaption>
+        </figure>
+        <figure>
+          <img
+            alt="Privana em preto"
+            class="mono"
+            src="../../../apps/web/public/brand/wordmark-inverse.svg"
+          >
+          <figcaption>Monocromática.</figcaption>
+        </figure>
+      </div>
+      <h2>Ícones da aplicação</h2>
+      <div class="app-icons">
+        <figure>
+          <img
+            alt="Favicon de Privana"
+            src="../../../apps/web/public/brand/favicon-96.png"
+          >
+          <figcaption>Favicon.</figcaption>
+        </figure>
+        <figure>
+          <img
+            alt="Ícone da aplicação com cantos arredondados"
+            class="rounded"
+            src="../../../apps/web/public/brand/app-192.png"
+          >
+          <figcaption>Ícone padrão.</figcaption>
+        </figure>
+        <figure>
+          <img
+            alt="Ícone mascarável de Privana sob recorte circular"
+            class="circle"
+            src="../../../apps/web/public/brand/app-maskable-512.png"
+          >
+          <figcaption>Recorte circular.</figcaption>
+        </figure>
+      </div>
+      <h2>Compartilhamento</h2>
+      <img
+        alt="Privana — encontre criadores para acompanhar. Explore perfis e acompanhe publicações."
+        class="social"
+        height="630"
+        src="../../../apps/web/public/brand/social-preview.png"
+        width="1200"
+      >
+      <h2>Identidades de apoio</h2>
+      <div class="fallbacks">
+        <img
+          alt="Exemplo de perfil sem foto"
+          class="avatar"
+          src="../../../apps/web/public/brand/default-avatar.svg"
+        ><img
+          alt="Capa padrão de Privana"
+          class="cover"
+          src="../../../apps/web/public/brand/default-cover.svg"
+        >
+      </div>
+      <p class="sub">
+        Os padrões não representam conteúdo de criadores nem verificação.
+        <a href="asset-guide.md">Guia de uso e limites</a>.
+      </p>
+    </main>
+  </body>
+</html>
