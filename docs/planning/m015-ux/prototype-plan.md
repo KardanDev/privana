@@ -10,7 +10,7 @@ The owner accepted KAR-129 in PRs #7/#8 and authorized KAR-130 on November 7, 20
 | KAR-177 | Isolated responsive review harness, modular frame/state rendering and a local-only runner | KAR-143/141. Shared tooling only, outside production routes and services. |
 | KAR-178 | Public/member discovery, named creator profiles and account entry/recovery | KAR-177/143/140. Read-only test credentials, local filtering and useful return context. |
 | KAR-181 | Fan feed/saved, recorded memberships, conversations and account preferences | KAR-178. Independent access fixtures; failed mutations retain useful input/context. |
-| KAR-182 | No-charge card and Pix checkout, reference currencies and recovery | KAR-178. Fixed test inputs, zero charge and no access grant. |
+| KAR-182 | No-charge card and Pix checkout, reference currencies and recovery | KAR-178/181. Fixed test inputs, zero charge and no access grant. |
 | KAR-179 | Mobile/desktop creator application, profile, editor interruption and draft/publish/archive cases | KAR-177/143/140. Public preview and private media remain distinct. |
 | KAR-180 | Staff-role operations/confirmation/audit and CMS draft/preview/publish/restore/conflict cases | KAR-177/143/140. No real records, messages or media inspection. |
 | KAR-145 | Builder review, source/token/component/screen mapping, three reference-screen definitions and G1 approval record | All critical prototypes and accepted identity. Owner approval remains explicit, never inferred from CI. |
