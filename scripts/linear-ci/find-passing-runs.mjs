@@ -4,14 +4,15 @@ import { readRunJobs } from "./read-run-jobs.mjs";
 export async function findPassingRuns(pr, requestGitHub) {
   const passing = [];
   for (const workflow of requiredWorkflows) {
+    // biome-ignore lint/performance/noAwaitInLoops: Stop on the first unverified workflow before requesting further evidence.
     const result = await requestGitHub(
       `/repos/${repository}/actions/workflows/${workflow.file}/runs?event=pull_request&head_sha=${pr.head.sha}&branch=${encodeURIComponent(pr.head.ref)}&per_page=100`
     );
-    const run = result.workflow_runs
+    const [run] = result.workflow_runs
       .filter(
         (item) => item.head_sha === pr.head.sha && item.event === "pull_request"
       )
-      .sort((a, b) => b.id - a.id)[0];
+      .sort((a, b) => b.id - a.id);
     if (
       !(
         run &&

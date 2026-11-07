@@ -30,6 +30,7 @@ try {
   }
   const files = [];
   for (let page = 1; page <= 30; page += 1) {
+    // biome-ignore lint/performance/noAwaitInLoops: The first short page terminates the bounded complete-diff scan.
     const batch = await requestGitHub(
       `${basePath}/files?per_page=100&page=${page}`,
       GITHUB_TOKEN

@@ -1,4 +1,5 @@
 import { requiredWorkflows } from "../config.mjs";
+import { requestGitHubFixture } from "./request-github-fixture.mjs";
 
 export function createGitHubFixture() {
   const pr = {
@@ -37,47 +38,11 @@ export function createGitHubFixture() {
     pr,
     runs,
   };
-  const requestGitHub = async (path) => {
-    state.calls.push(path);
-    if (path.includes("/pulls/")) {
-      const reads = state.calls.filter((item) =>
-        item.includes("/pulls/")
-      ).length;
-      return structuredClone(
-        reads > 1 && state.latestPr ? state.latestPr : state.pr
-      );
-    }
-    if (path.includes("/jobs?")) {
-      if (state.jobsOverride) {
-        return structuredClone(state.jobsOverride);
-      }
-      const index = path.includes("/100/") ? 0 : 1;
-      const jobs = requiredWorkflows[index].jobs.map((name) => ({
-        conclusion: "success",
-        name,
-        status: "completed",
-      }));
-      return { jobs, total_count: jobs.length };
-    }
-    if (path.includes("/actions/workflows/")) {
-      const index = path.includes("/quality.yml/") ? 0 : 1;
-      return {
-        workflow_runs: structuredClone([
-          ...(state.newerRun ? [state.newerRun] : []),
-          state.runs[index],
-        ]),
-      };
-    }
-    if (path.endsWith("/actions/runs/100")) {
-      return structuredClone(state.runs[0]);
-    }
-    throw new Error(`Unexpected test request: ${path}`);
-  };
   return {
     options: {
       event: { workflow_run: { id: 100 } },
       eventName: "workflow_run",
-      requestGitHub,
+      requestGitHub: (path) => requestGitHubFixture(state, path),
     },
     state,
   };

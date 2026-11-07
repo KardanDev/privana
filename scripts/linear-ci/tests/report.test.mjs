@@ -6,14 +6,25 @@ import { readRunJobs } from "../read-run-jobs.mjs";
 import { report } from "../report.mjs";
 import { createFixture } from "./fixture.mjs";
 
+const requiredChecksPassed = /Required PR checks passed/;
+const qualityRunLink = /actions\/runs\/100/;
+const contractRunLink = /actions\/runs\/101/;
+const pullRequestMerged = /Pull request merged/;
+const mergeTimestamp = /2026-11-06T23:00:00.000Z/;
+const positivePrNumber = /positive PR number/;
+const actionableIssue = /actionable Privana issue/;
+const advancingPagination = /pagination did not advance/;
+const confirmedCreation = /did not confirm/;
+const completeCiJobs = /complete CI job/;
+
 test("posts one CI comment only after both current workflows and all jobs pass", async () => {
   const { options, state } = createFixture();
   assert.equal(await report(options), "reported");
   assert.equal(state.writes.length, 1);
   assert.equal(state.writes[0].issueId, state.issue.id);
-  assert.match(state.writes[0].body, /Required PR checks passed/);
-  assert.match(state.writes[0].body, /actions\/runs\/100/);
-  assert.match(state.writes[0].body, /actions\/runs\/101/);
+  assert.match(state.writes[0].body, requiredChecksPassed);
+  assert.match(state.writes[0].body, qualityRunLink);
+  assert.match(state.writes[0].body, contractRunLink);
   assert.equal(await report(options), "already-reported");
   assert.equal(state.writes.length, 1);
 });
@@ -22,6 +33,7 @@ test("failed, cancelled, skipped, pending and missing required checks cannot pos
   for (const conclusion of ["failure", "cancelled", "skipped", null]) {
     const { options, state } = createFixture();
     state.runs[1].conclusion = conclusion;
+    // biome-ignore lint/performance/noAwaitInLoops: Evaluate each isolated negative fixture before advancing to the next case.
     assert.equal(await report(options), "checks-not-passed");
     assert.equal(state.writes.length, 0);
   }
@@ -63,6 +75,7 @@ test("stale source SHA, changed base, wrong workflow and non-PR runs are ignored
   ]) {
     const { options, state } = createFixture();
     Object.assign(state.runs[0], update);
+    // biome-ignore lint/performance/noAwaitInLoops: Evaluate each isolated negative fixture before advancing to the next case.
     assert.equal(await report(options), "not-applicable");
     assert.equal(state.writes.length, 0);
   }
@@ -88,6 +101,7 @@ test("forks, drafts, closed-unmerged and wrong-base PRs never post success", asy
   ]) {
     const { options, state } = createFixture();
     mutate(state.pr);
+    // biome-ignore lint/performance/noAwaitInLoops: Evaluate each isolated negative fixture before advancing to the next case.
     assert.equal(await report(options), "not-applicable");
     assert.equal(state.writes.length, 0);
   }
@@ -117,8 +131,8 @@ test("posts a distinct merge comment from authoritative GitHub state and dedupli
   };
   assert.equal(await report(options), "reported");
   assert.equal(state.writes.length, 2);
-  assert.match(state.writes[1].body, /Pull request merged/);
-  assert.match(state.writes[1].body, /2026-11-06T23:00:00.000Z/);
+  assert.match(state.writes[1].body, pullRequestMerged);
+  assert.match(state.writes[1].body, mergeTimestamp);
   assert.notEqual(state.writes[0].id, state.writes[1].id);
   assert.equal(await report(options), "already-reported");
   assert.equal(state.writes.length, 2);
@@ -145,7 +159,7 @@ test("manual reconciliation recovers setup or event failures without duplicate w
   assert.equal(await report(options), "already-reported");
   assert.equal(state.writes.length, 1);
   options.event.inputs.pull_request = "4; inject";
-  await assert.rejects(() => report(options), /positive PR number/);
+  await assert.rejects(() => report(options), positivePrNumber);
 });
 
 test("rejects wrong-project, archived and parent issues before a mutation", async () => {
@@ -165,7 +179,8 @@ test("rejects wrong-project, archived and parent issues before a mutation", asyn
   ]) {
     const { options, state } = createFixture();
     mutate(state.issue);
-    await assert.rejects(() => report(options), /actionable Privana issue/);
+    // biome-ignore lint/performance/noAwaitInLoops: Verify the no-write boundary separately for each mutated issue fixture.
+    await assert.rejects(() => report(options), actionableIssue);
     assert.equal(state.writes.length, 0);
   }
 });
@@ -191,14 +206,11 @@ test("non-advancing pagination and rejected mutations fail visibly", async () =>
     first: { nodes: [], pageInfo: { endCursor: "next", hasNextPage: true } },
     next: { nodes: [], pageInfo: { endCursor: "next", hasNextPage: true } },
   };
-  await assert.rejects(
-    () => report(first.options),
-    /pagination did not advance/
-  );
+  await assert.rejects(() => report(first.options), advancingPagination);
   assert.equal(first.state.writes.length, 0);
   const second = createFixture();
   second.state.mutationSuccess = false;
-  await assert.rejects(() => report(second.options), /did not confirm/);
+  await assert.rejects(() => report(second.options), confirmedCreation);
 });
 
 test("reads every CI job page and rejects truncated responses", async () => {
@@ -217,6 +229,6 @@ test("reads every CI job page and rejects truncated responses", async () => {
       readRunJobs({ id: 100 }, () =>
         Promise.resolve({ jobs: [], total_count: 1 })
       ),
-    /complete CI job/
+    completeCiJobs
   );
 });
