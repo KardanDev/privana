@@ -1,0 +1,16 @@
+{
+  "baseline": "2fb257a70d4a7537183f280bc4866dcdef0c457e",
+  "command": "impeccable.cmd detect --json apps/web/src/shared apps/web/src/domains packages/ui/src",
+  "observedExitCode": 1,
+  "status": "Valid finding JSON; nonzero launcher exit is recorded, not called a clean pass",
+  "findings": [
+    {
+      "rule": "border-accent-on-rounded",
+      "severity": "warning",
+      "file": "apps/web/src/domains/admin/cms/cms-preview.tsx",
+      "line": 8,
+      "snippet": "border-t-4",
+      "assessment": "Contextual low-priority marker for the draft accent. Not a broken workflow or evidence of general quality."
+    }
+  ]
+}
