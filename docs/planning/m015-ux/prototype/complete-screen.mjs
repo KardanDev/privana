@@ -1,4 +1,5 @@
 import { filterCreators } from "./fan/filter-creators.mjs";
+import { revealFocus } from "./reveal-focus.mjs";
 import { reviewState } from "./state.mjs";
 
 export function completeScreen(scenario, previousScroll) {
@@ -20,4 +21,7 @@ export function completeScreen(scenario, previousScroll) {
       : (reviewState.scroll.get(scenario.id) ?? 0),
   });
   reviewState.current = scenario.id;
+  if (scenario.focusField && target) {
+    revealFocus(target);
+  }
 }

@@ -1,4 +1,5 @@
 import { element } from "./element.mjs";
+import { readCopy } from "./read-copy.mjs";
 import { renderActions } from "./render-actions.mjs";
 
 export function renderCard(card) {
@@ -8,8 +9,11 @@ export function renderCard(card) {
       `${card.title} ${card.text.join(" ")}`.toLocaleLowerCase("pt-BR");
   }
   section.append(element("h2", card.title));
+  if (card.byline) {
+    section.append(element("p", card.byline, { class: "card-meta" }));
+  }
   for (const text of card.text ?? []) {
-    section.append(element("p", text));
+    section.append(element("p", readCopy(text)));
   }
   if (card.image) {
     const image = element("img", "", {

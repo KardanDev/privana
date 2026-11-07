@@ -4,6 +4,7 @@ import { renderActions } from "./render-actions.mjs";
 import { renderCard } from "./render-card.mjs";
 import { renderFields } from "./render-fields.mjs";
 import { renderNavigation } from "./render-navigation.mjs";
+import { renderSecondary } from "./render-secondary.mjs";
 import { scenarios } from "./scenarios.mjs";
 import { reviewState } from "./state.mjs";
 
@@ -38,8 +39,8 @@ export function renderScreen() {
       })
     );
   }
-  if (scenario.form) {
-    screen.append(renderFields(scenario.form, scenario.error));
+  if (scenario.form && scenario.formPlacement !== "after") {
+    screen.append(renderFields(scenario.form, scenario.invalidFields));
   }
   const body = element("div", "", { class: "screen-body" });
   const content = element("div", "", {
@@ -49,11 +50,20 @@ export function renderScreen() {
     content.append(renderCard(card));
   }
   body.append(content);
+  if (scenario.secondary) {
+    body.append(renderSecondary(scenario.secondary));
+  }
   screen.append(body);
+  if (scenario.form && scenario.formPlacement === "after") {
+    content.append(renderFields(scenario.form, scenario.invalidFields));
+  }
   if (scenario.layout === "grid") {
     screen.append(element("p", "", { id: "search-status", role: "status" }));
   }
-  screen.append(renderActions(scenario.actions));
+  const actionTarget = ["feed", "conversation"].includes(scenario.layout)
+    ? content
+    : screen;
+  actionTarget.append(renderActions(scenario.actions));
   renderNavigation(document.getElementById("side-navigation"), scenario);
   renderNavigation(document.getElementById("mobile-navigation"), scenario);
   renderNavigation(document.getElementById("public-navigation"), scenario);
