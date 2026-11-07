@@ -1,3 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="currentColor" color="#6929D4" role="img" aria-labelledby="title"><title id="title">Perfil sem foto</title>
-<rect width="64" height="64" rx="32" fill="#F2EBFA"/><circle cx="32" cy="25" r="9" fill="#6E5C7C"/><path d="M16 53c0-10 6-15 16-15s16 5 16 15" fill="#6E5C7C"/>
+<svg
+  aria-labelledby="title"
+  color="#6929D4"
+  fill="currentColor"
+  height="64"
+  role="img"
+  viewBox="0 0 64 64"
+  width="64"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title id="title">Perfil sem foto</title>
+  <rect fill="#F2EBFA" height="64" rx="32" width="64" />
+  <circle cx="32" cy="25" fill="#6E5C7C" r="9" />
+  <path d="M16 53c0-10 6-15 16-15s16 5 16 15" fill="#6E5C7C" />
 </svg>

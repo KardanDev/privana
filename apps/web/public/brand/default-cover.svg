@@ -1,3 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="500" viewBox="0 0 1500 500" fill="currentColor" color="#6929D4" role="img" aria-labelledby="title"><title id="title">Capa padrão Privana</title>
-<rect width="1500" height="500" fill="#F2EBFA"/><path d="M0 390h1500v110H0z" fill="#EDE3FC"/><g transform="translate(1130 85) scale(5)" fill="#C3A1FF"><path d="M6 18h4v38H6z"/><path d="M14 10h19c12.7 0 23 7.16 23 16S45.7 42 33 42h-8v-8h8c8.28 0 15-3.58 15-8S41.28 18 33 18H22v38h-8z"/></g>
+<svg
+  aria-labelledby="title"
+  color="#6929D4"
+  fill="currentColor"
+  height="500"
+  role="img"
+  viewBox="0 0 1500 500"
+  width="1500"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title id="title">Capa padrão Privana</title>
+  <rect fill="#F2EBFA" height="500" width="1500" />
+  <path d="M0 390h1500v110H0z" fill="#EDE3FC" />
+  <g fill="#C3A1FF" transform="translate(1130 85) scale(5)">
+    <path d="M6 18h4v38H6z" />
+    <path
+      d="M14 10h19c12.7 0 23 7.16 23 16S45.7 42 33 42h-8v-8h8c8.28 0 15-3.58 15-8S41.28 18 33 18H22v38h-8z"
+    />
+  </g>
 </svg>

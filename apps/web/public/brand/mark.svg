@@ -1,3 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="currentColor" color="#6929D4" role="img" aria-labelledby="title"><title id="title">Privana</title>
-<path d="M6 18h4v38H6z"/><path d="M14 10h19c12.7 0 23 7.16 23 16S45.7 42 33 42h-8v-8h8c8.28 0 15-3.58 15-8S41.28 18 33 18H22v38h-8z"/>
+<svg
+  aria-labelledby="title"
+  color="#6929D4"
+  fill="currentColor"
+  height="64"
+  role="img"
+  viewBox="0 0 64 64"
+  width="64"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title id="title">Privana</title>
+  <path d="M6 18h4v38H6z" />
+  <path
+    d="M14 10h19c12.7 0 23 7.16 23 16S45.7 42 33 42h-8v-8h8c8.28 0 15-3.58 15-8S41.28 18 33 18H22v38h-8z"
+  />
 </svg>
