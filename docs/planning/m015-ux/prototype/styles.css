@@ -346,6 +346,7 @@ button:disabled {
 .creator[hidden] {
   display: none;
 }
+.stage[data-layout="checkout"] .screen-body,
 .stage[data-layout="feed"] .screen-body,
 .stage[data-layout="conversation"] .screen-body {
   display: grid;
@@ -394,13 +395,28 @@ button:disabled {
   min-height: 160px;
   resize: vertical;
 }
+.fields.compact {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.fields.compact label:has(#field-currency),
+.fields.compact label:has(#field-number) {
+  grid-column: 1 / -1;
+}
+.fields.compact input {
+  font-variant-numeric: tabular-nums;
+}
 @media (max-width: 1100px) {
+  .stage[data-layout="checkout"] .screen-body,
   .stage[data-layout="feed"] .screen-body,
   .stage[data-layout="conversation"] .screen-body {
     display: block;
   }
   .secondary {
     display: none;
+  }
+  .stage[data-layout="checkout"] .secondary {
+    display: block;
+    margin-top: 28px;
   }
 }
 @media (max-width: 700px) {

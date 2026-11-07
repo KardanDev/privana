@@ -37,6 +37,14 @@ export function createProfileCases(creator) {
       ...profile,
       actions: [
         { label: "Registrar interesse", target: `fan-interest-${creator.key}` },
+        ...(creator.key === "isabela"
+          ? [
+              {
+                label: "Testar assinatura sem cobrança",
+                target: "demo-card-brl",
+              },
+            ]
+          : []),
         { label: "Voltar à descoberta", target: "fan-discover-member" },
       ],
       id: `fan-member-profile-${creator.key}`,
