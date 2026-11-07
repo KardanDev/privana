@@ -1,0 +1,339 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-07T13:21:48.571Z",
+  "title": "Design System: Privana — Proximidade",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Royal purple",
+        "tonalRamp": [
+          "oklch(15.0% 0.0706 291.9)",
+          "oklch(26.4% 0.1244 291.9)",
+          "oklch(37.9% 0.1782 291.9)",
+          "oklch(49.3% 0.2319 291.9)",
+          "oklch(60.7% 0.2353 291.9)",
+          "oklch(72.1% 0.2353 291.9)",
+          "oklch(83.6% 0.1933 291.9)",
+          "oklch(95.0% 0.0588 291.9)"
+        ]
+      },
+      "on-primary": {
+        "tonalRamp": [
+          "oklch(15.0% 0.0000 89.9)",
+          "oklch(26.4% 0.0000 89.9)",
+          "oklch(37.9% 0.0000 89.9)",
+          "oklch(49.3% 0.0000 89.9)",
+          "oklch(60.7% 0.0000 89.9)",
+          "oklch(72.1% 0.0000 89.9)",
+          "oklch(83.6% 0.0000 89.9)",
+          "oklch(95.0% 0.0000 89.9)"
+        ]
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Violet white",
+        "tonalRamp": [
+          "oklch(15.0% 0.0021 304.2)",
+          "oklch(26.4% 0.0037 304.2)",
+          "oklch(37.9% 0.0052 304.2)",
+          "oklch(49.3% 0.0068 304.2)",
+          "oklch(60.7% 0.0069 304.2)",
+          "oklch(72.1% 0.0069 304.2)",
+          "oklch(83.6% 0.0057 304.2)",
+          "oklch(95.0% 0.0017 304.2)"
+        ]
+      },
+      "surface": {
+        "tonalRamp": [
+          "oklch(15.0% 0.0000 89.9)",
+          "oklch(26.4% 0.0000 89.9)",
+          "oklch(37.9% 0.0000 89.9)",
+          "oklch(49.3% 0.0000 89.9)",
+          "oklch(60.7% 0.0000 89.9)",
+          "oklch(72.1% 0.0000 89.9)",
+          "oklch(83.6% 0.0000 89.9)",
+          "oklch(95.0% 0.0000 89.9)"
+        ]
+      },
+      "ink": {
+        "tonalRamp": [
+          "oklch(15.0% 0.0156 303.3)",
+          "oklch(26.4% 0.0275 303.3)",
+          "oklch(37.9% 0.0393 303.3)",
+          "oklch(49.3% 0.0512 303.3)",
+          "oklch(60.7% 0.0520 303.3)",
+          "oklch(72.1% 0.0520 303.3)",
+          "oklch(83.6% 0.0427 303.3)",
+          "oklch(95.0% 0.0130 303.3)"
+        ]
+      },
+      "supporting": {
+        "tonalRamp": [
+          "oklch(15.0% 0.0163 310.0)",
+          "oklch(26.4% 0.0287 310.0)",
+          "oklch(37.9% 0.0411 310.0)",
+          "oklch(49.3% 0.0534 310.0)",
+          "oklch(60.7% 0.0542 310.0)",
+          "oklch(72.1% 0.0542 310.0)",
+          "oklch(83.6% 0.0445 310.0)",
+          "oklch(95.0% 0.0136 310.0)"
+        ]
+      },
+      "rail": {
+        "role": "secondary",
+        "displayName": "Soft violet",
+        "tonalRamp": [
+          "oklch(15.0% 0.0064 306.8)",
+          "oklch(26.4% 0.0112 306.8)",
+          "oklch(37.9% 0.0161 306.8)",
+          "oklch(49.3% 0.0210 306.8)",
+          "oklch(60.7% 0.0213 306.8)",
+          "oklch(72.1% 0.0213 306.8)",
+          "oklch(83.6% 0.0175 306.8)",
+          "oklch(95.0% 0.0053 306.8)"
+        ]
+      },
+      "selected": {
+        "tonalRamp": [
+          "oklch(15.0% 0.0105 303.8)",
+          "oklch(26.4% 0.0185 303.8)",
+          "oklch(37.9% 0.0266 303.8)",
+          "oklch(49.3% 0.0346 303.8)",
+          "oklch(60.7% 0.0351 303.8)",
+          "oklch(72.1% 0.0351 303.8)",
+          "oklch(83.6% 0.0288 303.8)",
+          "oklch(95.0% 0.0088 303.8)"
+        ]
+      },
+      "divider": {
+        "tonalRamp": [
+          "oklch(15.0% 0.0062 311.1)",
+          "oklch(26.4% 0.0109 311.1)",
+          "oklch(37.9% 0.0156 311.1)",
+          "oklch(49.3% 0.0203 311.1)",
+          "oklch(60.7% 0.0206 311.1)",
+          "oklch(72.1% 0.0206 311.1)",
+          "oklch(83.6% 0.0169 311.1)",
+          "oklch(95.0% 0.0052 311.1)"
+        ]
+      },
+      "field": {
+        "tonalRamp": [
+          "oklch(15.0% 0.0143 310.5)",
+          "oklch(26.4% 0.0252 310.5)",
+          "oklch(37.9% 0.0361 310.5)",
+          "oklch(49.3% 0.0470 310.5)",
+          "oklch(60.7% 0.0477 310.5)",
+          "oklch(72.1% 0.0477 310.5)",
+          "oklch(83.6% 0.0392 310.5)",
+          "oklch(95.0% 0.0119 310.5)"
+        ]
+      },
+      "dark-primary": {
+        "tonalRamp": [
+          "oklch(15.0% 0.0405 299.9)",
+          "oklch(26.4% 0.0714 299.9)",
+          "oklch(37.9% 0.1023 299.9)",
+          "oklch(49.3% 0.1332 299.9)",
+          "oklch(60.7% 0.1351 299.9)",
+          "oklch(72.1% 0.1351 299.9)",
+          "oklch(83.6% 0.1110 299.9)",
+          "oklch(95.0% 0.0338 299.9)"
+        ]
+      },
+      "dark-on-primary": {
+        "tonalRamp": [
+          "oklch(15.0% 0.0228 306.8)",
+          "oklch(26.4% 0.0403 306.8)",
+          "oklch(37.9% 0.0577 306.8)",
+          "oklch(49.3% 0.0751 306.8)",
+          "oklch(60.7% 0.0762 306.8)",
+          "oklch(72.1% 0.0762 306.8)",
+          "oklch(83.6% 0.0626 306.8)",
+          "oklch(95.0% 0.0190 306.8)"
+        ]
+      },
+      "dark-canvas": {
+        "tonalRamp": [
+          "oklch(15.0% 0.0087 303.5)",
+          "oklch(26.4% 0.0153 303.5)",
+          "oklch(37.9% 0.0220 303.5)",
+          "oklch(49.3% 0.0286 303.5)",
+          "oklch(60.7% 0.0290 303.5)",
+          "oklch(72.1% 0.0290 303.5)",
+          "oklch(83.6% 0.0238 303.5)",
+          "oklch(95.0% 0.0072 303.5)"
+        ]
+      },
+      "dark-surface": {
+        "tonalRamp": [
+          "oklch(15.0% 0.0118 304.3)",
+          "oklch(26.4% 0.0208 304.3)",
+          "oklch(37.9% 0.0298 304.3)",
+          "oklch(49.3% 0.0388 304.3)",
+          "oklch(60.7% 0.0393 304.3)",
+          "oklch(72.1% 0.0393 304.3)",
+          "oklch(83.6% 0.0323 304.3)",
+          "oklch(95.0% 0.0098 304.3)"
+        ]
+      },
+      "dark-ink": {
+        "tonalRamp": [
+          "oklch(15.0% 0.0034 308.3)",
+          "oklch(26.4% 0.0060 308.3)",
+          "oklch(37.9% 0.0086 308.3)",
+          "oklch(49.3% 0.0112 308.3)",
+          "oklch(60.7% 0.0113 308.3)",
+          "oklch(72.1% 0.0113 308.3)",
+          "oklch(83.6% 0.0093 308.3)",
+          "oklch(95.0% 0.0028 308.3)"
+        ]
+      },
+      "dark-supporting": {
+        "tonalRamp": [
+          "oklch(15.0% 0.0153 309.0)",
+          "oklch(26.4% 0.0270 309.0)",
+          "oklch(37.9% 0.0386 309.0)",
+          "oklch(49.3% 0.0503 309.0)",
+          "oklch(60.7% 0.0510 309.0)",
+          "oklch(72.1% 0.0510 309.0)",
+          "oklch(83.6% 0.0419 309.0)",
+          "oklch(95.0% 0.0128 309.0)"
+        ]
+      },
+      "dark-rail": {
+        "tonalRamp": [
+          "oklch(15.0% 0.0155 305.7)",
+          "oklch(26.4% 0.0273 305.7)",
+          "oklch(37.9% 0.0391 305.7)",
+          "oklch(49.3% 0.0509 305.7)",
+          "oklch(60.7% 0.0516 305.7)",
+          "oklch(72.1% 0.0516 305.7)",
+          "oklch(83.6% 0.0424 305.7)",
+          "oklch(95.0% 0.0129 305.7)"
+        ]
+      },
+      "dark-selected": {
+        "tonalRamp": [
+          "oklch(15.0% 0.0239 305.3)",
+          "oklch(26.4% 0.0422 305.3)",
+          "oklch(37.9% 0.0604 305.3)",
+          "oklch(49.3% 0.0787 305.3)",
+          "oklch(60.7% 0.0798 305.3)",
+          "oklch(72.1% 0.0798 305.3)",
+          "oklch(83.6% 0.0655 305.3)",
+          "oklch(95.0% 0.0199 305.3)"
+        ]
+      },
+      "dark-divider": {
+        "tonalRamp": [
+          "oklch(15.0% 0.0159 310.7)",
+          "oklch(26.4% 0.0281 310.7)",
+          "oklch(37.9% 0.0402 310.7)",
+          "oklch(49.3% 0.0523 310.7)",
+          "oklch(60.7% 0.0531 310.7)",
+          "oklch(72.1% 0.0531 310.7)",
+          "oklch(83.6% 0.0436 310.7)",
+          "oklch(95.0% 0.0133 310.7)"
+        ]
+      },
+      "dark-field": {
+        "tonalRamp": [
+          "oklch(15.0% 0.0206 310.3)",
+          "oklch(26.4% 0.0362 310.3)",
+          "oklch(37.9% 0.0519 310.3)",
+          "oklch(49.3% 0.0675 310.3)",
+          "oklch(60.7% 0.0685 310.3)",
+          "oklch(72.1% 0.0685 310.3)",
+          "oklch(83.6% 0.0563 310.3)",
+          "oklch(95.0% 0.0171 310.3)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Bricolage heading",
+        "purpose": "Major headings and brand lettering."
+      },
+      "body": {
+        "displayName": "Hanken UI",
+        "purpose": "Reading, controls and operational data."
+      }
+    },
+    "breakpoints": [
+      {
+        "name": "mobile-shell",
+        "value": "700px"
+      },
+      {
+        "name": "collapse-discovery",
+        "value": "1150px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Selected study's primary geometry; interactive states are illustrative handoff guidance.",
+      "html": "<button class=\"ds-primary\">Nova publicação</button>",
+      "css": ".ds-primary{font:600 16px 'Hanken Grotesk',system-ui,sans-serif;min-height:44px;padding:11px 18px;background:#6929d4;color:#fff;border:0;border-radius:12px}.ds-primary:hover{filter:brightness(.94)}.ds-primary:active{filter:brightness(.88)}.ds-primary:focus-visible{outline:3px solid #ab77ef;outline-offset:4px}"
+    },
+    {
+      "name": "Search field",
+      "kind": "input",
+      "description": "Illustrative labeled field using the selected study geometry; hover guidance is not implemented prototype behavior.",
+      "html": "<label class=\"ds-search\">Buscar criadores<input type=\"search\" placeholder=\"Nome ou perfil\"></label>",
+      "css": ".ds-search{display:grid;gap:8px;color:#261a35;font:400 14px 'Hanken Grotesk',system-ui,sans-serif}.ds-search input{font:inherit;min-height:46px;padding:0 12px;background:#fff;color:#261a35;border:1px solid #9d8caa;border-radius:12px}.ds-search input:hover{border-color:#6929d4}.ds-search input:focus-visible{outline:3px solid #ab77ef;outline-offset:4px}"
+    },
+    {
+      "name": "Selected navigation",
+      "kind": "nav",
+      "description": "Illustrative accessible selection using study geometry; aria-current and hover guidance are handoff additions.",
+      "html": "<nav aria-label=\"Exemplo de navegação\"><a class=\"ds-nav\" href=\"#inicio\" aria-current=\"page\">Início</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;min-height:47px;padding:0 13px;background:#6929d4;color:#fff;border-radius:12px;text-decoration:none;font:500 16px 'Hanken Grotesk',system-ui,sans-serif}.ds-nav:hover{filter:brightness(.94)}.ds-nav:focus-visible{outline:3px solid #ab77ef;outline-offset:4px}"
+    },
+    {
+      "name": "Content container",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "A quiet edge around creator content, without nested card chrome.",
+      "html": "<article class=\"ds-card\"><strong>Entre uma foto e outra</strong><p>Publicação de demonstração.</p></article>",
+      "css": ".ds-card{padding:24px;border:1px solid #e7dfed;border-radius:16px;background:#fff;color:#261a35;font:400 16px/1.5 'Hanken Grotesk',system-ui,sans-serif}.ds-card p{margin:8px 0 0}"
+    },
+    {
+      "name": "Publication status",
+      "kind": "chip",
+      "description": "Illustrative 14px status label; the prototype has smaller 13px labels that are not canonized for production.",
+      "html": "<span class=\"ds-status\">Publicada</span>",
+      "css": ".ds-status{display:inline-block;padding:5px 9px;background:#ede3fc;color:#6929d4;border-radius:7px;font:600 14px 'Hanken Grotesk',system-ui,sans-serif}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Proximidade",
+    "overview": "The owner selected Proximidade on November 7, 2026 after comparing Galeria, Proximidade and Ritmo. This records the rendered, read-only direction studies in [the review packet](../../docs/planning/m015-brand/direction-review.md). It is the approved target for later M01.5 work; the current application still uses its incumbent tokens and fonts. PR acceptance and logo approval are separate review gates.\n\nCreators' work carries the visual interest. The surrounding interface is welcoming, legible and familiar: tinted navigation, clear selected states, generous media and economical operational rows. Public entry is photographic; Studio and owner views prioritize completing tasks. The platform is Brazil-first; its language, names and currency examples follow pt-BR conventions.",
+    "keyCharacteristics": [
+      "Royal purple and violet tonal layers.",
+      "Humanist UI with expressive major headings.",
+      "Mobile creator workflows and readable owner data."
+    ],
+    "rules": [
+      {
+        "name": "The Creator Content Rule",
+        "body": "Keep content prominent and surrounding controls predictable.",
+        "section": "layout"
+      }
+    ],
+    "dos": [
+      "Do preserve familiar creator-platform navigation, one clear primary task and the separation of fan, Studio and owner workspaces.",
+      "Do keep real creator media dominant and label fictional/sample data honestly; never turn seed totals into commercial proof.",
+      "Do keep simulated payments clearly identified and server access state authoritative."
+    ],
+    "donts": [
+      "Don't copy competitor marks, manufacture trust badges or imply that publishing approval verifies identity/age.",
+      "Don't adopt the prototype's tiny demo badges or fixed preview toolbar as production design tokens. Their role is review context; required status/action labels need the later accessibility checks."
+    ]
+  }
+}
