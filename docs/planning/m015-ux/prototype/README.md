@@ -20,4 +20,10 @@ Run the server-boundary checks with:
 bun test docs/planning/m015-ux/prototype/server/respond.test.mjs
 ```
 
-Keep one renderer/helper per file and domain scenarios separate. Do not import this harness into the application. KAR-178/179/180 add the critical linked cases; KAR-145 records owner G1 approval before later screen/token implementation. Static/browser checks of this tool do not certify live permissions, email delivery, commerce or production accessibility.
+Keep one renderer/helper per file and domain scenarios separate. Do not import this harness into the application. KAR-178/181/182/179/180 add the critical linked cases; KAR-145 records owner G1 approval before later screen/token implementation. Static/browser checks of this tool do not certify live permissions, email delivery, commerce or production accessibility.
+
+## Public and account walkthrough (KAR-178)
+
+Start with `#fan-public` → Explorar → search a name/city or a nonmatching term → open a named profile → browser Back. The search and scroll position return. Each card keeps its own public handle. Use `#fan-discover-member` to review signed-in interest and the return to that same profile. Locked posts remain locked.
+
+From a guest profile, Entrar leads to read-only test credentials. Entrar shows a disabled pending action; the separate review toolbar selects success or invalid credentials. Success demonstrates the current `/feed` fallback, not a repaired return-to flow (KAR-152/M02). Recovery returns a generic account-neutral response without sending mail. Criar conta demonstrates disabled registration. Fixture credentials cannot authenticate anywhere.
