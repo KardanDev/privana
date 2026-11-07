@@ -42,6 +42,7 @@ export const accountScenarios = [
       { label: "Salvos", target: "fan-saved-empty" },
       { label: "Assinaturas", target: "fan-memberships" },
       { label: "Configurações", target: "fan-settings" },
+      { label: "Quero publicar", target: "studio-profile-apply" },
     ],
     active: "Conta",
     cards: [

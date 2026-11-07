@@ -1,0 +1,11 @@
+# KAR-179 review evidence
+
+November 7, 2026. All 85 cases were checked at 1440/768/390 px without horizontal overflow. Profile checks covered application/pending/active/suspended/feature-closed states; active phone navigation has five destinations, applicants have four. Pending can update a profile; suspension presents no enabled edit/publication action. Current profile bounds and HTTPS inputs were compared with `profile-form.tsx`, `save-profile.ts` and `query-shapes.ts`.
+
+Playwright MCP verified dirty close/workspace navigation → continue/discard → chosen destination, retained name/handle after failed save, disabled pending fields, clean confirmation, edited name/handle in local preview and only-group reset on discard. Native constraints reject uppercase/spaced handles, oversized price and HTTP image links. Focus/refocus reveals fields above phone navigation. The invalid legacy HTML pattern was reproduced, replaced in this prototype with `(?:[a-z0-9_]|-)+`, and recorded for production KAR-161, which remains Backlog. The final browser context reports zero errors/warnings.
+
+Captures: [desktop profile form](profile-desktop.jpg), [phone pending confirmation](profile-phone.jpg). Tablet failure and actual scrolled phone-focus captures were also inspected locally; the repository source/runner reproduces those states. All captures carry embedded origins. Cases have named fixture personas rather than a persistent viewer; workspace guards are proposed UI behavior. No entered image URL is used as an image source and no service write occurs.
+
+Scoped Ultracite checked 46 files; graph: 85 cases / 914 links / no missing destinations. Four server-boundary tests passed (18 assertions). Automatic design hints were present and later suppressed after repeated CSS edits; no additional manual detector pass was run. Studio composing/list/lifecycle coverage belongs to KAR-183 after the PR-budget refinement. G1 remains KAR-145.
+
+The fresh finish review requested one confirmation-copy correction. Updated captures now acknowledge pending review and label the pending editor “Revisar candidatura”; its verdict scored the fix resolved with disposition `ship`. This scores the named fix rather than granting broader production approval. The documenter preserved PRODUCT/DESIGN/sidecar; profile columns, tabs and dirty-state behavior stay local review patterns.

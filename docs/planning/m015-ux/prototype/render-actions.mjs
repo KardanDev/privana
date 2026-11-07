@@ -1,4 +1,6 @@
+import { discardFields } from "./discard-fields.mjs";
 import { element } from "./element.mjs";
+import { guardClose } from "./guard-close.mjs";
 import { validateFields } from "./validate-fields.mjs";
 
 export function renderActions(actions) {
@@ -21,6 +23,16 @@ export function renderActions(actions) {
     }
     if (action.validates) {
       link.addEventListener("click", validateFields);
+    }
+    if (action.guardGroup) {
+      link.dataset.guardGroup = action.guardGroup;
+      link.dataset.guardTarget = action.guardTarget;
+      link.addEventListener("click", guardClose);
+    }
+    if (action.resetGroup) {
+      link.dataset.resetGroup = action.resetGroup;
+      link.dataset.resume = String(Boolean(action.resume));
+      link.addEventListener("click", discardFields);
     }
     group.append(link);
   }
