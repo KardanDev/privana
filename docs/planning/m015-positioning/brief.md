@@ -33,11 +33,13 @@ Lead with actual creators and their available work. Use one primary discovery ac
 | Heading | “Encontre criadores para acompanhar.” | Direct discovery-led candidate; owner can replace it at review. |
 | Supporting line | “Explore perfis, siga criadores e acompanhe as publicações no seu feed.” | Refers to current discovery/follow/feed behavior, without promising paid access. |
 | Primary action | “Explorar criadores” | `/explore`; available publicly. |
-| Creator entry | “Quero criar conteúdo” | Existing `/studio` entry; signed-out visitors use the existing login return path. Respect the application feature flag and current profile state. |
+| Creator entry | “Quero criar conteúdo” | Existing `/studio` destination; respect the application feature flag and profile state. Signed-out continuation needs the auth repair described below. |
 | Existing creator entry | “Abrir meu Studio” | Existing authenticated creator workspace; no extra account or creator eligibility implied. |
 | Stage disclosure | “Ambiente de testes. Assinaturas e pagamentos estão em demonstração, sem cobrança ou liberação de acesso.” | Required near commercial decisions in the current stage. Demo profiles retain their own label. |
 
 Two heading alternatives for owner review: “Quem você acompanha, mais perto.” emphasizes the relationship; “Perto de quem cria.” preserves the current short tagline. Both need the concrete supporting line. Recommend the first table's direct direction for testing; none is recorded as owner-approved.
+
+**Current entry limitation:** Studio's shared guard redirects to `/login` without preserving a destination; the feed guard adds `returnTo`, but login does not consume it and successful sign-in returns `/feed`. KAR-152, coordinated with KAR-148, must preserve validated same-site intent before the proposed creator entry promises an automatic continuation. Sources: [login page](../../../apps/web/src/app/login/page.tsx), [auth submission](../../../apps/web/src/domains/auth/submit-auth.ts), [Studio member guard](../../../apps/web/src/shared/auth/require-member.ts). This brief records the gap; it changes no auth code.
 
 Do not describe the internal test environment as a public beta, open paid launch or age-verified community. External restricted-content onboarding remains gated by the existing roadmap. Content categories and allowed public imagery require owner/content-policy decisions before publication.
 
