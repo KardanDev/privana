@@ -89,6 +89,7 @@ export const publicScenarios = [
     feedback: "E-mail ou senha incorretos. Confira os dados e tente novamente.",
     focusField: "email",
     id: "fan-login-failed",
+    invalidFields: true,
     label: "Conta · credenciais inválidas",
   },
   {
@@ -133,10 +134,8 @@ export const publicScenarios = [
         title: "Encontre sua próxima conexão",
       },
     ],
-    id: "fan-feed",
-    label: "Conta · destino após entrada",
-    notice:
-      "Entrada mínima após autenticação fictícia; a jornada completa de comunidade pertence a KAR-181.",
+    id: "fan-feed-empty",
+    label: "Fã · feed vazio",
     route: "/feed",
     title: "Seu feed começa com quem você acompanha.",
   },

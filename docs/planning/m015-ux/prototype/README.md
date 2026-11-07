@@ -27,3 +27,11 @@ Keep one renderer/helper per file and domain scenarios separate. Do not import t
 Start with `#fan-public` → Explorar → search a name/city or a nonmatching term → open a named profile → browser Back. The search and scroll position return. Each card keeps its own public handle. Use `#fan-discover-member` to review signed-in interest and the return to that same profile. Locked posts remain locked.
 
 From a guest profile, Entrar leads to read-only test credentials. Entrar shows a disabled pending action; the separate review toolbar selects success or invalid credentials. Success demonstrates the current `/feed` fallback, not a repaired return-to flow (KAR-152/M02). Recovery returns a generic account-neutral response without sending mail. Criar conta demonstrates disabled registration. Fixture credentials cannot authenticate anywhere.
+
+## Fan community walkthrough (KAR-181)
+
+Start `#fan-feed` → Salvar → use the review-toolbar failure outcome → retry → confirm → Ver salvos → remove. The post remains available after failure, and saving never grants content access. Select the independent loading/failed/empty feed cases from the toolbar. Wide feed recommendations disappear at narrower widths; no second search is added.
+
+Assinaturas compares independent active/expired fixtures. Active opens a clearly labeled content example; expired opens the locked profile. `#fan-memberships-empty` is the no-access destination after a checkout demonstration, not an automatic subscription.
+
+Mensagens → Abrir conversa → edit the nonsecret text → send → select failure → retry/confirm. Failure retains text and focus; pending disables editing; confirmation shows the entered text. Empty and disabled-message cases are separate configuration examples. Conta exposes Salvos, Assinaturas and Configurações on phone. Settings covers only the existing name and email-notification preference, with pending/failure/confirmation; none of these examples sends email. Case selection can inspect independent fixtures and does not represent persistent global account state.
