@@ -8,7 +8,7 @@ export function renderCard(card) {
     section.dataset.creator =
       `${card.title} ${card.text.join(" ")}`.toLocaleLowerCase("pt-BR");
   }
-  section.append(element("h2", card.title));
+  section.append(element("h2", readCopy(card.title)));
   if (card.byline) {
     section.append(element("p", card.byline, { class: "card-meta" }));
   }

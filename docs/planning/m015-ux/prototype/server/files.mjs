@@ -37,6 +37,12 @@ export const previewFiles = new Map([
     "checkout/create-card-cases.mjs",
     "checkout/pix.mjs",
     "checkout/scenarios.mjs",
+    "guard-close.mjs",
+    "discard-fields.mjs",
+    "render-heading.mjs",
+    "studio/model.mjs",
+    "studio/create-profile-cases.mjs",
+    "studio/scenarios.mjs",
   ].map((name) => [`/${name}`, new URL(`../${name}`, import.meta.url)]),
   ...[
     "favicon.svg",

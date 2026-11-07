@@ -1,5 +1,7 @@
 export function validateFields(event) {
-  const fields = document.querySelectorAll(".fields input, .fields textarea");
+  const fields = document.querySelectorAll(
+    ".fields input, .fields textarea, .fields select"
+  );
   for (const field of fields) {
     field.setCustomValidity(
       field.required && field.type !== "checkbox" && !field.value.trim()
