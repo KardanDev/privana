@@ -11,13 +11,13 @@ KAR-177, within owner-authorized KAR-130. Operate mode. A reviewer chooses ficti
 
 ## Direction contract
 
-THESIS: A clearly separated review toolbar surrounds a familiar creator-platform frame. The initial empty-feed/navigation cases prove the harness, without pretending to deliver the later domain journeys.
+THESIS: A clearly separated review toolbar surrounds a familiar creator-platform frame. Public discovery leads to the matching creator and honest account entry; signed-in interest keeps the same creator context. Studio, community and checkout arrive in separate stories.
 
 OWN-WORLD: Inherit royal purple, pale-violet rail, violet-white work area, dark plum alternate, Hanken UI and Bricolage headings. Use the approved original wordmarks and consistent vector icons.
 
 STORY: Reviewers know the data is fictional, choose a case/theme, follow a local action, and return without touching any service or account.
 
-FIRST VIEWPORT: A compact case/theme/reset toolbar and collapsed case notes precede the frame. Desktop has a 232px rail and one main task area; phone has the same heading/content and one fixed bottom navigation. Empty content stays honest.
+FIRST VIEWPORT: A compact case/theme/reset toolbar and collapsed case notes precede the frame. Visitors see a simple brand/header and editorial creator portraits; members use a 232px rail or phone bottom navigation. Discovery owns one search. Sensitive fields are read-only; empty content stays honest.
 
 FORM: Inherited Proximidade, grounded direction 1 from the approved identity round, seed:c0e81b28ee1eccfe; no new direction roll. Code-led. The signature response is immediate violet selection plus retained, useful heading focus; no entrance animation.
 
