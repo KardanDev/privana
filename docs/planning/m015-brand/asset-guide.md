@@ -34,6 +34,6 @@ Google's CSS2 service supplied fixed, non-variable TTF instances, checked for ab
 
 ## Adoption boundary and validation
 
-The files are served under `/brand/` but are not activated by app metadata, manifest, email or shell code in this story. [The surface inventory](brand-surfaces.md) records current CMS behavior and the later integration owners. Review/merge KAR-141 first, then this dependent KAR-142 PR. Asset approval is the owner accepting this PR; keep Linear In Review until accepted and merged.
+The files are served under `/brand/` but are not activated by app metadata, manifest, email or shell code in this story. [The surface inventory](brand-surfaces.md) records current CMS behavior and the later integration owners. KAR-141 is accepted and merged in [PR #7](https://github.com/KardanDev/privana/pull/7); this KAR-142 asset PR now targets merged `main`. Asset approval is the owner accepting this PR; keep Linear In Review until accepted and merged.
 
 Checks: desktop 1360px and phone 390px sheets rendered with custom fonts, zero broken images and no document-width overflow; 13 exports inspected for size/dependencies; PNG dimensions/source matches and maskable safe zone verified. Native-size and light/dark/monochrome appearances were visually reviewed. These checks validate the asset kit, not installed-PWA behavior, CMS publishing, assistive technology or the future platform redesign. Reverting the asset commit removes these additions without changing records or production configuration.
