@@ -1,11 +1,10 @@
+import { applyCaseState } from "./apply-case-state.mjs";
 import { completeScreen } from "./complete-screen.mjs";
 import { element } from "./element.mjs";
 import { renderActions } from "./render-actions.mjs";
-import { renderCard } from "./render-card.mjs";
-import { renderFields } from "./render-fields.mjs";
+import { renderContent } from "./render-content.mjs";
 import { renderHeading } from "./render-heading.mjs";
 import { renderNavigation } from "./render-navigation.mjs";
-import { renderSecondary } from "./render-secondary.mjs";
 import { scenarios } from "./scenarios.mjs";
 import { reviewState } from "./state.mjs";
 
@@ -13,6 +12,7 @@ export function renderScreen() {
   const requested = location.hash.slice(1);
   const scenario =
     scenarios.find((item) => item.id === requested) ?? scenarios[0];
+  applyCaseState(scenario);
   const previousScroll = window.scrollY;
   if (reviewState.current) {
     reviewState.scroll.set(reviewState.current, previousScroll);
@@ -37,33 +37,7 @@ export function renderScreen() {
       })
     );
   }
-  if (scenario.form && scenario.formPlacement !== "after") {
-    screen.append(renderFields(scenario.form, scenario.invalidFields));
-  }
-  const body = element("div", "", { class: "screen-body" });
-  const content = element("div", "", {
-    class: `content ${scenario.layout ?? "list"}`,
-  });
-  for (const card of scenario.cards) {
-    content.append(renderCard(card));
-  }
-  body.append(content);
-  if (scenario.secondary) {
-    body.append(renderSecondary(scenario.secondary));
-  }
-  screen.append(body);
-  if (scenario.form && scenario.formPlacement === "after") {
-    content.append(renderFields(scenario.form, scenario.invalidFields));
-  }
-  if (scenario.layout === "grid") {
-    screen.append(element("p", "", { id: "search-status", role: "status" }));
-  }
-  const actionTarget = ["feed", "conversation", "checkout"].includes(
-    scenario.layout
-  )
-    ? content
-    : screen;
-  actionTarget.append(renderActions(scenario.actions));
+  screen.append(renderContent(scenario));
   renderNavigation(document.getElementById("side-navigation"), scenario);
   renderNavigation(document.getElementById("mobile-navigation"), scenario);
   renderNavigation(document.getElementById("public-navigation"), scenario);

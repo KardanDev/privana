@@ -11,7 +11,7 @@ KAR-177, within owner-authorized KAR-130. Operate mode. A reviewer chooses ficti
 
 ## Direction contract
 
-THESIS: A clearly separated review toolbar surrounds a familiar creator-platform frame. Fan journeys preserve content/access truth; creator application and profile tasks add honest status, retained edits and deliberate discard. Composing and owner work arrive in separate stories.
+THESIS: A clearly separated review toolbar surrounds a familiar creator-platform frame. Fan and creator journeys preserve identity, access truth and working text through deliberate pending, retry and discard paths. Owner work arrives in a separate story.
 
 OWN-WORLD: Inherit royal purple, pale-violet rail, violet-white work area, dark plum alternate, Hanken UI and Bricolage headings. Use the approved original wordmarks and consistent vector icons.
 

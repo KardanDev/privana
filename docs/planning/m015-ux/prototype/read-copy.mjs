@@ -1,7 +1,9 @@
 import { reviewState } from "./state.mjs";
 
 export function readCopy(copy) {
-  return typeof copy === "string"
-    ? copy
-    : `${copy.prefix ?? ""}${String(reviewState.fields.get(copy.from) ?? copy.fallback)}`;
+  if (typeof copy === "string") {
+    return copy;
+  }
+  const value = reviewState.fields.get(copy.from) ?? copy.fallback;
+  return `${copy.prefix ?? ""}${String(copy.labels?.[value] ?? value)}`;
 }

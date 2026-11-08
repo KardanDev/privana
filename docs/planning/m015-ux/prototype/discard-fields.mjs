@@ -1,6 +1,9 @@
 import { reviewState } from "./state.mjs";
 
 export function discardFields(event) {
+  if (event.defaultPrevented) {
+    return;
+  }
   const link = event.currentTarget;
   const group = link.dataset.resetGroup;
   for (const key of reviewState.fields.keys()) {
