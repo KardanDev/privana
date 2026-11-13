@@ -1,4 +1,5 @@
 import type { OperationsTransactionDTO } from "@privana/api/contracts/platform";
+import { TableScrollArea } from "@privana/ui/components/table-scroll-area";
 import { formatDate } from "@/shared/formatting/format-date";
 import { AdminStatus } from "./admin-status";
 import { formatMinorCurrency } from "./format-minor-currency";
@@ -9,8 +10,8 @@ export function OperationsTransactions({
   items: OperationsTransactionDTO[];
 }) {
   return (
-    <div className="overflow-x-auto rounded-xl border bg-card">
-      <table className="w-full min-w-[780px] text-left text-xs">
+    <TableScrollArea label="Transações verificadas">
+      <table className="w-full min-w-[780px] text-left text-sm">
         <caption className="sr-only">
           Transações verificadas — consulta sem ações de cobrança
         </caption>
@@ -55,10 +56,10 @@ export function OperationsTransactions({
               </td>
               <td className="max-w-72 px-4 py-4">
                 <p>{item.provider}</p>
-                <p className="mt-1 break-all font-mono text-[10px] text-muted-foreground">
+                <p className="mt-1 break-all font-mono text-muted-foreground text-sm">
                   {item.externalId}
                 </p>
-                <p className="mt-1 break-all text-[10px] text-muted-foreground">
+                <p className="mt-1 break-all text-muted-foreground text-sm">
                   Registro: {item.id}
                 </p>
               </td>
@@ -66,6 +67,6 @@ export function OperationsTransactions({
           ))}
         </tbody>
       </table>
-    </div>
+    </TableScrollArea>
   );
 }
