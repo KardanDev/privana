@@ -16,8 +16,14 @@ export function createSectionCases(role) {
             section === "cms"
               ? [
                   {
+                    actions: [
+                      {
+                        label: "Editar conteúdo e marca",
+                        target: `cms-${role}-brand`,
+                      },
+                    ],
                     text: [
-                      "Seu papel permite editar o CMS. O fluxo de rascunho, publicação e versões será ligado pelo KAR-184, antes da aprovação G1.",
+                      "Edite o rascunho e revise antes de publicar. Salvar não muda o conteúdo público.",
                     ],
                     title: "Conteúdo e marca",
                   },

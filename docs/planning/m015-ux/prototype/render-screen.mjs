@@ -1,4 +1,5 @@
 import { applyCaseState } from "./apply-case-state.mjs";
+import { prepareCmsScreen } from "./cms/prepare-screen.mjs";
 import { completeScreen } from "./complete-screen.mjs";
 import { element } from "./element.mjs";
 import { renderActions } from "./render-actions.mjs";
@@ -10,8 +11,9 @@ import { reviewState } from "./state.mjs";
 
 export function renderScreen() {
   const requested = location.hash.slice(1);
-  const scenario =
-    scenarios.find((item) => item.id === requested) ?? scenarios[0];
+  const scenario = prepareCmsScreen(
+    scenarios.find((item) => item.id === requested) ?? scenarios[0]
+  );
   applyCaseState(scenario);
   const previousScroll = window.scrollY;
   if (reviewState.current) {
