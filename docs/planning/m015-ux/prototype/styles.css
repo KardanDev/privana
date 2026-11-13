@@ -5,6 +5,7 @@
   --sub: #6e5c7c;
   --rail: #f2ebfa;
   --line: #e7dfed;
+  --field: #9d8caa;
   --primary: #6929d4;
   --on-primary: #fff;
   --soft: #ede3fc;
@@ -30,6 +31,7 @@ body.dark {
   --sub: #c9b7d9;
   --rail: #21142e;
   --line: #493855;
+  --field: #8a729c;
   --primary: #c3a1ff;
   --on-primary: #271139;
   --soft: #39234f;
@@ -52,11 +54,11 @@ select {
 }
 button,
 .button {
-  padding: 10px 16px;
+  padding: 11px 18px;
   color: var(--ink);
   cursor: pointer;
   background: var(--surface);
-  border: 1px solid var(--line);
+  border: 1px solid var(--field);
   border-radius: 12px;
 }
 :focus-visible {
@@ -111,8 +113,8 @@ select {
   padding: 6px 30px 6px 10px;
   color: var(--ink);
   background: var(--surface);
-  border: 1px solid var(--sub);
-  border-radius: 8px;
+  border: 1px solid var(--field);
+  border-radius: 12px;
 }
 .review-tools output {
   width: 100%;
