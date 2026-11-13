@@ -35,3 +35,9 @@ One cold development preflight timed out; the server subsequently logged a 43-se
 No dependency, environment, database, seed, email or billing changes. Rollback is the issue commit without data reversal. Keep Linear In Review until owner acceptance and merge.
 
 Documentation reconciliation checked the final shared overlays/feedback, LockedPostNotice, three native tables and four representative captures against PRODUCT/DESIGN/sidecar and the overlay brief; authority files and inherited seed are preserved, while deferred Card/StatCard typography remains KAR-189, not a new system rule. The recorded provenance scan found 24 rasters with zero missing origins.
+
+## Main-branch delivery correction
+
+The owner accepted PR #24 on November 13, but it merged into the already-merged KAR-187 branch. The main-target follow-up replays reviewed commit `d035fc5`; its complete tree matched that commit before the plan/evidence bookkeeping below. UI source, captures and existing authority files remain unchanged. The original merged PR cannot be retargeted; keep KAR-188 In Review until this follow-up reaches main. KAR-189 delivery follows separately after that merge.
+
+Fresh integration checks: scoped lint (22 files), workspace types (five tasks), tooling types, 275 deterministic tests across 55 files and production build pass. Source/capture Git blobs match `d035fc5`; only this evidence and the execution plan differ. Browser/visual results above are retained evidence from the identical approved source, not a new browser run or owner G2 acceptance. GitHub checks remain a separate gate.
