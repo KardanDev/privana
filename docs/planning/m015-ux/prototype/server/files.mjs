@@ -24,6 +24,8 @@ export const previewFiles = new Map([
     "fan/profile-scenarios.mjs",
     "fan/post.mjs",
     "fan/feed.mjs",
+    "fan/feed-tabs.mjs",
+    "fan/recent.mjs",
     "fan/access.mjs",
     "fan/inbox.mjs",
     "fan/account.mjs",

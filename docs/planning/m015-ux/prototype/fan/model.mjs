@@ -1,5 +1,5 @@
 export const fanNavigation = [
-  { icon: "home", label: "Início", target: "fan-feed" },
+  { icon: "home", label: "Início", target: "fan-recent" },
   { icon: "explore", label: "Explorar", target: "fan-discover-member" },
   { icon: "saved", label: "Salvos", target: "fan-saved-empty" },
   { icon: "messages", label: "Mensagens", target: "fan-inbox-list" },

@@ -1,8 +1,8 @@
 # Linear delivery index
 
-Execution note: November 7, 2026; backlog structure recorded November 6. The live board owns current status and acceptance evidence. See [roadmap](roadmap.md), [scope and decisions](scope-and-decisions.md) and the [Linear project](https://linear.app/kardandev/project/privana-onlyfans-inspired-platform-eab4888a909b).
+Execution note: November 13, 2026; backlog structure recorded November 6. The live board owns current status and acceptance evidence. See [roadmap](roadmap.md), [scope and decisions](scope-and-decisions.md) and the [Linear project](https://linear.app/kardandev/project/privana-onlyfans-inspired-platform-eab4888a909b).
 
-The project has 12 roadmap milestones. M01.5 is refined into ten workstream deliverables and 36 actionable stories with user outcomes, acceptance criteria, implementation checklists and native dependencies. M01 is merged and Done. M01.5 now executes one owner-authorized group at a time; later groups/milestones stay unstarted. KAR-8 is superseded planning material, not delivered work. Live issue status is authoritative.
+The project has 12 roadmap milestones. M01.5 has ten workstream deliverables and 45 actionable leaves after KAR-144 was refined into ten prototype stories. User outcomes, acceptance evidence and native dependencies remain issue-scoped. M01 is merged and Done. M01.5 executes one owner-authorized group at a time; later groups/milestones stay unstarted. KAR-8 is superseded planning material, not delivered work. Live issue status is authoritative.
 
 ## M01 — Delivery foundation
 
@@ -19,7 +19,7 @@ Deliverable: [KAR-9](https://linear.app/kardandev/issue/KAR-9/m01-delivery-found
 
 ## M01.5 — Platform redesign and polish
 
-Deliverable: [KAR-126](https://linear.app/kardandev/issue/KAR-126). M01 is merged and Done. KAR-127 is accepted in PRs [#2](https://github.com/KardanDev/privana/pull/2)/[#3](https://github.com/KardanDev/privana/pull/3), KAR-128 in [#5](https://github.com/KardanDev/privana/pull/5)/[#6](https://github.com/KardanDev/privana/pull/6), and KAR-129's Proximidade direction/assets in [#7](https://github.com/KardanDev/privana/pull/7)/[#8](https://github.com/KardanDev/privana/pull/8). The owner authorized **KAR-130 only** on November 7, 2026. Its [navigation contract](m015-ux/navigation.md) and [bounded prototype plan](m015-ux/prototype-plan.md) prepare the next review. **KAR-131 and later groups remain unstarted.**
+Deliverable: [KAR-126](https://linear.app/kardandev/issue/KAR-126). M01 is merged and Done. KAR-127 is accepted in PRs [#2](https://github.com/KardanDev/privana/pull/2)/[#3](https://github.com/KardanDev/privana/pull/3), KAR-128 in [#5](https://github.com/KardanDev/privana/pull/5)/[#6](https://github.com/KardanDev/privana/pull/6), and KAR-129's Proximidade direction/assets in [#7](https://github.com/KardanDev/privana/pull/7)/[#8](https://github.com/KardanDev/privana/pull/8). The owner authorized **KAR-130 only** on November 7, 2026. Its [navigation contract](m015-ux/navigation.md), [bounded prototype plan](m015-ux/prototype-plan.md) and [G1 handoff](m015-ux/handoff.md) prepare the owner review; approval remains pending. **KAR-131 and later groups remain unstarted.**
 
 See the [direction decision](m015-brand/direction-review.md), [positioning brief](m015-positioning/brief.md), [execution brief](m015-redesign-plan.md), [audit](m015-design-audit.md) and [Linear source](https://linear.app/kardandev/document/m015-redesign-execution-brief-coverage-and-acceptance-16b1acc50787). Direction/artwork approval, production adoption and group advancement are separate gates.
 

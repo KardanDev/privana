@@ -52,6 +52,7 @@ export const scenarios = [
   ...publicScenarios,
   ...profileScenarios,
   ...feedScenarios,
+  ...recentScenarios,
   ...accessScenarios,
   ...inboxScenarios,
   ...accountScenarios,
@@ -69,6 +70,7 @@ import { accessScenarios } from "./fan/access.mjs";
 import { accountScenarios } from "./fan/account.mjs";
 import { feedScenarios } from "./fan/feed.mjs";
 import { inboxScenarios } from "./fan/inbox.mjs";
+import { recentScenarios } from "./fan/recent.mjs";
 import { ownerDecisionScenarios } from "./owner/decision-scenarios.mjs";
 import { ownerScenarios } from "./owner/scenarios.mjs";
 import { studioScenarios } from "./studio/scenarios.mjs";
