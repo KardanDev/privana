@@ -1,5 +1,7 @@
 "use client";
 
+import { Label } from "@privana/ui/components/label";
+import { NativeSelect } from "@privana/ui/components/native-select";
 import { useCallback } from "react";
 import type { DemoCurrency } from "./demo-types";
 
@@ -21,11 +23,9 @@ export function DemoCurrencySelect({
   );
   return (
     <div className="flex flex-col gap-2">
-      <label className="font-medium text-sm" htmlFor="demo-currency">
-        Moeda da demonstração
-      </label>
-      <select
-        className="h-11 min-w-0 rounded-lg border bg-card px-3 text-base text-foreground outline-none focus-visible:ring-2 focus-visible:ring-ring md:text-sm"
+      <Label htmlFor="demo-currency">Moeda da demonstração</Label>
+      <NativeSelect
+        aria-describedby="demo-currency-hint"
         id="demo-currency"
         onChange={change}
         value={currency}
@@ -33,8 +33,8 @@ export function DemoCurrencySelect({
         <option value="BRL">BRL · Real brasileiro</option>
         <option value="USD">USD · Dólar americano</option>
         <option value="EUR">EUR · Euro</option>
-      </select>
-      <p className="text-muted-foreground text-xs">
+      </NativeSelect>
+      <p className="text-muted-foreground text-sm" id="demo-currency-hint">
         A troca de moeda não consulta taxas de câmbio. Pix demonstrativo
         disponível somente em BRL.
       </p>
