@@ -13,6 +13,7 @@ select.addEventListener("change", (event) => {
 });
 document.getElementById("theme").addEventListener("click", toggleTheme);
 document.querySelector(".sidebar .brand").addEventListener("click", guardClose);
+document.querySelector(".owner-header a").addEventListener("click", guardClose);
 window.addEventListener("hashchange", () => {
   if (location.hash !== "#screen-title") {
     renderScreen();

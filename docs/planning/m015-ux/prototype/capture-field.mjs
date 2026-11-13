@@ -1,3 +1,4 @@
+import { syncCmsControls } from "./cms/sync-controls.mjs";
 import { filterCreators } from "./fan/filter-creators.mjs";
 import { filterRecords } from "./owner/filter-records.mjs";
 import { reviewState } from "./state.mjs";
@@ -14,4 +15,5 @@ export function captureField(event) {
   );
   filterCreators();
   filterRecords();
+  syncCmsControls();
 }

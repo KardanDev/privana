@@ -28,7 +28,12 @@ export function renderScreen() {
     scenario.guardGroup ?? "";
   stage.querySelector(".sidebar .brand").dataset.guardTarget =
     scenario.guardTarget ?? "";
+  const ownerReturn = stage.querySelector(".owner-header a");
+  ownerReturn.dataset.guardGroup = scenario.guardGroup ?? "";
+  ownerReturn.dataset.guardTarget = scenario.guardTarget ?? "";
   const screen = document.getElementById("screen");
+  screen.dataset.cmsRole = scenario.cmsRole ?? "";
+  screen.dataset.cmsStatus = String(Boolean(scenario.cmsStatus));
   screen.replaceChildren(renderHeading(scenario));
   if (scenario.feedback) {
     screen.append(
