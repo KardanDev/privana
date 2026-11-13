@@ -351,11 +351,11 @@ button:disabled {
 .stage[data-layout="feed"] .screen-body,
 .stage[data-layout="conversation"] .screen-body {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 240px;
-  gap: 28px;
+  grid-template-columns: minmax(0, 1fr) 278px;
+  gap: 32px;
 }
 .stage[data-layout="conversation"] .screen-body {
-  grid-template-columns: 240px minmax(0, 1fr);
+  grid-template-columns: 278px minmax(0, 1fr);
 }
 .stage[data-layout="conversation"] .secondary {
   order: -1;
@@ -396,7 +396,7 @@ button:disabled {
   min-height: 160px;
   resize: vertical;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
   .stage[data-layout="feed"] .screen-body,
   .stage[data-layout="conversation"] .screen-body {
     display: block;
@@ -429,6 +429,16 @@ button:disabled {
   }
   .card {
     padding: 20px;
+  }
+  .stage[data-layout="feed"] .post {
+    padding: 20px 18px;
+    margin-inline: -18px;
+    border-inline: 0;
+    border-radius: 0;
+  }
+  .stage[data-layout="feed"] .post img {
+    width: calc(100% + 36px);
+    margin-inline: -18px;
   }
   .mobile-navigation {
     position: fixed;
