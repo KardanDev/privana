@@ -1,6 +1,7 @@
 import { element } from "./element.mjs";
 import { readCopy } from "./read-copy.mjs";
 import { renderActions } from "./render-actions.mjs";
+import { renderFields } from "./render-fields.mjs";
 import { renderNavigation } from "./render-navigation.mjs";
 
 export function renderHeading(scenario) {
@@ -19,6 +20,9 @@ export function renderHeading(scenario) {
     header.append(actions);
   }
   fragment.append(header);
+  if (scenario.sectionMenu) {
+    fragment.append(renderFields(scenario.sectionMenu));
+  }
   if (scenario.tabs) {
     const tabs = element("nav", "", {
       "aria-label": "Seções do espaço de trabalho",

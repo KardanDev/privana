@@ -1,0 +1,15 @@
+# KAR-180 review evidence
+
+November 7, 2026. Thirty owner cases cover the eight existing sections and four staff roles, plus restricted-role denial and loading/failure/empty examples. Playwright MCP checked every owner case at 390/768/1440 px without horizontal overflow. A tablet failure traced to the native select's intrinsic width in a nested grid; a zero-minimum grid track resolved the four affected cases.
+
+Search/status combination, no-match feedback, clearing, phone section navigation and keyboard focus were exercised. Analyst navigation excludes moderation, CMS and audits; moderator/editor navigation follows current source permissions. Native table captions, column scopes and phone labels remain available; Chromium exposes the stacked records as a table. Both approved font families loaded. Sampled console reported zero errors/warnings; installed-device and assistive-technology testing is not certified.
+
+Captures: [desktop record view](owner-records-desktop-light.jpg) and [phone moderation records](owner-records-phone-dark.jpg), full-page with embedded origins. Four review-server boundary tests passed with 18 assertions. The current graph has 157 cases and 1,785 links with no missing destinations. Automatic design hints are active; repeatedly edited shared CSS is suppressed, and no additional detector was run.
+
+The record layer is deliberately separate from KAR-185 decisions and KAR-184 CMS. Figures are fictional, recorded sandbox finance is independent of the no-charge browser demonstration, and no operation is sent. G1 remains pending owner review.
+
+Resumed verification on November 13, 2026: scoped Ultracite passed 58 files, the 157-case graph still has no missing links, and all four boundary tests passed again. The first review's two findings were corrected: compact phone controls put the first record within the 844px viewport, and first-column values now use the approved 16px while supporting labels/columns stay 14px. These checks do not claim live service verification.
+
+Fresh finish review returned `ship` for the supplied desktop/phone record views. The reviewer verified the corrected typography and first viewport; interaction checks and broader state coverage remain the separate evidence described above. Owner G1 acceptance is not implied.
+
+Documentation verification checked the final index, stylesheet, owner frame/table renderer and both captures against `apps/web/PRODUCT.md`, `apps/web/DESIGN.md`, its sidecar and the surface contract. The inherited Proximidade palette, Hanken/Bricolage pairing, 16px first-column values and 14px supporting text remain consistent; phone section selection and stacked records stay local to this surface. PRODUCT, DESIGN and the sidecar are preserved. Pre-existing shared-style differences (10px/16px button padding, 8px native selects, supporting-color field borders and the 1100px secondary-column breakpoint) remain uncanonized and unrepaired; this extension authorizes no new system decision. G1 remains pending owner review.

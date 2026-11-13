@@ -9,6 +9,9 @@ export function createFieldSelect(field, group) {
     select.append(element("option", option.label, { value: option.value }));
   }
   select.dataset.key = `${group}:${field.name}`;
+  if (field.scope === "records") {
+    select.dataset.filterRecords = field.name;
+  }
   select.disabled = Boolean(field.disabled);
   select.required = Boolean(field.required);
   if (field.casePrefix) {
