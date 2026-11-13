@@ -1,4 +1,15 @@
+import { guardDestination } from "./guard-destination.mjs";
+
 export function changeCase(event) {
   const select = event.currentTarget;
-  location.hash = `${select.dataset.prefix}${select.value}`;
+  const target = `${select.dataset.prefix}${select.value}`;
+  if (
+    !guardDestination(
+      select.dataset.guardGroup,
+      target,
+      select.dataset.guardTarget
+    )
+  ) {
+    location.hash = target;
+  }
 }

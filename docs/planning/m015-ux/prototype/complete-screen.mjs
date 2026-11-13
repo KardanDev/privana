@@ -1,3 +1,4 @@
+import { syncCmsControls } from "./cms/sync-controls.mjs";
 import { filterCreators } from "./fan/filter-creators.mjs";
 import { filterRecords } from "./owner/filter-records.mjs";
 import { readCopy } from "./read-copy.mjs";
@@ -13,6 +14,7 @@ export function completeScreen(scenario, previousScroll) {
   document.title = `${scenario.label} · revisão Privana`;
   filterCreators();
   filterRecords();
+  syncCmsControls();
   const target = document.getElementById(
     scenario.focusField ? `field-${scenario.focusField}` : "screen-title"
   );

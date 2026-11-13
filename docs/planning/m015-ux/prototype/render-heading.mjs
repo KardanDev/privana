@@ -31,6 +31,7 @@ export function renderHeading(scenario) {
     renderNavigation(tabs, {
       ...scenario,
       active: scenario.tab,
+      guardGroup: scenario.cmsRole ? undefined : scenario.guardGroup,
       navigation: scenario.tabs,
     });
     fragment.append(tabs);

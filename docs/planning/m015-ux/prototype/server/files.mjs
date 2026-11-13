@@ -75,6 +75,9 @@ export const previewFiles = new Map([
     "cms/render-preview.mjs",
     "cms/create-cases.mjs",
     "cms/scenarios.mjs",
+    "cms/commit-command.mjs",
+    "cms/sync-controls.mjs",
+    "guard-destination.mjs",
   ].map((name) => [`/${name}`, new URL(`../${name}`, import.meta.url)]),
   ...[
     "favicon.svg",

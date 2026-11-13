@@ -1,8 +1,8 @@
-export function cmsAction(role, label, command, target) {
+export function cmsAction(role, label, command, target, clean = false) {
   return {
-    cms: { command, role },
+    cms: { clean, command, role },
     label,
-    primary: command === "preview",
+    primary: ["save", "publish", "restore"].includes(command),
     target,
   };
 }
