@@ -348,6 +348,63 @@ button:disabled {
 .creator[hidden] {
   display: none;
 }
+.stage[data-layout="feed"] .screen-body,
+.stage[data-layout="conversation"] .screen-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 278px;
+  gap: 32px;
+}
+.stage[data-layout="conversation"] .screen-body {
+  grid-template-columns: 278px minmax(0, 1fr);
+}
+.stage[data-layout="conversation"] .secondary {
+  order: -1;
+}
+.post img {
+  max-height: none;
+  aspect-ratio: 4 / 3;
+  object-position: center top;
+}
+.secondary .card {
+  padding: 16px;
+}
+.secondary .creator img {
+  height: 150px;
+}
+.secondary .creator > :not(img) {
+  margin-inline: 0;
+}
+.secondary h2 {
+  font-size: 18px;
+}
+.card-meta {
+  font-size: 14px;
+  color: var(--sub);
+}
+.fields label:has([type="checkbox"]) {
+  grid-template-columns: 24px 1fr;
+  align-items: start;
+}
+.fields input[type="checkbox"] {
+  grid-row: 1;
+  grid-column: 1;
+  width: 20px;
+  min-height: 20px;
+  accent-color: var(--primary);
+}
+.fields textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+@media (max-width: 1150px) {
+  .stage[data-layout="feed"] .screen-body,
+  .stage[data-layout="conversation"] .screen-body {
+    display: block;
+  }
+  .secondary {
+    display: none;
+  }
+}
 @media (max-width: 700px) {
   .review-tools {
     gap: 12px;
@@ -372,6 +429,16 @@ button:disabled {
   }
   .card {
     padding: 20px;
+  }
+  .stage[data-layout="feed"] .post {
+    padding: 20px 18px;
+    margin-inline: -18px;
+    border-inline: 0;
+    border-radius: 0;
+  }
+  .stage[data-layout="feed"] .post img {
+    width: calc(100% + 36px);
+    margin-inline: -18px;
   }
   .mobile-navigation {
     position: fixed;

@@ -51,5 +51,14 @@ const harnessScenarios = [
 export const scenarios = [
   ...publicScenarios,
   ...profileScenarios,
+  ...feedScenarios,
+  ...accessScenarios,
+  ...inboxScenarios,
+  ...accountScenarios,
   ...harnessScenarios,
 ];
+
+import { accessScenarios } from "./fan/access.mjs";
+import { accountScenarios } from "./fan/account.mjs";
+import { feedScenarios } from "./fan/feed.mjs";
+import { inboxScenarios } from "./fan/inbox.mjs";

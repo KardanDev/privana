@@ -1,4 +1,5 @@
 import { element } from "./element.mjs";
+import { validateFields } from "./validate-fields.mjs";
 
 export function renderActions(actions) {
   const group = element("div", "", { class: "actions" });
@@ -17,6 +18,9 @@ export function renderActions(actions) {
     });
     if (action.ariaLabel) {
       link.setAttribute("aria-label", action.ariaLabel);
+    }
+    if (action.validates) {
+      link.addEventListener("click", validateFields);
     }
     group.append(link);
   }

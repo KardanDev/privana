@@ -17,6 +17,18 @@ export function createFieldInput(field, group, invalid) {
     : (reviewState.fields.get(input.dataset.key) ?? field.value ?? "");
   input.readOnly = Boolean(field.sensitive || field.readOnly);
   input.disabled = Boolean(field.disabled);
+  input.required = Boolean(field.required);
+  if (field.type === "checkbox") {
+    input.checked = Boolean(
+      reviewState.fields.get(input.dataset.key) ?? field.value
+    );
+  }
+  if (field.min) {
+    input.minLength = field.min;
+  }
+  if (field.max) {
+    input.maxLength = field.max;
+  }
   if (field.scope === "creators") {
     input.dataset.filterCreators = "true";
   }

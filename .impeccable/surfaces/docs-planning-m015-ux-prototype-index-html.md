@@ -11,11 +11,11 @@ KAR-177, within owner-authorized KAR-130. Operate mode. A reviewer chooses ficti
 
 ## Direction contract
 
-THESIS: A clearly separated review toolbar surrounds a familiar creator-platform frame. Public discovery leads to the matching creator and honest account entry; signed-in interest keeps the same creator context. Studio, community and checkout arrive in separate stories.
+THESIS: A clearly separated review toolbar surrounds a familiar creator-platform frame. Discovery keeps creator identity; the fan frame links content, saved items, recorded access and conversations with useful failure recovery. Studio, owner and checkout arrive in separate stories.
 
 OWN-WORLD: Inherit royal purple, pale-violet rail, violet-white work area, dark plum alternate, Hanken UI and Bricolage headings. Use the approved original wordmarks and consistent vector icons.
 
-STORY: Reviewers know the data is fictional, choose a case/theme, follow a local action, and return without touching any service or account.
+STORY: Reviewers know the data is fictional, choose a case/theme, follow a local action, and recover without touching a service. Pending and failed saves/messages preserve context; membership fixtures remain independent of checkout.
 
 FIRST VIEWPORT: A compact case/theme/reset toolbar and collapsed case notes precede the frame. Visitors see a simple brand/header and editorial creator portraits; members use a 232px rail or phone bottom navigation. Discovery owns one search. Sensitive fields are read-only; empty content stays honest.
 
