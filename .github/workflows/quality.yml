@@ -70,6 +70,10 @@ jobs:
           EMAIL_DELIVERY_MODE: resend
       # Varlock resolves server configuration into the build. Synthetic CI
       # output is disposable: never upload/cache/promote .next or resolved env.
+      - name: Install catalogue browser
+        run: bunx playwright install --with-deps chromium
+      - name: Exercise isolated shared component catalogue
+        run: bun run test:catalogue
 
   quality-gate:
     name: Quality gate

@@ -10,10 +10,11 @@ const TOOLTIP = "Exemplos locais; nenhuma ação altera contas ou pagamentos.";
 
 for (const dark of [false, true]) {
   test(`${dark ? "dark" : "light"}: named menus support keyboard selection, disabled items and Escape focus return`, async ({
+    baseURL,
     page,
   }) => {
     await page.emulateMedia({ reducedMotion: "reduce" });
-    await openReviewFixture(page, "feedback");
+    await openReviewFixture(page, "feedback", baseURL);
     const activeTransitions = await page
       .locator("html")
       .evaluate((root, enabled) => {
@@ -54,9 +55,10 @@ for (const dark of [false, true]) {
   });
 
   test(`${dark ? "dark" : "light"}: tooltip focus and existing recovery/data patterns keep their meaning`, async ({
+    baseURL,
     page,
   }) => {
-    await openReviewFixture(page, "feedback");
+    await openReviewFixture(page, "feedback", baseURL);
     await page
       .locator("html")
       .evaluate(
