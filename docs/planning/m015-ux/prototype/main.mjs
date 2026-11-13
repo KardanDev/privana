@@ -11,5 +11,9 @@ select.addEventListener("change", (event) => {
   location.hash = event.currentTarget.value;
 });
 document.getElementById("theme").addEventListener("click", toggleTheme);
-window.addEventListener("hashchange", renderScreen);
+window.addEventListener("hashchange", () => {
+  if (location.hash !== "#screen-title") {
+    renderScreen();
+  }
+});
 renderScreen();

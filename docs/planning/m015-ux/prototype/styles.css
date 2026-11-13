@@ -262,6 +262,92 @@ button:hover {
 .mobile-navigation {
   display: none;
 }
+.public-header {
+  display: none;
+}
+.stage[data-shell="public"] {
+  display: block;
+}
+.stage[data-shell="public"] .sidebar,
+.stage[data-shell="public"] .mobile-navigation {
+  display: none;
+}
+.stage[data-shell="public"] .public-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px max(24px, calc((100% - 1036px) / 2));
+  border-bottom: 1px solid var(--line);
+}
+.public-header nav {
+  display: flex;
+  gap: 8px;
+}
+.stage[data-shell="public"] main {
+  margin-inline: auto;
+}
+.fields {
+  display: grid;
+  gap: 16px;
+  max-width: 560px;
+  padding: 0;
+  margin: 0 0 28px;
+  border: 0;
+}
+.fields legend {
+  padding: 0 0 12px;
+  font-weight: 600;
+}
+.fields label {
+  display: grid;
+  gap: 6px;
+}
+.fields input,
+.fields textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 11px 14px;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--field);
+  border-radius: 12px;
+}
+.fields [readonly] {
+  background: var(--rail);
+}
+button:disabled {
+  color: var(--sub);
+  cursor: default;
+}
+.content.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+  gap: 24px;
+}
+.creator {
+  padding: 0 0 20px;
+}
+.creator > :not(img) {
+  margin-inline: 20px;
+}
+.creator img {
+  height: 240px;
+  margin: 0 0 20px;
+}
+.creator h2 {
+  font-size: 21px;
+}
+.creator p {
+  color: var(--sub);
+}
+.creator .actions {
+  margin-top: 20px;
+}
+.creator[hidden] {
+  display: none;
+}
 @media (max-width: 700px) {
   .review-tools {
     gap: 12px;

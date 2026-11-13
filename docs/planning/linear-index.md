@@ -50,7 +50,9 @@ See the [direction decision](m015-brand/direction-review.md), [positioning brief
 | [KAR-144](https://linear.app/kardandev/issue/KAR-144) | Prototype the critical fan, creator and owner workflows | [KAR-143](https://linear.app/kardandev/issue/KAR-143), [KAR-141](https://linear.app/kardandev/issue/KAR-141), [KAR-140](https://linear.app/kardandev/issue/KAR-140) |
 | [KAR-145](https://linear.app/kardandev/issue/KAR-145) | Approve redesign scope, prototypes and design-code handoff | [KAR-144](https://linear.app/kardandev/issue/KAR-144), [KAR-142](https://linear.app/kardandev/issue/KAR-142), [KAR-138](https://linear.app/kardandev/issue/KAR-138) |
 | [KAR-177](https://linear.app/kardandev/issue/KAR-177) | Build the isolated review harness (child of KAR-144) | KAR-143, KAR-141 |
-| [KAR-178](https://linear.app/kardandev/issue/KAR-178) | Prototype fan/access/demo flows (child of KAR-144) | KAR-177, KAR-143, KAR-140 |
+| [KAR-178](https://linear.app/kardandev/issue/KAR-178) | Prototype discovery, creator profiles and account entry (child of KAR-144) | KAR-177, KAR-143, KAR-140 |
+| [KAR-181](https://linear.app/kardandev/issue/KAR-181) | Prototype fan feed, saved access and conversations (child of KAR-144) | KAR-178 |
+| [KAR-182](https://linear.app/kardandev/issue/KAR-182) | Prototype no-charge card and Pix checkout (child of KAR-144) | KAR-178 |
 | [KAR-179](https://linear.app/kardandev/issue/KAR-179) | Prototype the creator lifecycle (child of KAR-144) | KAR-177, KAR-143, KAR-140 |
 | [KAR-180](https://linear.app/kardandev/issue/KAR-180) | Prototype owner/CMS flows (child of KAR-144) | KAR-177, KAR-143, KAR-140 |
 | [KAR-146](https://linear.app/kardandev/issue/KAR-146) | Implement semantic themes, fonts and CMS accent parity | [KAR-145](https://linear.app/kardandev/issue/KAR-145) |

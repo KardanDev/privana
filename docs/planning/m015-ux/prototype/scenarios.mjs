@@ -1,8 +1,11 @@
+import { profileScenarios } from "./fan/profile-scenarios.mjs";
+import { publicScenarios } from "./fan/public.mjs";
+
 const navigation = [
   { icon: "home", label: "Início", target: "harness" },
   { icon: "explore", label: "Explorar", target: "harness-discovery" },
 ];
-export const scenarios = [
+const harnessScenarios = [
   {
     actions: [{ label: "Explorar criadores", target: "harness-discovery" }],
     active: "Início",
@@ -43,4 +46,10 @@ export const scenarios = [
     route: "/explore",
     title: "Encontre criadores para acompanhar.",
   },
+];
+
+export const scenarios = [
+  ...publicScenarios,
+  ...profileScenarios,
+  ...harnessScenarios,
 ];
