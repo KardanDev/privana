@@ -15,7 +15,7 @@ export function renderActions(actions) {
       continue;
     }
     const link = element("a", action.label, {
-      class: index === 0 ? "button primary" : "button",
+      class: (action.primary ?? index === 0) ? "button primary" : "button",
       href: `#${action.target}`,
     });
     if (action.ariaLabel) {

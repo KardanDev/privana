@@ -1,24 +1,16 @@
 import { fanFrame } from "../fan/model.mjs";
+import { contentScenarios, postListFrame } from "./content-scenarios.mjs";
 import { createProfileCases } from "./create-profile-cases.mjs";
-import { studioFrame } from "./model.mjs";
 
 export const studioScenarios = [
   ...["apply", "pending", "active"].flatMap(createProfileCases),
+  ...contentScenarios,
   {
-    ...studioFrame,
-    actions: [{ label: "Editar perfil", target: "studio-profile-active" }],
-    cards: [
-      {
-        text: [
-          "Revise as informações públicas e o valor planejado. Pagamentos continuam em demonstração.",
-        ],
-        title: "Seu perfil, do seu jeito",
-      },
-    ],
+    ...postListFrame,
     id: "studio-overview",
     label: "Studio · entrada do espaço de trabalho",
     notice:
-      "Entrada de criadora ativa e perfil no KAR-179. Composição, listas e ciclo de publicação chegam no KAR-183; nenhum controle de publicação incompleto é apresentado.",
+      "Studio de criadora ativa, com perfil e ciclos de conteúdo locais. Filtros nomeados são fixtures independentes; o resultado de cada editor mantém o título e o estado que você confirmou.",
   },
   {
     ...fanFrame,
