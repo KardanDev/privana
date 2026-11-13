@@ -25,7 +25,7 @@ export function createRecords(section) {
       columns: ["Perfil", "Publicação", "Conta"],
       rows: [
         {
-          cells: ["Luna Moreira · @luna-demo", "Em análise", "Ativa"],
+          cells: ["Luna Martins · @luna-demo", "Em análise", "Ativa"],
           status: "PENDING",
         },
         {
@@ -33,7 +33,7 @@ export function createRecords(section) {
           status: "ACTIVE",
         },
         {
-          cells: ["Júlia Montenegro · @julia-demo", "Suspensa", "Ativa"],
+          cells: ["Júlia Ribeiro · @julia-demo", "Suspensa", "Ativa"],
           status: "SUSPENDED",
         },
       ],
