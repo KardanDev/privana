@@ -21,6 +21,9 @@ export function renderContent(scenario) {
     body.append(renderSecondary(scenario.secondary));
   }
   fragment.append(body);
+  if (scenario.recordSearch) {
+    fragment.append(element("p", "", { id: "records-status", role: "status" }));
+  }
   if (scenario.form && scenario.formPlacement === "after") {
     content.append(renderFields(scenario.form, scenario.invalidFields));
   }

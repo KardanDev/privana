@@ -285,6 +285,51 @@ button:hover {
 .mobile-navigation {
   display: none;
 }
+.owner-header,
+.fields.section-menu {
+  display: none;
+}
+.fields.record-filters {
+  grid-template-columns: minmax(0, 2fr) minmax(140px, 1fr);
+  max-width: 760px;
+}
+.records {
+  width: 100%;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  border-collapse: collapse;
+}
+.records caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.records th,
+.records td {
+  padding: 16px 12px;
+  vertical-align: top;
+  text-align: left;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--line);
+}
+.records th {
+  font-weight: 600;
+  background: var(--rail);
+}
+.records td:first-child {
+  font-size: 16px;
+}
+.records .actions {
+  margin: 0;
+}
+.records .button {
+  padding: 8px 12px;
+}
+.records tr[hidden] {
+  display: none;
+}
 .public-header {
   display: none;
 }
@@ -324,9 +369,21 @@ button:hover {
   padding: 0 0 12px;
   font-weight: 600;
 }
+.fields.section-menu legend,
+.fields.record-filters legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
 .fields label {
   display: grid;
   gap: 6px;
+}
+.fields.record-filters label {
+  grid-template-columns: minmax(0, 1fr);
+  min-width: 0;
 }
 .fields input,
 .fields textarea {
@@ -461,6 +518,45 @@ button:disabled {
   }
 }
 @media (max-width: 700px) {
+  .stage[data-shell="owner"] .owner-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+    padding: 18px;
+    border-bottom: 1px solid var(--line);
+  }
+  .fields.section-menu {
+    display: grid;
+    width: 100%;
+  }
+  .fields.record-filters {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+  .records thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  .records tr {
+    display: block;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .records td {
+    display: block;
+    padding: 8px 0;
+    border: 0;
+  }
+  .records td::before {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    content: attr(data-label);
+  }
   .fields.profile {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -522,6 +618,12 @@ button:disabled {
     gap: 4px;
     padding: 6px;
     font-size: 14px;
+  }
+  .stage[data-shell="owner"] .mobile-navigation {
+    display: none;
+  }
+  .stage[data-shell="owner"] main {
+    padding-bottom: 32px;
   }
 }
 @media (prefers-reduced-motion: reduce) {

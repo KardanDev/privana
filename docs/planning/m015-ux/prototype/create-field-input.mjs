@@ -42,6 +42,9 @@ export function createFieldInput(field, group, invalid) {
   if (field.scope === "creators") {
     input.dataset.filterCreators = "true";
   }
+  if (field.scope === "records") {
+    input.dataset.filterRecords = field.name;
+  }
   if (invalid) {
     input.setAttribute("aria-invalid", "true");
     input.setAttribute("aria-describedby", "screen-feedback");

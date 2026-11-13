@@ -1,4 +1,5 @@
 import { filterCreators } from "./fan/filter-creators.mjs";
+import { filterRecords } from "./owner/filter-records.mjs";
 import { reviewState } from "./state.mjs";
 
 export function captureField(event) {
@@ -12,4 +13,5 @@ export function captureField(event) {
     input.type === "checkbox" ? input.checked : input.value
   );
   filterCreators();
+  filterRecords();
 }

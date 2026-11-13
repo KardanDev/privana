@@ -55,7 +55,9 @@ See the [direction decision](m015-brand/direction-review.md), [positioning brief
 | [KAR-182](https://linear.app/kardandev/issue/KAR-182) | Prototype no-charge card and Pix checkout (child of KAR-144) | KAR-178, KAR-181 |
 | [KAR-179](https://linear.app/kardandev/issue/KAR-179) | Prototype applications, profiles and Studio entry (child of KAR-144) | KAR-177, KAR-143, KAR-140 |
 | [KAR-183](https://linear.app/kardandev/issue/KAR-183) | Prototype composing and publication lifecycle (child of KAR-144) | KAR-179 |
-| [KAR-180](https://linear.app/kardandev/issue/KAR-180) | Prototype owner/CMS flows (child of KAR-144) | KAR-177, KAR-143, KAR-140 |
+| [KAR-180](https://linear.app/kardandev/issue/KAR-180) | Prototype owner navigation and records (child of KAR-144) | KAR-177, KAR-143, KAR-140 |
+| [KAR-185](https://linear.app/kardandev/issue/KAR-185) | Prototype owner decisions and recovery (child of KAR-144) | KAR-180 |
+| [KAR-184](https://linear.app/kardandev/issue/KAR-184) | Prototype CMS editing and version recovery (child of KAR-144) | KAR-180 |
 | [KAR-146](https://linear.app/kardandev/issue/KAR-146) | Implement semantic themes, fonts and CMS accent parity | [KAR-145](https://linear.app/kardandev/issue/KAR-145) |
 | [KAR-147](https://linear.app/kardandev/issue/KAR-147) | Polish shared controls, forms, overlays and data patterns | [KAR-146](https://linear.app/kardandev/issue/KAR-146) |
 | [KAR-148](https://linear.app/kardandev/issue/KAR-148) | Build consistent public, fan, Studio and owner shells | [KAR-147](https://linear.app/kardandev/issue/KAR-147), [KAR-143](https://linear.app/kardandev/issue/KAR-143) |

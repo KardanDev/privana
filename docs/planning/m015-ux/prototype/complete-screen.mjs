@@ -1,4 +1,5 @@
 import { filterCreators } from "./fan/filter-creators.mjs";
+import { filterRecords } from "./owner/filter-records.mjs";
 import { readCopy } from "./read-copy.mjs";
 import { revealFocus } from "./reveal-focus.mjs";
 import { reviewState } from "./state.mjs";
@@ -11,6 +12,7 @@ export function completeScreen(scenario, previousScroll) {
     scenario.notice ?? "Caso fictício; nenhuma operação real.";
   document.title = `${scenario.label} · revisão Privana`;
   filterCreators();
+  filterRecords();
   const target = document.getElementById(
     scenario.focusField ? `field-${scenario.focusField}` : "screen-title"
   );

@@ -1,4 +1,5 @@
 import { element } from "./element.mjs";
+import { renderTable } from "./owner/render-table.mjs";
 import { readCopy } from "./read-copy.mjs";
 import { renderActions } from "./render-actions.mjs";
 
@@ -8,7 +9,9 @@ export function renderCard(card) {
     section.dataset.creator =
       `${card.title} ${card.text.join(" ")}`.toLocaleLowerCase("pt-BR");
   }
-  section.append(element("h2", readCopy(card.title)));
+  if (!card.table) {
+    section.append(element("h2", readCopy(card.title)));
+  }
   if (card.byline) {
     section.append(element("p", card.byline, { class: "card-meta" }));
   }
@@ -29,6 +32,9 @@ export function renderCard(card) {
   }
   if (card.actions) {
     section.append(renderActions(card.actions));
+  }
+  if (card.table) {
+    section.append(renderTable(card.table));
   }
   return section;
 }

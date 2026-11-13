@@ -20,7 +20,7 @@ Run the server-boundary checks with:
 bun test docs/planning/m015-ux/prototype/server/respond.test.mjs
 ```
 
-Keep one renderer/helper per file and domain scenarios separate. Do not import this harness into the application. KAR-178/181/182/179/180 add the critical linked cases; KAR-145 records owner G1 approval before later screen/token implementation. Static/browser checks of this tool do not certify live permissions, email delivery, commerce or production accessibility.
+Keep one renderer/helper per file and domain scenarios separate. Do not import this harness into the application. KAR-178/181/182/179/183/180/185/184 add the critical linked cases; KAR-145 records owner G1 approval before later screen/token implementation. Static/browser checks of this tool do not certify live permissions, email delivery, commerce or production accessibility.
 
 ## Public and account walkthrough (KAR-178)
 
@@ -59,3 +59,11 @@ From `#studio-overview`, Nova publicação starts a fresh local example; if that
 Usar mídia de exemplo → pending → fail → retry or continue without media. Text survives; save/publish is unavailable on failed attachment until you retry or deliberately omit it. Only fixed WebP metadata appears: no file chooser, private object or upload request. Save/publish pending disables repeat actions/fields; failure retains edits and useful focus; confirmation keeps the entered title and result state in that editor's record view.
 
 Publish → archive review → cancel or confirm → pending → fail/retry or archived. Archiving preserves a record rather than deleting it. Current archived rows can still be edited; no new restore command is invented. The list/filter/loading/empty examples are independent fixtures on `/studio`, not new deep-link routes or persistent account records. New/edit groups are separate; explicit discard clears only the chosen group. Current API ownership, active-profile and media checks stay authoritative in future implementation.
+
+## Owner records walkthrough (KAR-180)
+
+Choose `#owner-admin-users` in the review toolbar. Search a name/email, combine it with Situação, try a nonmatching search and clear it. Records and feedback update locally without another search bar. Choose Criadores/Denúncias/Assinaturas/Transações/Auditoria in the owner rail. On phone, the Seção selector replaces that rail; records keep their column labels in stacked rows, without the community bottom navigation. Voltar à comunidade is explicit.
+
+Compare `#owner-moderator-reports`, `#owner-editor-cms` and `#owner-analyst-transactions`: moderator gets people/creators/reports; editor gets CMS; analyst gets overview/subscriptions/transactions. Admin gets all eight current sections. Restricted roles have separate denied cases; all roles have loading/failed/empty examples. Selecting a case is a review action, never a way to change actual permissions. Every reference remains `/admin`, whose sections are internal state today.
+
+Overview separates BRL/USD/EUR and labels the counts and sandbox records fictional. An estorno is a read-only recorded example, not a refund command. No currency conversion or mixed-currency total is implied. This PR is the record-reading layer; KAR-185 adds authorized decision actions and audit context, and KAR-184 adds CMS editing/version recovery before G1. No production record, private message/media or service is accessed.
