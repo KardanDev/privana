@@ -56,7 +56,7 @@
     "postinstall": "varlock codegen --path ./apps/web/ && varlock codegen --path ./packages/db/",
     "owner:bootstrap": "cd apps/web && varlock run -- bun ../../packages/auth/scripts/bootstrap-owner.ts",
     "start:dev": "turbo run dev",
-    "test": "bun test packages/api/tests packages/auth/tests packages/db/tests apps/web/tests e2e/read-browser-target.test.ts",
+    "test": "bun test packages/api/tests packages/auth/tests packages/db/tests apps/web/tests e2e/read-browser-target.test.ts docs/planning/m015-ux/prototype/server",
     "test:browser": "playwright test",
     "test:smoke": "cd apps/web && varlock run -- bun ../../packages/api/scripts/verify-demo-http.ts"
   },
