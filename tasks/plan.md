@@ -24,9 +24,9 @@ Each actionable issue has one ordinary PR, explicit prerequisite/base and task-o
 
 ## Verification checkpoints
 
-After each slice, run scoped lint, relevant types and meaningful interaction checks; inspect light/dark phone/desktop states and publish exact results. Preserve the known local root-lint constraint rather than formatting unrelated files.
+After each slice, run scoped lint, relevant types and meaningful interaction checks; inspect light/dark phone/desktop states and publish exact results. Preserve the known local root-lint constraint rather than formatting unrelated files. KAR-188 reuses KAR-187's browser fixture boundary; it starts on that issue's branch until PR #23 lands. Table wrappers retain native captions, rows and actions while adding a named keyboard scroll target.
 
-At catalogue acceptance, verify long pt-BR content, labels, retained input, touch/keyboard checkbox behavior, disabled/pending actions, Escape/focus return and local-server boundaries. Reconcile every KAR-147 criterion with actual source/evidence.
+At catalogue acceptance, verify long pt-BR content, labels, retained input, touch/keyboard checkbox behavior, disabled/pending actions, Escape/focus return and local-server boundaries. Include the existing StatCard's supporting typography and unused registry Card with their actual catalogue recipes. Reconcile every KAR-147 criterion with actual source/evidence.
 
 KAR-148–150 remain separate stories in this same authorized group. G2 requires owner review of the completed group before KAR-132; passing CI alone never accepts, merges, deploys or completes the group.
 

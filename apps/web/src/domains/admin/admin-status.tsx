@@ -18,12 +18,14 @@ export function AdminStatus({ status }: { status: string }) {
   return (
     <span
       className={cn(
-        "inline-flex w-fit shrink-0 items-center rounded-full border px-2.5 py-1 font-medium text-[11px]",
-        status === "ACTIVE" || status === "RESOLVED"
-          ? "border-primary/15 bg-accent text-primary"
+        "inline-flex w-fit items-center rounded-full px-2.5 py-1 font-medium text-sm",
+        ["ACTIVE", "RESOLVED", "SUCCEEDED"].includes(status)
+          ? "bg-success-surface text-success"
           : "bg-muted text-muted-foreground",
-        status === "SUSPENDED" &&
-          "border-destructive/15 bg-destructive/5 text-destructive"
+        ["FAILED", "SUSPENDED"].includes(status) &&
+          "bg-destructive-surface text-destructive",
+        ["OPEN", "PENDING"].includes(status) &&
+          "bg-warning-surface text-warning"
       )}
     >
       {labels[status] ?? status}
