@@ -1,9 +1,13 @@
+import { renderCmsPreview } from "./cms/render-preview.mjs";
 import { element } from "./element.mjs";
 import { renderTable } from "./owner/render-table.mjs";
 import { readCopy } from "./read-copy.mjs";
 import { renderActions } from "./render-actions.mjs";
 
 export function renderCard(card) {
+  if (card.cmsPreview) {
+    return renderCmsPreview(card.cmsPreview);
+  }
   const section = element("section", "", { class: `card ${card.kind ?? ""}` });
   if (card.kind === "creator") {
     section.dataset.creator =

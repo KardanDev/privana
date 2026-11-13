@@ -1,3 +1,4 @@
+import { renderCmsCommand } from "./cms/render-command.mjs";
 import { discardFields } from "./discard-fields.mjs";
 import { element } from "./element.mjs";
 import { guardClose } from "./guard-close.mjs";
@@ -6,6 +7,10 @@ import { validateFields } from "./validate-fields.mjs";
 export function renderActions(actions) {
   const group = element("div", "", { class: "actions" });
   for (const [index, action] of actions.entries()) {
+    if (action.cms) {
+      group.append(renderCmsCommand(action));
+      continue;
+    }
     if (action.disabled) {
       const button = element("button", action.label, {
         disabled: "",

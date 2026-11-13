@@ -59,10 +59,12 @@ export const scenarios = [
   ...studioScenarios,
   ...ownerScenarios,
   ...ownerDecisionScenarios,
+  ...cmsScenarios,
   ...harnessScenarios,
 ];
 
 import { checkoutScenarios } from "./checkout/scenarios.mjs";
+import { cmsScenarios } from "./cms/scenarios.mjs";
 import { accessScenarios } from "./fan/access.mjs";
 import { accountScenarios } from "./fan/account.mjs";
 import { feedScenarios } from "./fan/feed.mjs";

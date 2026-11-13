@@ -15,10 +15,11 @@ The owner accepted KAR-129 in PRs #7/#8 and authorized KAR-130 on November 7, 20
 | KAR-183 | Creator composing, interrupted editing, upload/save recovery and draft/publish/archive | KAR-179. Public preview/private media, list/filter/empty states; no real upload or publication. |
 | KAR-180 | Role-aware owner navigation, record search/filter and read-only analytics/audits | KAR-177/143/140. Fictional records; separate phone workspace. |
 | KAR-185 | Owner decision confirmations, pending/failure recovery and audit context | KAR-180. Current authorized moderation, role changes and local access revocation only. |
-| KAR-184 | CMS draft/edit/preview/save/publish/restore and version-conflict recovery | KAR-180. Current schema and admin/editor authority only. |
+| KAR-184 | CMS fields, validation and local preview | KAR-180. Current schema, representative collection rows and admin/editor authority. |
+| KAR-186 | CMS draft/save/publish/restore and version-conflict recovery | KAR-184. Dirty exits, clean-draft publication and version authority. |
 | KAR-145 | Builder review, source/token/component/screen mapping, three reference-screen definitions and G1 approval record | All critical prototypes and accepted identity. Owner approval remains explicit, never inferred from CI. |
 
-KAR-144 is the prototype container for nine bounded child stories. Formatted fan, Studio and combined owner source exceeded the hard PR budget; separating domain workflows retains all original acceptance. Each actionable issue has one short-lived branch and ordinary PR; dependent PRs identify their base and merge order. The group review precedes KAR-131 or any later group.
+KAR-144 is the prototype container for ten bounded child stories. Formatted fan, Studio, owner and CMS source exceeded the hard PR budget; separating domain workflows retains all original acceptance. Each actionable issue has one short-lived branch and ordinary PR; dependent PRs identify their base and merge order. The group review precedes KAR-131 or any later group.
 
 ## Review medium and fixture contract
 
