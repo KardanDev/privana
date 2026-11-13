@@ -26,9 +26,22 @@ const Toaster = ({ ...props }: ToasterProps) => {
       style={
         {
           "--border-radius": "var(--radius)",
+          "--error-bg": "var(--destructive-surface)",
+          "--error-border": "var(--destructive)",
+          "--error-text": "var(--destructive)",
+          "--info-bg": "var(--info-surface)",
+          "--info-border": "var(--info)",
+          "--info-text": "var(--info)",
           "--normal-bg": "var(--popover)",
           "--normal-border": "var(--border)",
           "--normal-text": "var(--popover-foreground)",
+          "--success-bg": "var(--success-surface)",
+          "--success-border": "var(--success)",
+          "--success-text": "var(--success)",
+          "--warning-bg": "var(--warning-surface)",
+          "--warning-border": "var(--warning)",
+          "--warning-text": "var(--warning)",
+          fontFamily: "inherit",
         } as React.CSSProperties
       }
       theme={theme as ToasterProps["theme"]}
