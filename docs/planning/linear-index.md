@@ -53,7 +53,8 @@ See the [direction decision](m015-brand/direction-review.md), [positioning brief
 | [KAR-178](https://linear.app/kardandev/issue/KAR-178) | Prototype discovery, creator profiles and account entry (child of KAR-144) | KAR-177, KAR-143, KAR-140 |
 | [KAR-181](https://linear.app/kardandev/issue/KAR-181) | Prototype fan feed, saved access and conversations (child of KAR-144) | KAR-178 |
 | [KAR-182](https://linear.app/kardandev/issue/KAR-182) | Prototype no-charge card and Pix checkout (child of KAR-144) | KAR-178, KAR-181 |
-| [KAR-179](https://linear.app/kardandev/issue/KAR-179) | Prototype the creator lifecycle (child of KAR-144) | KAR-177, KAR-143, KAR-140 |
+| [KAR-179](https://linear.app/kardandev/issue/KAR-179) | Prototype applications, profiles and Studio entry (child of KAR-144) | KAR-177, KAR-143, KAR-140 |
+| [KAR-183](https://linear.app/kardandev/issue/KAR-183) | Prototype composing and publication lifecycle (child of KAR-144) | KAR-179 |
 | [KAR-180](https://linear.app/kardandev/issue/KAR-180) | Prototype owner/CMS flows (child of KAR-144) | KAR-177, KAR-143, KAR-140 |
 | [KAR-146](https://linear.app/kardandev/issue/KAR-146) | Implement semantic themes, fonts and CMS accent parity | [KAR-145](https://linear.app/kardandev/issue/KAR-145) |
 | [KAR-147](https://linear.app/kardandev/issue/KAR-147) | Polish shared controls, forms, overlays and data patterns | [KAR-146](https://linear.app/kardandev/issue/KAR-146) |

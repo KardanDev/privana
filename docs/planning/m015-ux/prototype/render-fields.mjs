@@ -1,5 +1,6 @@
 import { createFieldInput } from "./create-field-input.mjs";
 import { element } from "./element.mjs";
+import { revealFocus } from "./reveal-focus.mjs";
 
 export function renderFields(form, invalid) {
   const group = element("fieldset", "", {
@@ -11,7 +12,15 @@ export function renderFields(form, invalid) {
     const fieldInvalid = Array.isArray(invalid)
       ? invalid.includes(field.name)
       : Boolean(invalid);
-    label.append(createFieldInput(field, form.group, fieldInvalid));
+    const input = createFieldInput(field, form.group, fieldInvalid);
+    input.addEventListener("focus", () => revealFocus(input));
+    if (form.trackDirty) {
+      input.dataset.dirtyGroup = form.group;
+    }
+    label.append(input);
+    if (field.hint) {
+      label.append(element("small", field.hint));
+    }
     group.append(label);
   }
   return group;
