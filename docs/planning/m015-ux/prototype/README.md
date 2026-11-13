@@ -20,7 +20,7 @@ Run the server-boundary checks with:
 bun test docs/planning/m015-ux/prototype/server/respond.test.mjs
 ```
 
-Keep one renderer/helper per file and domain scenarios separate. Do not import this harness into the application. KAR-178/181/182/179/183/180/185/184 add the critical linked cases; KAR-145 records owner G1 approval before later screen/token implementation. Static/browser checks of this tool do not certify live permissions, email delivery, commerce or production accessibility.
+Keep one renderer/helper per file and domain scenarios separate. Do not import this harness into the application. KAR-178/181/182/179/183/180/185/184/186 supply the critical linked cases. The [G1 handoff](../handoff.md), [coverage](../coverage.md), [CMS contract](../cms-contract.md) and [final evidence](../review/handoff-evidence.md) prepare KAR-145 for explicit owner approval before later screen/token implementation. Static/browser checks of this tool do not certify live permissions, email delivery, commerce or production accessibility.
 
 ## Public and account walkthrough (KAR-178)
 
@@ -31,6 +31,8 @@ From a guest profile, Entrar leads to read-only test credentials. Entrar shows a
 ## Fan community walkthrough (KAR-181)
 
 Start `#fan-feed` → Salvar → use the review-toolbar failure outcome → retry → confirm → Ver salvos → remove. The post remains available after failure, and saving never grants content access. Select the independent loading/failed/empty feed cases from the toolbar. Wide feed recommendations disappear at narrower widths; no second search is added.
+
+`#fan-recent` is the signed-in Início reference for recent content on `/`. Recentes/Seguindo explicitly switch between `/` and `/feed`; the shell's Início points to recent content. Anonymous `/` remains the separate public-entry proposal. These coded reference frames reconcile the KAR-143 contract; they do not add a production route or change feed/query authority.
 
 Assinaturas compares independent active/expired fixtures. Active opens a clearly labeled content example; expired opens the locked profile. `#fan-memberships-empty` is the no-access destination after a checkout demonstration, not an automatic subscription.
 

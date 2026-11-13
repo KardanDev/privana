@@ -32,3 +32,5 @@ Keep the tool's scenario selector and prototype notice distinct from the product
 For every domain, link start/end frames and exercise forward, back/cancel and retry paths. Capture representative phone/desktop and light/dark cases; include long/empty/locked/loading/failure/permission examples. Record whether a frame demonstrates current behavior, a proposed UI repair or a future dependency. Route coverage is not proof that live services were exercised.
 
 KAR-145's review must reconcile the full route/role/state inventory with the prototype matrix, current CMS customization and code ownership. Define reference examples for a fan content task, mobile creator editing and owner CMS/data work. Resolve material ambiguity before seeking the owner decision; preserve genuine release/content/tool dependencies as named gates rather than fake approval.
+
+The resulting [G1 handoff](handoff.md), [route/role/state reconciliation](coverage.md), [supported CMS contract](cms-contract.md) and [reference evidence](review/handoff-evidence.md) are ready for the owner review. G1 remains pending; KAR-131 remains unstarted.

@@ -1,3 +1,4 @@
+import { feedTabs } from "./feed-tabs.mjs";
 import { fanFrame, memberCreators } from "./model.mjs";
 import { publicPost } from "./post.mjs";
 
@@ -10,6 +11,8 @@ const feed = {
   layout: "feed",
   route: "/feed",
   secondary: { cards: memberCreators.slice(1), title: "Conheça também" },
+  tab: "Seguindo",
+  tabs: feedTabs,
   title: "Seu feed",
 };
 export const feedScenarios = [
