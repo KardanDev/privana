@@ -60,7 +60,9 @@ export function renderScreen() {
   if (scenario.layout === "grid") {
     screen.append(element("p", "", { id: "search-status", role: "status" }));
   }
-  const actionTarget = ["feed", "conversation"].includes(scenario.layout)
+  const actionTarget = ["feed", "conversation", "checkout"].includes(
+    scenario.layout
+  )
     ? content
     : screen;
   actionTarget.append(renderActions(scenario.actions));

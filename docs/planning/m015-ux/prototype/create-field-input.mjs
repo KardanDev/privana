@@ -1,8 +1,12 @@
 import { captureField } from "./capture-field.mjs";
+import { createFieldSelect } from "./create-field-select.mjs";
 import { element } from "./element.mjs";
 import { reviewState } from "./state.mjs";
 
 export function createFieldInput(field, group, invalid) {
+  if (field.type === "select") {
+    return createFieldSelect(field);
+  }
   const tag = field.type === "textarea" ? "textarea" : "input";
   const input = element(tag, "", {
     autocomplete: "off",
