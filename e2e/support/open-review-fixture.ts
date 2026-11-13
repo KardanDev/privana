@@ -1,12 +1,20 @@
 // biome-ignore-all lint/performance/noAwaitInLoops: Stylesheets must retain the application's cascade order.
 import type { Page } from "@playwright/test";
+import { catalogueOrigin } from "../../scripts/catalogue/catalogue-assets";
 import { buildReviewFixture, type ReviewFixture } from "./build-review-fixture";
 
 // Real components in a browser-only fixture; no production route or service calls.
 export async function openReviewFixture(
   page: Page,
-  kind: ReviewFixture
+  kind: ReviewFixture,
+  baseURL?: string
 ): Promise<void> {
+  if (baseURL === catalogueOrigin) {
+    await page.goto("/");
+    await page.getByLabel("Exemplo", { exact: true }).selectOption(kind);
+    await page.evaluate(() => document.fonts.ready);
+    return;
+  }
   const bundle = await buildReviewFixture(kind);
   await page.goto("/login");
   const shell = await page.locator("html").evaluate((root) => ({

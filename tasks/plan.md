@@ -35,3 +35,13 @@ KAR-148–150 remain separate stories in this same authorized group. G2 requires
 Field-context adoption must preserve existing IDs, descriptions, refs and submit payloads. Native validation and backend rules remain authoritative. Treat disabled and pending states explicitly rather than changing data flows through a reskin.
 
 The installed library has native/inline patterns rather than every available registry component. Do not add unused dialogs or another framework to fill a catalogue. Current screen-specific composition remains with its existing later screen story.
+
+## KAR-189 execution
+
+Reuse the real controls/feedback fixtures and add actual Card/StatCard recipes in a local React catalogue. Provide local theme/accent/example selection; synchronize native color-scheme with the theme. Sources remain editable in the repository, with a quick rebuild on restart.
+
+Compile the current shared Tailwind CSS through the already installed PostCSS toolchain, with explicit source paths. Reuse only selected first-party font faces and WOFF2 files from an existing local Next production build; do not expose .next/server, resolved environment or application routes. A missing font build must give a clear instruction to run the normal build once.
+
+Serve exact generated HTML/JS/CSS/font/license paths on 127.0.0.1:53471, GET/HEAD only. Reject foreign hosts/origins, API/source/environment paths and writes. Add boundary tests and a dedicated browser configuration that starts this static runner without the application. Keep CI's synthetic build disposable and never upload it.
+
+Keep this issue below the hard PR budget; refine before implementation if a necessary addition would exceed it. Parent acceptance remains pending owner review of every child; no move to KAR-132.
