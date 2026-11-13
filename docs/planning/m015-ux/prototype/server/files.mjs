@@ -55,6 +55,11 @@ export const previewFiles = new Map([
     "owner/create-records.mjs",
     "owner/create-section-cases.mjs",
     "owner/scenarios.mjs",
+    "owner/action-definitions.mjs",
+    "owner/create-action-cases.mjs",
+    "owner/create-action-form.mjs",
+    "owner/create-record-actions.mjs",
+    "owner/decision-scenarios.mjs",
   ].map((name) => [`/${name}`, new URL(`../${name}`, import.meta.url)]),
   ...[
     "favicon.svg",

@@ -58,6 +58,7 @@ export const scenarios = [
   ...checkoutScenarios,
   ...studioScenarios,
   ...ownerScenarios,
+  ...ownerDecisionScenarios,
   ...harnessScenarios,
 ];
 
@@ -66,5 +67,6 @@ import { accessScenarios } from "./fan/access.mjs";
 import { accountScenarios } from "./fan/account.mjs";
 import { feedScenarios } from "./fan/feed.mjs";
 import { inboxScenarios } from "./fan/inbox.mjs";
+import { ownerDecisionScenarios } from "./owner/decision-scenarios.mjs";
 import { ownerScenarios } from "./owner/scenarios.mjs";
 import { studioScenarios } from "./studio/scenarios.mjs";

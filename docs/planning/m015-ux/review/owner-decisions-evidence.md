@@ -1,0 +1,13 @@
+# KAR-185 review evidence
+
+November 13, 2026. Sixteen authorized admin/moderator decision paths were walked through confirmation, disabled pending, failure, retry and confirmed audit context. Selected team role and revocation reason survive failure; cancel/confirmed return resets the decision group. Revocation cannot advance without acknowledgement. Moderator has no team-role entry; analyst has no revoke action. Creator publication approval, account status, report resolution and provider billing remain separate.
+
+The pointer regression was reproduced with event coordinates: a nearly visible checkbox moved from y824 to y507 between pointerdown and pointerup, causing activation to land on the screen. Restricting automatic reveal to focus-visible preserves pointer activation. The same sequence then passed, and keyboard Tab/Space focus remained visible. This is a shared prototype helper repair, not a claim of a production fix.
+
+Scoped Ultracite passed 63 files. The expanded graph includes table actions, guarded exits and selector destinations: 223 cases / 2,970 links / zero missing destinations. All 96 owner cases were checked at 390/768/1440 px without overflow. `bun run test` passed 275 tests / 852 assertions, including four server-boundary tests; no service credentials or real operations. A fresh console sample reported zero errors/warnings. Automatic design hints remain active/suppressed on repeated shared CSS; no extra detector.
+
+Captures: [desktop role confirmation](owner-decision-desktop.jpg) and [phone failure with retained input](owner-decision-phone.jpg), full-page with embedded origins. The owner workspace and permission-filtered record layer are KAR-180; CMS editing is KAR-184. G1 remains pending owner review.
+
+Documentation verification checked the action cases, action form, record actions, field renderer and both captures against the accepted PRODUCT, DESIGN, sidecar and inherited surface contract. Confirmation, disabled pending, retained-input failure/retry and audit context extend existing patterns; they establish no new visual world, tokens or seed. The supplied captures received a fresh `ship` verdict. System files are preserved. Pre-existing shared-style drift (10px/16px button padding, 8px selects, supporting-color field borders and the 1100px secondary breakpoint) remains uncanonized and unrepaired. G1 remains pending owner review.
+
+Fresh finish reviewer: `ship` for the supplied owner-decision evidence. The reviewer verified visible consequence hierarchy, retained reason/acknowledgement and the inherited palette/type treatment; reported interactions remain the separate browser evidence above. No G1 acceptance or live-service result is inferred.

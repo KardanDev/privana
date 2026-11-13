@@ -7,7 +7,7 @@ export function createSectionCases(role) {
     .filter((item) => item[2].includes(role))
     .map(([section, title]) => {
       const frame = createOwnerFrame(role, section);
-      const records = createRecords(section);
+      const records = createRecords(section, role);
       const id = `owner-${role}-${section}`;
       if (!records) {
         return {

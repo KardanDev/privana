@@ -1,4 +1,6 @@
-export function createRecords(section) {
+import { createRecordActions } from "./create-record-actions.mjs";
+
+export function createRecords(section, role) {
   const records = {
     audits: {
       columns: ["Quando", "Responsável", "Evento", "Referência"],
@@ -26,14 +28,17 @@ export function createRecords(section) {
       rows: [
         {
           cells: ["Luna Martins · @luna-demo", "Em análise", "Ativa"],
+          key: "luna",
           status: "PENDING",
         },
         {
           cells: ["Isabela Ferreira · @isabela-demo", "Aprovada", "Ativa"],
+          key: "isabela",
           status: "ACTIVE",
         },
         {
           cells: ["Júlia Ribeiro · @julia-demo", "Suspensa", "Ativa"],
+          key: "julia",
           status: "SUSPENDED",
         },
       ],
@@ -47,6 +52,7 @@ export function createRecords(section) {
             "Publicação de @luna-demo",
             "Aberta",
           ],
+          key: "DEN-104",
           status: "OPEN",
         },
         {
@@ -68,6 +74,7 @@ export function createRecords(section) {
       rows: [
         {
           cells: ["ASS-201 · Marina → Isabela", "Até 30/11/2026", "Ativo"],
+          key: "ASS-201",
           status: "ACTIVE",
         },
         {
@@ -126,10 +133,12 @@ export function createRecords(section) {
             "Membro · e-mail verificado",
             "Ativa",
           ],
+          key: "marina",
           status: "ACTIVE",
         },
         {
           cells: ["Renata Barbosa · renata@example.test", "Membro", "Suspensa"],
+          key: "renata",
           status: "SUSPENDED",
         },
         {
@@ -143,5 +152,19 @@ export function createRecords(section) {
       ],
     },
   };
-  return records[section];
+  const table = records[section];
+  if (!table) {
+    return;
+  }
+  const rows = table.rows.map((row) => ({
+    ...row,
+    actions: createRecordActions(role, row.key),
+  }));
+  return {
+    ...table,
+    columns: rows.some((row) => row.actions.length)
+      ? [...table.columns, "Ações"]
+      : table.columns,
+    rows,
+  };
 }
