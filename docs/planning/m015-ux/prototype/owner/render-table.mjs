@@ -1,4 +1,5 @@
 import { element } from "../element.mjs";
+import { renderActions } from "../render-actions.mjs";
 
 export function renderTable(data) {
   const table = element("table", "", { class: "records" });
@@ -16,6 +17,15 @@ export function renderTable(data) {
     row.dataset.status = item.status ?? "";
     for (const [index, value] of item.cells.entries()) {
       row.append(element("td", value, { "data-label": data.columns[index] }));
+    }
+    if (data.columns.at(-1) === "Ações") {
+      const cell = element("td", "", { "data-label": "Ações" });
+      if (item.actions.length) {
+        cell.append(renderActions(item.actions));
+      } else {
+        cell.textContent = "Somente consulta";
+      }
+      row.append(cell);
     }
     body.append(row);
   }

@@ -16,7 +16,12 @@ export function renderFields(form, invalid) {
       : Boolean(invalid);
     const input = createFieldInput(field, form.group, fieldInvalid);
     input.setAttribute("aria-labelledby", labelId);
-    input.addEventListener("focus", () => revealFocus(input));
+    input.addEventListener("focus", () => {
+      // Pointer focus must not move a control before its click completes.
+      if (input.matches(":focus-visible")) {
+        revealFocus(input);
+      }
+    });
     if (form.trackDirty) {
       input.dataset.dirtyGroup = form.group;
     }
