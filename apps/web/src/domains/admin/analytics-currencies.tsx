@@ -1,4 +1,5 @@
 import type { AnalyticsDTO } from "@privana/api/contracts/platform";
+import { TableScrollArea } from "@privana/ui/components/table-scroll-area";
 import { EmptyState } from "@/shared/components/empty-state";
 import { formatMinorCurrency } from "./format-minor-currency";
 
@@ -16,7 +17,7 @@ export function AnalyticsCurrencies({
     );
   }
   return (
-    <div className="overflow-x-auto rounded-xl border bg-card">
+    <TableScrollArea label="Totais financeiros por moeda">
       <table className="w-full text-left text-sm">
         <caption className="sr-only">
           Totais financeiros históricos separados por moeda
@@ -64,6 +65,6 @@ export function AnalyticsCurrencies({
           ))}
         </tbody>
       </table>
-    </div>
+    </TableScrollArea>
   );
 }

@@ -6,13 +6,13 @@ import {
   EmptyMedia,
   EmptyTitle,
 } from "@privana/ui/components/empty";
-import { type LucideIcon, Sparkles } from "lucide-react";
+import { Inbox, type LucideIcon } from "lucide-react";
 import type { ReactNode } from "react";
 
 export function EmptyState({
   title,
   description,
-  icon: Icon = Sparkles,
+  icon: Icon = Inbox,
   children,
 }: {
   title: string;
@@ -21,7 +21,7 @@ export function EmptyState({
   children?: ReactNode;
 }) {
   return (
-    <Empty className="min-h-64 rounded-2xl border border-dashed bg-card p-8">
+    <Empty className="min-h-64 bg-card">
       <EmptyHeader>
         <EmptyMedia variant="icon">
           <Icon aria-hidden="true" />

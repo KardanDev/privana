@@ -2,7 +2,7 @@
 import { expect } from "@playwright/test";
 import { test } from "./fixtures/anonymous-test";
 import { assertNoHorizontalOverflow } from "./support/assert-no-horizontal-overflow";
-import { openControlsFixture } from "./support/open-controls-fixture";
+import { openReviewFixture } from "./support/open-review-fixture";
 
 const CHECKBOX_NAME = /Quero receber novidades/;
 const FAILURE = "Não foi possível salvar. Revise o nome e tente novamente.";
@@ -10,7 +10,7 @@ const FAILURE = "Não foi possível salvar. Revise o nome e tente novamente.";
 test("field labels, descriptions, retained input and caller refs survive an error", async ({
   page,
 }) => {
-  await openControlsFixture(page);
+  await openReviewFixture(page, "controls");
   const name = page.getByRole("textbox", { exact: true, name: "Nome público" });
   const alternative = page.getByRole("textbox", {
     exact: true,
@@ -46,7 +46,7 @@ test("field labels, descriptions, retained input and caller refs survive an erro
 test("checkbox keyboard operation and pending actions prevent a second local submit", async ({
   page,
 }) => {
-  await openControlsFixture(page);
+  await openReviewFixture(page, "controls");
   const checkbox = page.getByRole("checkbox", { name: CHECKBOX_NAME });
   await checkbox.focus();
   await page.keyboard.press("Space");
@@ -73,7 +73,7 @@ test("checkbox keyboard operation and pending actions prevent a second local sub
 test("controls remain readable with long pt-BR labels in both themes", async ({
   page,
 }, testInfo) => {
-  await openControlsFixture(page);
+  await openReviewFixture(page, "controls");
   for (const dark of [false, true]) {
     await page
       .locator("html")
