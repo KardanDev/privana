@@ -52,12 +52,12 @@ export function AppShell({ children }: { children: ReactNode }) {
           >
             {children}
           </main>
-          <div className="pb-24 lg:pb-0">
+          <div className={viewer.data ? "pb-24 lg:pb-0" : undefined}>
             <PlatformFooter />
           </div>
         </div>
       </div>
-      <MobileNavigation />
+      <MobileNavigation viewer={viewer.data} />
     </>
   );
 }

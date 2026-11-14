@@ -59,11 +59,22 @@ KAR-147 and its three component children are now accepted and verified on main t
 | Issue | Result | Prerequisite |
 | --- | --- | --- |
 | [KAR-190](https://linear.app/kardandev/issue/KAR-190) | Native links for the three existing shell navigation CTAs | Accepted KAR-147/143 |
-| [KAR-191](https://linear.app/kardandev/issue/KAR-191) | Public/fan role-aware navigation, account access and task search | KAR-190 main merge |
-| [KAR-192](https://linear.app/kardandev/issue/KAR-192) | Responsive Studio/owner shell composition and focus/safe areas | KAR-191 main merge |
+| [KAR-191](https://linear.app/kardandev/issue/KAR-191) | Public and desktop workspace entries match viewer state | KAR-190 main merge (PR #28 accepted) |
+| [KAR-193](https://linear.app/kardandev/issue/KAR-193) | Interactive phone account menu, role tabs and task search | KAR-191 main merge |
+| [KAR-192](https://linear.app/kardandev/issue/KAR-192) | Responsive Studio/owner shell composition and focus/safe areas | KAR-193 main merge |
 
 KAR-190 uses native Next Link plus existing merged button variants for phone registration, desktop sign-in and operations return. Keep registration switches, actual button actions, destinations and all authorization unchanged. No new abstraction or business capability is needed for these three substitutions.
 
 Exercise the actual components' static server-rendered output in Chromium, using the existing isolated CSS/font runner and fictional props. Verify native accessible roles, keyboard Enter/destination, registration-off behavior and retained owner section buttons. This fixture proves link semantics, not authenticated access or client-router prefetch. Capture light/dark phone/tablet/desktop appearance with no external services or writes.
 
-Keep source functions modular and the issue below the preferred 400-line/20-file budget. Run scoped lint/types, deterministic/browser checks and build; obtain bounded finish review/documentation. Publish only an ordinary PR targeting main; wait for owner review/merge before the next child. Original KAR-148 criteria stay on the parent until all three children and combined evidence are accepted; G2 still precedes KAR-132.
+Keep source functions modular and the issue below the preferred 400-line/20-file budget. Run scoped lint/types, deterministic/browser checks and build; obtain bounded finish review/documentation. Publish only an ordinary PR targeting main; wait for owner review/merge before the next child. Original KAR-148 criteria stay on the parent until all four children and combined evidence are accepted; G2 still precedes KAR-132.
+
+## KAR-191 execution
+
+PR #28 is accepted on main (`f70f9f7`). Linear owns the refined acceptance: public/desktop entries first, with authenticated phone account/search work preserved in KAR-193. Retain the existing authenticated phone access until its complete replacement lands.
+
+Use one small Studio-entry selector based on the returned viewer/profile state and application switch. Anonymous/loading viewers get public discovery only; fans get application entry when enabled; existing profiles retain their workspace/application entry. Remove the misleading rail publication shortcut: `/studio` opens management, not its local-state editor. Actual publication remains the ACTIVE-only Studio action. Preserve supported CMS labels, staff filtering and real routes.
+
+Verify the selector's role/state/flag matrix and actual Sidebar/phone-tab static output through the existing isolated catalogue. Unknown route context must not fabricate an active link. Capture 320/390/768/1280px light/dark cases and long labels; check keyboard destinations. Fixtures prove rendered roles/links and reflow, not authentication, hydration or menu interaction. No live services or writes are needed.
+
+Likely changes: focused layout modules, policy tests, bounded fixture/test helpers, this plan/index and one review packet. Run scoped lint, workspace/tooling types, unit/catalogue tests and production build. Obtain fresh Impeccable finish review and documentation, then publish one ordinary main-target PR and hold KAR-193 for owner review/merge.

@@ -22,7 +22,7 @@ export function NavLink({
       aria-current={active ? "page" : undefined}
       aria-label={label}
       className={cn(
-        "group flex h-12 items-center justify-center gap-3 rounded-lg px-3 font-medium text-[15px] transition-colors xl:justify-start",
+        "group flex min-h-12 items-center justify-center gap-3 rounded-lg px-3 py-2 font-medium text-[15px] transition-colors xl:justify-start",
         active
           ? "bg-accent text-primary"
           : "text-muted-foreground hover:bg-muted hover:text-foreground"
@@ -35,7 +35,9 @@ export function NavLink({
         className="size-[23px] shrink-0"
         strokeWidth={active ? 2.2 : 1.7}
       />
-      <span className="hidden truncate xl:inline">{label}</span>
+      <span className="hidden min-w-0 leading-snug [overflow-wrap:anywhere] xl:inline">
+        {label}
+      </span>
     </Link>
   );
 }
