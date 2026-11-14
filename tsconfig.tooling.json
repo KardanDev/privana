@@ -10,7 +10,8 @@
     "scripts/**/*.ts",
     "playwright*.config.ts",
     "e2e/**/*.ts",
-    "apps/web/tests/catalogue/**/*.tsx"
+    "apps/web/tests/catalogue/**/*.tsx",
+    "apps/web/tests/fixtures/render-shell-links.tsx"
   ],
   "exclude": ["e2e/**/*.test.ts"]
 }

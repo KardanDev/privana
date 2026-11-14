@@ -1,6 +1,6 @@
-# KAR-147 implementation plan
+# KAR-131 execution plan
 
-Tasks and acceptance status live in Linear. This file records the approved component story's delivery split; it does not duplicate the tracker or advance another group.
+Tasks and acceptance status live in Linear. The component story below is accepted on main through PR #27 (`cc55dc8`). Current work is KAR-148's bounded shell delivery; no later group or milestone starts here.
 
 The owner accepted KAR-130/G1 and requested continuation on November 13. KAR-146 supplies the theme prerequisite in PR #22. Work stays inside KAR-131 until its G2 owner review; no later group or milestone starts automatically.
 
@@ -52,4 +52,18 @@ Compile the current shared Tailwind CSS through the already installed PostCSS to
 
 Serve exact generated HTML/JS/CSS/font/license paths on 127.0.0.1:53471, GET/HEAD only. Reject foreign hosts/origins, API/source/environment paths and writes. Add boundary tests and a dedicated browser configuration that starts this static runner without the application. Keep CI's synthetic build disposable and never upload it.
 
-Keep this issue below the hard PR budget; refine before implementation if a necessary addition would exceed it. Parent acceptance remains pending owner review of every child; no move to KAR-132.
+KAR-147 and its three component children are now accepted and verified on main through PR #27. The shell delivery below is next within the same authorized group; G2 still precedes KAR-132.
+
+## KAR-148 ordered delivery
+
+| Issue | Result | Prerequisite |
+| --- | --- | --- |
+| [KAR-190](https://linear.app/kardandev/issue/KAR-190) | Native links for the three existing shell navigation CTAs | Accepted KAR-147/143 |
+| [KAR-191](https://linear.app/kardandev/issue/KAR-191) | Public/fan role-aware navigation, account access and task search | KAR-190 main merge |
+| [KAR-192](https://linear.app/kardandev/issue/KAR-192) | Responsive Studio/owner shell composition and focus/safe areas | KAR-191 main merge |
+
+KAR-190 uses native Next Link plus existing merged button variants for phone registration, desktop sign-in and operations return. Keep registration switches, actual button actions, destinations and all authorization unchanged. No new abstraction or business capability is needed for these three substitutions.
+
+Exercise the actual components' static server-rendered output in Chromium, using the existing isolated CSS/font runner and fictional props. Verify native accessible roles, keyboard Enter/destination, registration-off behavior and retained owner section buttons. This fixture proves link semantics, not authenticated access or client-router prefetch. Capture light/dark phone/tablet/desktop appearance with no external services or writes.
+
+Keep source functions modular and the issue below the preferred 400-line/20-file budget. Run scoped lint/types, deterministic/browser checks and build; obtain bounded finish review/documentation. Publish only an ordinary PR targeting main; wait for owner review/merge before the next child. Original KAR-148 criteria stay on the parent until all three children and combined evidence are accepted; G2 still precedes KAR-132.
