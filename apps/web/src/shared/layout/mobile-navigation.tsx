@@ -1,4 +1,5 @@
 "use client";
+import type { ViewerDTO } from "@privana/api/contracts/product";
 import { cn } from "@privana/ui/lib/utils";
 import {
   Compass,
@@ -24,9 +25,16 @@ const items = [
   },
   { href: "/settings", icon: UserRound, label: "Perfil" },
 ] as const;
-export function MobileNavigation() {
+export function MobileNavigation({
+  viewer,
+}: {
+  viewer: ViewerDTO | null | undefined;
+}) {
   const pathname = usePathname();
   const config = usePlatform();
+  if (!viewer) {
+    return null;
+  }
   return (
     <nav
       aria-label="Navegação principal"
