@@ -9,6 +9,7 @@ export function ThemeToggle() {
   return (
     <Button
       aria-label="Alternar tema claro ou escuro"
+      className="sm:size-11"
       onClick={toggle}
       size="icon"
       title="Alternar tema claro ou escuro"

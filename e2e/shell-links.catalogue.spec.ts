@@ -83,14 +83,23 @@ test("operations return stays a link while section controls stay buttons", async
   page,
 }) => {
   await openShellLinksFixture(page, { dark: true, operations: true });
-  const back = page.getByRole("link", { name: "Ver plataforma" });
+  const back = page.getByRole("link", { name: "Voltar à comunidade" });
   await expect(back).toHaveAttribute("href", "/");
   await expect(
-    page.getByRole("button", { name: "Ver plataforma" })
+    page.getByRole("button", { name: "Voltar à comunidade" })
   ).toHaveCount(0);
-  await expect(
-    page.getByRole("button", { exact: true, name: "Visão geral" })
-  ).toHaveAttribute("aria-current", "page");
+  if ((page.viewportSize()?.width ?? 0) >= 1024) {
+    await expect(
+      page.getByRole("button", { exact: true, name: "Visão geral" })
+    ).toHaveAttribute("aria-current", "page");
+  } else {
+    await expect(
+      page.getByRole("button", {
+        exact: true,
+        name: "Selecionar seção: Visão geral",
+      })
+    ).toBeVisible();
+  }
   await expect(
     page.getByRole("button", { name: "Alternar tema claro ou escuro" })
   ).toBeVisible();

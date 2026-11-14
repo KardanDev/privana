@@ -32,6 +32,7 @@ export default defineConfig({
     "controls.spec.ts",
     "feedback.spec.ts",
     "shell-links.catalogue.spec.ts",
+    "workspaces.catalogue.spec.ts",
   ],
   timeout: 45_000,
   use: {
