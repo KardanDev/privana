@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@privana/ui/components/button";
+import { buttonVariants } from "@privana/ui/components/button";
 import { cn } from "@privana/ui/lib/utils";
 import { ArrowUpRight, ShieldCheck } from "lucide-react";
 import Link from "next/link";
@@ -90,15 +90,13 @@ export function OperationsShell({
           </div>
           <div className="flex shrink-0 items-center gap-2">
             <ThemeToggle />
-            <Button
-              nativeButton={false}
-              render={<Link href="/" />}
-              size="sm"
-              variant="outline"
+            <Link
+              className={cn(buttonVariants({ size: "sm", variant: "outline" }))}
+              href="/"
             >
               Ver plataforma
               <ArrowUpRight data-icon="inline-end" />
-            </Button>
+            </Link>
           </div>
         </header>
         <main

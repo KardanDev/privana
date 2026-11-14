@@ -1,7 +1,8 @@
 "use client";
 import type { ViewerDTO } from "@privana/api/contracts/product";
-import { Button } from "@privana/ui/components/button";
+import { buttonVariants } from "@privana/ui/components/button";
 import { Skeleton } from "@privana/ui/components/skeleton";
+import { cn } from "@privana/ui/lib/utils";
 import { Bell } from "lucide-react";
 import Link from "next/link";
 import { Brand } from "@/shared/components/brand";
@@ -37,13 +38,12 @@ export function Topbar({ viewer }: { viewer: ViewerDTO | null | undefined }) {
               Entrar
             </Link>
             {config.features.registration ? (
-              <Button
-                nativeButton={false}
-                render={<Link href="/register" />}
-                size="sm"
+              <Link
+                className={cn(buttonVariants({ size: "sm" }))}
+                href="/register"
               >
                 Criar conta
-              </Button>
+              </Link>
             ) : null}
           </>
         ) : null}

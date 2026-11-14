@@ -1,8 +1,8 @@
 # Linear delivery index
 
-Execution note: November 13, 2026; backlog structure recorded November 6. The live board owns current status and acceptance evidence. See [roadmap](roadmap.md), [scope and decisions](scope-and-decisions.md) and the [Linear project](https://linear.app/kardandev/project/privana-onlyfans-inspired-platform-eab4888a909b).
+Execution note: November 14, 2026; backlog structure recorded November 6. The live board owns current status and acceptance evidence. See [roadmap](roadmap.md), [scope and decisions](scope-and-decisions.md) and the [Linear project](https://linear.app/kardandev/project/privana-onlyfans-inspired-platform-eab4888a909b).
 
-The project has 12 roadmap milestones. M01.5 has ten workstream deliverables and 47 actionable leaves after KAR-144's prototype split and KAR-147's three component stories. User outcomes, acceptance evidence and native dependencies remain issue-scoped. M01 is merged and Done. M01.5 executes one owner-authorized group at a time; later groups/milestones stay unstarted. KAR-8 is superseded planning material, not delivered work. Live issue status is authoritative.
+The project has 12 roadmap milestones. M01.5 has ten workstream deliverables and 49 actionable leaves after the prototype, component and shell splits. User outcomes, acceptance evidence and native dependencies remain issue-scoped. M01 is merged and Done. M01.5 executes one owner-authorized group at a time; later groups/milestones stay unstarted. KAR-8 is superseded planning material, not delivered work. Live issue status is authoritative.
 
 ## M01 — Delivery foundation
 
@@ -64,7 +64,10 @@ See the [direction decision](m015-brand/direction-review.md), [positioning brief
 | [KAR-187](https://linear.app/kardandev/issue/KAR-187) | KAR-147: readable controls and accessible form fields | KAR-146 |
 | [KAR-188](https://linear.app/kardandev/issue/KAR-188) | KAR-147: overlays, feedback and data presentation | KAR-146; work follows KAR-187 |
 | [KAR-189](https://linear.app/kardandev/issue/KAR-189) | KAR-147: editable real-component catalogue and interaction acceptance | KAR-187, KAR-188 |
-| [KAR-148](https://linear.app/kardandev/issue/KAR-148) | Build consistent public, fan, Studio and owner shells | [KAR-147](https://linear.app/kardandev/issue/KAR-147), [KAR-143](https://linear.app/kardandev/issue/KAR-143) |
+| [KAR-148](https://linear.app/kardandev/issue/KAR-148) | Shell delivery container; accepted after the three children below | KAR-147, KAR-143 |
+| [KAR-190](https://linear.app/kardandev/issue/KAR-190) | Native shell navigation links | KAR-147, KAR-143 |
+| [KAR-191](https://linear.app/kardandev/issue/KAR-191) | Role-aware public/fan navigation and account access | KAR-190 |
+| [KAR-192](https://linear.app/kardandev/issue/KAR-192) | Responsive Studio/owner shell composition | KAR-191 |
 | [KAR-149](https://linear.app/kardandev/issue/KAR-149) | Preserve fast feedback and safe mutation recovery | [KAR-138](https://linear.app/kardandev/issue/KAR-138), [KAR-147](https://linear.app/kardandev/issue/KAR-147) |
 | [KAR-150](https://linear.app/kardandev/issue/KAR-150) | Validate coded reference screens before platform rollout | [KAR-148](https://linear.app/kardandev/issue/KAR-148), [KAR-149](https://linear.app/kardandev/issue/KAR-149) |
 | [KAR-151](https://linear.app/kardandev/issue/KAR-151) | Redesign public entry and fan-versus-creator paths | [KAR-150](https://linear.app/kardandev/issue/KAR-150), [KAR-140](https://linear.app/kardandev/issue/KAR-140) |

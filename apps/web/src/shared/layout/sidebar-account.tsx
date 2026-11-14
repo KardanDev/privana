@@ -1,8 +1,9 @@
 "use client";
 
 import type { ViewerDTO } from "@privana/api/contracts/product";
-import { Button } from "@privana/ui/components/button";
+import { Button, buttonVariants } from "@privana/ui/components/button";
 import { Skeleton } from "@privana/ui/components/skeleton";
+import { cn } from "@privana/ui/lib/utils";
 import { Bell, LogIn, LogOut } from "lucide-react";
 import Link from "next/link";
 import { ThemeToggle } from "@/shared/appearance/theme-toggle";
@@ -28,14 +29,14 @@ export function SidebarAccount({
   if (!viewer) {
     return (
       <div className="flex flex-col gap-3">
-        <Button
-          nativeButton={false}
-          render={<Link aria-label="Entrar" href="/login" />}
-          variant="outline"
+        <Link
+          aria-label="Entrar"
+          className={cn(buttonVariants({ variant: "outline" }))}
+          href="/login"
         >
           <LogIn aria-hidden="true" />
           <span className="hidden xl:inline">Entrar</span>
-        </Button>
+        </Link>
         {config.features.registration ? (
           <Link
             className="hidden py-1 text-center font-medium text-primary text-sm hover:underline xl:block"

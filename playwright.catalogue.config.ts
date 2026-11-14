@@ -27,7 +27,12 @@ export default defineConfig({
   reporter: "list",
   retries: 0,
   testDir: "./e2e",
-  testMatch: ["catalogue.spec.ts", "controls.spec.ts", "feedback.spec.ts"],
+  testMatch: [
+    "catalogue.spec.ts",
+    "controls.spec.ts",
+    "feedback.spec.ts",
+    "shell-links.catalogue.spec.ts",
+  ],
   timeout: 45_000,
   use: {
     baseURL: catalogueOrigin,
