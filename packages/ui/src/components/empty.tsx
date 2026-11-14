@@ -5,7 +5,7 @@ function Empty({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       className={cn(
-        "flex w-full min-w-0 flex-1 flex-col items-center justify-center gap-4 text-balance rounded-none border-dashed p-6 text-center md:p-12",
+        "flex w-full min-w-0 flex-1 flex-col items-center justify-center gap-4 rounded-2xl p-6 text-center md:p-8",
         className
       )}
       data-slot="empty"
@@ -33,7 +33,7 @@ const emptyMediaVariants = cva(
     variants: {
       variant: {
         default: "bg-transparent",
-        icon: "flex size-10 shrink-0 items-center justify-center rounded-none bg-muted text-foreground [&_svg:not([class*='size-'])]:size-5",
+        icon: "flex size-10 shrink-0 items-center justify-center rounded-full bg-muted text-foreground [&_svg:not([class*='size-'])]:size-5",
       },
     },
   }
@@ -54,13 +54,10 @@ function EmptyMedia({
   );
 }
 
-function EmptyTitle({ className, ...props }: React.ComponentProps<"div">) {
+function EmptyTitle({ className, ...props }: React.ComponentProps<"h2">) {
   return (
-    <div
-      className={cn(
-        "cn-font-heading font-medium text-sm tracking-tight",
-        className
-      )}
+    <h2
+      className={cn("font-heading font-semibold text-xl leading-7", className)}
       data-slot="empty-title"
       {...props}
     />
@@ -69,7 +66,7 @@ function EmptyTitle({ className, ...props }: React.ComponentProps<"div">) {
 
 function EmptyDescription({ className, ...props }: React.ComponentProps<"p">) {
   return (
-    <div
+    <p
       className={cn(
         "text-muted-foreground text-sm/relaxed [&>a:hover]:text-primary [&>a]:underline [&>a]:underline-offset-4",
         className

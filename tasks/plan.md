@@ -24,9 +24,9 @@ Each actionable issue has one ordinary PR, explicit prerequisite/base and task-o
 
 ## Verification checkpoints
 
-After each slice, run scoped lint, relevant types and meaningful interaction checks; inspect light/dark phone/desktop states and publish exact results. Preserve the known local root-lint constraint rather than formatting unrelated files.
+After each slice, run scoped lint, relevant types and meaningful interaction checks; inspect light/dark phone/desktop states and publish exact results. Preserve the known local root-lint constraint rather than formatting unrelated files. KAR-188 reuses KAR-187's browser fixture boundary; it starts on that issue's branch until PR #23 lands. Table wrappers retain native captions, rows and actions while adding a named keyboard scroll target.
 
-At catalogue acceptance, verify long pt-BR content, labels, retained input, touch/keyboard checkbox behavior, disabled/pending actions, Escape/focus return and local-server boundaries. Reconcile every KAR-147 criterion with actual source/evidence.
+At catalogue acceptance, verify long pt-BR content, labels, retained input, touch/keyboard checkbox behavior, disabled/pending actions, Escape/focus return and local-server boundaries. Include the existing StatCard's supporting typography and unused registry Card with their actual catalogue recipes. Reconcile every KAR-147 criterion with actual source/evidence.
 
 KAR-148–150 remain separate stories in this same authorized group. G2 requires owner review of the completed group before KAR-132; passing CI alone never accepts, merges, deploys or completes the group.
 
@@ -35,3 +35,11 @@ KAR-148–150 remain separate stories in this same authorized group. G2 requires
 Field-context adoption must preserve existing IDs, descriptions, refs and submit payloads. Native validation and backend rules remain authoritative. Treat disabled and pending states explicitly rather than changing data flows through a reskin.
 
 The installed library has native/inline patterns rather than every available registry component. Do not add unused dialogs or another framework to fill a catalogue. Current screen-specific composition remains with its existing later screen story.
+
+## Main-branch delivery recovery
+
+The owner accepted and merged #23 into main, #24 into the already-merged KAR-187 branch, and #25 into the KAR-188 branch. Only #23 reached main. Replaying the accepted KAR-188 commit onto current main produced a byte-identical tree before this bookkeeping update.
+
+Keep the original KAR-188/189 issues: these are delivery corrections, not new feature stories. Their original PRs are already merged and cannot be retargeted, so each requires a main-target follow-up. Publish KAR-188 first; wait for its main merge before opening KAR-189. Do not repeat the dependent-branch merge path.
+
+Verify unchanged implementation/capture bytes, scoped lint, workspace/tooling types, deterministic tests, production build and fresh PR checks. Keep the two issues In Review until main delivery, KAR-147/131 active, and KAR-148–150/G2 pending. Do not advance KAR-132 or another milestone.

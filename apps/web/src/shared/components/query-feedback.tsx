@@ -1,5 +1,13 @@
 "use client";
 import { Button } from "@privana/ui/components/button";
+import {
+  Empty,
+  EmptyContent,
+  EmptyDescription,
+  EmptyHeader,
+  EmptyMedia,
+  EmptyTitle,
+} from "@privana/ui/components/empty";
 import { Skeleton } from "@privana/ui/components/skeleton";
 import { RefreshCw } from "lucide-react";
 
@@ -14,30 +22,37 @@ export function QueryFeedback({
     return (
       <div
         aria-label="Carregando"
-        className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+        className="flex flex-col gap-6 py-6"
         role="status"
       >
+        <span className="sr-only">Carregando conteúdo…</span>
         {[1, 2, 3].map((item) => (
-          <Skeleton className="h-72 rounded-2xl" key={item} />
+          <div aria-hidden="true" className="flex flex-col gap-3" key={item}>
+            <Skeleton className="h-5 w-1/3" />
+            <Skeleton className="h-4 w-2/3" />
+          </div>
         ))}
       </div>
     );
   }
   return (
-    <div
-      className="flex min-h-64 flex-col items-center justify-center gap-4 rounded-2xl border bg-card p-8 text-center"
-      role="alert"
-    >
-      <RefreshCw aria-hidden="true" className="size-7 text-primary" />
-      <h2 className="font-semibold">Não foi possível carregar agora</h2>
-      <p className="max-w-sm text-muted-foreground text-sm">
-        Tente novamente em instantes. Suas informações continuam salvas.
-      </p>
+    <Empty className="min-h-64 bg-card" role="alert">
+      <EmptyHeader>
+        <EmptyMedia variant="icon">
+          <RefreshCw aria-hidden="true" />
+        </EmptyMedia>
+        <EmptyTitle>Não foi possível carregar agora</EmptyTitle>
+        <EmptyDescription>
+          Tente novamente em instantes. Suas informações continuam salvas.
+        </EmptyDescription>
+      </EmptyHeader>
       {retry ? (
-        <Button onClick={retry} variant="outline">
-          Tentar novamente
-        </Button>
+        <EmptyContent>
+          <Button onClick={retry} variant="outline">
+            Tentar novamente
+          </Button>
+        </EmptyContent>
       ) : null}
-    </div>
+    </Empty>
   );
 }

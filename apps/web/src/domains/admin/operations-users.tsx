@@ -1,4 +1,5 @@
 import type { OperationsUserDTO } from "@privana/api/contracts/platform";
+import { TableScrollArea } from "@privana/ui/components/table-scroll-area";
 import { formatDate } from "@/shared/formatting/format-date";
 import { AdminActionButton } from "./admin-action-button";
 import { AdminStatus } from "./admin-status";
@@ -18,7 +19,7 @@ export function OperationsUsers({
   viewerRole: string;
 }) {
   return (
-    <div className="overflow-x-auto rounded-xl border bg-card">
+    <TableScrollArea label="Contas e papéis de acesso">
       <table className="w-full min-w-[620px] text-left text-sm">
         <caption className="sr-only">Contas e papéis de acesso</caption>
         <thead className="border-b bg-muted/40 text-xs">
@@ -43,16 +44,16 @@ export function OperationsUsers({
                   {user.name}
                   {user.id === viewerId ? " (você)" : ""}
                 </p>
-                <p className="mt-1 break-all text-muted-foreground text-xs">
+                <p className="mt-1 break-all text-muted-foreground text-sm">
                   {user.email}
                 </p>
-                <p className="mt-2 text-[11px] text-muted-foreground">
+                <p className="mt-2 text-muted-foreground text-sm">
                   Desde {formatDate(user.createdAt)} · E-mail{" "}
                   {user.emailVerified ? "verificado" : "não verificado"}
                 </p>
               </td>
               <td className="px-4 py-4">
-                <p className="mb-2 text-xs">
+                <p className="mb-2 text-sm">
                   {teamRoleLabels[user.role] ?? user.role}
                 </p>
                 <AdminStatus status={user.status} />
@@ -77,7 +78,7 @@ export function OperationsUsers({
                     {user.status === "SUSPENDED" ? "Reativar" : "Suspender"}
                   </AdminActionButton>
                 ) : (
-                  <span className="text-muted-foreground text-xs">
+                  <span className="text-muted-foreground text-sm">
                     Conta da equipe protegida
                   </span>
                 )}
@@ -91,6 +92,6 @@ export function OperationsUsers({
           ))}
         </tbody>
       </table>
-    </div>
+    </TableScrollArea>
   );
 }

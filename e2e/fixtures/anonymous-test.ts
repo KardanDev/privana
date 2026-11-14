@@ -8,10 +8,18 @@ export const test = base.extend<{ anonymousSafety: string[] }>({
         throw new Error("Anonymous smoke requires an explicit base URL.");
       }
       const blocked = await protectAnonymousPage(page, baseURL);
+      const errors: string[] = [];
+      const collectError = (error: Error) => errors.push(error.message);
+      page.on("pageerror", collectError);
       await use(blocked);
+      page.off("pageerror", collectError);
       expect(
         blocked,
-        "Checkout must not attempt external calls or unapproved API writes."
+        "Anonymous UI checks must not attempt external calls or unapproved API writes."
+      ).toEqual([]);
+      expect(
+        errors,
+        "Anonymous UI checks must not produce runtime errors."
       ).toEqual([]);
     },
     { auto: true },

@@ -3,7 +3,11 @@ import { cn } from "@privana/ui/lib/utils";
 function Skeleton({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
-      className={cn("animate-pulse rounded-none bg-muted", className)}
+      aria-hidden="true"
+      className={cn(
+        "animate-pulse rounded-lg bg-muted motion-reduce:animate-none",
+        className
+      )}
       data-slot="skeleton"
       {...props}
     />
