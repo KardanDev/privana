@@ -38,7 +38,7 @@ The installed library has native/inline patterns rather than every available reg
 
 ## Main-branch delivery recovery
 
-The owner accepted and merged #23 into main, #24 into the already-merged KAR-187 branch, and #25 into the KAR-188 branch. Only #23 reached main. Replaying the accepted KAR-188 commit onto current main produced a byte-identical tree before this bookkeeping update.
+The owner accepted #23–25, but #24/25 initially reached only their feature bases. Main-target PR #26 has now delivered KAR-188. KAR-189 follows separately; its prepared replay remained byte-identical when rebased onto that actual main merge.
 
 Keep the original KAR-188/189 issues: these are delivery corrections, not new feature stories. Their original PRs are already merged and cannot be retargeted, so each requires a main-target follow-up. Publish KAR-188 first; wait for its main merge before opening KAR-189. Do not repeat the dependent-branch merge path.
 
