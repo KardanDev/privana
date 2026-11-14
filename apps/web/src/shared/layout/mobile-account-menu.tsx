@@ -1,7 +1,6 @@
 "use client";
 
 import type { ViewerDTO } from "@privana/api/contracts/product";
-import { Button } from "@privana/ui/components/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,6 +10,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@privana/ui/components/dropdown-menu";
+import { cn } from "@privana/ui/lib/utils";
 import {
   Bookmark,
   Heart,
@@ -18,72 +18,93 @@ import {
   Moon,
   Settings,
   ShieldCheck,
+  SquarePen,
+  UserRound,
 } from "lucide-react";
-import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useToggleTheme } from "@/shared/appearance/use-toggle-theme";
-import { Avatar } from "@/shared/components/avatar";
 import { usePlatform } from "@/shared/platform/use-platform";
+import { AccountMenuLink } from "./account-menu-link";
+import { getStudioEntry } from "./get-studio-entry";
+import { isNavigationActive } from "./is-navigation-active";
+import {
+  mobileNavigationItemClassName,
+  mobileNavigationLabelClassName,
+} from "./mobile-navigation-styles";
 import { useSignOut } from "./use-sign-out";
 
 export function MobileAccountMenu({ viewer }: { viewer: ViewerDTO }) {
   const config = usePlatform();
+  const pathname = usePathname();
   const signOut = useSignOut();
   const toggleTheme = useToggleTheme();
+  const studio = getStudioEntry(
+    viewer,
+    config.features.creatorApplications,
+    config.navigation.studio
+  );
+  const active =
+    ["/settings", "/saved", "/memberships"].some((href) =>
+      isNavigationActive(pathname, href)
+    ) ||
+    (isNavigationActive(pathname, "/studio") &&
+      !(viewer.creatorId && viewer.creatorStatus === "ACTIVE"));
   const isStaff = ["admin", "editor", "moderator", "analyst"].includes(
     viewer.role
   );
   return (
     <DropdownMenu>
       <DropdownMenuTrigger
-        render={
-          <Button
-            aria-label="Abrir menu da conta"
-            size="icon"
-            variant="ghost"
-          />
-        }
+        className={cn(
+          mobileNavigationItemClassName,
+          "data-popup-open:bg-accent data-popup-open:font-semibold data-popup-open:text-primary",
+          active
+            ? "bg-accent font-semibold text-primary"
+            : "text-muted-foreground"
+        )}
       >
-        <Avatar name={viewer.name} size={36} src={viewer.image} />
+        <UserRound aria-hidden="true" className="size-5" />
+        <span className={mobileNavigationLabelClassName}>Conta</span>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="w-64 rounded-xl p-1.5">
+      <DropdownMenuContent align="end" side="top" sideOffset={8}>
         <DropdownMenuGroup>
-          <DropdownMenuLabel className="truncate">
-            {viewer.name}
-          </DropdownMenuLabel>
-          <DropdownMenuItem
-            className="min-h-11"
-            render={<Link href="/settings" />}
-          >
-            <Settings aria-hidden="true" /> Configurações
-          </DropdownMenuItem>
-          <DropdownMenuItem
-            className="min-h-11"
-            render={<Link href="/saved" />}
-          >
-            <Bookmark aria-hidden="true" /> {config.navigation.saved}
-          </DropdownMenuItem>
-          <DropdownMenuItem
-            className="min-h-11"
-            render={<Link href="/memberships" />}
-          >
-            <Heart aria-hidden="true" /> {config.navigation.memberships}
-          </DropdownMenuItem>
+          <DropdownMenuLabel>{viewer.name}</DropdownMenuLabel>
+          <AccountMenuLink
+            href="/saved"
+            icon={Bookmark}
+            label={config.navigation.saved}
+          />
+          <AccountMenuLink
+            href="/memberships"
+            icon={Heart}
+            label={config.navigation.memberships}
+          />
+          <AccountMenuLink
+            href="/settings"
+            icon={Settings}
+            label="Configurações"
+          />
+          {studio ? (
+            <AccountMenuLink
+              href="/studio"
+              icon={SquarePen}
+              label={studio.label}
+            />
+          ) : null}
           {isStaff ? (
-            <DropdownMenuItem
-              className="min-h-11"
-              render={<Link href="/admin" />}
-            >
-              <ShieldCheck aria-hidden="true" /> Administração
-            </DropdownMenuItem>
+            <AccountMenuLink
+              href="/admin"
+              icon={ShieldCheck}
+              label="Administração"
+            />
           ) : null}
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
-          <DropdownMenuItem className="min-h-11" onClick={toggleTheme}>
+          <DropdownMenuItem onClick={toggleTheme}>
             <Moon aria-hidden="true" /> Alternar tema claro ou escuro
           </DropdownMenuItem>
           <DropdownMenuItem
-            className="min-h-11"
             disabled={signOut.pending}
             onClick={signOut.signOut}
           >

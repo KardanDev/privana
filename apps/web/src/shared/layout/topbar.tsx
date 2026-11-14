@@ -7,7 +7,6 @@ import { Bell } from "lucide-react";
 import Link from "next/link";
 import { Brand } from "@/shared/components/brand";
 import { usePlatform } from "@/shared/platform/use-platform";
-import { MobileAccountMenu } from "./mobile-account-menu";
 export function Topbar({ viewer }: { viewer: ViewerDTO | null | undefined }) {
   const config = usePlatform();
   return (
@@ -18,16 +17,13 @@ export function Topbar({ viewer }: { viewer: ViewerDTO | null | undefined }) {
           <Skeleton className="h-10 w-24 rounded-full" />
         ) : null}
         {viewer ? (
-          <>
-            <Link
-              aria-label="Notificações"
-              className="flex size-10 items-center justify-center rounded-full border bg-card transition-colors hover:bg-accent"
-              href="/notifications"
-            >
-              <Bell aria-hidden="true" className="size-[18px]" />
-            </Link>
-            <MobileAccountMenu viewer={viewer} />
-          </>
+          <Link
+            aria-label="Notificações"
+            className="flex size-11 items-center justify-center rounded-full border bg-card transition-colors hover:bg-accent"
+            href="/notifications"
+          >
+            <Bell aria-hidden="true" className="size-[18px]" />
+          </Link>
         ) : null}
         {viewer === null ? (
           <>

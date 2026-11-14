@@ -78,3 +78,15 @@ Use one small Studio-entry selector based on the returned viewer/profile state a
 Verify the selector's role/state/flag matrix and actual Sidebar/phone-tab static output through the existing isolated catalogue. Unknown route context must not fabricate an active link. Capture 320/390/768/1280px light/dark cases and long labels; check keyboard destinations. Fixtures prove rendered roles/links and reflow, not authentication, hydration or menu interaction. No live services or writes are needed.
 
 Likely changes: focused layout modules, policy tests, bounded fixture/test helpers, this plan/index and one review packet. Run scoped lint, workspace/tooling types, unit/catalogue tests and production build. Obtain fresh Impeccable finish review and documentation, then publish one ordinary main-target PR and hold KAR-193 for owner review/merge.
+
+## KAR-193 execution
+
+Linear owns this issue's phone acceptance. PR #29 is now accepted on main at `4d3f47d`; the local issue branch was fast-forwarded to that content-identical merge with its changes preserved. KAR-191 is Done. This is the accepted G1 navigation design, not a new concept round.
+
+Reuse MobileAccountMenu at a real bottom Conta trigger and remove the duplicate header account control. Fans/applicants/restricted profiles keep stable fan tabs; only a returned ACTIVE profile gets a Studio tab. Reuse the Studio-entry selector for application/workspace recovery in Conta, including when new applications are closed. Keep supported CMS labels, existing routes and server access checks. Use readable, bounded phone labels, full menu wording and safe-area clearance; disabling messaging redistributes space.
+
+The shell has no search input; discovery already owns one search and disables search in its suggestion column. Preserve this task placement and verify it by source review plus a bounded local browser journey where available. Do not add another shell search or change discovery's query contract.
+
+The browser-mounted probe of existing components exposed a Next runtime dependency, so do not introduce private adapters. Keep the isolated real-component SSR role/flag matrix, and verify popup, focus return, native destinations and theme feedback through the actual local Next app. The development runtime stalled during hydration; a fresh build on owned loopback port 3002 passes the interactions. Use fictional client read replies, block mutations/external requests, and exercise the real anonymous server guard and browser back. Do not claim authenticated sessions, a repaired development runtime or live service acceptance.
+
+Capture before/after 320/390/768/1280px light/dark states. Run scoped lint, types, unit/catalogue checks and production build. Keep functions/components in domain files, inspect the review budget before expanding tooling, obtain fresh Impeccable finish/documentation review and open one ordinary main-target PR. The inherited seed-provenance gap remains disclosed; no invented roll or authority refresh. Hold KAR-192 and G2 for the owner's next decision.

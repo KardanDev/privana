@@ -50,6 +50,12 @@ Each scenario starts anonymously. The fixture blocks external requests and unapp
 
 This smoke does not prove authenticated fan/creator/staff access, email receipt, uploads, ledger processing, real payments or all accessibility requirements. The broader isolated journey/device/authorization matrix belongs to M08.
 
+## Phone navigation with fictional read responses
+
+After building and starting a local app against reviewed test resources, run `bun run test:browser e2e/navigation.spec.ts` with the same explicit browser opt-in and loopback origin above. The isolated catalogue also checks the server-rendered phone role/flag matrix.
+
+The navigation suite mounts the actual Next app. It intercepts viewer and creator read replies with fictional data; a clock-driven published-platform reply checks long labels and disabled features. All other external requests and unapproved API calls remain blocked. It exercises menu/focus/theme/touch behavior, one discovery search, the real anonymous server guard on Saved and browser back. These fictional viewer props grant no server access and do not prove authenticated accounts or a real CMS publication. No login, seed or service mutation is performed. Chromium touch emulation is not physical-device certification.
+
 ## Deliberate service checks
 
 | Check | Command / opt-in | Effects and limits |
