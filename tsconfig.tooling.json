@@ -2,8 +2,15 @@
   "extends": "@privana/config/tsconfig.base.json",
   "compilerOptions": {
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "paths": { "@/*": ["./apps/web/src/*"] },
     "noEmit": true
   },
-  "include": ["scripts/**/*.ts", "playwright.config.ts", "e2e/**/*.ts"],
+  "include": [
+    "scripts/**/*.ts",
+    "playwright*.config.ts",
+    "e2e/**/*.ts",
+    "apps/web/tests/catalogue/**/*.tsx"
+  ],
   "exclude": ["e2e/**/*.test.ts"]
 }

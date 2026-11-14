@@ -19,12 +19,18 @@ import { Info } from "lucide-react";
 import { useCallback, useState } from "react";
 
 export function ReviewActions() {
+  const [emailUpdates, setEmailUpdates] = useState(true);
   const [notice, setNotice] = useState("");
   const preview = useCallback(
     () =>
       setNotice(
         "Prévia selecionada. Exemplo local, sem alteração na plataforma."
       ),
+    []
+  );
+  const discard = useCallback(
+    () =>
+      setNotice("Exemplo local descartado. Nenhum conteúdo real foi removido."),
     []
   );
   return (
@@ -42,7 +48,10 @@ export function ReviewActions() {
               <DropdownMenuItem onClick={preview}>
                 Ver prévia com o nome completo e as preferências de privacidade
               </DropdownMenuItem>
-              <DropdownMenuCheckboxItem defaultChecked>
+              <DropdownMenuCheckboxItem
+                checked={emailUpdates}
+                onCheckedChange={setEmailUpdates}
+              >
                 Receber novidades por e-mail
               </DropdownMenuCheckboxItem>
               <DropdownMenuItem disabled>
@@ -51,7 +60,7 @@ export function ReviewActions() {
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
-              <DropdownMenuItem variant="destructive">
+              <DropdownMenuItem onClick={discard} variant="destructive">
                 Descartar exemplo local
               </DropdownMenuItem>
             </DropdownMenuGroup>

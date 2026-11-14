@@ -38,8 +38,18 @@ The installed library has native/inline patterns rather than every available reg
 
 ## Main-branch delivery recovery
 
-The owner accepted and merged #23 into main, #24 into the already-merged KAR-187 branch, and #25 into the KAR-188 branch. Only #23 reached main. Replaying the accepted KAR-188 commit onto current main produced a byte-identical tree before this bookkeeping update.
+The owner accepted #23–25, but #24/25 initially reached only their feature bases. Main-target PR #26 has now delivered KAR-188. KAR-189 follows separately; its prepared replay remained byte-identical when rebased onto that actual main merge.
 
 Keep the original KAR-188/189 issues: these are delivery corrections, not new feature stories. Their original PRs are already merged and cannot be retargeted, so each requires a main-target follow-up. Publish KAR-188 first; wait for its main merge before opening KAR-189. Do not repeat the dependent-branch merge path.
 
 Verify unchanged implementation/capture bytes, scoped lint, workspace/tooling types, deterministic tests, production build and fresh PR checks. Keep the two issues In Review until main delivery, KAR-147/131 active, and KAR-148–150/G2 pending. Do not advance KAR-132 or another milestone.
+
+## KAR-189 execution
+
+Reuse the real controls/feedback fixtures and add actual Card/StatCard recipes in a local React catalogue. Provide local theme/accent/example selection; synchronize native color-scheme with the theme. Sources remain editable in the repository, with a quick rebuild on restart.
+
+Compile the current shared Tailwind CSS through the already installed PostCSS toolchain, with explicit source paths. Reuse only selected first-party font faces and WOFF2 files from an existing local Next production build; do not expose .next/server, resolved environment or application routes. A missing font build must give a clear instruction to run the normal build once.
+
+Serve exact generated HTML/JS/CSS/font/license paths on 127.0.0.1:53471, GET/HEAD only. Reject foreign hosts/origins, API/source/environment paths and writes. Add boundary tests and a dedicated browser configuration that starts this static runner without the application. Keep CI's synthetic build disposable and never upload it.
+
+Keep this issue below the hard PR budget; refine before implementation if a necessary addition would exceed it. Parent acceptance remains pending owner review of every child; no move to KAR-132.

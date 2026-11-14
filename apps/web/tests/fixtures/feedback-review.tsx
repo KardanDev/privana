@@ -1,7 +1,7 @@
 import type { OperationsTransactionDTO } from "@privana/api/contracts/platform";
 import { buttonVariants } from "@privana/ui/components/button";
 import { cn } from "@privana/ui/lib/utils";
-import { useCallback, useState } from "react";
+import { type MouseEvent, useCallback, useState } from "react";
 import { OperationsTransactions } from "../../src/domains/admin/operations-transactions";
 import { LockedPostNotice } from "../../src/domains/posts/locked-post-notice";
 import { EmptyState } from "../../src/shared/components/empty-state";
@@ -27,7 +27,22 @@ const transactions: OperationsTransactionDTO[] = [
   },
 ];
 
-export function FeedbackReview() {
+export function FeedbackReview({
+  localPreview = false,
+}: {
+  localPreview?: boolean;
+}) {
+  const [previewShown, setPreviewShown] = useState(false);
+  const openPreview = useCallback(
+    (event: MouseEvent<HTMLAnchorElement>) => {
+      if (!localPreview) {
+        return;
+      }
+      event.preventDefault();
+      setPreviewShown(true);
+    },
+    [localPreview]
+  );
   const [retries, setRetries] = useState(0);
   const retry = useCallback(() => setRetries((count) => count + 1), []);
   return (
@@ -57,10 +72,16 @@ export function FeedbackReview() {
           <a
             className={cn(buttonVariants({ size: "sm", variant: "outline" }))}
             href="/creators/perfil-ficticio"
+            onClick={openPreview}
           >
             Ver perfil do criador
           </a>
         </LockedPostNotice>
+        {previewShown ? (
+          <p className="mt-3 text-muted-foreground text-sm" role="status">
+            Prévia local selecionada. Nenhum perfil real foi aberto.
+          </p>
+        ) : null}
       </section>
       <section aria-label="Dados fictícios para revisão">
         <h2 className="mb-4 font-heading font-semibold text-xl">

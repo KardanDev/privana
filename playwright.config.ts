@@ -32,6 +32,7 @@ export default defineConfig({
   reporter: "list",
   retries: 0,
   testDir: "./e2e",
+  testIgnore: "catalogue.spec.ts",
   testMatch: "**/*.spec.ts",
   timeout: 60_000,
   use: {
