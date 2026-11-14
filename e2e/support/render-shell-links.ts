@@ -8,7 +8,9 @@ let built: Promise<unknown> | undefined;
 
 export async function renderShellLinks(
   registration: boolean,
-  operations: boolean
+  operations: boolean,
+  scenario = "",
+  flags = ""
 ): Promise<string> {
   built ??= run(
     "bun",
@@ -29,6 +31,8 @@ export async function renderShellLinks(
       output,
       registration ? "open" : "closed",
       operations ? "operations" : "entry",
+      scenario,
+      flags,
     ],
     { timeout: 30_000 }
   );
