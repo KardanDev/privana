@@ -52,7 +52,13 @@ export function AppShell({ children }: { children: ReactNode }) {
           >
             {children}
           </main>
-          <div className={viewer.data ? "pb-24 lg:pb-0" : undefined}>
+          <div
+            className={
+              viewer.data
+                ? "pb-[calc(6rem+env(safe-area-inset-bottom))] lg:pb-0"
+                : undefined
+            }
+          >
             <PlatformFooter />
           </div>
         </div>

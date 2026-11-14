@@ -130,6 +130,13 @@ for (const [scenario, label] of workspaceCases) {
     await expect(rail.locator('a[href="/studio"]')).toHaveCount(1);
     await expect(rail.locator('a[href="/settings"]')).toHaveCount(2);
     await expect(rail.getByLabel("Nova publicação")).toHaveCount(0);
+    await expect(page.locator('body > nav a[href="/studio"]')).toHaveCount(
+      scenario === "active" ? 1 : 0
+    );
+    await expect(
+      page.locator('body > nav button[aria-haspopup="menu"]')
+    ).toHaveText("Conta");
+    await expect(page.locator('body > nav a[href="/settings"]')).toHaveCount(0);
     await expect(rail.locator('a[href="/admin"]')).toHaveCount(
       ["staff", "editor", "moderator", "analyst"].includes(scenario) ? 1 : 0
     );
