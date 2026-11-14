@@ -4,15 +4,15 @@ import { buttonVariants } from "@privana/ui/components/button";
 import { cn } from "@privana/ui/lib/utils";
 import { ArrowUpRight, ShieldCheck } from "lucide-react";
 import Link from "next/link";
-import type { MouseEventHandler, ReactNode } from "react";
+import type { ReactNode } from "react";
 import { ThemeToggle } from "@/shared/appearance/theme-toggle";
 import { Brand } from "@/shared/components/brand";
-import { usePlatform } from "@/shared/platform/use-platform";
 import {
   type OperationsSection,
   operationsNavigation,
   teamRoleLabels,
 } from "./operations-navigation";
+import { OperationsSectionNavigation } from "./operations-section-navigation";
 
 export function OperationsShell({
   section,
@@ -22,13 +22,15 @@ export function OperationsShell({
   children,
 }: {
   section: OperationsSection;
-  onSelect: MouseEventHandler<HTMLButtonElement>;
+  onSelect: (section: string) => void;
   viewerName: string;
   viewerRole: string;
   children: ReactNode;
 }) {
-  const current = operationsNavigation.find((item) => item.id === section);
-  const config = usePlatform();
+  const current = operationsNavigation.find(
+    (item) =>
+      item.id === section && item.roles.some((role) => role === viewerRole)
+  );
   return (
     <div className="min-h-svh bg-background">
       <a
@@ -37,76 +39,64 @@ export function OperationsShell({
       >
         Pular para a operação
       </a>
-      <aside className="border-b bg-card lg:fixed lg:inset-y-0 lg:left-0 lg:z-30 lg:flex lg:w-60 lg:flex-col lg:border-r lg:border-b-0">
-        <div className="flex items-center justify-between gap-3 px-5 py-5">
-          <Brand />
-          <span className="rounded border bg-muted px-2 py-1 font-semibold text-[10px] uppercase tracking-wider">
-            Gestão
-          </span>
+      <aside className="hidden border-r bg-card pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)] lg:fixed lg:inset-y-0 lg:left-0 lg:z-30 lg:flex lg:w-60 lg:flex-col lg:overflow-y-auto">
+        <div className="flex shrink-0 flex-col items-start gap-3 px-5 py-5">
+          <Brand wrapName />
         </div>
-        <nav
-          aria-label="Seções da operação"
-          className="flex gap-1 overflow-x-auto px-3 pb-3 lg:flex-col lg:overflow-visible lg:pb-0"
-        >
-          {operationsNavigation
-            .filter((item) => item.roles.some((role) => role === viewerRole))
-            .map(({ id, label, icon: Icon }) => (
-              <button
-                aria-current={section === id ? "page" : undefined}
-                className={cn(
-                  "flex shrink-0 items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
-                  section === id
-                    ? "bg-accent font-semibold text-primary"
-                    : "text-muted-foreground"
-                )}
-                key={id}
-                onClick={onSelect}
-                type="button"
-                value={id}
-              >
-                <Icon aria-hidden="true" className="size-4" />
-                {label}
-              </button>
-            ))}
-        </nav>
-        <div className="mt-auto hidden border-t p-5 lg:block">
-          <p className="truncate font-medium text-sm">{viewerName}</p>
-          <p className="mt-1 text-muted-foreground text-xs">
+        <OperationsSectionNavigation
+          onSelect={onSelect}
+          section={section}
+          viewerRole={viewerRole}
+        />
+        <div className="mt-auto shrink-0 border-t p-5 [overflow-wrap:anywhere]">
+          <p className="font-medium text-sm">{viewerName}</p>
+          <p className="mt-1 text-muted-foreground text-sm">
             {teamRoleLabels[viewerRole] ?? viewerRole}
           </p>
-          <p className="mt-4 flex items-center gap-2 text-[11px] text-muted-foreground">
+          <p className="mt-4 flex items-center gap-2 text-muted-foreground text-sm">
             <ShieldCheck aria-hidden="true" className="size-3.5" />
             Área restrita à equipe
           </p>
         </div>
       </aside>
       <div className="lg:pl-60">
-        <header className="flex min-h-16 items-center justify-between gap-4 border-b bg-card px-5 py-3 sm:px-8">
-          <div>
-            <p className="font-semibold text-sm">Operação da plataforma</p>
-            <p className="mt-0.5 text-muted-foreground text-xs lg:hidden">
-              {teamRoleLabels[viewerRole] ?? viewerRole}
+        <header className="flex min-h-16 flex-wrap items-center justify-between gap-3 border-b bg-card px-4 pt-[calc(0.75rem+env(safe-area-inset-top))] pb-3 sm:px-8">
+          <div className="min-w-0 flex-1 basis-40 [overflow-wrap:anywhere]">
+            <div className="lg:hidden">
+              <Brand wrapName />
+            </div>
+            <p className="hidden font-semibold text-sm lg:block">
+              Operação da plataforma
+            </p>
+            <p className="mt-1 text-muted-foreground text-sm">
+              Gestão · {teamRoleLabels[viewerRole] ?? viewerRole}
             </p>
           </div>
           <div className="flex shrink-0 items-center gap-2">
             <ThemeToggle />
             <Link
-              className={cn(buttonVariants({ size: "sm", variant: "outline" }))}
+              className={cn(buttonVariants({ variant: "outline" }))}
               href="/"
             >
-              Ver plataforma
+              Voltar à comunidade
               <ArrowUpRight data-icon="inline-end" />
             </Link>
           </div>
+          <div className="w-full min-w-0 lg:hidden">
+            <OperationsSectionNavigation
+              compact
+              onSelect={onSelect}
+              section={section}
+              viewerRole={viewerRole}
+            />
+          </div>
         </header>
         <main
-          className="mx-auto flex max-w-[1440px] flex-col gap-6 p-5 sm:p-8"
+          className="mx-auto flex min-w-0 max-w-[1440px] scroll-mt-4 flex-col gap-6 px-4 pt-6 pb-[calc(2rem+env(safe-area-inset-bottom))] outline-none sm:px-8"
           id="operations-main"
+          tabIndex={-1}
         >
           <div>
-            <p className="mb-1 font-medium text-[10px] text-primary uppercase tracking-[0.14em]">
-              {config.brand.name} / Operação
-            </p>
             <h1 className="font-semibold text-2xl tracking-tight">
               {current?.label}
             </h1>

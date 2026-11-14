@@ -1,8 +1,9 @@
 "use client";
-import { Button } from "@privana/ui/components/button";
+import { Button, buttonVariants } from "@privana/ui/components/button";
 import { cn } from "@privana/ui/lib/utils";
 import { useIsMutating } from "@tanstack/react-query";
 import {
+  ArrowLeft,
   ArrowUpRight,
   BellRing,
   FileText,
@@ -39,24 +40,30 @@ export function StudioScreen() {
   const visiblePosts = query.data?.pages.flatMap((page) => page.posts) ?? [];
   return (
     <>
+      <Link
+        className={cn(buttonVariants({ variant: "link" }), "mb-3 px-0")}
+        href="/"
+      >
+        <ArrowLeft aria-hidden="true" data-icon="inline-start" />
+        Voltar à comunidade
+      </Link>
       <PageHeading
         description="Seu conteúdo e sua comunidade, de perto."
         title="Meu estúdio"
       >
         {profile?.status === "ACTIVE" && (
-          <div className="flex flex-wrap gap-2">
-            <Button
-              nativeButton={false}
-              render={<Link href={`/creators/${profile.handle}`} />}
-              variant="outline"
-            >
-              Ver perfil{" "}
-              <ArrowUpRight aria-hidden="true" data-icon="inline-end" />
-            </Button>
+          <div className="flex w-full flex-wrap gap-2 sm:w-auto">
             <Button disabled={pending} onClick={state.openEditor}>
               <Plus aria-hidden="true" data-icon="inline-start" />
               Nova publicação
             </Button>
+            <Link
+              className={cn(buttonVariants({ variant: "outline" }))}
+              href={`/creators/${profile.handle}`}
+            >
+              Ver perfil
+              <ArrowUpRight aria-hidden="true" data-icon="inline-end" />
+            </Link>
           </div>
         )}
       </PageHeading>
@@ -96,11 +103,10 @@ export function StudioScreen() {
             ].map((item) => (
               <Button
                 aria-pressed={tab === item.id}
-                className={cn(tab === item.id && "shadow-sm")}
+                className="min-w-0 grow whitespace-normal sm:grow-0"
                 disabled={pending}
                 key={item.id}
                 onClick={state.selectTab}
-                size="sm"
                 value={item.id}
                 variant={tab === item.id ? "secondary" : "ghost"}
               >
@@ -117,7 +123,7 @@ export function StudioScreen() {
                 <label className="flex items-center gap-2 text-muted-foreground text-sm">
                   Mostrar
                   <select
-                    className="h-10 rounded-lg border border-input bg-card px-3 text-foreground outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                    className="min-h-11 max-w-full rounded-lg border border-input bg-card px-3 text-foreground outline-none focus-visible:ring-2 focus-visible:ring-ring"
                     disabled={pending}
                     onChange={state.changeStatus}
                     value={state.status}

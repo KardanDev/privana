@@ -4,7 +4,7 @@ import { resolve } from "node:path";
 import { promisify } from "node:util";
 
 const run = promisify(execFile);
-export type ReviewFixture = "controls" | "feedback";
+export type ReviewFixture = "controls" | "feedback" | "workspaces";
 const bundles = new Map<ReviewFixture, string>();
 
 export async function buildReviewFixture(kind: ReviewFixture): Promise<string> {
@@ -20,6 +20,9 @@ export async function buildReviewFixture(kind: ReviewFixture): Promise<string> {
       `apps/web/tests/fixtures/mount-${kind}-review.tsx`,
       "--target=browser",
       "--minify",
+      "--env=disable",
+      "--define",
+      'process.env.NODE_ENV="production"',
       `--outfile=${output}`,
     ],
     { timeout: 30_000 }

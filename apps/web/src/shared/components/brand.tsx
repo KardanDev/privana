@@ -1,15 +1,25 @@
 "use client";
 
+import { cn } from "@privana/ui/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { usePlatform } from "@/shared/platform/use-platform";
 
-export function Brand({ compact = false }: { compact?: boolean }) {
+export function Brand({
+  compact = false,
+  wrapName = false,
+}: {
+  compact?: boolean;
+  wrapName?: boolean;
+}) {
   const { brand } = usePlatform();
   return (
     <Link
       aria-label={`${brand.name}, página inicial`}
-      className="inline-flex min-w-0 items-center gap-2.5"
+      className={cn(
+        "inline-flex min-w-0 items-center gap-2.5",
+        wrapName && "items-start"
+      )}
       href="/"
     >
       {brand.logoUrl ? (
@@ -24,7 +34,7 @@ export function Brand({ compact = false }: { compact?: boolean }) {
       ) : (
         <svg
           aria-hidden="true"
-          className="size-9 text-primary"
+          className="size-9 shrink-0 text-primary"
           fill="none"
           viewBox="0 0 36 36"
         >
@@ -38,7 +48,12 @@ export function Brand({ compact = false }: { compact?: boolean }) {
       )}
       {!compact && (
         <span
-          className="truncate font-bold font-heading text-[24px] tracking-[-1px] lg:hidden xl:inline"
+          className={cn(
+            "min-w-0 font-bold font-heading text-[24px] tracking-[-0.03em]",
+            wrapName
+              ? "[overflow-wrap:anywhere]"
+              : "truncate lg:hidden xl:inline"
+          )}
           translate="no"
         >
           {brand.name}

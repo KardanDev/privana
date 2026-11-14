@@ -1,6 +1,6 @@
 "use client";
 
-import { type MouseEvent, useCallback, useState } from "react";
+import { useCallback, useState } from "react";
 import {
   type OperationsSection,
   operationsNavigation,
@@ -14,10 +14,10 @@ export function useOperationsNavigation(role: string) {
     allowed[0]?.id ?? "overview"
   );
   const select = useCallback(
-    (event: MouseEvent<HTMLButtonElement>) => {
+    (value: string) => {
       const selected = operationsNavigation.find(
         (item) =>
-          item.id === event.currentTarget.value &&
+          item.id === value &&
           item.roles.some((candidate) => candidate === role)
       );
       if (selected) {
