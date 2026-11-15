@@ -34,6 +34,7 @@ export default defineConfig({
     "shell-links.catalogue.spec.ts",
     "workspaces.catalogue.spec.ts",
     "message-drafts.catalogue.spec.ts",
+    "mutation-recovery.catalogue.spec.ts",
   ],
   timeout: 45_000,
   use: {

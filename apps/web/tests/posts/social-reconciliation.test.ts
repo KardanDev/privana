@@ -18,6 +18,7 @@ test("a completing write cannot refetch over another optimistic write; the last 
         finishFirst = resolve;
       }),
     mutationKey: [...SOCIAL_MUTATION_KEY, "like", post.id],
+    onSettled: () => reconcileSocialQueries(client),
   });
   const second = client.getMutationCache().build(client, {
     mutationFn: () =>
@@ -25,6 +26,7 @@ test("a completing write cannot refetch over another optimistic write; the last 
         finishSecond = resolve;
       }),
     mutationKey: [...SOCIAL_MUTATION_KEY, "bookmark", post.id],
+    onSettled: () => reconcileSocialQueries(client),
   });
   const firstTask = first.execute(undefined);
   const secondTask = second.execute(undefined);
@@ -36,11 +38,11 @@ test("a completing write cannot refetch over another optimistic write; the last 
   expect(client.getQueryState(key)?.isInvalidated).toBe(false);
   finishFirst();
   await firstTask;
-  await reconcileSocialQueries(client);
-  expect(client.getQueryState(key)?.isInvalidated).toBe(true);
-  expect(client.getQueryState(["settings"])?.isInvalidated).toBe(false);
+  expect(client.getQueryState(key)?.isInvalidated).toBe(false);
   finishSecond();
   await secondTask;
+  expect(client.getQueryState(key)?.isInvalidated).toBe(true);
+  expect(client.getQueryState(["settings"])?.isInvalidated).toBe(false);
   client.clear();
 });
 
