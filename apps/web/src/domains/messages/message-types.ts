@@ -1,5 +1,12 @@
 import type { MessageDTO } from "@privana/api/contracts/product";
 import type { InfiniteData } from "@tanstack/react-query";
+import type { SetStateAction } from "react";
+
+export type MessageDrafts = Readonly<Record<string, string>>;
+export type ChangeMessageDraft = (
+  conversationId: string,
+  update: SetStateAction<string>
+) => void;
 
 export interface MessageAttempt extends MessageDTO {
   conversationId: string;

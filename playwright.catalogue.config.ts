@@ -33,6 +33,7 @@ export default defineConfig({
     "feedback.spec.ts",
     "shell-links.catalogue.spec.ts",
     "workspaces.catalogue.spec.ts",
+    "message-drafts.catalogue.spec.ts",
   ],
   timeout: 45_000,
   use: {

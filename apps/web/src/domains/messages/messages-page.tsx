@@ -17,6 +17,7 @@ import { usePlatform } from "@/shared/platform/use-platform";
 import { client } from "@/utils/orpc";
 import { CONVERSATIONS_KEY } from "./message-query-keys";
 import { updateConversationPreview } from "./update-conversation-preview";
+import { useMessageDrafts } from "./use-message-drafts";
 import { useMessageOutbox } from "./use-message-outbox";
 export function MessagesPage({
   initialConversation,
@@ -24,6 +25,7 @@ export function MessagesPage({
   initialConversation?: string;
 }) {
   const [selectedId, setSelectedId] = useState(initialConversation);
+  const { drafts, changeDraft } = useMessageDrafts();
   const platform = usePlatform();
   const outbox = useMessageOutbox();
   const conversations = useQuery({
@@ -151,9 +153,11 @@ export function MessagesPage({
           </nav>
           {selected ? (
             <ConversationPanel
+              body={drafts[selected.id] ?? ""}
               conversation={selected}
               key={selected.id}
               onBack={closeConversation}
+              onDraftChange={changeDraft}
             />
           ) : (
             <div className="hidden h-[calc(100dvh-11rem)] min-h-64 md:flex">
