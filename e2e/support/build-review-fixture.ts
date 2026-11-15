@@ -6,12 +6,12 @@ import { promisify } from "node:util";
 const run = promisify(execFile);
 export type ReviewFixture = "controls" | "feedback";
 const bundles = new Map<
-  ReviewFixture | "workspaces" | "messages" | "mutations",
+  ReviewFixture | "workspaces" | "messages" | "mutations" | "studio-posts",
   string
 >();
 
 export async function buildReviewFixture(
-  kind: ReviewFixture | "workspaces" | "messages" | "mutations"
+  kind: ReviewFixture | "workspaces" | "messages" | "mutations" | "studio-posts"
 ): Promise<string> {
   const bundle = bundles.get(kind);
   if (bundle !== undefined) {

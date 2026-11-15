@@ -11,6 +11,7 @@ import { uploadMedia } from "@/domains/media/upload-media";
 import { client, orpc } from "@/utils/orpc";
 import { commitStudioPost } from "./commit-studio-post";
 import { invalidateStudioContent } from "./invalidate-studio-content";
+import { postSaveErrorMessage } from "./post-save-error-message";
 import { readPostForm } from "./read-post-form";
 import { STUDIO_WRITE_KEY } from "./studio-cache-types";
 export function usePostForm(post: PostDTO | undefined, onSaved: () => void) {
@@ -58,7 +59,7 @@ export function usePostForm(post: PostDTO | undefined, onSaved: () => void) {
       return { ...saved, content };
     },
     mutationKey: [...STUDIO_WRITE_KEY, "post", post?.id ?? "new"],
-    onError: (failure) => setError(failure.message),
+    onError: (failure) => setError(postSaveErrorMessage(failure)),
     onSettled: () =>
       invalidateStudioContent(
         queryClient,
