@@ -1,0 +1,27 @@
+# KAR-194 — Conversation draft recovery
+
+Opening or closing a keyed conversation panel used to erase its local unsent text. MessagesPage now owns a page-memory draft record, with a stable, conversation-bound functional update. Returning to a conversation restores its own composer text. A send clears only its submitted draft; a late failure restores the originating empty draft without replacing newer typing or another conversation. Existing request IDs, explicit retry, pending-send guards, selection URLs, history polling and confirmed-delivery behavior remain intact.
+
+Drafts live only while the inbox page remains mounted. Reloading, leaving that page or signing out through its existing full-page navigation discards this memory. No browser storage, server draft endpoint, migration, configuration, dependency or authority change is introduced. Session-expiry recovery remains KAR-198; broader inbox design remains KAR-157.
+
+## Review artifacts
+
+- [Before returning to conversation A, 390px/light](review/conversation-drafts/before-phone-return.jpg) and [after the same return](review/conversation-drafts/after-phone-return.jpg): the empty composer becomes the retained Portuguese draft.
+- [Rejected send and explicit retry, desktop/dark](review/conversation-drafts/failed-desktop-dark.jpg): existing delivery feedback and restored text remain visible.
+
+The ignored `output/playwright/review/kar194/` packet contains 24 canonical before and 24 after frames: A, B and return-to-A at 320/390/768/1280px in both themes. The frozen before bundle uses unchanged main `496c69d`; paired frames use matching current fixture CSS, fonts, focus and fictional conversations. All eight before return frames lose A's draft; all eight after frames retain it. Metadata reports no runtime errors, blocked requests or horizontal overflow. Twelve separate interaction captures cover return and rejected-send states at phone/tablet/desktop sizes in both themes. The three committed representatives are exact copies; all 65 source/representative rasters carry provenance. Two early diagnostic frames used earlier fixture CSS and are excluded from the canonical comparison.
+
+## Validation and limits
+
+The original actual-hook/control probe failed before the fix (`retained: false`, exit 1). Browser cases exercise switching, close/remount, fast UTF-8 typing, reload clearing, delayed failure with and without newer text, cross-conversation reverse-order confirmation, retry ID reuse and duplicate-submit guards. Simulated successful sends remain available to the fake history endpoint when the panel remounts.
+
+`bun run test:catalogue` passes 171 cases (1.7m), including 30 message cases across desktop/tablet/phone and both themes. `bun run check-types` passes five tasks (four cached); final `bun run check-types:scripts` and scoped Ultracite on 14 code files pass. `bun run test` passes 300 tests across 58 files, 889 assertions. The final `bun run build` passes in 24.181s with web rebuilt and three package tasks cached. Diff and evidence-link checks complete before PR review.
+
+The isolated client fixture mounts actual useMessageDrafts/useConversation/useSendMessage hooks and ConversationComposer/ConversationHistory controls inside a fictional keyed switching wrapper. Reads and sends are intercepted; only expected simulated rejection requests fail. This proves client state and recovery, not authenticated inbox hydration, server persistence/access, real services or physical-device behavior. An initial standalone attempt to mount the full Next inbox hit a missing `process` runtime; no private framework adapter was added. Product wiring is covered by source review, types and production compilation. No login, seed, real message, email/storage/payment operation or deployment occurs; rollback is the issue commit.
+
+Proximidade, typography, layout and existing delivery labels are preserved. Inherited seed-roll corroboration and QUALITYBAR remain unavailable; DESIGN/sidecar study wording and concept breakpoint drift stay disclosed. No clean Impeccable SHIP, ceiling assessment or authority refresh is claimed. KAR-194 stays In Review until owner acceptance/main merge; KAR-195 onward, parent KAR-149 acceptance and G2 remain pending.
+Documenter reconciliation: draft wiring and existing composer/history were compared with [PRODUCT](../../../apps/web/PRODUCT.md), [DESIGN](../../../apps/web/DESIGN.md), [sidecar](../../../apps/web/.impeccable/design.json), [surface brief](../../../.impeccable/surfaces/apps-web-src-domains-messages-messages-page-tsx.md), [navigation](../m015-ux/navigation.md) and [interactions](../m015-ux/interactions.md). Page-owned functional updates retain per-conversation text while preserving the Proximidade palette, Hanken/Bricolage type, layout, labels and query URLs.
+
+Visual inspection of all three representatives confirms the empty-before/retained-after phone composer and restored text beside explicit rejected-send feedback on desktop/dark. SHA-256 comparisons match each canonical raster; the 65-raster audit lists no problems or missing provenance. These checks retain the fictional-fixture limits above.
+
+Incumbent system files were left unchanged. The inherited uncorroborated seed and unavailable chosen-world QUALITYBAR/ceiling evidence remain open finish gates; pre-existing study wording and concept breakpoint drift are neither canonized nor repaired. No clean SHIP or owner acceptance is asserted.

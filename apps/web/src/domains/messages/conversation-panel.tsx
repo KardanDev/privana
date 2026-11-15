@@ -6,16 +6,21 @@ import { QueryFeedback } from "@/domains/feed/components/query-feedback";
 import { Avatar } from "@/shared/components/avatar";
 import { ConversationComposer } from "./conversation-composer";
 import { ConversationHistory } from "./conversation-history";
+import type { ChangeMessageDraft } from "./message-types";
 import { useConversation } from "./use-conversation";
 
 export function ConversationPanel({
   conversation,
+  body,
+  onDraftChange,
   onBack,
 }: {
   conversation: ConversationDTO;
+  body: string;
+  onDraftChange: ChangeMessageDraft;
   onBack: () => void;
 }) {
-  const state = useConversation(conversation.id);
+  const state = useConversation(conversation.id, body, onDraftChange);
   const { messages } = state;
   return (
     <section

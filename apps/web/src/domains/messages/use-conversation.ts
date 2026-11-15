@@ -1,17 +1,30 @@
 "use client";
 import type { MessageDTO } from "@privana/api/contracts/product";
 import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
-import { type ChangeEvent, type FormEvent, useCallback, useState } from "react";
+import {
+  type ChangeEvent,
+  type FormEvent,
+  type SetStateAction,
+  useCallback,
+} from "react";
 import { client, orpc } from "@/utils/orpc";
 import { messageHistoryKey } from "./message-query-keys";
+import type { ChangeMessageDraft } from "./message-types";
 import { useMessageOutbox } from "./use-message-outbox";
 import { useSendMessage } from "./use-send-message";
 import { visibleMessageHistory } from "./visible-message-history";
 
 const MESSAGES_PER_PAGE = 50;
 
-export function useConversation(conversationId: string) {
-  const [body, setBody] = useState("");
+export function useConversation(
+  conversationId: string,
+  body: string,
+  onDraftChange: ChangeMessageDraft
+) {
+  const setBody = useCallback(
+    (update: SetStateAction<string>) => onDraftChange(conversationId, update),
+    [conversationId, onDraftChange]
+  );
   const outbox = useMessageOutbox(conversationId);
   const pending = outbox.some((message) => message.status === "pending");
   const viewer = useQuery(orpc.viewer.get.queryOptions());
@@ -27,7 +40,7 @@ export function useConversation(conversationId: string) {
   const restoreDraft = useCallback(
     (failedBody: string) =>
       setBody((draft) => (draft.trim() ? draft : failedBody)),
-    []
+    [setBody]
   );
   const { submit } = useSendMessage(conversationId, restoreDraft);
   const submitMessage = useCallback(
@@ -51,11 +64,20 @@ export function useConversation(conversationId: string) {
         setBody("");
       }
     },
-    [body, conversationId, messages.data, outbox, pending, submit, viewer.data]
+    [
+      body,
+      conversationId,
+      messages.data,
+      outbox,
+      pending,
+      setBody,
+      submit,
+      viewer.data,
+    ]
   );
   const changeMessage = useCallback(
     (event: ChangeEvent<HTMLInputElement>) => setBody(event.target.value),
-    []
+    [setBody]
   );
   const retryMessage = useCallback(
     (id: string) => {
@@ -66,7 +88,7 @@ export function useConversation(conversationId: string) {
         setBody((draft) => (draft.trim() === attempt.body ? "" : draft));
       }
     },
-    [outbox, submit]
+    [outbox, setBody, submit]
   );
   const retryMessages = useCallback(() => messages.refetch(), [messages]);
   const loadOlderMessages = useCallback(
