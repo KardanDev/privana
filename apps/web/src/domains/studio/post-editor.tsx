@@ -6,7 +6,9 @@ import { Textarea } from "@privana/ui/components/textarea";
 import { LoaderCircle, Send, X } from "lucide-react";
 import { TextField } from "@/shared/components/text-field";
 import { PendingPostPreview } from "./pending-post-preview";
+import { PostDiscardDialog } from "./post-discard-dialog";
 import { StudioMediaField } from "./studio-media-field";
+import { usePostDiscard } from "./use-post-discard";
 import { usePostForm } from "./use-post-form";
 export function PostEditor({
   post,
@@ -16,6 +18,7 @@ export function PostEditor({
   onClose: () => void;
 }) {
   const form = usePostForm(post, onClose);
+  const discard = usePostDiscard(post, onClose);
   return (
     <section
       aria-labelledby="post-editor-title"
@@ -28,7 +31,7 @@ export function PostEditor({
         <Button
           aria-label="Fechar editor"
           disabled={form.pending}
-          onClick={onClose}
+          onClick={discard.requestClose}
           size="icon"
           variant="ghost"
         >
@@ -39,6 +42,7 @@ export function PostEditor({
         aria-busy={form.pending}
         className="flex flex-col gap-5"
         onSubmit={form.onSubmit}
+        ref={discard.ref}
       >
         <fieldset
           aria-label="Conteúdo da publicação"
@@ -138,6 +142,12 @@ export function PostEditor({
         </div>
         {form.preview ? <PendingPostPreview {...form.preview} /> : null}
       </form>
+      <PostDiscardDialog
+        onCancel={discard.cancel}
+        onDiscard={discard.discard}
+        open={discard.open}
+        pending={form.pending}
+      />
     </section>
   );
 }

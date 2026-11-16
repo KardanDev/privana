@@ -2,8 +2,8 @@
 
 import { Button } from "@privana/ui/components/button";
 import { ShieldAlert } from "lucide-react";
+import { useConfirmationDialog } from "@/shared/hooks/use-confirmation-dialog";
 import type { StatusCommand } from "./admin-types";
-import { useConfirmationDialog } from "./use-confirmation-dialog";
 
 export function AdminConfirmation({
   command,

@@ -37,6 +37,7 @@ export default defineConfig({
     "mutation-recovery.catalogue.spec.ts",
     "studio-post-recovery.catalogue.spec.ts",
     "studio-media-recovery.catalogue.spec.ts",
+    "studio-discard.catalogue.spec.ts",
   ],
   timeout: 45_000,
   use: {
