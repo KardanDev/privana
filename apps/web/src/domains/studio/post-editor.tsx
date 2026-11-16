@@ -7,18 +7,23 @@ import { LoaderCircle, Send, X } from "lucide-react";
 import { TextField } from "@/shared/components/text-field";
 import { PendingPostPreview } from "./pending-post-preview";
 import { PostDiscardDialog } from "./post-discard-dialog";
+import type { PostLeaveRef } from "./post-leave-guard";
 import { StudioMediaField } from "./studio-media-field";
 import { usePostDiscard } from "./use-post-discard";
 import { usePostForm } from "./use-post-form";
 export function PostEditor({
   post,
   onClose,
+  leaveRef,
+  canWrite = true,
 }: {
   post?: PostDTO;
   onClose: () => void;
+  leaveRef?: PostLeaveRef;
+  canWrite?: boolean;
 }) {
-  const form = usePostForm(post, onClose);
-  const discard = usePostDiscard(post, onClose);
+  const form = usePostForm(post, onClose, canWrite);
+  const discard = usePostDiscard(post, onClose, leaveRef);
   return (
     <section
       aria-labelledby="post-editor-title"
@@ -116,9 +121,15 @@ export function PostEditor({
             {form.error}
           </p>
         ) : null}
+        {canWrite ? null : (
+          <p className="text-muted-foreground text-sm" role="status">
+            O perfil precisa estar ativo para salvar ou publicar. Suas
+            alterações continuam neste editor.
+          </p>
+        )}
         <div className="flex flex-wrap justify-end gap-3">
           <Button
-            disabled={form.pending}
+            disabled={form.pending || !canWrite}
             name="status"
             type="submit"
             value="DRAFT"
@@ -127,7 +138,7 @@ export function PostEditor({
             Salvar rascunho
           </Button>
           <Button
-            disabled={form.pending}
+            disabled={form.pending || !canWrite}
             name="status"
             type="submit"
             value="PUBLISHED"

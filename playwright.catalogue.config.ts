@@ -38,6 +38,7 @@ export default defineConfig({
     "studio-post-recovery.catalogue.spec.ts",
     "studio-media-recovery.catalogue.spec.ts",
     "studio-discard.catalogue.spec.ts",
+    "studio-context.catalogue.spec.ts",
   ],
   timeout: 45_000,
   use: {

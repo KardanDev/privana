@@ -14,7 +14,11 @@ import { invalidateStudioContent } from "./invalidate-studio-content";
 import { postSaveErrorMessage } from "./post-save-error-message";
 import { readPostForm } from "./read-post-form";
 import { STUDIO_WRITE_KEY } from "./studio-cache-types";
-export function usePostForm(post: PostDTO | undefined, onSaved: () => void) {
+export function usePostForm(
+  post: PostDTO | undefined,
+  onSaved: () => void,
+  canWrite = true
+) {
   const [error, setError] = useState<string | null>(null);
   const [clientPostId] = useState(() => crypto.randomUUID());
   const [phase, setPhase] = useState<"uploading" | "saving">("saving");
@@ -78,7 +82,10 @@ export function usePostForm(post: PostDTO | undefined, onSaved: () => void) {
     error,
     onSubmit: (event: FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      if (queryClient.isMutating({ mutationKey: STUDIO_WRITE_KEY }) > 0) {
+      if (
+        !canWrite ||
+        queryClient.isMutating({ mutationKey: STUDIO_WRITE_KEY }) > 0
+      ) {
         return;
       }
       setError(null);

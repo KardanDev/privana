@@ -28,6 +28,8 @@ export async function buildReviewFixture(
       "--env=disable",
       "--define",
       'process.env.NODE_ENV="production"',
+      // Next Link reads build flags; fixtures never embed the real environment.
+      ...(kind === "studio-posts" ? ["--define", "process.env={}"] : []),
       `--outfile=${output}`,
     ],
     { timeout: 30_000 }
