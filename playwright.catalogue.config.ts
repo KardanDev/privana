@@ -36,6 +36,7 @@ export default defineConfig({
     "message-drafts.catalogue.spec.ts",
     "mutation-recovery.catalogue.spec.ts",
     "studio-post-recovery.catalogue.spec.ts",
+    "studio-media-recovery.catalogue.spec.ts",
   ],
   timeout: 45_000,
   use: {
