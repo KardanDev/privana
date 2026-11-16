@@ -95,7 +95,9 @@ export function StudioScreen() {
           <StudioStatusNotice status={profile.status} />
           <fieldset
             aria-label="Seções do estúdio"
-            className="flex flex-wrap gap-2 border-b pb-3"
+            className="flex flex-wrap gap-2 border-b pb-3 outline-none"
+            ref={state.navigationRef}
+            tabIndex={-1}
           >
             {[
               { id: "posts", label: "Minhas publicações" },
@@ -126,6 +128,7 @@ export function StudioScreen() {
                     className="min-h-11 max-w-full rounded-lg border border-input bg-card px-3 text-foreground outline-none focus-visible:ring-2 focus-visible:ring-ring"
                     disabled={pending}
                     onChange={state.changeStatus}
+                    ref={state.filterRef}
                     value={state.status}
                   >
                     <option value="ACTIVE">Todas as ativas</option>
@@ -139,8 +142,9 @@ export function StudioScreen() {
                 active={profile.status === "ACTIVE"}
                 editor={editor}
                 filtered={state.status !== "ACTIVE"}
+                leaveRef={state.leaveRef}
                 onClose={state.closeEditor}
-                onEdit={state.setEditor}
+                onEdit={state.selectEditor}
                 onOpen={state.openEditor}
                 posts={visiblePosts}
               />

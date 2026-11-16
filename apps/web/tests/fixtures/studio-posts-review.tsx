@@ -4,9 +4,12 @@ import { StudioPosts } from "../../src/domains/studio/studio-posts";
 import { post } from "../posts/social-fixtures";
 
 export function StudioPostsReview({ mode }: { mode: string }) {
-  const [editor, setEditor] = useState<PostDTO | "new" | null>(
-    mode === "edit" ? post : "new"
-  );
+  const [editor, setEditor] = useState<PostDTO | "new" | null>(() => {
+    if (mode === "new") {
+      return "new";
+    }
+    return mode === "edit" ? post : null;
+  });
   const close = useCallback(() => setEditor(null), []);
   const open = useCallback(() => setEditor("new"), []);
   return (

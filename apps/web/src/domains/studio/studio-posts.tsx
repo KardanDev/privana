@@ -6,6 +6,7 @@ import { FileText, Plus } from "lucide-react";
 import { useCallback, useRef } from "react";
 import { EmptyState } from "@/shared/components/empty-state";
 import { PostEditor } from "./post-editor";
+import type { PostLeaveRef } from "./post-leave-guard";
 import { StudioPostRow } from "./studio-post-row";
 
 export function StudioPosts({
@@ -16,6 +17,7 @@ export function StudioPosts({
   onOpen,
   onClose,
   onEdit,
+  leaveRef,
 }: {
   active: boolean;
   filtered?: boolean;
@@ -24,6 +26,7 @@ export function StudioPosts({
   onOpen: () => void;
   onClose: () => void;
   onEdit: (post: PostDTO) => void;
+  leaveRef?: PostLeaveRef;
 }) {
   const region = useRef<HTMLElement>(null);
   const closeEditor = useCallback(() => {
@@ -40,9 +43,11 @@ export function StudioPosts({
       ref={region}
       tabIndex={-1}
     >
-      {editor && active ? (
+      {editor ? (
         <PostEditor
+          canWrite={active}
           key={editor === "new" ? "new" : editor.id}
+          leaveRef={leaveRef}
           onClose={closeEditor}
           post={editor === "new" ? undefined : editor}
         />

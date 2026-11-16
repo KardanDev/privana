@@ -1,23 +1,36 @@
 import type { Page } from "@playwright/test";
 import { getNavigationReviewViewer } from "../../apps/web/tests/fixtures/get-navigation-review-viewer";
+import { studioContextOverview } from "../../apps/web/tests/fixtures/studio-context-overview";
 import { buildReviewFixture } from "./build-review-fixture";
 
 export async function openStudioPostFixture(
   page: Page,
   dark = false,
-  mode: "new" | "edit" | "PENDING" | "SUSPENDED" = "new"
+  mode: "new" | "edit" | "context" | "PENDING" | "SUSPENDED" = "new"
 ): Promise<void> {
   const bundle = await buildReviewFixture("studio-posts");
   await page.route("**/api/rpc/viewer/get", (route) =>
     route.fulfill({
       body: JSON.stringify({
         json: getNavigationReviewViewer(
-          mode === "new" || mode === "edit" ? "active" : mode.toLowerCase()
+          mode === "PENDING" || mode === "SUSPENDED"
+            ? mode.toLowerCase()
+            : "active"
         ),
       }),
       contentType: "application/json",
     })
   );
+  if (mode === "context") {
+    await page.route("**/api/rpc/studio/overview", (route) =>
+      route.fulfill({
+        body: JSON.stringify({
+          json: studioContextOverview,
+        }),
+        contentType: "application/json",
+      })
+    );
+  }
   await page.route("**/studio-post-review.js", (route) =>
     route.fulfill({ body: bundle, contentType: "text/javascript" })
   );
@@ -32,6 +45,10 @@ export async function openStudioPostFixture(
     })
   );
   await page.goto("/__studio-post-review");
-  await page.getByRole("heading", { name: "Publicações em revisão" }).waitFor();
+  await page
+    .getByRole("heading", {
+      name: mode === "context" ? "Meu estúdio" : "Publicações em revisão",
+    })
+    .waitFor();
   await page.evaluate(() => document.fonts.ready);
 }
