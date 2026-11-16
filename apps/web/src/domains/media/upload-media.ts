@@ -45,7 +45,15 @@ export async function uploadMedia(
     headers: { "Content-Type": "application/json" },
     method: "POST",
   });
-  const payload: unknown = await response.json();
+  let payload: unknown;
+  try {
+    payload = await response.json();
+  } catch (error) {
+    throw new Error(
+      "Não foi possível confirmar o envio do arquivo. Tente novamente.",
+      { cause: error }
+    );
+  }
   if (!response.ok) {
     const error = errorSchema.safeParse(payload);
     throw new Error(
