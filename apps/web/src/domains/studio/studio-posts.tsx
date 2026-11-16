@@ -1,6 +1,9 @@
+"use client";
+
 import type { PostDTO } from "@privana/api/contracts/product";
 import { Button } from "@privana/ui/components/button";
 import { FileText, Plus } from "lucide-react";
+import { useCallback, useRef } from "react";
 import { EmptyState } from "@/shared/components/empty-state";
 import { PostEditor } from "./post-editor";
 import { StudioPostRow } from "./studio-post-row";
@@ -22,15 +25,25 @@ export function StudioPosts({
   onClose: () => void;
   onEdit: (post: PostDTO) => void;
 }) {
+  const region = useRef<HTMLElement>(null);
+  const closeEditor = useCallback(() => {
+    onClose();
+    requestAnimationFrame(() => region.current?.focus({ preventScroll: true }));
+  }, [onClose]);
   const firstPostDescription = active
     ? "Crie sua primeira publicação ou salve uma ideia como rascunho."
     : "Suas publicações aparecerão aqui quando seu perfil estiver aprovado.";
   return (
-    <>
+    <section
+      aria-label="Publicações do estúdio"
+      className="flex flex-col gap-4 outline-none sm:gap-5"
+      ref={region}
+      tabIndex={-1}
+    >
       {editor && active ? (
         <PostEditor
           key={editor === "new" ? "new" : editor.id}
-          onClose={onClose}
+          onClose={closeEditor}
           post={editor === "new" ? undefined : editor}
         />
       ) : null}
@@ -70,6 +83,6 @@ export function StudioPosts({
           ) : null}
         </EmptyState>
       )}
-    </>
+    </section>
   );
 }
