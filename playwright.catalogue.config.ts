@@ -39,6 +39,7 @@ export default defineConfig({
     "studio-media-recovery.catalogue.spec.ts",
     "studio-discard.catalogue.spec.ts",
     "studio-context.catalogue.spec.ts",
+    "studio-unload.catalogue.spec.ts",
   ],
   timeout: 45_000,
   use: {

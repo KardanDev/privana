@@ -9,6 +9,7 @@ import { PendingPostPreview } from "./pending-post-preview";
 import { PostDiscardDialog } from "./post-discard-dialog";
 import type { PostLeaveRef } from "./post-leave-guard";
 import { StudioMediaField } from "./studio-media-field";
+import { usePostBeforeUnload } from "./use-post-before-unload";
 import { usePostDiscard } from "./use-post-discard";
 import { usePostForm } from "./use-post-form";
 export function PostEditor({
@@ -24,6 +25,7 @@ export function PostEditor({
 }) {
   const form = usePostForm(post, onClose, canWrite);
   const discard = usePostDiscard(post, onClose, leaveRef);
+  usePostBeforeUnload(discard.ref, post);
   return (
     <section
       aria-labelledby="post-editor-title"
@@ -121,7 +123,12 @@ export function PostEditor({
             {form.error}
           </p>
         ) : null}
-        {canWrite ? null : (
+        {canWrite ? (
+          <p className="text-muted-foreground text-sm leading-relaxed">
+            Salve suas alterações antes de sair. O navegador nem sempre avisa
+            sobre alterações não salvas.
+          </p>
+        ) : (
           <p className="text-muted-foreground text-sm" role="status">
             O perfil precisa estar ativo para salvar ou publicar. Suas
             alterações continuam neste editor.
