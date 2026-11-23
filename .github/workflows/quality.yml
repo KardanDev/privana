@@ -72,6 +72,8 @@ jobs:
       # output is disposable: never upload/cache/promote .next or resolved env.
       - name: Install catalogue browser
         run: bunx playwright install --with-deps chromium
+      - name: Exercise the isolated Studio App Router
+        run: bun run test:studio-router
       - name: Exercise isolated shared component catalogue
         run: bun run test:catalogue
 

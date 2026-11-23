@@ -56,6 +56,12 @@ After building and starting a local app against reviewed test resources, run `bu
 
 The navigation suite mounts the actual Next app. It intercepts viewer and creator read replies with fictional data; a clock-driven published-platform reply checks long labels and disabled features. All other external requests and unapproved API calls remain blocked. It exercises menu/focus/theme/touch behavior, one discovery search, the real anonymous server guard on Saved and browser back. These fictional viewer props grant no server access and do not prove authenticated accounts or a real CMS publication. No login, seed or service mutation is performed. Chromium touch emulation is not physical-device certification.
 
+## Isolated Studio routing
+
+Run `bun run test:studio-router` after generating environment types and the Prisma client (`bun run env:generate`, `bun run db:generate`) and installing Chromium. Playwright builds and serves a separate Next.js App Router project on `127.0.0.1:53472`. The project mounts the real Studio screen, shared shell and styles with fictional viewer and platform data. It uses system fonts to keep the build self-contained. The browser handles the three fixture reads locally and rejects unexpected API calls and external HTTP requests. The fixture runs independently of the production layout, server authentication and services.
+
+The desktop keyboard and phone touch checks assert the destination URL and confirm that navigation kept the same document. A suspended creator receives the real restricted Studio state. The suite captures the open editor at both viewport sizes in `output/playwright/studio-router-results`. GitHub Quality runs this suite with the other browser checks.
+
 ## Deliberate service checks
 
 | Check | Command / opt-in | Effects and limits |
