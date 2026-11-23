@@ -22,6 +22,7 @@ import {
   UserRound,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
+import { useRef } from "react";
 import { useToggleTheme } from "@/shared/appearance/use-toggle-theme";
 import { usePlatform } from "@/shared/platform/use-platform";
 import { AccountMenuLink } from "./account-menu-link";
@@ -34,6 +35,7 @@ import {
 import { useSignOut } from "./use-sign-out";
 
 export function MobileAccountMenu({ viewer }: { viewer: ViewerDTO }) {
+  const triggerRef = useRef<HTMLButtonElement>(null);
   const config = usePlatform();
   const pathname = usePathname();
   const signOut = useSignOut();
@@ -62,6 +64,7 @@ export function MobileAccountMenu({ viewer }: { viewer: ViewerDTO }) {
             ? "bg-accent font-semibold text-primary"
             : "text-muted-foreground"
         )}
+        ref={triggerRef}
       >
         <UserRound aria-hidden="true" className="size-5" />
         <span className={mobileNavigationLabelClassName}>Conta</span>
@@ -70,22 +73,26 @@ export function MobileAccountMenu({ viewer }: { viewer: ViewerDTO }) {
         <DropdownMenuGroup>
           <DropdownMenuLabel>{viewer.name}</DropdownMenuLabel>
           <AccountMenuLink
+            fallbackFocusRef={triggerRef}
             href="/saved"
             icon={Bookmark}
             label={config.navigation.saved}
           />
           <AccountMenuLink
+            fallbackFocusRef={triggerRef}
             href="/memberships"
             icon={Heart}
             label={config.navigation.memberships}
           />
           <AccountMenuLink
+            fallbackFocusRef={triggerRef}
             href="/settings"
             icon={Settings}
             label="Configurações"
           />
           {studio ? (
             <AccountMenuLink
+              fallbackFocusRef={triggerRef}
               href="/studio"
               icon={SquarePen}
               label={studio.label}
@@ -93,6 +100,7 @@ export function MobileAccountMenu({ viewer }: { viewer: ViewerDTO }) {
           ) : null}
           {isStaff ? (
             <AccountMenuLink
+              fallbackFocusRef={triggerRef}
               href="/admin"
               icon={ShieldCheck}
               label="Administração"

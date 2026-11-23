@@ -8,6 +8,7 @@ import { Bell, LogIn, LogOut } from "lucide-react";
 import Link from "next/link";
 import { ThemeToggle } from "@/shared/appearance/theme-toggle";
 import { Avatar } from "@/shared/components/avatar";
+import { GuardedLink } from "@/shared/navigation/guarded-link";
 import { usePlatform } from "@/shared/platform/use-platform";
 import { useSignOut } from "./use-sign-out";
 
@@ -51,14 +52,14 @@ export function SidebarAccount({
   return (
     <div className="flex flex-col gap-3 border-t pt-4">
       <div className="flex flex-col items-center justify-center gap-2 xl:flex-row xl:justify-between">
-        <Link
+        <GuardedLink
           aria-label="Notificações"
           className="flex size-10 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-accent hover:text-primary"
           href="/notifications"
           title="Notificações"
         >
           <Bell aria-hidden="true" className="size-5" />
-        </Link>
+        </GuardedLink>
         <Button
           aria-label="Sair da conta"
           disabled={signOut.pending}
@@ -71,7 +72,7 @@ export function SidebarAccount({
         </Button>
         <ThemeToggle />
       </div>
-      <Link
+      <GuardedLink
         aria-label="Minha conta"
         className="flex items-center justify-center gap-3 rounded-xl p-2 transition-colors hover:bg-muted xl:justify-start"
         href="/settings"
@@ -83,7 +84,7 @@ export function SidebarAccount({
           </span>
           <span className="text-muted-foreground text-xs">Minha conta</span>
         </span>
-      </Link>
+      </GuardedLink>
     </div>
   );
 }

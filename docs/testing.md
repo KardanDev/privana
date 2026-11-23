@@ -62,6 +62,8 @@ Run `bun run test:studio-router` after generating environment types and the Pris
 
 The desktop keyboard and phone touch checks assert the destination URL and confirm that navigation kept the same document. A suspended creator receives the real restricted Studio state. The suite captures the open editor at both viewport sizes in `output/playwright/studio-router-results`. GitHub Quality runs this suite with the other browser checks.
 
+The suite also covers Studio's unsaved-post confirmation on shared app links, including account menu focus, the latest link choice, and a fictional save acknowledgement. The guarded links cover the Studio page, shared brand and shell, and known app routes in the announcement and footer. Other CMS URLs retain their native link behavior. Browser Back and Forward retain their normal history behavior. Reloads and other full-document departures rely on the browser's native warning when it fires. Save before leaving Studio to keep your changes.
+
 ## Deliberate service checks
 
 | Check | Command / opt-in | Effects and limits |

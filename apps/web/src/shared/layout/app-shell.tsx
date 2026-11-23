@@ -2,6 +2,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { usePathname } from "next/navigation";
 import type { ReactNode } from "react";
+import { NavigationGuardProvider } from "@/shared/navigation/navigation-guard-provider";
 import { PlatformAnnouncement } from "@/shared/platform/platform-announcement";
 import { PlatformFooter } from "@/shared/platform/platform-footer";
 import { orpc } from "@/utils/orpc";
@@ -26,7 +27,7 @@ export function AppShell({ children }: { children: ReactNode }) {
     return <main id="main-content">{children}</main>;
   }
   return (
-    <>
+    <NavigationGuardProvider>
       <a
         className="sr-only fixed top-3 left-3 z-50 rounded-lg bg-primary px-4 py-3 text-primary-foreground focus:not-sr-only"
         href="#main-content"
@@ -64,6 +65,6 @@ export function AppShell({ children }: { children: ReactNode }) {
         </div>
       </div>
       <MobileNavigation viewer={viewer.data} />
-    </>
+    </NavigationGuardProvider>
   );
 }

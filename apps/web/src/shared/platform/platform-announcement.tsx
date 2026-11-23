@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowUpRight } from "lucide-react";
+import { PlatformLink } from "./platform-link";
 import { usePlatform } from "./use-platform";
 
 export function PlatformAnnouncement() {
@@ -14,13 +15,13 @@ export function PlatformAnnouncement() {
       className="border-b bg-accent px-5 py-3 text-sm"
     >
       {announcement.href ? (
-        <a
+        <PlatformLink
           className="flex items-center justify-center gap-2 font-medium text-primary"
           href={announcement.href}
         >
           {announcement.text}
           <ArrowUpRight aria-hidden="true" className="size-4 shrink-0" />
-        </a>
+        </PlatformLink>
       ) : (
         <p className="text-center">{announcement.text}</p>
       )}

@@ -13,6 +13,7 @@ import {
 import { client, orpc } from "@/utils/orpc";
 import type { PostLeaveGuard } from "./post-leave-guard";
 import { STUDIO_WRITE_KEY } from "./studio-cache-types";
+import { useStudioLinkGuard } from "./use-studio-link-guard";
 
 export function useStudioScreen() {
   const leaveRef = useRef<PostLeaveGuard | null>(null);
@@ -20,6 +21,7 @@ export function useStudioScreen() {
   const navigationRef = useRef<HTMLFieldSetElement>(null);
   const restoreFilterFocus = useRef(false);
   const queryClient = useQueryClient();
+  useStudioLinkGuard(leaveRef, queryClient);
   const changeContext = useCallback(
     (same: boolean, proceed: () => void, restoreFocus = true) => {
       if (queryClient.isMutating({ mutationKey: STUDIO_WRITE_KEY }) > 0) {

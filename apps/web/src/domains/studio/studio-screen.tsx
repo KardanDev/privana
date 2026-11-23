@@ -11,10 +11,10 @@ import {
   Plus,
   Users,
 } from "lucide-react";
-import Link from "next/link";
 import { PageHeading } from "@/shared/components/page-heading";
 import { QueryFeedback } from "@/shared/components/query-feedback";
 import { StatCard } from "@/shared/components/stat-card";
+import { GuardedLink } from "@/shared/navigation/guarded-link";
 import { ProfileForm } from "./profile-form";
 import { STUDIO_WRITE_KEY } from "./studio-cache-types";
 import { StudioLoadMore } from "./studio-load-more";
@@ -40,13 +40,13 @@ export function StudioScreen() {
   const visiblePosts = query.data?.pages.flatMap((page) => page.posts) ?? [];
   return (
     <>
-      <Link
+      <GuardedLink
         className={cn(buttonVariants({ variant: "link" }), "mb-3 px-0")}
         href="/"
       >
         <ArrowLeft aria-hidden="true" data-icon="inline-start" />
         Voltar à comunidade
-      </Link>
+      </GuardedLink>
       <PageHeading
         description="Seu conteúdo e sua comunidade, de perto."
         title="Meu estúdio"
@@ -57,13 +57,13 @@ export function StudioScreen() {
               <Plus aria-hidden="true" data-icon="inline-start" />
               Nova publicação
             </Button>
-            <Link
+            <GuardedLink
               className={cn(buttonVariants({ variant: "outline" }))}
               href={`/creators/${profile.handle}`}
             >
               Ver perfil
               <ArrowUpRight aria-hidden="true" data-icon="inline-end" />
-            </Link>
+            </GuardedLink>
           </div>
         )}
       </PageHeading>
