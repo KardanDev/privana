@@ -2,7 +2,7 @@
 
 import { cn } from "@privana/ui/lib/utils";
 import Image from "next/image";
-import Link from "next/link";
+import { GuardedLink } from "@/shared/navigation/guarded-link";
 import { usePlatform } from "@/shared/platform/use-platform";
 
 export function Brand({
@@ -14,7 +14,7 @@ export function Brand({
 }) {
   const { brand } = usePlatform();
   return (
-    <Link
+    <GuardedLink
       aria-label={`${brand.name}, página inicial`}
       className={cn(
         "inline-flex min-w-0 items-center gap-2.5",
@@ -60,6 +60,6 @@ export function Brand({
           <span className="text-primary">.</span>
         </span>
       )}
-    </Link>
+    </GuardedLink>
   );
 }

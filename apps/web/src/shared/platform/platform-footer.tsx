@@ -1,5 +1,6 @@
 "use client";
 
+import { PlatformLink } from "./platform-link";
 import { usePlatform } from "./use-platform";
 
 export function PlatformFooter() {
@@ -10,22 +11,22 @@ export function PlatformFooter() {
         © {new Date().getFullYear()} {config.brand.name}
       </span>
       {config.footer.links.map((link) => (
-        <a
+        <PlatformLink
           className="hover:text-foreground hover:underline"
           href={link.href}
           key={link.href}
         >
           {link.label}
-        </a>
+        </PlatformLink>
       ))}
       {config.pages.map((page) => (
-        <a
+        <PlatformLink
           className="hover:text-foreground hover:underline"
           href={`/pages/${page.slug}`}
           key={page.slug}
         >
           {page.title}
-        </a>
+        </PlatformLink>
       ))}
       {config.footer.supportEmail ? (
         <a href={`mailto:${config.footer.supportEmail}`}>Suporte</a>

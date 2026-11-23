@@ -13,40 +13,62 @@ export function usePostDiscard(
   leaveRef?: PostLeaveRef
 ) {
   const ref = useRef<HTMLFormElement>(null);
-  const destination = useRef<(() => void) | null>(null);
+  const departure = useRef<{
+    proceed: () => void;
+    restoreFocus?: () => void;
+  } | null>(null);
   const [open, setOpen] = useState(false);
   const queryClient = useQueryClient();
   const cancel = useCallback(() => {
-    destination.current = null;
+    departure.current = null;
     setOpen(false);
   }, []);
+  const keepEditing = useCallback(() => {
+    const restoreFocus = departure.current?.restoreFocus;
+    cancel();
+    if (restoreFocus) {
+      requestAnimationFrame(restoreFocus);
+    }
+  }, [cancel]);
   const discard = useCallback(() => {
     if (queryClient.isMutating({ mutationKey: STUDIO_WRITE_KEY }) > 0) {
       return;
     }
-    const proceed = destination.current;
+    const proceed = departure.current?.proceed;
     cancel();
     proceed?.();
   }, [cancel, queryClient]);
-  const request = useCallback(
-    (proceed: () => void) => {
+  const defer = useCallback(
+    (proceed: () => void, restoreFocus?: () => void) => {
       if (queryClient.isMutating({ mutationKey: STUDIO_WRITE_KEY }) > 0) {
-        return;
+        return true;
       }
       if (
         ref.current &&
         hasUnsavedPostChanges(new FormData(ref.current), post)
       ) {
-        destination.current = proceed;
+        departure.current = { proceed, restoreFocus };
         setOpen(true);
-      } else {
-        cancel();
-        proceed();
+        return true;
       }
+      cancel();
+      return false;
     },
     [cancel, post, queryClient]
   );
-  useImperativeHandle(leaveRef, () => ({ cancel, request }), [cancel, request]);
+  const request = useCallback(
+    (proceed: () => void) => {
+      if (!defer(proceed)) {
+        proceed();
+      }
+    },
+    [defer]
+  );
+  useImperativeHandle(leaveRef, () => ({ cancel, defer, request }), [
+    cancel,
+    defer,
+    request,
+  ]);
   const requestClose = useCallback(() => request(onClose), [onClose, request]);
-  return { cancel, discard, open, ref, requestClose };
+  return { discard, keepEditing, open, ref, requestClose };
 }

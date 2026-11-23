@@ -161,7 +161,7 @@ export function PostEditor({
         {form.preview ? <PendingPostPreview {...form.preview} /> : null}
       </form>
       <PostDiscardDialog
-        onCancel={discard.cancel}
+        onCancel={discard.keepEditing}
         onDiscard={discard.discard}
         open={discard.open}
         pending={form.pending}

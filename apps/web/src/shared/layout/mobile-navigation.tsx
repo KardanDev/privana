@@ -2,8 +2,8 @@
 import type { ViewerDTO } from "@privana/api/contracts/product";
 import { cn } from "@privana/ui/lib/utils";
 import { Compass, House, MessageCircle, Sparkles } from "lucide-react";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { GuardedLink } from "@/shared/navigation/guarded-link";
 import { usePlatform } from "@/shared/platform/use-platform";
 import { isNavigationActive } from "./is-navigation-active";
 import { MobileAccountMenu } from "./mobile-account-menu";
@@ -49,7 +49,7 @@ export function MobileNavigation({
           const active = isNavigationActive(pathname, href);
           const label = config.navigation[item.key];
           return (
-            <Link
+            <GuardedLink
               aria-current={active ? "page" : undefined}
               aria-label={label}
               className={cn(
@@ -68,7 +68,7 @@ export function MobileNavigation({
                 strokeWidth={active ? 2.2 : 1.7}
               />
               <span className={mobileNavigationLabelClassName}>{label}</span>
-            </Link>
+            </GuardedLink>
           );
         })}
       <MobileAccountMenu viewer={viewer} />

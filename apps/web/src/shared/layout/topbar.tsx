@@ -6,6 +6,7 @@ import { cn } from "@privana/ui/lib/utils";
 import { Bell } from "lucide-react";
 import Link from "next/link";
 import { Brand } from "@/shared/components/brand";
+import { GuardedLink } from "@/shared/navigation/guarded-link";
 import { usePlatform } from "@/shared/platform/use-platform";
 export function Topbar({ viewer }: { viewer: ViewerDTO | null | undefined }) {
   const config = usePlatform();
@@ -17,13 +18,13 @@ export function Topbar({ viewer }: { viewer: ViewerDTO | null | undefined }) {
           <Skeleton className="h-10 w-24 rounded-full" />
         ) : null}
         {viewer ? (
-          <Link
+          <GuardedLink
             aria-label="Notificações"
             className="flex size-11 items-center justify-center rounded-full border bg-card transition-colors hover:bg-accent"
             href="/notifications"
           >
             <Bell aria-hidden="true" className="size-[18px]" />
-          </Link>
+          </GuardedLink>
         ) : null}
         {viewer === null ? (
           <>

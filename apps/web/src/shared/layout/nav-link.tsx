@@ -2,8 +2,8 @@
 import { cn } from "@privana/ui/lib/utils";
 import type { LucideIcon } from "lucide-react";
 import type { Route } from "next";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { GuardedLink } from "@/shared/navigation/guarded-link";
 import { isNavigationActive } from "./is-navigation-active";
 
 export function NavLink({
@@ -18,7 +18,7 @@ export function NavLink({
   const pathname = usePathname();
   const active = isNavigationActive(pathname, href);
   return (
-    <Link
+    <GuardedLink
       aria-current={active ? "page" : undefined}
       aria-label={label}
       className={cn(
@@ -38,6 +38,6 @@ export function NavLink({
       <span className="hidden min-w-0 leading-snug [overflow-wrap:anywhere] xl:inline">
         {label}
       </span>
-    </Link>
+    </GuardedLink>
   );
 }
