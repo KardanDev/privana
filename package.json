@@ -60,6 +60,7 @@
     "test:browser": "playwright test",
     "test:catalogue": "playwright test --config playwright.catalogue.config.ts",
     "test:smoke": "cd apps/web && varlock run -- bun ../../packages/api/scripts/verify-demo-http.ts",
+    "test:studio-router": "playwright test --config playwright.studio-router.config.ts",
     "ui:catalogue": "bun scripts/catalogue/serve-catalogue.ts"
   },
   "overrides": {

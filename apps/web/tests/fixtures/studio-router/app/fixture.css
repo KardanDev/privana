@@ -1,0 +1,7 @@
+@import "../../../../src/index.css";
+@source "../../../../src";
+
+:root {
+  --font-bricolage: ui-sans-serif;
+  --font-hanken: system-ui;
+}
